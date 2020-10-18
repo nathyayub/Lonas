@@ -87,12 +87,12 @@
     End Property
     Public Sub Gravar(novo As Boolean)
         If novo = True Then
-            sql = "insert into tabembarcaçao (nomebarco, marca, modelo, anofab, cliente, codmarina, marina) values ('" & m_nmbarco & "', '" & m_marca & "', '" & m_modelo & "', '" & m_anofab & "', '" & m_cliente & "', '" & m_codmarina & "', " & m_marina & ")"
+            sql = "insert into tabembarcaçao (nomebarco, marca, modelo, anofab, cliente, codmarina, marina) values ('" & m_nmbarco & "', '" & m_marca & "', '" & m_modelo & "', '" & m_anofab & "', '" & m_cliente & "', '" & m_marina & "', " & m_nmarina & ")"
             objbanco.executar_comando(sql)
             sql = "select max(codigo) as codigo from tabembarcaçao"
             m_cod = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update tabembarcaçao set nmbarco='" & m_nmbarco & "', marca='" & m_marca & "', modelo='" & m_modelo & "', anofab='" & m_anofab & "', cliente='" & m_cliente & "', codmarina='" & m_codmarina & "', marina=" & m_marina & "  where codigo=" & m_cod
+            sql = "Update tabembarcaçao set nmbarco='" & m_nmbarco & "', marca='" & m_marca & "', modelo='" & m_modelo & "', anofab='" & m_anofab & "', cliente='" & m_cliente & "', codmarina='" & m_marina & "', marina=" & m_marina & "  where codigo=" & m_cod
             objbanco.executar_comando(sql)
         End If
     End Sub

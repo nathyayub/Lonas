@@ -24,11 +24,6 @@ Partial Class ConsultaDespesasStr
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaDespesasStr))
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
-        Me.DtpFin = New System.Windows.Forms.DateTimePicker()
-        Me.DtpIni = New System.Windows.Forms.DateTimePicker()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.CodcontPag = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nome = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,6 +31,11 @@ Partial Class ConsultaDespesasStr
         Me.Venc = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Desc = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Quita = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.DtpFin = New System.Windows.Forms.DateTimePicker()
+        Me.DtpIni = New System.Windows.Forms.DateTimePicker()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,57 +52,6 @@ Partial Class ConsultaDespesasStr
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(908, 450)
         Me.DgdGrade.TabIndex = 12
-        '
-        'DtpFin
-        '
-        Me.DtpFin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DtpFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtpFin.Location = New System.Drawing.Point(500, 35)
-        Me.DtpFin.Name = "DtpFin"
-        Me.DtpFin.Size = New System.Drawing.Size(120, 26)
-        Me.DtpFin.TabIndex = 11
-        '
-        'DtpIni
-        '
-        Me.DtpIni.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DtpIni.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtpIni.Location = New System.Drawing.Point(233, 35)
-        Me.DtpIni.Name = "DtpIni"
-        Me.DtpIni.Size = New System.Drawing.Size(102, 26)
-        Me.DtpIni.TabIndex = 10
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.DimGray
-        Me.Button1.Location = New System.Drawing.Point(655, 28)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(150, 45)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "OK"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(397, 39)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 22)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Data Final"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(121, 39)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(106, 22)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Data Inicial"
         '
         'CodcontPag
         '
@@ -147,6 +96,63 @@ Partial Class ConsultaDespesasStr
         Me.Quita.Name = "Quita"
         Me.Quita.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Quita.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
+        'DtpFin
+        '
+        Me.DtpFin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DtpFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DtpFin.Location = New System.Drawing.Point(500, 35)
+        Me.DtpFin.Name = "DtpFin"
+        Me.DtpFin.Size = New System.Drawing.Size(120, 26)
+        Me.DtpFin.TabIndex = 11
+        '
+        'DtpIni
+        '
+        Me.DtpIni.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DtpIni.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DtpIni.Location = New System.Drawing.Point(233, 35)
+        Me.DtpIni.Name = "DtpIni"
+        Me.DtpIni.Size = New System.Drawing.Size(102, 26)
+        Me.DtpIni.TabIndex = 10
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Silver
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button1.FlatAppearance.BorderSize = 2
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(655, 28)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(150, 45)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "OK"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(397, 39)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(97, 22)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Data Final"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(121, 39)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(106, 22)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Data Inicial"
         '
         'ConsultaDespesasStr
         '

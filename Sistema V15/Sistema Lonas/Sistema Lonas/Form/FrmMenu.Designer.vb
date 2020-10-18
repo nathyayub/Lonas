@@ -53,6 +53,7 @@ Partial Class FrmMenu
         Me.ToolStripButton9 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.CadastroDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EntradaDeMaterialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EstoqueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaídaDeMaterialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -66,7 +67,6 @@ Partial Class FrmMenu
         Me.lblvalordolar = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.grbcotacao = New System.Windows.Forms.GroupBox()
-        Me.CadastroDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
@@ -165,6 +165,7 @@ Partial Class FrmMenu
         'ToolStripButton1
         '
         resources.ApplyResources(Me.ToolStripButton1, "ToolStripButton1")
+        Me.ToolStripButton1.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton1.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton1.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripButton1.Name = "ToolStripButton1"
@@ -178,6 +179,7 @@ Partial Class FrmMenu
         'ToolStripButton2
         '
         resources.ApplyResources(Me.ToolStripButton2, "ToolStripButton2")
+        Me.ToolStripButton2.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton2.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton2.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripButton2.Name = "ToolStripButton2"
@@ -190,6 +192,7 @@ Partial Class FrmMenu
         'ToolStripButton8
         '
         resources.ApplyResources(Me.ToolStripButton8, "ToolStripButton8")
+        Me.ToolStripButton8.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton8.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton8.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripButton8.Name = "ToolStripButton8"
@@ -202,6 +205,7 @@ Partial Class FrmMenu
         'ToolStripButton3
         '
         resources.ApplyResources(Me.ToolStripButton3, "ToolStripButton3")
+        Me.ToolStripButton3.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton3.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton3.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripButton3.Name = "ToolStripButton3"
@@ -214,6 +218,7 @@ Partial Class FrmMenu
         'ToolStripButton6
         '
         resources.ApplyResources(Me.ToolStripButton6, "ToolStripButton6")
+        Me.ToolStripButton6.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton6.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton6.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripButton6.Name = "ToolStripButton6"
@@ -226,6 +231,7 @@ Partial Class FrmMenu
         'ToolStripButton4
         '
         resources.ApplyResources(Me.ToolStripButton4, "ToolStripButton4")
+        Me.ToolStripButton4.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton4.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton4.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripButton4.Name = "ToolStripButton4"
@@ -238,6 +244,7 @@ Partial Class FrmMenu
         'ToolStripButton9
         '
         resources.ApplyResources(Me.ToolStripButton9, "ToolStripButton9")
+        Me.ToolStripButton9.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton9.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton9.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripButton9.Name = "ToolStripButton9"
@@ -250,14 +257,22 @@ Partial Class FrmMenu
         'ToolStripSplitButton1
         '
         resources.ApplyResources(Me.ToolStripSplitButton1, "ToolStripSplitButton1")
+        Me.ToolStripSplitButton1.BackColor = System.Drawing.Color.Brown
         Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastroDeMateriaisToolStripMenuItem, Me.EntradaDeMaterialToolStripMenuItem, Me.EstoqueToolStripMenuItem, Me.SaídaDeMaterialToolStripMenuItem})
         Me.ToolStripSplitButton1.ForeColor = System.Drawing.Color.White
         Me.ToolStripSplitButton1.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
         '
+        'CadastroDeMateriaisToolStripMenuItem
+        '
+        resources.ApplyResources(Me.CadastroDeMateriaisToolStripMenuItem, "CadastroDeMateriaisToolStripMenuItem")
+        Me.CadastroDeMateriaisToolStripMenuItem.BackColor = System.Drawing.Color.Brown
+        Me.CadastroDeMateriaisToolStripMenuItem.Name = "CadastroDeMateriaisToolStripMenuItem"
+        '
         'EntradaDeMaterialToolStripMenuItem
         '
         resources.ApplyResources(Me.EntradaDeMaterialToolStripMenuItem, "EntradaDeMaterialToolStripMenuItem")
+        Me.EntradaDeMaterialToolStripMenuItem.BackColor = System.Drawing.Color.Brown
         Me.EntradaDeMaterialToolStripMenuItem.Name = "EntradaDeMaterialToolStripMenuItem"
         '
         'EstoqueToolStripMenuItem
@@ -278,6 +293,7 @@ Partial Class FrmMenu
         'ToolStripButton7
         '
         resources.ApplyResources(Me.ToolStripButton7, "ToolStripButton7")
+        Me.ToolStripButton7.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton7.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton7.Margin = New System.Windows.Forms.Padding(5, 1, 0, 0)
         Me.ToolStripButton7.Name = "ToolStripButton7"
@@ -290,6 +306,7 @@ Partial Class FrmMenu
         'ToolStripButton5
         '
         resources.ApplyResources(Me.ToolStripButton5, "ToolStripButton5")
+        Me.ToolStripButton5.BackColor = System.Drawing.Color.Brown
         Me.ToolStripButton5.ForeColor = System.Drawing.Color.White
         Me.ToolStripButton5.Margin = New System.Windows.Forms.Padding(5, 1, 0, 0)
         Me.ToolStripButton5.Name = "ToolStripButton5"
@@ -329,17 +346,12 @@ Partial Class FrmMenu
         Me.grbcotacao.Name = "grbcotacao"
         Me.grbcotacao.TabStop = False
         '
-        'CadastroDeMateriaisToolStripMenuItem
-        '
-        resources.ApplyResources(Me.CadastroDeMateriaisToolStripMenuItem, "CadastroDeMateriaisToolStripMenuItem")
-        Me.CadastroDeMateriaisToolStripMenuItem.Name = "CadastroDeMateriaisToolStripMenuItem"
-        '
         'FrmMenu
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
-        Me.BackColor = System.Drawing.Color.LightGray
+        Me.BackColor = System.Drawing.Color.Brown
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.grbcotacao)
