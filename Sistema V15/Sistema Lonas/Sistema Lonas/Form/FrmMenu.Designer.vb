@@ -67,6 +67,8 @@ Partial Class FrmMenu
         Me.lblvalordolar = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.grbcotacao = New System.Windows.Forms.GroupBox()
+        Me.ToolStripButton10 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
@@ -139,8 +141,9 @@ Partial Class FrmMenu
         '
         resources.ApplyResources(Me.ToolStrip1, "ToolStrip1")
         Me.ToolStrip1.BackColor = System.Drawing.Color.Brown
+        Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(56, 56)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator11, Me.ToolStripButton12, Me.ToolStripSeparator13, Me.ToolStripButton1, Me.ToolStripSeparator10, Me.ToolStripButton2, Me.ToolStripSeparator9, Me.ToolStripButton8, Me.ToolStripSeparator2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripButton6, Me.ToolStripSeparator7, Me.ToolStripButton4, Me.ToolStripSeparator4, Me.ToolStripButton9, Me.ToolStripSeparator5, Me.ToolStripSplitButton1, Me.ToolStripSeparator3, Me.ToolStripButton7, Me.ToolStripSeparator1, Me.ToolStripButton5, Me.ToolStripSeparator12})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator11, Me.ToolStripButton12, Me.ToolStripSeparator13, Me.ToolStripButton1, Me.ToolStripSeparator10, Me.ToolStripButton2, Me.ToolStripSeparator9, Me.ToolStripButton8, Me.ToolStripSeparator2, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripButton6, Me.ToolStripSeparator7, Me.ToolStripButton10, Me.ToolStripSeparator6, Me.ToolStripButton4, Me.ToolStripSeparator4, Me.ToolStripButton9, Me.ToolStripSeparator5, Me.ToolStripSplitButton1, Me.ToolStripSeparator3, Me.ToolStripButton7, Me.ToolStripSeparator1, Me.ToolStripButton5, Me.ToolStripSeparator12})
         Me.ToolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
@@ -346,6 +349,19 @@ Partial Class FrmMenu
         Me.grbcotacao.Name = "grbcotacao"
         Me.grbcotacao.TabStop = False
         '
+        'ToolStripButton10
+        '
+        resources.ApplyResources(Me.ToolStripButton10, "ToolStripButton10")
+        Me.ToolStripButton10.BackColor = System.Drawing.Color.Brown
+        Me.ToolStripButton10.ForeColor = System.Drawing.Color.White
+        Me.ToolStripButton10.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
+        Me.ToolStripButton10.Name = "ToolStripButton10"
+        '
+        'ToolStripSeparator6
+        '
+        resources.ApplyResources(Me.ToolStripSeparator6, "ToolStripSeparator6")
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        '
         'FrmMenu
         '
         resources.ApplyResources(Me, "$this")
@@ -414,5 +430,7 @@ Partial Class FrmMenu
     Friend WithEvents EstoqueToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SaídaDeMaterialToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CadastroDeMateriaisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripButton10 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents ToolStripSeparator6 As System.Windows.Forms.ToolStripSeparator
 
 End Class

@@ -9,7 +9,6 @@
         Me.Top = 0
         Me.Left = 0
     End Sub
-
     Private Sub Funcionarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         objControle.Limpar_tela(Me)
         objControle.habilitar_tela(Me, False)
@@ -18,8 +17,7 @@
         BtnExc.Enabled = False
         BtnImp.Enabled = False
     End Sub
-
-    Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles BtnNov.Click
+    Private Sub BtnNov_Click_1(sender As Object, e As EventArgs) Handles BtnNov.Click
         objControle.Limpar_tela(Me)
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
@@ -29,6 +27,7 @@
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
+
         If TxtNom.Text = "" Then
             MsgBox("Digite o nome do funcionario!")
             TxtNom.Focus()
@@ -67,22 +66,38 @@
             objControle.habilitar_botoes(Me, True)
         End If
     End Sub
-
-    Private Sub BtnSai_Click(sender As Object, e As EventArgs) Handles BtnSai.Click
-        Me.Close()
+    Private Sub BtnExc_Click_1(sender As Object, e As EventArgs) Handles BtnExc.Click
+        If objFun.Excluir(TxtCod.Text) = True Then
+            objControle.Limpar_tela(Me)
+            BtnExc.Enabled = False
+            BtnAlt.Enabled = False
+            BtnImp.Enabled = False
+        End If
     End Sub
-
-    Private Sub BtnLoc_Click(sender As Object, e As EventArgs) Handles BtnLoc.Click
+    Private Sub BtnLoc_Click_1(sender As Object, e As EventArgs) Handles BtnLoc.Click
         GrpLoc.Visible = True
         TxtLoc.Text = ""
         BtnOK.Enabled = False
         TxtLoc.Focus()
     End Sub
-
-    Private Sub BtnCan_Click(sender As Object, e As EventArgs) Handles BtnCan.Click
+    Private Sub BtnAlt_Click_1(sender As Object, e As EventArgs) Handles BtnAlt.Click
+        objControle.habilitar_tela(Me, True)
+        objControle.habilitar_botoes(Me, False)
+        TxtCod.Enabled = False
+        TxtNom.Focus()
+        novo = False
+    End Sub
+    Private Sub BtnCan_Click_1(sender As Object, e As EventArgs) Handles BtnCan.Click
         Me.Funcionarios_Load(Nothing, Nothing)
     End Sub
 
+    Private Sub BtnImp_Click(sender As Object, e As EventArgs) Handles BtnImp.Click
+
+    End Sub
+
+    Private Sub BtnSai_Click_1(sender As Object, e As EventArgs) Handles BtnSai.Click
+        Me.Close()
+    End Sub
     Private Sub TxtLoc_TextChanged(sender As Object, e As EventArgs) Handles TxtLoc.TextChanged
         If TxtLoc.Text = "" Then
             BtnOK.Enabled = False
@@ -90,7 +105,6 @@
             BtnOK.Enabled = True
         End If
     End Sub
-
     Private Sub BtnOK_Click(sender As Object, e As EventArgs) Handles BtnOK.Click
         If objFun.LocalizarPorCodigoOuNome(TxtLoc.Text) = True Then
             Call mostrar_DadosVindosDaClasse()
@@ -99,7 +113,6 @@
         TxtLoc.Text = ""
         TxtLoc.Focus()
     End Sub
-
     Private Sub mostrar_DadosVindosDaClasse()
         TxtCod.Text = objFun.Codigo
         TxtNom.Text = objFun.Nome
@@ -109,23 +122,5 @@
         TxtRg.Text = objFun.RG
         TxtDta.Text = objFun.DtAdmissao
         TxtAra.Text = objFun.Atuacao
-
-    End Sub
-
-    Private Sub BtnExc_Click(sender As Object, e As EventArgs) Handles BtnExc.Click
-        If objFun.Excluir(TxtCod.Text) = True Then
-            objControle.Limpar_tela(Me)
-            BtnExc.Enabled = False
-            BtnAlt.Enabled = False
-            BtnImp.Enabled = False
-        End If
-    End Sub
-
-    Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
-        objControle.habilitar_tela(Me, True)
-        objControle.habilitar_botoes(Me, False)
-        TxtCod.Enabled = False
-        TxtNom.Focus()
-        novo = False
     End Sub
 End Class

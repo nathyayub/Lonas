@@ -96,4 +96,8 @@
         Despesas.Show()
         Despesas.MdiParent = FrmMenu
     End Sub
+
+    Private Sub TxtDes_TextChanged(sender As Object, e As EventArgs) Handles TxtDes.TextChanged
+
+    End Sub
 End Class

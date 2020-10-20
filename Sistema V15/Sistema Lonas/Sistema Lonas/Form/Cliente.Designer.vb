@@ -70,7 +70,7 @@ Partial Class Cliente
         Me.TxtIns.Location = New System.Drawing.Point(174, 219)
         Me.TxtIns.Name = "TxtIns"
         Me.TxtIns.Size = New System.Drawing.Size(169, 26)
-        Me.TxtIns.TabIndex = 89
+        Me.TxtIns.TabIndex = 5
         Me.TxtIns.Tag = "x"
         '
         'Label14
@@ -79,9 +79,9 @@ Partial Class Cliente
         Me.Label14.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(13, 223)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(156, 22)
+        Me.Label14.Size = New System.Drawing.Size(162, 22)
         Me.Label14.TabIndex = 90
-        Me.Label14.Text = "Inscrição Estadual"
+        Me.Label14.Text = "Inscrição Estadual:"
         '
         'TxtCNPJ
         '
@@ -89,7 +89,7 @@ Partial Class Cliente
         Me.TxtCNPJ.Location = New System.Drawing.Point(174, 181)
         Me.TxtCNPJ.Name = "TxtCNPJ"
         Me.TxtCNPJ.Size = New System.Drawing.Size(169, 26)
-        Me.TxtCNPJ.TabIndex = 87
+        Me.TxtCNPJ.TabIndex = 4
         Me.TxtCNPJ.Tag = "x"
         '
         'Label12
@@ -98,9 +98,9 @@ Partial Class Cliente
         Me.Label12.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(13, 185)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(56, 22)
+        Me.Label12.Size = New System.Drawing.Size(62, 22)
         Me.Label12.TabIndex = 88
-        Me.Label12.Text = "CNPJ"
+        Me.Label12.Text = "CNPJ:"
         '
         'TxtEst
         '
@@ -109,7 +109,7 @@ Partial Class Cliente
         Me.TxtEst.Location = New System.Drawing.Point(174, 415)
         Me.TxtEst.Name = "TxtEst"
         Me.TxtEst.Size = New System.Drawing.Size(130, 26)
-        Me.TxtEst.TabIndex = 64
+        Me.TxtEst.TabIndex = 10
         '
         'TxtCid
         '
@@ -118,7 +118,7 @@ Partial Class Cliente
         Me.TxtCid.Location = New System.Drawing.Point(174, 453)
         Me.TxtCid.Name = "TxtCid"
         Me.TxtCid.Size = New System.Drawing.Size(204, 26)
-        Me.TxtCid.TabIndex = 65
+        Me.TxtCid.TabIndex = 11
         '
         'TxtCep
         '
@@ -126,7 +126,7 @@ Partial Class Cliente
         Me.TxtCep.Location = New System.Drawing.Point(174, 492)
         Me.TxtCep.Name = "TxtCep"
         Me.TxtCep.Size = New System.Drawing.Size(130, 26)
-        Me.TxtCep.TabIndex = 66
+        Me.TxtCep.TabIndex = 12
         '
         'TxtBai
         '
@@ -135,7 +135,7 @@ Partial Class Cliente
         Me.TxtBai.Location = New System.Drawing.Point(174, 378)
         Me.TxtBai.Name = "TxtBai"
         Me.TxtBai.Size = New System.Drawing.Size(130, 26)
-        Me.TxtBai.TabIndex = 63
+        Me.TxtBai.TabIndex = 9
         '
         'TxtCom
         '
@@ -144,7 +144,7 @@ Partial Class Cliente
         Me.TxtCom.Location = New System.Drawing.Point(174, 339)
         Me.TxtCom.Name = "TxtCom"
         Me.TxtCom.Size = New System.Drawing.Size(169, 26)
-        Me.TxtCom.TabIndex = 62
+        Me.TxtCom.TabIndex = 8
         '
         'TxtEnd
         '
@@ -153,7 +153,7 @@ Partial Class Cliente
         Me.TxtEnd.Location = New System.Drawing.Point(174, 300)
         Me.TxtEnd.Name = "TxtEnd"
         Me.TxtEnd.Size = New System.Drawing.Size(238, 26)
-        Me.TxtEnd.TabIndex = 61
+        Me.TxtEnd.TabIndex = 7
         '
         'TxtCpf
         '
@@ -161,7 +161,7 @@ Partial Class Cliente
         Me.TxtCpf.Location = New System.Drawing.Point(177, 144)
         Me.TxtCpf.Name = "TxtCpf"
         Me.TxtCpf.Size = New System.Drawing.Size(167, 26)
-        Me.TxtCpf.TabIndex = 59
+        Me.TxtCpf.TabIndex = 3
         Me.TxtCpf.Tag = "x"
         '
         'Label13
@@ -170,9 +170,9 @@ Partial Class Cliente
         Me.Label13.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.Location = New System.Drawing.Point(13, 146)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(45, 22)
+        Me.Label13.Size = New System.Drawing.Size(51, 22)
         Me.Label13.TabIndex = 86
-        Me.Label13.Text = "CPF"
+        Me.Label13.Text = "CPF:"
         '
         'Label11
         '
@@ -180,9 +180,9 @@ Partial Class Cliente
         Me.Label11.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(13, 380)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(62, 22)
+        Me.Label11.Size = New System.Drawing.Size(68, 22)
         Me.Label11.TabIndex = 85
-        Me.Label11.Text = "Bairro"
+        Me.Label11.Text = "Bairro:"
         '
         'Label10
         '
@@ -190,9 +190,9 @@ Partial Class Cliente
         Me.Label10.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(13, 301)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(85, 22)
+        Me.Label10.Size = New System.Drawing.Size(91, 22)
         Me.Label10.TabIndex = 84
-        Me.Label10.Text = "Endereço"
+        Me.Label10.Text = "Endereço:"
         '
         'Label9
         '
@@ -200,9 +200,9 @@ Partial Class Cliente
         Me.Label9.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(13, 341)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(119, 22)
+        Me.Label9.Size = New System.Drawing.Size(125, 22)
         Me.Label9.TabIndex = 83
-        Me.Label9.Text = "Complemento"
+        Me.Label9.Text = "Complemento:"
         '
         'Label8
         '
@@ -210,9 +210,9 @@ Partial Class Cliente
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(13, 456)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(67, 22)
+        Me.Label8.Size = New System.Drawing.Size(73, 22)
         Me.Label8.TabIndex = 82
-        Me.Label8.Text = "Cidade"
+        Me.Label8.Text = "Cidade:"
         '
         'Label7
         '
@@ -220,9 +220,9 @@ Partial Class Cliente
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(13, 418)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 22)
+        Me.Label7.Size = New System.Drawing.Size(70, 22)
         Me.Label7.TabIndex = 81
-        Me.Label7.Text = "Estado"
+        Me.Label7.Text = "Estado:"
         '
         'Label6
         '
@@ -230,9 +230,9 @@ Partial Class Cliente
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(13, 496)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(46, 22)
+        Me.Label6.Size = New System.Drawing.Size(52, 22)
         Me.Label6.TabIndex = 80
-        Me.Label6.Text = "CEP"
+        Me.Label6.Text = "CEP:"
         '
         'MskTel
         '
@@ -242,7 +242,7 @@ Partial Class Cliente
         Me.MskTel.Name = "MskTel"
         Me.MskTel.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
         Me.MskTel.Size = New System.Drawing.Size(183, 26)
-        Me.MskTel.TabIndex = 58
+        Me.MskTel.TabIndex = 2
         '
         'TxtEma
         '
@@ -251,7 +251,7 @@ Partial Class Cliente
         Me.TxtEma.Location = New System.Drawing.Point(174, 255)
         Me.TxtEma.Name = "TxtEma"
         Me.TxtEma.Size = New System.Drawing.Size(294, 26)
-        Me.TxtEma.TabIndex = 60
+        Me.TxtEma.TabIndex = 6
         '
         'Label4
         '
@@ -259,9 +259,9 @@ Partial Class Cliente
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(13, 257)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 22)
+        Me.Label4.Size = New System.Drawing.Size(70, 22)
         Me.Label4.TabIndex = 79
-        Me.Label4.Text = "E-mail"
+        Me.Label4.Text = "E-mail:"
         '
         'Label3
         '
@@ -269,9 +269,9 @@ Partial Class Cliente
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(13, 102)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 22)
+        Me.Label3.Size = New System.Drawing.Size(85, 22)
         Me.Label3.TabIndex = 78
-        Me.Label3.Text = "Telefone"
+        Me.Label3.Text = "Telefone:"
         '
         'TxtNom
         '
@@ -280,7 +280,7 @@ Partial Class Cliente
         Me.TxtNom.Location = New System.Drawing.Point(177, 55)
         Me.TxtNom.Name = "TxtNom"
         Me.TxtNom.Size = New System.Drawing.Size(294, 26)
-        Me.TxtNom.TabIndex = 57
+        Me.TxtNom.TabIndex = 1
         '
         'Label2
         '
@@ -288,9 +288,9 @@ Partial Class Cliente
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(13, 59)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 22)
+        Me.Label2.Size = New System.Drawing.Size(63, 22)
         Me.Label2.TabIndex = 77
-        Me.Label2.Text = "Nome"
+        Me.Label2.Text = "Nome:"
         '
         'TxtCod
         '
@@ -298,7 +298,7 @@ Partial Class Cliente
         Me.TxtCod.Location = New System.Drawing.Point(177, 15)
         Me.TxtCod.Name = "TxtCod"
         Me.TxtCod.Size = New System.Drawing.Size(127, 26)
-        Me.TxtCod.TabIndex = 56
+        Me.TxtCod.TabIndex = 0
         Me.TxtCod.Tag = "x"
         '
         'Label1
@@ -307,9 +307,9 @@ Partial Class Cliente
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(13, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 22)
+        Me.Label1.Size = New System.Drawing.Size(74, 22)
         Me.Label1.TabIndex = 76
-        Me.Label1.Text = "Código"
+        Me.Label1.Text = "Código:"
         '
         'GrpLoc
         '
@@ -317,12 +317,13 @@ Partial Class Cliente
         Me.GrpLoc.Controls.Add(Me.BtnOK)
         Me.GrpLoc.Controls.Add(Me.TxtLoc)
         Me.GrpLoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrpLoc.ForeColor = System.Drawing.Color.White
         Me.GrpLoc.Location = New System.Drawing.Point(487, 419)
         Me.GrpLoc.Name = "GrpLoc"
-        Me.GrpLoc.Size = New System.Drawing.Size(236, 96)
+        Me.GrpLoc.Size = New System.Drawing.Size(230, 90)
         Me.GrpLoc.TabIndex = 75
         Me.GrpLoc.TabStop = False
-        Me.GrpLoc.Text = "Localizar"
+        Me.GrpLoc.Text = "Código:"
         Me.GrpLoc.Visible = False
         '
         'Label5
@@ -369,9 +370,9 @@ Partial Class Cliente
         Me.BtnImp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnImp.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnImp.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnImp.ForeColor = System.Drawing.Color.Black
-        Me.BtnImp.Location = New System.Drawing.Point(599, 322)
+        Me.BtnImp.Location = New System.Drawing.Point(601, 322)
         Me.BtnImp.Name = "BtnImp"
         Me.BtnImp.Size = New System.Drawing.Size(124, 43)
         Me.BtnImp.TabIndex = 74
@@ -388,12 +389,12 @@ Partial Class Cliente
         Me.BtnAlt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnAlt.ForeColor = System.Drawing.Color.Black
-        Me.BtnAlt.Location = New System.Drawing.Point(599, 222)
+        Me.BtnAlt.Location = New System.Drawing.Point(601, 222)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
-        Me.BtnAlt.TabIndex = 73
+        Me.BtnAlt.TabIndex = 16
         Me.BtnAlt.Text = "&Alterar"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -407,9 +408,9 @@ Partial Class Cliente
         Me.BtnSai.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnSai.ForeColor = System.Drawing.Color.Black
-        Me.BtnSai.Location = New System.Drawing.Point(599, 370)
+        Me.BtnSai.Location = New System.Drawing.Point(601, 370)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
         Me.BtnSai.TabIndex = 72
@@ -426,12 +427,12 @@ Partial Class Cliente
         Me.BtnCan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnCan.ForeColor = System.Drawing.Color.Black
-        Me.BtnCan.Location = New System.Drawing.Point(599, 271)
+        Me.BtnCan.Location = New System.Drawing.Point(601, 271)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
-        Me.BtnCan.TabIndex = 71
+        Me.BtnCan.TabIndex = 17
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -445,12 +446,12 @@ Partial Class Cliente
         Me.BtnLoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnLoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnLoc.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLoc.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnLoc.ForeColor = System.Drawing.Color.Black
-        Me.BtnLoc.Location = New System.Drawing.Point(599, 172)
+        Me.BtnLoc.Location = New System.Drawing.Point(601, 172)
         Me.BtnLoc.Name = "BtnLoc"
         Me.BtnLoc.Size = New System.Drawing.Size(124, 44)
-        Me.BtnLoc.TabIndex = 70
+        Me.BtnLoc.TabIndex = 15
         Me.BtnLoc.Text = "&Localizar"
         Me.BtnLoc.UseVisualStyleBackColor = False
         '
@@ -464,12 +465,12 @@ Partial Class Cliente
         Me.BtnExc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnExc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnExc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnExc.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnExc.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnExc.ForeColor = System.Drawing.Color.Black
-        Me.BtnExc.Location = New System.Drawing.Point(599, 123)
+        Me.BtnExc.Location = New System.Drawing.Point(601, 123)
         Me.BtnExc.Name = "BtnExc"
         Me.BtnExc.Size = New System.Drawing.Size(124, 43)
-        Me.BtnExc.TabIndex = 69
+        Me.BtnExc.TabIndex = 14
         Me.BtnExc.Text = "&Excluir"
         Me.BtnExc.UseVisualStyleBackColor = False
         '
@@ -483,12 +484,12 @@ Partial Class Cliente
         Me.BtnGra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnGra.ForeColor = System.Drawing.Color.Black
-        Me.BtnGra.Location = New System.Drawing.Point(599, 73)
+        Me.BtnGra.Location = New System.Drawing.Point(601, 73)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
-        Me.BtnGra.TabIndex = 68
+        Me.BtnGra.TabIndex = 13
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -502,12 +503,12 @@ Partial Class Cliente
         Me.BtnNov.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnNov.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnNov.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnNov.ForeColor = System.Drawing.Color.Black
-        Me.BtnNov.Location = New System.Drawing.Point(599, 24)
+        Me.BtnNov.Location = New System.Drawing.Point(601, 24)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
-        Me.BtnNov.TabIndex = 67
+        Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
@@ -516,7 +517,7 @@ Partial Class Cliente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(742, 534)
+        Me.ClientSize = New System.Drawing.Size(744, 551)
         Me.Controls.Add(Me.TxtIns)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.TxtCNPJ)
@@ -554,9 +555,9 @@ Partial Class Cliente
         Me.Controls.Add(Me.BtnNov)
         Me.ForeColor = System.Drawing.Color.White
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Cliente"
-        Me.Text = "Cliente"
+        Me.Text = "cliente"
         Me.GrpLoc.ResumeLayout(False)
         Me.GrpLoc.PerformLayout()
         Me.ResumeLayout(False)

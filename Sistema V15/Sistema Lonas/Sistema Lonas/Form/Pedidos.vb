@@ -78,7 +78,7 @@
     Private Sub BtnOK_Click(sender As Object, e As EventArgs) Handles BtnOK.Click
         If objPed.LocalizarPorCodigoOuNome(TxtLoc.Text) = True Then
             Call mostrar_DadosVindosDaClasse()
-            LblCodCli.Visible = True
+            lblCli.Visible = True
             TxtCli.Visible = True
             objControle.habilitar_botoes(Me, True)
         End If

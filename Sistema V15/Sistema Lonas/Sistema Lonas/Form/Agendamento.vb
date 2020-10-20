@@ -65,24 +65,6 @@
     Private Sub BtnCan_Click(sender As Object, e As EventArgs) Handles btncan.Click
         Agendamento_Load(Nothing, Nothing)
     End Sub
-
-    Private Sub TxtLoc_TextChanged(sender As Object, e As EventArgs) Handles TxtLoc.TextChanged
-        If TxtLoc.Text = "" Then
-            BtnOK.Enabled = False
-        Else
-            BtnOK.Enabled = True
-        End If
-    End Sub
-
-    Private Sub BtnOK_Click(sender As Object, e As EventArgs) Handles BtnOK.Click
-        If objAg.LocalizarPorCodigoOuNome(TxtLoc.Text) = True Then
-            Call mostrar_DadosVindosDaClasse()
-            objControle.habilitar_botoes(Me, True)
-        End If
-        TxtLoc.Text = ""
-        TxtLoc.Focus()
-    End Sub
-
     Private Sub mostrar_DadosVindosDaClasse()
         TxtCod.Text = objAg.Codigo
         Txtcodcli.Text = objAg.Cli
@@ -112,5 +94,23 @@
     Private Sub BtnNom_Click(sender As Object, e As EventArgs) Handles BtnNom.Click
         ConsultaCliente.quemChamou = Me.Name
         ConsultaCliente.ShowDialog()
+    End Sub
+
+   
+    Private Sub TxtLoc_TextChanged(sender As Object, e As EventArgs) Handles TxtLoc.TextChanged
+        If TxtLoc.Text = "" Then
+            BtnOK.Enabled = False
+        Else
+            BtnOK.Enabled = True
+        End If
+    End Sub
+
+    Private Sub BtnOK_Click(sender As Object, e As EventArgs) Handles BtnOK.Click
+        If objAg.LocalizarPorCodigoOuNome(TxtLoc.Text) = True Then
+            Call mostrar_DadosVindosDaClasse()
+            objControle.habilitar_botoes(Me, True)
+        End If
+        TxtLoc.Text = ""
+        TxtLoc.Focus()
     End Sub
 End Class

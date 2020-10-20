@@ -113,4 +113,9 @@
         SaidaDeMateriais.Show()
         SaidaDeMateriais.MdiParent = Me
     End Sub
+
+    Private Sub ToolStripButton10_Click_1(sender As Object, e As EventArgs) Handles ToolStripButton10.Click
+        Fornecedor.Show()
+        Fornecedor.MdiParent = Me
+    End Sub
 End Class
