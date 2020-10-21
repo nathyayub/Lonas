@@ -108,12 +108,6 @@
     <Compile Include="Class\ClsPagamento.vb" />
     <Compile Include="Class\ClsEntradaMateriais.vb" />
     <Compile Include="Class\ClsSaidaDeMaterial.vb" />
-    <Compile Include="Consultas\ConsultaAgendamentoCliente.Designer.vb">
-      <DependentUpon>ConsultaAgendamentoCliente.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Consultas\ConsultaAgendamentoCliente.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Consultas\ConsultaCliente.Designer.vb">
       <DependentUpon>ConsultaCliente.vb</DependentUpon>
     </Compile>
@@ -166,6 +160,12 @@
       <DependentUpon>ConsultaTipoDespesa.vb</DependentUpon>
     </Compile>
     <Compile Include="Consultas\ConsultaTipoDespesa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaAgendamento.Designer.vb">
+      <DependentUpon>ConsultaAgendamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaAgendamento.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\ContasApagar.designer.vb">
@@ -313,8 +313,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Consultas\ConsultaAgendamentoCliente.resx">
-      <DependentUpon>ConsultaAgendamentoCliente.vb</DependentUpon>
+    <EmbeddedResource Include="Consultas\ConsultaAgendamento.resx">
+      <DependentUpon>ConsultaAgendamento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaCliente.resx">
       <DependentUpon>ConsultaCliente.vb</DependentUpon>

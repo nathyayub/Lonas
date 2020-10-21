@@ -106,4 +106,6 @@
         TxtNom.Focus()
         novo = False
     End Sub
+
+    
 End Class

@@ -2,6 +2,10 @@
     Dim objControle As New ClsControle
     Dim objPag As New ClsPagamento
     Dim novo As Boolean
+    Private Sub Pagamento_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Me.Top = 0
+        Me.Left = 0
+    End Sub
 
     Private Sub Pagamento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         objControle.Limpar_tela(Me)

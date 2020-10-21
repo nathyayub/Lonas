@@ -167,11 +167,11 @@ Partial Class ConsultaCliente
         '
         'btnimprimir
         '
-        Me.btnimprimir.Location = New System.Drawing.Point(782, 80)
+        Me.btnimprimir.Location = New System.Drawing.Point(513, 45)
         Me.btnimprimir.Name = "btnimprimir"
         Me.btnimprimir.Size = New System.Drawing.Size(61, 26)
         Me.btnimprimir.TabIndex = 10
-        Me.btnimprimir.Text = "Imprimir"
+        Me.btnimprimir.Text = "ok"
         Me.btnimprimir.UseVisualStyleBackColor = True
         '
         'ConsultaCliente
@@ -183,7 +183,7 @@ Partial Class ConsultaCliente
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ConsultaCliente"
         Me.Text = "ConsultaCliente"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()

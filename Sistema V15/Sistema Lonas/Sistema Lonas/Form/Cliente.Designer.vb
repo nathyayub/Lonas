@@ -323,7 +323,7 @@ Partial Class Cliente
         Me.GrpLoc.Size = New System.Drawing.Size(230, 90)
         Me.GrpLoc.TabIndex = 75
         Me.GrpLoc.TabStop = False
-        Me.GrpLoc.Text = "Código:"
+        Me.GrpLoc.Text = "Código"
         Me.GrpLoc.Visible = False
         '
         'Label5

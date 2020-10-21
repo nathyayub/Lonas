@@ -6,7 +6,10 @@
 
     Public quemchamou As String = ""
     Public campochave As Integer
-
+    Private Sub SaidaDeMateriais_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Me.Top = 0
+        Me.Left = 0
+    End Sub
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
         For x = 0 To DgdGrade.Rows.Count - 1
 

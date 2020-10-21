@@ -255,7 +255,6 @@ C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.xml
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.pdb
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas 2.vbprojResolveAssemblyReference.cache
-C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaAgendamentoCliente.resources
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaCliente.resources
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaDespesasStr.resources
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEmbarcacaoMarina.resources
@@ -289,3 +288,4 @@ C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\bin
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\bin\Debug\Sistema Lonas.xml
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\bin\Debug\pt-BR\Sistema Lonas.resources.dll
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\pt-BR\Sistema Lonas.resources.dll
+C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaAgendamento.resources

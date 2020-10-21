@@ -47,7 +47,7 @@ Partial Class Materiais
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Material, Me.TipoMaterial, Me.Fornecedor, Me.QuantidadeAtual, Me.QuantidadeMinima, Me.QuantidadeMaxima, Me.UltimoReabastecimento})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DgdGrade.Location = New System.Drawing.Point(15, 100)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(2)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.RowTemplate.Height = 24
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -142,15 +142,15 @@ Partial Class Materiais
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(904, 568)
+        Me.ClientSize = New System.Drawing.Size(904, 561)
         Me.Controls.Add(Me.BtnNov)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.txtNum)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Materiais"
-        Me.Text = "Materiais"
+        Me.Text = "Estoque"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

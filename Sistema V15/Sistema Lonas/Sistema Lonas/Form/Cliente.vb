@@ -176,4 +176,12 @@
     End Sub
 
    
+    Private Sub BtnImp_Click(sender As Object, e As EventArgs) Handles BtnImp.Click
+        Dim rpt As New CrpClientes
+        FrmImp.CrystalReportViewer1.ReportSource = rpt
+        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
+        rpt.SummaryInfo.ReportComments = "Relatório de Cliente "
+        rpt.Refresh()
+        FrmImp.ShowDialog()
+    End Sub
 End Class

@@ -22,6 +22,7 @@ Partial Class EntradaDeMateriais
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EntradaDeMateriais))
         Me.MskVal = New System.Windows.Forms.MaskedTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.BtnMat = New System.Windows.Forms.Button()
@@ -56,30 +57,31 @@ Partial Class EntradaDeMateriais
         'MskVal
         '
         Me.MskVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MskVal.Location = New System.Drawing.Point(250, 110)
-        Me.MskVal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.MskVal.Mask = "$999999999"
+        Me.MskVal.Location = New System.Drawing.Point(201, 89)
+        Me.MskVal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MskVal.Mask = "$"
         Me.MskVal.Name = "MskVal"
-        Me.MskVal.Size = New System.Drawing.Size(125, 30)
+        Me.MskVal.Size = New System.Drawing.Size(137, 26)
         Me.MskVal.TabIndex = 125
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(13, 115)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(10, 93)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(107, 25)
+        Me.Label4.Size = New System.Drawing.Size(105, 22)
         Me.Label4.TabIndex = 124
-        Me.Label4.Text = "Valor Total"
+        Me.Label4.Text = "Valor Total:"
         '
         'BtnMat
         '
-        Me.BtnMat.Location = New System.Drawing.Point(371, 16)
-        Me.BtnMat.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnMat.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMat.Location = New System.Drawing.Point(291, 16)
+        Me.BtnMat.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnMat.Name = "BtnMat"
-        Me.BtnMat.Size = New System.Drawing.Size(63, 32)
+        Me.BtnMat.Size = New System.Drawing.Size(47, 26)
         Me.BtnMat.TabIndex = 123
         Me.BtnMat.Text = "..."
         Me.BtnMat.UseVisualStyleBackColor = True
@@ -88,89 +90,118 @@ Partial Class EntradaDeMateriais
         '
         Me.DtaBai.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtaBai.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtaBai.Location = New System.Drawing.Point(250, 151)
-        Me.DtaBai.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DtaBai.Location = New System.Drawing.Point(201, 125)
+        Me.DtaBai.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DtaBai.Name = "DtaBai"
-        Me.DtaBai.Size = New System.Drawing.Size(200, 30)
+        Me.DtaBai.Size = New System.Drawing.Size(137, 26)
         Me.DtaBai.TabIndex = 122
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(13, 156)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(10, 127)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(155, 25)
+        Me.Label8.Size = New System.Drawing.Size(145, 22)
         Me.Label8.TabIndex = 121
-        Me.Label8.Text = "Data da Compra"
+        Me.Label8.Text = "Data da Compra:"
         '
         'BtnAlt
         '
         Me.BtnAlt.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnAlt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAlt.Location = New System.Drawing.Point(1158, 204)
-        Me.BtnAlt.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnAlt.BackColor = System.Drawing.Color.Silver
+        Me.BtnAlt.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnAlt.FlatAppearance.BorderSize = 2
+        Me.BtnAlt.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnAlt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAlt.Location = New System.Drawing.Point(868, 166)
         Me.BtnAlt.Name = "BtnAlt"
-        Me.BtnAlt.Size = New System.Drawing.Size(165, 53)
+        Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
         Me.BtnAlt.TabIndex = 120
         Me.BtnAlt.Text = "Sair"
-        Me.BtnAlt.UseVisualStyleBackColor = True
+        Me.BtnAlt.UseVisualStyleBackColor = False
         '
         'BtnCan
         '
         Me.BtnCan.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnCan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCan.Location = New System.Drawing.Point(1158, 143)
-        Me.BtnCan.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnCan.BackColor = System.Drawing.Color.Silver
+        Me.BtnCan.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnCan.FlatAppearance.BorderSize = 2
+        Me.BtnCan.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnCan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCan.Location = New System.Drawing.Point(868, 116)
         Me.BtnCan.Name = "BtnCan"
-        Me.BtnCan.Size = New System.Drawing.Size(165, 53)
+        Me.BtnCan.Size = New System.Drawing.Size(124, 43)
         Me.BtnCan.TabIndex = 119
         Me.BtnCan.Text = "&Cancelar"
-        Me.BtnCan.UseVisualStyleBackColor = True
+        Me.BtnCan.UseVisualStyleBackColor = False
         '
         'BtnEst
         '
-        Me.BtnEst.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnEst.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEst.Location = New System.Drawing.Point(1018, 199)
-        Me.BtnEst.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnEst.BackColor = System.Drawing.Color.Silver
+        Me.BtnEst.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnEst.FlatAppearance.BorderSize = 2
+        Me.BtnEst.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnEst.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEst.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEst.Location = New System.Drawing.Point(731, 162)
         Me.BtnEst.Name = "BtnEst"
-        Me.BtnEst.Size = New System.Drawing.Size(62, 32)
+        Me.BtnEst.Size = New System.Drawing.Size(54, 28)
         Me.BtnEst.TabIndex = 118
         Me.BtnEst.Text = "OK"
-        Me.BtnEst.UseVisualStyleBackColor = True
+        Me.BtnEst.UseVisualStyleBackColor = False
         '
         'BtnGra
         '
         Me.BtnGra.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnGra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGra.Location = New System.Drawing.Point(1158, 82)
-        Me.BtnGra.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnGra.BackColor = System.Drawing.Color.Silver
+        Me.BtnGra.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnGra.FlatAppearance.BorderSize = 2
+        Me.BtnGra.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnGra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnGra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnGra.Location = New System.Drawing.Point(868, 67)
         Me.BtnGra.Name = "BtnGra"
-        Me.BtnGra.Size = New System.Drawing.Size(165, 53)
+        Me.BtnGra.Size = New System.Drawing.Size(124, 43)
         Me.BtnGra.TabIndex = 117
         Me.BtnGra.Text = "&Gravar"
-        Me.BtnGra.UseVisualStyleBackColor = True
+        Me.BtnGra.UseVisualStyleBackColor = False
         '
         'BtnNov
         '
         Me.BtnNov.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnNov.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNov.Location = New System.Drawing.Point(1158, 20)
-        Me.BtnNov.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnNov.BackColor = System.Drawing.Color.Silver
+        Me.BtnNov.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnNov.FlatAppearance.BorderSize = 2
+        Me.BtnNov.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnNov.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnNov.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnNov.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnNov.Location = New System.Drawing.Point(868, 16)
         Me.BtnNov.Name = "BtnNov"
-        Me.BtnNov.Size = New System.Drawing.Size(165, 53)
+        Me.BtnNov.Size = New System.Drawing.Size(124, 43)
         Me.BtnNov.TabIndex = 116
         Me.BtnNov.Text = "&Novo"
-        Me.BtnNov.UseVisualStyleBackColor = True
+        Me.BtnNov.UseVisualStyleBackColor = False
         '
         'BtnFor
         '
-        Me.BtnFor.Location = New System.Drawing.Point(514, 199)
-        Me.BtnFor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnFor.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFor.Location = New System.Drawing.Point(291, 161)
+        Me.BtnFor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnFor.Name = "BtnFor"
-        Me.BtnFor.Size = New System.Drawing.Size(63, 32)
+        Me.BtnFor.Size = New System.Drawing.Size(47, 26)
         Me.BtnFor.TabIndex = 115
         Me.BtnFor.Text = "..."
         Me.BtnFor.UseVisualStyleBackColor = True
@@ -179,102 +210,97 @@ Partial Class EntradaDeMateriais
         '
         Me.TxtNomFor.Enabled = False
         Me.TxtNomFor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNomFor.Location = New System.Drawing.Point(823, 201)
-        Me.TxtNomFor.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtNomFor.Location = New System.Drawing.Point(527, 162)
         Me.TxtNomFor.Name = "TxtNomFor"
-        Me.TxtNomFor.Size = New System.Drawing.Size(168, 30)
+        Me.TxtNomFor.Size = New System.Drawing.Size(198, 26)
         Me.TxtNomFor.TabIndex = 113
         '
         'LblCodCli
         '
         Me.LblCodCli.AutoSize = True
-        Me.LblCodCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCodCli.Location = New System.Drawing.Point(599, 204)
-        Me.LblCodCli.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblCodCli.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCodCli.ForeColor = System.Drawing.Color.White
+        Me.LblCodCli.Location = New System.Drawing.Point(345, 164)
         Me.LblCodCli.Name = "LblCodCli"
-        Me.LblCodCli.Size = New System.Drawing.Size(196, 25)
+        Me.LblCodCli.Size = New System.Drawing.Size(184, 22)
         Me.LblCodCli.TabIndex = 114
-        Me.LblCodCli.Text = "Nome do Fornecedor"
+        Me.LblCodCli.Text = "Nome do Fornecedor:"
         '
         'TxtCodFor
         '
         Me.TxtCodFor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCodFor.Location = New System.Drawing.Point(250, 199)
-        Me.TxtCodFor.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtCodFor.Location = New System.Drawing.Point(201, 162)
         Me.TxtCodFor.Name = "TxtCodFor"
-        Me.TxtCodFor.Size = New System.Drawing.Size(217, 30)
+        Me.TxtCodFor.Size = New System.Drawing.Size(85, 26)
         Me.TxtCodFor.TabIndex = 111
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(13, 204)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(7, 163)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 25)
+        Me.Label5.Size = New System.Drawing.Size(195, 22)
         Me.Label5.TabIndex = 112
-        Me.Label5.Text = "Fornecedor"
+        Me.Label5.Text = "Código do Fornecedor:"
         '
         'TxtCom
         '
         Me.TxtCom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCom.Location = New System.Drawing.Point(250, 70)
-        Me.TxtCom.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtCom.Location = New System.Drawing.Point(201, 55)
         Me.TxtCom.Name = "TxtCom"
-        Me.TxtCom.Size = New System.Drawing.Size(172, 30)
+        Me.TxtCom.Size = New System.Drawing.Size(137, 26)
         Me.TxtCom.TabIndex = 109
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(13, 75)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(10, 57)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(211, 25)
+        Me.Label3.Size = New System.Drawing.Size(193, 22)
         Me.Label3.TabIndex = 110
-        Me.Label3.Text = "Quantidade Comprada"
+        Me.Label3.Text = "Quantidade Comprada:"
         '
         'TxtNomMat
         '
         Me.TxtNomMat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNomMat.Location = New System.Drawing.Point(645, 20)
-        Me.TxtNomMat.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtNomMat.Location = New System.Drawing.Point(504, 16)
         Me.TxtNomMat.Name = "TxtNomMat"
-        Me.TxtNomMat.Size = New System.Drawing.Size(270, 30)
+        Me.TxtNomMat.Size = New System.Drawing.Size(281, 26)
         Me.TxtNomMat.TabIndex = 107
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(459, 21)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(344, 19)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(165, 25)
+        Me.Label2.Size = New System.Drawing.Size(161, 22)
         Me.Label2.TabIndex = 108
-        Me.Label2.Text = "Nome do Material"
+        Me.Label2.Text = "Nome do Material:"
         '
         'TxtCodMat
         '
         Me.TxtCodMat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCodMat.Location = New System.Drawing.Point(250, 18)
-        Me.TxtCodMat.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtCodMat.Location = New System.Drawing.Point(201, 16)
         Me.TxtCodMat.Name = "TxtCodMat"
-        Me.TxtCodMat.Size = New System.Drawing.Size(89, 30)
+        Me.TxtCodMat.Size = New System.Drawing.Size(85, 26)
         Me.TxtCodMat.TabIndex = 105
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 23)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(10, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(176, 25)
+        Me.Label1.Size = New System.Drawing.Size(172, 22)
         Me.Label1.TabIndex = 106
-        Me.Label1.Text = "Código do Material"
+        Me.Label1.Text = "Código do Material:"
         '
         'DgdGrade
         '
@@ -284,55 +310,56 @@ Partial Class EntradaDeMateriais
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Material, Me.QuantidadeMinima, Me.ValorEnt, Me.UltimoReabastecimento, Me.Fornecedor})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(12, 248)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DgdGrade.Location = New System.Drawing.Point(9, 202)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.RowTemplate.Height = 24
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgdGrade.Size = New System.Drawing.Size(955, 345)
+        Me.DgdGrade.Size = New System.Drawing.Size(776, 280)
         Me.DgdGrade.TabIndex = 104
         '
         'Column1
         '
         Me.Column1.HeaderText = "Código"
         Me.Column1.Name = "Column1"
-        Me.Column1.Width = 81
+        Me.Column1.Width = 65
         '
         'Material
         '
         Me.Material.HeaderText = "Material"
         Me.Material.Name = "Material"
-        Me.Material.Width = 87
+        Me.Material.Width = 69
         '
         'QuantidadeMinima
         '
         Me.QuantidadeMinima.HeaderText = "Quantidade Comprada"
         Me.QuantidadeMinima.Name = "QuantidadeMinima"
-        Me.QuantidadeMinima.Width = 164
+        Me.QuantidadeMinima.Width = 126
         '
         'ValorEnt
         '
         Me.ValorEnt.HeaderText = "Valor do maretial"
         Me.ValorEnt.Name = "ValorEnt"
-        Me.ValorEnt.Width = 132
+        Me.ValorEnt.Width = 101
         '
         'UltimoReabastecimento
         '
         Me.UltimoReabastecimento.HeaderText = "Data Comprada"
         Me.UltimoReabastecimento.Name = "UltimoReabastecimento"
-        Me.UltimoReabastecimento.Width = 125
+        Me.UltimoReabastecimento.Width = 97
         '
         'Fornecedor
         '
         Me.Fornecedor.HeaderText = "Fornecedor"
         Me.Fornecedor.Name = "Fornecedor"
-        Me.Fornecedor.Width = 110
+        Me.Fornecedor.Width = 86
         '
         'EntradaDeMateriais
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1336, 618)
+        Me.BackColor = System.Drawing.Color.Brown
+        Me.ClientSize = New System.Drawing.Size(1002, 502)
         Me.Controls.Add(Me.MskVal)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BtnMat)
@@ -355,9 +382,10 @@ Partial Class EntradaDeMateriais
         Me.Controls.Add(Me.TxtCodMat)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "EntradaDeMateriais"
-        Me.Text = "EntradaDeMateriais"
+        Me.Text = "Entrada De Materiais"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

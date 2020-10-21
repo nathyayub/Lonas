@@ -26,13 +26,8 @@
         Me.Close()
     End Sub
 
-    Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
-        Dim rpt As New CrpClientes
-        FrmImp.CrystalReportViewer1.ReportSource = rpt
-        rpt.SetDataSource(DgdGrade.DataSource)
-        rpt.Refresh()
-        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiro"
-        rpt.SummaryInfo.ReportComments = "Relatório de Clientes"
-        FrmImp.ShowDialog()
+
+    Private Sub ConsultaCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
