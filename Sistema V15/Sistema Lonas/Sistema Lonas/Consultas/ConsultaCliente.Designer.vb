@@ -22,6 +22,7 @@ Partial Class ConsultaCliente
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaCliente))
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -38,7 +39,6 @@ Partial Class ConsultaCliente
         Me.CepCli = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TxtCampo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnimprimir = New System.Windows.Forms.Button()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -50,7 +50,7 @@ Partial Class ConsultaCliente
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.CNPJ, Me.InscricaoEstadual, Me.EmaCli, Me.EndCli, Me.ComCli, Me.BaiCli, Me.CidCli, Me.EstCli, Me.CepCli})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(10, 119)
+        Me.DgdGrade.Location = New System.Drawing.Point(14, 76)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(935, 339)
@@ -150,7 +150,7 @@ Partial Class ConsultaCliente
         'TxtCampo
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(10, 45)
+        Me.TxtCampo.Location = New System.Drawing.Point(14, 30)
         Me.TxtCampo.Name = "TxtCampo"
         Me.TxtCampo.Size = New System.Drawing.Size(477, 26)
         Me.TxtCampo.TabIndex = 8
@@ -158,34 +158,27 @@ Partial Class ConsultaCliente
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(10, 7)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(12, 5)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(180, 20)
+        Me.Label1.Size = New System.Drawing.Size(204, 22)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Digite o código ou nome"
-        '
-        'btnimprimir
-        '
-        Me.btnimprimir.Location = New System.Drawing.Point(513, 45)
-        Me.btnimprimir.Name = "btnimprimir"
-        Me.btnimprimir.Size = New System.Drawing.Size(61, 26)
-        Me.btnimprimir.TabIndex = 10
-        Me.btnimprimir.Text = "ok"
-        Me.btnimprimir.UseVisualStyleBackColor = True
         '
         'ConsultaCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1013, 455)
-        Me.Controls.Add(Me.btnimprimir)
+        Me.BackColor = System.Drawing.Color.Brown
+        Me.ClientSize = New System.Drawing.Size(965, 446)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ConsultaCliente"
-        Me.Text = "ConsultaCliente"
+        Me.Text = "Consulta Cliente"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -207,5 +200,4 @@ Partial Class ConsultaCliente
     Friend WithEvents CepCli As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TxtCampo As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents btnimprimir As System.Windows.Forms.Button
 End Class

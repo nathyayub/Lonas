@@ -160,4 +160,9 @@
         ContasApagar.Show()
         ContasApagar.MdiParent = Me
     End Sub
+
+    Private Sub PedidoPorDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PedidoPorDataToolStripMenuItem.Click
+        ConsultaPedidoPorData.Show()
+        ConsultaPedidoPorData.MdiParent = Me
+    End Sub
 End Class

@@ -5,6 +5,10 @@
 
     Private Property FrmMenu As Form
 
+    Private Sub ConsultaEmbarcacaoMarina_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Me.Top = 0
+        Me.Left = 0
+    End Sub
     Private Sub TxtCampo_TextChanged(sender As Object, e As EventArgs) Handles TxtCampo.TextChanged
         ''   If TxtCampo.Text <> "" Then
         DgdGrade.DataSource = objmar.LocalizarFiltro(TxtCampo.Text)
@@ -25,9 +29,5 @@
 
     Private Sub FrmConCLi_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         TxtCampo.Text = ""
-    End Sub
-
-    Private Sub ConsultaEmbarcacaoMarina_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

@@ -22,6 +22,7 @@ Partial Class ConsultaEmbarcacaoMarina
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaEmbarcacaoMarina))
         Me.TxtCampo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
@@ -39,20 +40,19 @@ Partial Class ConsultaEmbarcacaoMarina
         'TxtCampo
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(20, 68)
-        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtCampo.Location = New System.Drawing.Point(16, 34)
         Me.TxtCampo.Name = "TxtCampo"
-        Me.TxtCampo.Size = New System.Drawing.Size(635, 30)
+        Me.TxtCampo.Size = New System.Drawing.Size(477, 26)
         Me.TxtCampo.TabIndex = 14
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(20, 21)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(221, 25)
+        Me.Label1.Size = New System.Drawing.Size(204, 22)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Digite o código ou nome"
         '
@@ -64,11 +64,10 @@ Partial Class ConsultaEmbarcacaoMarina
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.EndMar, Me.Complemento, Me.Column3, Me.Cidade, Me.Estado, Me.CEP})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(20, 116)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DgdGrade.Location = New System.Drawing.Point(16, 76)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgdGrade.Size = New System.Drawing.Size(859, 417)
+        Me.DgdGrade.Size = New System.Drawing.Size(644, 339)
         Me.DgdGrade.TabIndex = 12
         '
         'Column1
@@ -76,68 +75,69 @@ Partial Class ConsultaEmbarcacaoMarina
         Me.Column1.DataPropertyName = "Codigo"
         Me.Column1.HeaderText = "Código"
         Me.Column1.Name = "Column1"
-        Me.Column1.Width = 81
+        Me.Column1.Width = 65
         '
         'Column2
         '
         Me.Column2.DataPropertyName = "NomeMarina"
         Me.Column2.HeaderText = "Marina"
         Me.Column2.Name = "Column2"
-        Me.Column2.Width = 80
+        Me.Column2.Width = 64
         '
         'EndMar
         '
         Me.EndMar.DataPropertyName = "Endereco"
         Me.EndMar.HeaderText = "Endereço"
         Me.EndMar.Name = "EndMar"
-        Me.EndMar.Width = 98
+        Me.EndMar.Width = 78
         '
         'Complemento
         '
         Me.Complemento.DataPropertyName = "Compl"
         Me.Complemento.HeaderText = "Complemento"
         Me.Complemento.Name = "Complemento"
-        Me.Complemento.Width = 123
+        Me.Complemento.Width = 96
         '
         'Column3
         '
         Me.Column3.DataPropertyName = "bairro"
         Me.Column3.HeaderText = "Bairro"
         Me.Column3.Name = "Column3"
-        Me.Column3.Width = 75
+        Me.Column3.Width = 59
         '
         'Cidade
         '
         Me.Cidade.DataPropertyName = "Cidade"
         Me.Cidade.HeaderText = "Cidade"
         Me.Cidade.Name = "Cidade"
-        Me.Cidade.Width = 81
+        Me.Cidade.Width = 65
         '
         'Estado
         '
         Me.Estado.DataPropertyName = "Estado"
         Me.Estado.HeaderText = "Estado"
         Me.Estado.Name = "Estado"
-        Me.Estado.Width = 81
+        Me.Estado.Width = 65
         '
         'CEP
         '
         Me.CEP.DataPropertyName = "CEP"
         Me.CEP.HeaderText = "CEP"
         Me.CEP.Name = "CEP"
-        Me.CEP.Width = 64
+        Me.CEP.Width = 53
         '
         'ConsultaEmbarcacaoMarina
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(900, 554)
+        Me.BackColor = System.Drawing.Color.Brown
+        Me.ClientSize = New System.Drawing.Size(675, 436)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ConsultaEmbarcacaoMarina"
-        Me.Text = "ConsultaEmbarcacaoMarina"
+        Me.Text = "Consulta Embarção Marina"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

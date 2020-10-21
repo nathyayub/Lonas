@@ -22,6 +22,7 @@ Partial Class ConsultaPedido
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaPedido))
         Me.TxtCampo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
@@ -35,6 +36,7 @@ Partial Class ConsultaPedido
         Me.PraMax = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Pago = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.DtPag = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnok = New System.Windows.Forms.Button()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -44,26 +46,27 @@ Partial Class ConsultaPedido
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCampo.Location = New System.Drawing.Point(12, 53)
         Me.TxtCampo.Name = "TxtCampo"
-        Me.TxtCampo.Size = New System.Drawing.Size(109, 26)
+        Me.TxtCampo.Size = New System.Drawing.Size(229, 26)
         Me.TxtCampo.TabIndex = 8
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(12, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(188, 20)
+        Me.Label1.Size = New System.Drawing.Size(218, 22)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Digite o código do pedido"
         '
         'DgdGrade
         '
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodPed, Me.CodCli, Me.NomCli, Me.Tel, Me.ValPedTot, Me.DataPet, Me.PraMin, Me.PraMax, Me.Pago, Me.DtPag})
-        Me.DgdGrade.Location = New System.Drawing.Point(12, 106)
+        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodPed, Me.CodCli, Me.NomCli, Me.Tel, Me.ValPedTot, Me.DataPet, Me.PraMin, Me.PraMax, Me.Pago, Me.DtPag, Me.Column1})
+        Me.DgdGrade.Location = New System.Drawing.Point(12, 95)
         Me.DgdGrade.Name = "DgdGrade"
-        Me.DgdGrade.Size = New System.Drawing.Size(1196, 264)
+        Me.DgdGrade.Size = New System.Drawing.Size(1147, 264)
         Me.DgdGrade.TabIndex = 9
         '
         'CodPed
@@ -128,26 +131,41 @@ Partial Class ConsultaPedido
         Me.DtPag.HeaderText = "Data do Pagamento"
         Me.DtPag.Name = "DtPag"
         '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "Pedido"
+        Me.Column1.HeaderText = "Pedido"
+        Me.Column1.Name = "Column1"
+        '
         'btnok
         '
-        Me.btnok.Location = New System.Drawing.Point(127, 53)
+        Me.btnok.BackColor = System.Drawing.Color.Silver
+        Me.btnok.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnok.FlatAppearance.BorderSize = 2
+        Me.btnok.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnok.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnok.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnok.Location = New System.Drawing.Point(247, 43)
         Me.btnok.Name = "btnok"
-        Me.btnok.Size = New System.Drawing.Size(110, 27)
+        Me.btnok.Size = New System.Drawing.Size(114, 37)
         Me.btnok.TabIndex = 10
         Me.btnok.Text = "OK"
-        Me.btnok.UseVisualStyleBackColor = True
+        Me.btnok.UseVisualStyleBackColor = False
         '
         'ConsultaPedido
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1220, 407)
+        Me.BackColor = System.Drawing.Color.Brown
+        Me.ClientSize = New System.Drawing.Size(1173, 390)
         Me.Controls.Add(Me.btnok)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ConsultaPedido"
-        Me.Text = "ConsultaPedido"
+        Me.Text = "Consulta Pedido"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -167,4 +185,5 @@ Partial Class ConsultaPedido
     Friend WithEvents PraMax As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Pago As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents DtPag As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

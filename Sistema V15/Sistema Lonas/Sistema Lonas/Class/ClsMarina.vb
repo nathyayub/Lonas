@@ -84,12 +84,12 @@
 
     Public Sub Gravar(novo As Boolean)
         If novo = True Then
-            sql = "insert into tabmarina (codigo, nomemarina, Endereco, Compl, Bairro, Cidade, Estado, CEP) values ('" & m_cod & "', '" & m_nomemp & "','" & m_endereco & "', '" & m_Comp & "', '" & m_bairro & "','" & m_cidade & "','" & m_estado & "','" & m_Cep & "')"
+            sql = "insert into tabmarina ( nomemarina, Endereco, Compl, Bairro, Cidade, Estado, CEP) values ('" & m_nomemp & "','" & m_endereco & "', '" & m_Comp & "', '" & m_bairro & "','" & m_cidade & "','" & m_estado & "','" & m_Cep & "')"
             objbanco.executar_comando(sql)
             sql = "select max(codigo) as codigo from tabmarina"
             m_cod = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update tabmarina set codigo='" & m_cod & "', nomemarina='" & m_nomemp & "', Endereco='" & m_endereco & "', Compl='" & m_Comp & "', Bairro='" & m_bairro & "', Cidade ='" & m_cidade & "', Estado ='" & m_estado & "', CEP='" & m_Cep & "' where codigo=" & m_cod
+            sql = "Update tabmarina set nomemarina='" & m_nomemp & "', Endereco='" & m_endereco & "', Compl='" & m_Comp & "', Bairro='" & m_bairro & "', Cidade ='" & m_cidade & "', Estado ='" & m_estado & "', CEP='" & m_Cep & "' where codigo=" & m_cod
             objbanco.executar_comando(sql)
         End If
     End Sub

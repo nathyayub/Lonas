@@ -4,27 +4,45 @@
     Dim novo As Boolean
     Public quemchamou As String = ""
     Public campochave As Integer
+    Private Sub Marina_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Me.Top = 0
+        Me.Left = 0
+    End Sub
 
-    Private Sub marina_Activated(sender As Object, e As EventArgs)
+    Private Sub marina1_Activated(sender As Object, e As EventArgs)
         If quemchamou.ToUpper = "CONSULTAEMBACAOMARINA" Then
             objmar.LocalizarPorCodigoOuNome(campochave)
             Call mostrar_DadosVindosDaClasse()
             quemchamou = ""
         End If
-
-        Me.Top = 0
-        Me.Left = 0
     End Sub
 
-    Private Sub marina_Load(sender As Object, e As EventArgs)
+    Private Sub Marina_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
         objControle.Limpar_tela(Me)
         objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, True)
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
         BtnImp.Enabled = False
+        GrpLoc.Visible = False
     End Sub
-   
+
+    Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
+        objmar.Codigo = Val(txtcodigo.Text)
+        objmar.NomeEmpresa = txtnomeE.Text
+        objmar.Endereco = txtEnde.Text
+        objmar.Complemento = txtcomp.Text
+        objmar.bairro = txtbairro.Text
+        objmar.cidade = txtcidade.Text
+        objmar.estado = txtestado.Text
+        objmar.CEP = txtcep.Text
+        objmar.Gravar(novo)
+        txtcodigo.Text = objmar.Codigo
+
+        objControle.habilitar_tela(Me, False)
+        objControle.habilitar_botoes(Me, True)
+    End Sub
+
     Private Sub BtnSai_Click(sender As Object, e As EventArgs) Handles BtnSai.Click
         Me.Close()
     End Sub
@@ -37,7 +55,7 @@
     End Sub
 
     Private Sub BtnCan_Click(sender As Object, e As EventArgs) Handles BtnCan.Click
-        marina_Load(Nothing, Nothing)
+        Marina_Load_1(Nothing, Nothing)
     End Sub
 
     Private Sub TxtLoc_TextChanged(sender As Object, e As EventArgs) Handles TxtLoc.TextChanged
@@ -80,14 +98,19 @@
 
 
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
-
+        objControle.habilitar_tela(Me, True)
+        objControle.habilitar_botoes(Me, False)
+        txtcodigo.Enabled = False
+        txtnomeE.Focus()
+        novo = False
     End Sub
 
-    Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-
-    End Sub
-
-    Private Sub Marina_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles BtnNov.Click
+        objControle.Limpar_tela(Me)
+        objControle.habilitar_tela(Me, True)
+        objControle.habilitar_botoes(Me, False)
+        txtcodigo.Enabled = False
+        txtnomeE.Focus()
+        novo = True
     End Sub
 End Class

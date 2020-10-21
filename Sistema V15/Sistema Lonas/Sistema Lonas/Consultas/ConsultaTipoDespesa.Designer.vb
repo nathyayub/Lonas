@@ -22,6 +22,7 @@ Partial Class ConsultaTipoDespesa
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaTipoDespesa))
         Me.TxtCampo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
@@ -86,8 +87,9 @@ Partial Class ConsultaTipoDespesa
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ConsultaTipoDespesa"
-        Me.Text = "ConsultaTipoDespesa"
+        Me.Text = "Consulta Tipo Despesa"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -22,6 +22,7 @@ Partial Class ConsultaAgendamento
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaAgendamento))
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
         Me.CodAg = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -44,7 +45,7 @@ Partial Class ConsultaAgendamento
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodAg, Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(12, 103)
+        Me.DgdGrade.Location = New System.Drawing.Point(12, 88)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(736, 288)
@@ -102,7 +103,7 @@ Partial Class ConsultaAgendamento
         'TxtCampo
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(12, 56)
+        Me.TxtCampo.Location = New System.Drawing.Point(12, 43)
         Me.TxtCampo.Name = "TxtCampo"
         Me.TxtCampo.Size = New System.Drawing.Size(477, 26)
         Me.TxtCampo.TabIndex = 17
@@ -110,31 +111,41 @@ Partial Class ConsultaAgendamento
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(180, 20)
+        Me.Label1.Size = New System.Drawing.Size(204, 22)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Digite o código ou nome"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(495, 56)
+        Me.Button1.BackColor = System.Drawing.Color.Silver
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button1.FlatAppearance.BorderSize = 2
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(495, 34)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 26)
+        Me.Button1.Size = New System.Drawing.Size(124, 36)
         Me.Button1.TabIndex = 18
         Me.Button1.Text = "Ok"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'ConsultaAgendamento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(838, 460)
+        Me.BackColor = System.Drawing.Color.Brown
+        Me.ClientSize = New System.Drawing.Size(759, 411)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ConsultaAgendamento"
         Me.Text = "Consulta de Agendamento"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()

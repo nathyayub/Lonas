@@ -22,6 +22,7 @@ Partial Class ConsultaMarina
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaMarina))
         Me.TxtCampo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
@@ -37,7 +38,7 @@ Partial Class ConsultaMarina
         'TxtCampo
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(10, 44)
+        Me.TxtCampo.Location = New System.Drawing.Point(10, 37)
         Me.TxtCampo.Name = "TxtCampo"
         Me.TxtCampo.Size = New System.Drawing.Size(477, 26)
         Me.TxtCampo.TabIndex = 5
@@ -45,10 +46,11 @@ Partial Class ConsultaMarina
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(10, 7)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(12, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(180, 20)
+        Me.Label1.Size = New System.Drawing.Size(204, 22)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Digite o código ou nome"
         '
@@ -60,7 +62,7 @@ Partial Class ConsultaMarina
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.CEPMar, Me.EndMar})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(10, 84)
+        Me.DgdGrade.Location = New System.Drawing.Point(10, 76)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(644, 339)
@@ -112,13 +114,15 @@ Partial Class ConsultaMarina
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(663, 436)
+        Me.BackColor = System.Drawing.Color.Brown
+        Me.ClientSize = New System.Drawing.Size(664, 436)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ConsultaMarina"
-        Me.Text = "ConsultaMarina"
+        Me.Text = "Consulta Marina"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
