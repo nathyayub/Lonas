@@ -19,16 +19,27 @@
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-        objPag.Codigo = Val(txtcod.Text)
-        objPag.Pedido = txtcodped.Text
-        objPag.Valor = txtval.Text
-        objPag.Vencimento = dtpvenc.Text
-        objPag.Recebimento = chbrec.Checked
-        objPag.Gravar(novo)
-        txtcod.Text = objPag.Codigo
+        If txtcodped.Text = "" Then
+            MsgBox("Digite o código do pedido!")
+            txtcodped.Focus()
+        ElseIf txtval.Text = "" Then
+            MsgBox("Digite o valor do pedido!")
+            txtval.Focus()
+        ElseIf dtpvenc.Text = "" Then
+            MsgBox("Digite a data de vencimento!")
+            dtpvenc.Focus()
+        Else
+            objPag.Codigo = Val(txtcod.Text)
+            objPag.Pedido = txtcodped.Text
+            objPag.Valor = txtval.Text
+            objPag.Vencimento = dtpvenc.Text
+            objPag.Recebimento = chbrec.Checked
+            objPag.Gravar(novo)
+            txtcod.Text = objPag.Codigo
 
-        objControle.habilitar_tela(Me, False)
-        objControle.habilitar_botoes(Me, True)
+            objControle.habilitar_tela(Me, False)
+            objControle.habilitar_botoes(Me, True)
+        End If
     End Sub
 
     Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles BtnNov.Click

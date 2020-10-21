@@ -31,8 +31,12 @@
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-        If TxtNom.Text = "" Or CboUni.SelectedItem.ToString = "" Or TxtDes.Text = "" Or TxtMin.Text = "" Or TxtMax.Text = "" Then
-            MsgBox("Todos os campos são obrigatorios")
+        If TxtNom.Text = "" Then
+            MsgBox("Digite o código do produto!")
+            TxtNom.Focus()
+        ElseIf CboUni.Text = "" Then
+            MsgBox("Digite a quantidade comprada!")
+            CboUni.Focus()
         Else
             objCad.Codigo = Val(TxtCod.Text)
             objCad.NomeMaterial = TxtNom.Text

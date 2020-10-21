@@ -11,15 +11,26 @@
         Me.Left = 0
     End Sub
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-        For x = 0 To DgdGrade.Rows.Count - 1
+        If TxtCodMat.Text = "" Then
+            MsgBox("Digite o nome do cliente!")
+            TxtCodMat.Focus()
+        ElseIf TxtRet.Text = "" Then
+            MsgBox("Digite o CPF dp cliente!")
+            TxtRet.Focus()
+        ElseIf DtaRet.Text = "" Then
+            MsgBox("Digite o CPF dp cliente!")
+            DtaRet.Focus()
+        Else
+            For x = 0 To DgdGrade.Rows.Count - 1
 
-            objSai.Material = DgdGrade.Rows(x).Cells(0).Value
-            objSai.Quantidade = DgdGrade.Rows(x).Cells(2).Value
-            objSai.Data = DgdGrade.Rows(x).Cells(3).Value
+                objSai.Material = DgdGrade.Rows(x).Cells(0).Value
+                objSai.Quantidade = DgdGrade.Rows(x).Cells(2).Value
+                objSai.Data = DgdGrade.Rows(x).Cells(3).Value
 
-            objSai.Gravar()
+                objSai.Gravar()
 
-        Next
+            Next
+        End If
 
     End Sub
 

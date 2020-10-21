@@ -1,0 +1,119 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class ConsultaPedidoPorData
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.DgdGrade = New System.Windows.Forms.DataGridView()
+        Me.DtpFin = New System.Windows.Forms.DateTimePicker()
+        Me.DtpIni = New System.Windows.Forms.DateTimePicker()
+        Me.btnok = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'DgdGrade
+        '
+        Me.DgdGrade.AllowUserToAddRows = False
+        Me.DgdGrade.AllowUserToDeleteRows = False
+        Me.DgdGrade.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
+        Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.DgdGrade.Location = New System.Drawing.Point(56, 61)
+        Me.DgdGrade.Name = "DgdGrade"
+        Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DgdGrade.Size = New System.Drawing.Size(644, 339)
+        Me.DgdGrade.TabIndex = 24
+        '
+        'DtpFin
+        '
+        Me.DtpFin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DtpFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DtpFin.Location = New System.Drawing.Point(364, 15)
+        Me.DtpFin.Name = "DtpFin"
+        Me.DtpFin.Size = New System.Drawing.Size(102, 26)
+        Me.DtpFin.TabIndex = 23
+        '
+        'DtpIni
+        '
+        Me.DtpIni.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DtpIni.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DtpIni.Location = New System.Drawing.Point(146, 15)
+        Me.DtpIni.Name = "DtpIni"
+        Me.DtpIni.Size = New System.Drawing.Size(102, 26)
+        Me.DtpIni.TabIndex = 22
+        '
+        'btnok
+        '
+        Me.btnok.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnok.Location = New System.Drawing.Point(557, 10)
+        Me.btnok.Name = "btnok"
+        Me.btnok.Size = New System.Drawing.Size(97, 41)
+        Me.btnok.TabIndex = 21
+        Me.btnok.Text = "OK"
+        Me.btnok.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(276, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(82, 20)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "Data Final"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(52, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(88, 20)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "Data Inicial"
+        '
+        'ConsultaPedidoPorData
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(789, 424)
+        Me.Controls.Add(Me.DgdGrade)
+        Me.Controls.Add(Me.DtpFin)
+        Me.Controls.Add(Me.DtpIni)
+        Me.Controls.Add(Me.btnok)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "ConsultaPedidoPorData"
+        Me.Text = "ConsultaPedidoPorData"
+        CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents DgdGrade As System.Windows.Forms.DataGridView
+    Friend WithEvents DtpFin As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DtpIni As System.Windows.Forms.DateTimePicker
+    Friend WithEvents btnok As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+End Class

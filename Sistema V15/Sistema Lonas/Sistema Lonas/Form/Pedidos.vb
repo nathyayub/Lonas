@@ -32,23 +32,36 @@
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
+        If CboPed.Text = "" Then
+            MsgBox("Digite qual foi o pedido!")
+            CboPed.Focus()
+        ElseIf TxtCodCli.Text = "" Then
+            MsgBox("Digite o código do cliente!")
+            TxtCodCli.Focus()
+        ElseIf MskVal.Text = "" Then
+            MsgBox("Digite o valor do pedido!")
+            MskVal.Focus()
+        ElseIf DtaPed.Value > DtaMax.Value Or DtaPed.Value < DtaMin.Value Then
+            MsgBox("Não é possivel que a data da medicao seja essa data!")
+            TxtCodCli.Focus()
+        Else
+            objPed.Codigo = Val(TxtCod.Text)
+            objPed.Nomecli = TxtCli.Text
+            objPed.Cliente = TxtCodCli.Text
+            objPed.ValorTotal = MskVal.Text
+            objPed.DataDoPedido = DtaPed.Text
+            objPed.PrazoMinimo = DtaMin.Text
+            objPed.PrazoMaximo = DtaMax.Text
+            objPed.CheckPagamento = ChbPag.Checked
+            objPed.DataDoPagamento = DtaPag.Text
+            objPed.Pedido = CboPed.SelectedItem.ToString
+            objPed.Gravar(novo)
 
-        objPed.Codigo = Val(TxtCod.Text)
-        objPed.Nomecli = TxtCli.Text
-        objPed.Cliente = TxtCodCli.Text
-        objPed.ValorTotal = MskVal.Text
-        objPed.DataDoPedido = DtaPed.Text
-        objPed.PrazoMinimo = DtaMin.Text
-        objPed.PrazoMaximo = DtaMax.Text
-        objPed.CheckPagamento = ChbPag.Checked
-        objPed.DataDoPagamento = DtaPag.Text
-        objPed.Pedido = CboPed.SelectedItem.ToString
-        objPed.Gravar(novo)
+            TxtCod.Text = objPed.Codigo
 
-        TxtCod.Text = objPed.Codigo
-
-        objControle.habilitar_tela(Me, False)
-        objControle.habilitar_botoes(Me, True)
+            objControle.habilitar_tela(Me, False)
+            objControle.habilitar_botoes(Me, True)
+        End If
     End Sub
 
     Private Sub BtnSai_Click(sender As Object, e As EventArgs) Handles BtnSai.Click
