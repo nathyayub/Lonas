@@ -8,4 +8,13 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         DgdGrade.DataSource = objdes.Localizar_porData(DtpIni.Text, DtpFin.Text)
     End Sub
+
+    Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
+        Dim rpt As New CrpDespesas
+        rpt.SetDataSource(DgdGrade.DataSource)
+        FrmImp.CrystalReportViewer1.ReportSource = rpt
+        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
+        rpt.SummaryInfo.ReportComments = "Relatório de Despesas"
+        rpt.Refresh()
+    End Sub
 End Class

@@ -29,7 +29,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -72,6 +72,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
@@ -124,6 +125,18 @@
       <DependentUpon>ConsultaEmbarcacaoMarina.vb</DependentUpon>
     </Compile>
     <Compile Include="Consultas\ConsultaEmbarcacaoMarina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaEntradaMatRelat.Designer.vb">
+      <DependentUpon>ConsultaEntradaMatRelat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaEntradaMatRelat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaSaidaMatRelat.Designer.vb">
+      <DependentUpon>ConsultaSaidaMatRelat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaSaidaMatRelat.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\ConsultaFornecedor.Designer.vb">
@@ -293,10 +306,10 @@
       <DependentUpon>CrpEmbarcacao.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="relatorios\CrpEvolucaoProduto.vb">
+    <Compile Include="relatorios\CrpEntradaMat.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrpEvolucaoProduto.rpt</DependentUpon>
+      <DependentUpon>CrpEntradaMat.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="relatorios\CrpDespesas.vb">
@@ -309,6 +322,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrpFornecedor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="relatorios\CrpPedidos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpPedidos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="relatorios\CrpSaidaMat.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpSaidaMat.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="relatorios\FrmImp.Designer.vb">
@@ -330,6 +355,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaEmbarcacaoMarina.resx">
       <DependentUpon>ConsultaEmbarcacaoMarina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaEntradaMatRelat.resx">
+      <DependentUpon>ConsultaEntradaMatRelat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaSaidaMatRelat.resx">
+      <DependentUpon>ConsultaSaidaMatRelat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaFornecedor.resx">
       <DependentUpon>ConsultaFornecedor.vb</DependentUpon>
@@ -414,9 +445,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrpEmbarcacao.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="relatorios\CrpEvolucaoProduto.rpt">
+    <EmbeddedResource Include="relatorios\CrpEntradaMat.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrpEvolucaoProduto.vb</LastGenOutput>
+      <LastGenOutput>CrpEntradaMat.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="relatorios\CrpDespesas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -425,6 +456,14 @@
     <EmbeddedResource Include="relatorios\CrpFornecedor.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrpFornecedor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relatorios\CrpPedidos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpPedidos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relatorios\CrpSaidaMat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpSaidaMat.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="relatorios\FrmImp.resx">
       <DependentUpon>FrmImp.vb</DependentUpon>
