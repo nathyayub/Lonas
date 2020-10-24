@@ -54,6 +54,10 @@
         sql = "Update Tabestoque set qtdestoque=qtdestoque-" & 1 & " where codigo=" & codigo
         objbanco.executar_comando(sql)
     End Sub
+<<<<<<< HEAD
+=======
+
+>>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78
     Public Function Localizar_porData(dataini As Date, datafin As Date) As DataTable
         Dim objds As New DataSet
 
@@ -69,4 +73,8 @@
         Return objds.Tables(0)
 
     End Function
+<<<<<<< HEAD
+=======
+
+>>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78
 End Class

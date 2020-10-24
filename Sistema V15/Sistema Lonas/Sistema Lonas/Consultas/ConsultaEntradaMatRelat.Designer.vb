@@ -114,7 +114,10 @@ Partial Class ConsultaEntradaMatRelat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< HEAD
         Me.BackColor = System.Drawing.Color.Brown
+=======
+>>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78
         Me.ClientSize = New System.Drawing.Size(713, 376)
         Me.Controls.Add(Me.btnimprimir)
         Me.Controls.Add(Me.DgdGrade)

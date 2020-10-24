@@ -79,6 +79,12 @@
     Public Function Localizar_porData(dataini As Date, datafin As Date) As DataTable
         Dim objds As New DataSet
 
+<<<<<<< HEAD
+=======
+    Public Function Localizar_porData(dataini As Date, datafin As Date) As DataTable
+        Dim objds As New DataSet
+
+>>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78
         Dim objda = (New OleDb.OleDbDataAdapter("RelatorioEntradaMat", objbanco.objcon))
         objda.SelectCommand.CommandType = CommandType.StoredProcedure
         objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo1", OleDb.OleDbType.Date))
@@ -91,4 +97,8 @@
         Return objds.Tables(0)
 
     End Function
+<<<<<<< HEAD
+=======
+
+>>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78
 End Class

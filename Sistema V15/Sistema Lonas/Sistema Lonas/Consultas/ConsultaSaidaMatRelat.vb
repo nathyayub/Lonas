@@ -15,8 +15,11 @@
         rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
+<<<<<<< HEAD
 
     Private Sub ConsultaSaidaMatRelat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+=======
+>>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78
 End Class
