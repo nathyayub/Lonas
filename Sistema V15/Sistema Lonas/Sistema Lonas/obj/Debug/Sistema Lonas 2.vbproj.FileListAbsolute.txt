@@ -330,7 +330,6 @@ C:\Users\User\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\
 C:\Users\User\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas 2.vbproj.GenerateResource.Cache
 C:\Users\User\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\pt-BR\Sistema Lonas.resources.dll
 C:\Users\igork\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaPedidoPorData.resources
-<<<<<<< HEAD
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\bin\Debug\Sistema Lonas.exe.config
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.exe
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.xml
@@ -456,7 +455,3 @@ C:\Users\igork\OneDrive\Área de Trabalho\V2\Sistema_Lonas\Sistema V15\Sistema L
 C:\Users\igork\OneDrive\Área de Trabalho\V2\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\bin\Debug\pt-BR\Sistema Lonas.resources.dll
 C:\Users\igork\OneDrive\Área de Trabalho\V2\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\pt-BR\Sistema Lonas.resources.dll
 C:\Users\igork\OneDrive\Área de Trabalho\V2\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaSaidaMatRelat.resources
-=======
-C:\Users\User\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEntradaMatRelat.resources
-C:\Users\User\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaSaidaMatRelat.resources
->>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78

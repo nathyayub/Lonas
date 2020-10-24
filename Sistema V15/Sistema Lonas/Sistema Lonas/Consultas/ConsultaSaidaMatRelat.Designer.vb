@@ -110,18 +110,11 @@ Partial Class ConsultaSaidaMatRelat
         Me.Label1.TabIndex = 26
         Me.Label1.Text = "Data Inicial:"
         '
-<<<<<<< HEAD
         'ConsultaSaidaMatRelat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-=======
-        'ConsultaEntradaSaidaMat
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
->>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78
         Me.ClientSize = New System.Drawing.Size(747, 378)
         Me.Controls.Add(Me.btnimprimir)
         Me.Controls.Add(Me.DgdGrade)
@@ -130,11 +123,7 @@ Partial Class ConsultaSaidaMatRelat
         Me.Controls.Add(Me.btnok)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-<<<<<<< HEAD
         Me.Name = "ConsultaSaidaMatRelat"
-=======
-        Me.Name = "ConsultaEntradaSaidaMat"
->>>>>>> 219151e0f2b0202c11d9d88f7738f6b00ebd6c78
         Me.Text = "ConsultaEntradaSaidaMat"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
