@@ -6,7 +6,20 @@ SistemaLonas
 </name>
 </assembly>
 <members>
-<member name="M:Sistema_Lonas.WsCotacao.FachadaWSSGSService.#ctor">
+<member name="P:Sistema_Lonas.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Sistema_Lonas.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Sistema_Lonas.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Sistema_Lonas.WsCotacao.FachadaWSSGSService.#ctor">
 	<remarks/>
 </member><member name="E:Sistema_Lonas.WsCotacao.FachadaWSSGSService.getValoresSeriesVOCompleted">
 	<remarks/>
@@ -186,19 +199,6 @@ SistemaLonas
 	<remarks/>
 </member><member name="T:Sistema_Lonas.WsCotacao.getValorEspecialCompletedEventArgs">
 	<remarks/>
-</member><member name="P:Sistema_Lonas.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:Sistema_Lonas.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:Sistema_Lonas.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>

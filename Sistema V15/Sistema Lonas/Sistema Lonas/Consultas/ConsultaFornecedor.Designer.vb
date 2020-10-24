@@ -30,6 +30,7 @@ Partial Class ConsultaFornecedor
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmaCli = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PIX = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,7 +60,7 @@ Partial Class ConsultaFornecedor
         Me.DgdGrade.AllowUserToDeleteRows = False
         Me.DgdGrade.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3, Me.EmaCli})
+        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3, Me.EmaCli, Me.PIX})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DgdGrade.Location = New System.Drawing.Point(38, 128)
         Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4)
@@ -103,6 +104,13 @@ Partial Class ConsultaFornecedor
         Me.EmaCli.Name = "EmaCli"
         Me.EmaCli.Width = 146
         '
+        'PIX
+        '
+        Me.PIX.DataPropertyName = "PIX"
+        Me.PIX.HeaderText = "PIX"
+        Me.PIX.Name = "PIX"
+        Me.PIX.Width = 58
+        '
         'ConsultaFornecedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -126,4 +134,5 @@ Partial Class ConsultaFornecedor
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EmaCli As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PIX As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

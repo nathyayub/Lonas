@@ -4,6 +4,7 @@
     Dim m_cnpj As String
     Dim m_tele As String
     Dim m_vend As String
+    Dim m_pix As String
 
     Dim sql As String
     Dim objbanco As New ClsBanco
@@ -54,14 +55,23 @@
         End Set
     End Property
 
+    Public Property Pix() As String
+        Get
+            Return m_pix
+        End Get
+        Set(ByVal value As String)
+            m_pix = value
+        End Set
+    End Property
+
     Public Sub Gravar(novo As Boolean)
         If novo = True Then
-            sql = "insert into tabcadfornecedore (nomemp, tel, nomvend, cnpj) values ('" & m_nome & "', '" & m_tele & "', '" & m_vend & "','" & m_cnpj & "')"
+            sql = "insert into tabcadfornecedore (nomemp, tel, nomvend, cnpj, pix) values ('" & m_nome & "', '" & m_tele & "', '" & m_vend & "','" & m_cnpj & "', '" & m_pix & "')"
             objbanco.executar_comando(sql)
             sql = "select max(codigo) as codigo from tabcadfornecedore"
             m_codi = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update tabcadfornecedore set nomemp='" & m_nome & "', '" & m_tele & "', '" & m_vend & "','" & m_cnpj & "' where codigo=" & m_codi
+            sql = "Update tabcadfornecedore set nomemp='" & m_nome & "', '" & m_tele & "', '" & m_vend & "','" & m_cnpj & "', '" & m_pix & "' where codigo=" & m_codi
             objbanco.executar_comando(sql)
         End If
     End Sub
@@ -96,6 +106,7 @@
         m_tele = objdtLocal.Rows(0).Item(2)
         m_cnpj = objdtLocal.Rows(0).Item(3)
         m_vend = objdtLocal.Rows(0).Item(4)
+        m_pix = objdtLocal.Rows(0).Item(5)
     End Sub
 
     Public Function LocalizarFiltro(campo As String) As DataTable

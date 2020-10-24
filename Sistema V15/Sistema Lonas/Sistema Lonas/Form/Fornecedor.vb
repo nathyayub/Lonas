@@ -49,6 +49,7 @@
             objFor.CNPJ = txtcnpj.Text
             objFor.Telefone = txttel.Text
             objFor.NomeVendedor = txtven.Text
+            objFor.Pix = TxtPix.Text
             objFor.Gravar(novo)
             txtcod.Text = objFor.Codigo
 
@@ -95,6 +96,7 @@
         txttel.Text = objFor.Telefone
         txtcnpj.Text = objFor.CNPJ
         txtven.Text = objFor.NomeVendedor
+        TxtPix.Text = objFor.Pix
 
     End Sub
 
