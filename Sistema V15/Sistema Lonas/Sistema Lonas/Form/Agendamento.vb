@@ -2,7 +2,7 @@
     Dim objControle As New ClsControle
     Dim objAg As New ClsAgendamento
     Dim novo As Boolean
-
+    Public quemchamou As String = ""
     Private Sub Agendamento_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         Me.Top = 0
         Me.Left = 0
@@ -15,6 +15,10 @@
         btnexc.Enabled = False
         btnimp.Enabled = False
         GrpLoc.Visible = False
+        BtnNom.Enabled = False
+        GroupBox1.Enabled = False
+        btnEmbarcacao.Enabled = False
+
     End Sub
 
     Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles btnnov.Click
@@ -22,6 +26,13 @@
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
         TxtCod.Enabled = False
+        BtnNom.Enabled = True
+        GroupBox1.Enabled = True
+        Txtcodcli.Enabled = False
+        txtnomcli.Enabled = False
+        txtcodemb.Enabled = False
+        txtEmbarcacao.Enabled = False
+        btnEmbarcacao.Enabled = True
         Txtcodcli.Focus()
         novo = True
     End Sub
@@ -112,5 +123,10 @@
         End If
         TxtLoc.Text = ""
         TxtLoc.Focus()
+    End Sub
+
+    Private Sub btnEmbarcacao_Click(sender As Object, e As EventArgs) Handles btnEmbarcacao.Click
+        ConsultaEmbarcao.quemChamou = Me.Name
+        ConsultaEmbarcao.ShowDialog()
     End Sub
 End Class

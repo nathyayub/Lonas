@@ -77,22 +77,14 @@
         End Set
     End Property
 
-    Public Property Nmarina As String
-        Get
-            Return m_nmarina
-        End Get
-        Set(value As String)
-            m_nmarina = value
-        End Set
-    End Property
     Public Sub Gravar(novo As Boolean)
         If novo = True Then
-            sql = "insert into tabembarcaçao (nomebarco, marca, modelo, anofab, cliente, codmarina, marina) values ('" & m_nmbarco & "', '" & m_marca & "', '" & m_modelo & "', '" & m_anofab & "', '" & m_cliente & "', '" & m_marina & "', " & m_nmarina & ")"
+            sql = "insert into tabembarcaçao (nomebarco, marca, modelo, anofab, cliente, Marina) values ('" & m_nmbarco & "', '" & m_marca & "', '" & m_modelo & "', '" & m_anofab & "', '" & m_cliente & "', '" & m_marina & "')"
             objbanco.executar_comando(sql)
             sql = "select max(codigo) as codigo from tabembarcaçao"
             m_cod = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update tabembarcaçao set nmbarco='" & m_nmbarco & "', marca='" & m_marca & "', modelo='" & m_modelo & "', anofab='" & m_anofab & "', cliente='" & m_cliente & "', codmarina='" & m_marina & "', marina=" & m_marina & "  where codigo=" & m_cod
+            sql = "Update tabembarcaçao set nomebarco='" & m_nmbarco & "', marca='" & m_marca & "', modelo='" & m_modelo & "', anofab='" & m_anofab & "', cliente='" & m_cliente & "', marina='" & m_marina & "'  where codigo=" & m_cod
             objbanco.executar_comando(sql)
         End If
     End Sub
@@ -119,7 +111,15 @@
             Return True
         End If
     End Function
-
+    Public Function LocalizarFiltro(campo As String) As DataTable
+        If IsNumeric(campo) Then
+            sql = "select * from TabEmbarcaçao where codigo=" & campo
+        Else
+            sql = "select * from TabEmbarcaçao where nomeBarco like '" & campo & "%' order by nomeBarco"
+        End If
+        objdtLocal = objbanco.localizar(sql)
+        Return objdtLocal
+    End Function
     Private Sub mostrar_DadosVindosDoBanco()
         m_cod = objdtLocal.Rows(0).Item(0)
         m_nmbarco = objdtLocal.Rows(0).Item(1)

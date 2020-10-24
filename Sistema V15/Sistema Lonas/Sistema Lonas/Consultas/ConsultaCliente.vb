@@ -14,11 +14,11 @@
 
     Private Sub DgdGrade_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgdGrade.CellDoubleClick
         If quemChamou.ToUpper = "EMBARCACAO" Then
-            Embarcacao.txtcliente.Text = DgdGrade.CurrentRow.Cells(0).Value
-            Embarcacao.TxtNcli.Text = DgdGrade.CurrentRow.Cells(1).Value
+            Embarcacao.txtcliente.Text = DgdGrade.CurrentRow.Cells(1).Value
+            Embarcacao.TxtNcli.Text = DgdGrade.CurrentRow.Cells(2).Value
         ElseIf quemChamou.ToUpper = "PEDIDOS" Then
-            Pedidos.TxtCodCli.Text = DgdGrade.CurrentRow.Cells(0).Value
-            Pedidos.TxtCli.Text = DgdGrade.CurrentRow.Cells(1).Value
+            Pedidos.TxtCodCli.Text = DgdGrade.CurrentRow.Cells(1).Value
+            Pedidos.TxtCli.Text = DgdGrade.CurrentRow.Cells(2).Value
         ElseIf quemChamou.ToUpper = "AGENDAMENTO" Then
             Agendamento.Txtcodcli.Text = DgdGrade.CurrentRow.Cells(1).Value
             Agendamento.txtnomcli.Text = DgdGrade.CurrentRow.Cells(2).Value
@@ -31,8 +31,11 @@
         Me.Close()
     End Sub
 
-
     Private Sub ConsultaCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub DgdGrade_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgdGrade.CellContentClick
 
     End Sub
 End Class

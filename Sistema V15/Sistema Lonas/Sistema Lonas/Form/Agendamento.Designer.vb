@@ -50,6 +50,8 @@ Partial Class Agendamento
         Me.BtnOK = New System.Windows.Forms.Button()
         Me.TxtLoc = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnEmbarcacao = New System.Windows.Forms.Button()
+        Me.txtEmbarcacao = New System.Windows.Forms.TextBox()
         Me.GrpLoc.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -222,7 +224,7 @@ Partial Class Agendamento
         Me.txtcodemb.Location = New System.Drawing.Point(221, 256)
         Me.txtcodemb.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtcodemb.Name = "txtcodemb"
-        Me.txtcodemb.Size = New System.Drawing.Size(188, 26)
+        Me.txtcodemb.Size = New System.Drawing.Size(102, 26)
         Me.txtcodemb.TabIndex = 62
         '
         'Label7
@@ -415,12 +417,35 @@ Partial Class Agendamento
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data do Agendamento"
         '
+        'btnEmbarcacao
+        '
+        Me.btnEmbarcacao.Font = New System.Drawing.Font("Times New Roman", 14.0!)
+        Me.btnEmbarcacao.Location = New System.Drawing.Point(331, 256)
+        Me.btnEmbarcacao.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnEmbarcacao.Name = "btnEmbarcacao"
+        Me.btnEmbarcacao.Size = New System.Drawing.Size(45, 26)
+        Me.btnEmbarcacao.TabIndex = 83
+        Me.btnEmbarcacao.Text = "..."
+        Me.btnEmbarcacao.UseVisualStyleBackColor = True
+        '
+        'txtEmbarcacao
+        '
+        Me.txtEmbarcacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtEmbarcacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmbarcacao.Location = New System.Drawing.Point(384, 256)
+        Me.txtEmbarcacao.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtEmbarcacao.Name = "txtEmbarcacao"
+        Me.txtEmbarcacao.Size = New System.Drawing.Size(262, 26)
+        Me.txtEmbarcacao.TabIndex = 84
+        '
         'Agendamento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(804, 448)
+        Me.Controls.Add(Me.txtEmbarcacao)
+        Me.Controls.Add(Me.btnEmbarcacao)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GrpLoc)
         Me.Controls.Add(Me.BtnNom)
@@ -480,4 +505,6 @@ Partial Class Agendamento
     Friend WithEvents BtnOK As System.Windows.Forms.Button
     Friend WithEvents TxtLoc As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnEmbarcacao As System.Windows.Forms.Button
+    Friend WithEvents txtEmbarcacao As System.Windows.Forms.TextBox
 End Class

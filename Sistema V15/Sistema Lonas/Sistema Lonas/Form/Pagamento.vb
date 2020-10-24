@@ -16,6 +16,7 @@
         BtnExc.Enabled = False
         BtnImp.Enabled = False
         GrpLoc.Visible = False
+
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
@@ -47,8 +48,9 @@
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
         txtcod.Enabled = False
+        txtnomecli.Enabled = False
         btnverificar.Enabled = True
-        txtcodped.Focus()
+        txtval.Focus()
         novo = True
     End Sub
 

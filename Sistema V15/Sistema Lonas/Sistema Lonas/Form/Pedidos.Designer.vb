@@ -292,9 +292,8 @@ Partial Class Pedidos
         'MskVal
         '
         Me.MskVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MskVal.Location = New System.Drawing.Point(151, 138)
+        Me.MskVal.Location = New System.Drawing.Point(156, 138)
         Me.MskVal.Margin = New System.Windows.Forms.Padding(2)
-        Me.MskVal.Mask = "$"
         Me.MskVal.Name = "MskVal"
         Me.MskVal.Size = New System.Drawing.Size(151, 26)
         Me.MskVal.TabIndex = 59
@@ -387,7 +386,7 @@ Partial Class Pedidos
         '
         Me.DtaPed.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtaPed.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtaPed.Location = New System.Drawing.Point(151, 178)
+        Me.DtaPed.Location = New System.Drawing.Point(156, 182)
         Me.DtaPed.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaPed.Name = "DtaPed"
         Me.DtaPed.Size = New System.Drawing.Size(151, 26)
@@ -419,7 +418,7 @@ Partial Class Pedidos
         'BtnCli
         '
         Me.BtnCli.Font = New System.Drawing.Font("Times New Roman", 14.0!)
-        Me.BtnCli.Location = New System.Drawing.Point(252, 92)
+        Me.BtnCli.Location = New System.Drawing.Point(248, 97)
         Me.BtnCli.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCli.Name = "BtnCli"
         Me.BtnCli.Size = New System.Drawing.Size(47, 26)
@@ -431,7 +430,7 @@ Partial Class Pedidos
         '
         Me.TxtCli.Enabled = False
         Me.TxtCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCli.Location = New System.Drawing.Point(318, 92)
+        Me.TxtCli.Location = New System.Drawing.Point(302, 97)
         Me.TxtCli.Name = "TxtCli"
         Me.TxtCli.Size = New System.Drawing.Size(191, 26)
         Me.TxtCli.TabIndex = 80
@@ -439,7 +438,7 @@ Partial Class Pedidos
         'TxtCodCli
         '
         Me.TxtCodCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCodCli.Location = New System.Drawing.Point(180, 93)
+        Me.TxtCodCli.Location = New System.Drawing.Point(186, 97)
         Me.TxtCodCli.Name = "TxtCodCli"
         Me.TxtCodCli.Size = New System.Drawing.Size(55, 26)
         Me.TxtCodCli.TabIndex = 78

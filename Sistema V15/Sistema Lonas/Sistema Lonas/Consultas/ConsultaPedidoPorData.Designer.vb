@@ -29,6 +29,7 @@ Partial Class ConsultaPedidoPorData
         Me.btnok = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnimprimir = New System.Windows.Forms.Button()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -72,7 +73,7 @@ Partial Class ConsultaPedidoPorData
         Me.btnok.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnok.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnok.Location = New System.Drawing.Point(603, 12)
+        Me.btnok.Location = New System.Drawing.Point(517, 12)
         Me.btnok.Name = "btnok"
         Me.btnok.Size = New System.Drawing.Size(97, 37)
         Me.btnok.TabIndex = 21
@@ -101,12 +102,22 @@ Partial Class ConsultaPedidoPorData
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Data Inicial:"
         '
+        'btnimprimir
+        '
+        Me.btnimprimir.Location = New System.Drawing.Point(643, 23)
+        Me.btnimprimir.Name = "btnimprimir"
+        Me.btnimprimir.Size = New System.Drawing.Size(75, 23)
+        Me.btnimprimir.TabIndex = 25
+        Me.btnimprimir.Text = "imprimir"
+        Me.btnimprimir.UseVisualStyleBackColor = True
+        '
         'ConsultaPedidoPorData
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(750, 421)
+        Me.Controls.Add(Me.btnimprimir)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.DtpFin)
         Me.Controls.Add(Me.DtpIni)
@@ -127,4 +138,5 @@ Partial Class ConsultaPedidoPorData
     Friend WithEvents btnok As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnimprimir As System.Windows.Forms.Button
 End Class

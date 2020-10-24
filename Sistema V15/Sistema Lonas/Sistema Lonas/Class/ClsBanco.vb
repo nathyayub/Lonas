@@ -1,6 +1,4 @@
 ﻿Public Class ClsBanco
-    'Dim conexao As String = "Provider=microsoft.ace.oledb.12.0;data source=timoneiros2020_2002.accdb"
-    'Dim conexao As String = "Provider=microsoft.jet.OLEDB.12.0;data source=timoneiros2020_2000C.mdb"
     Dim conexao As String = "Provider=microsoft.ace.oledb.12.0;data source=timoneiros2020_2000C.mdb"
 
     Public objcon As New OleDb.OleDbConnection(conexao)

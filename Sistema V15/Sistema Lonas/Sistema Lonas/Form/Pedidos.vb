@@ -16,12 +16,14 @@
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
         TxtCod.Enabled = False
+        TxtCodCli.Enabled = False
+        TxtCli.Enabled = False
+        GroupBox1.Enabled = True
         TxtCodCli.Focus()
         novo = True
     End Sub
 
     Private Sub Pedidos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         objControle.Limpar_tela(Me)
         objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, True)
@@ -29,6 +31,7 @@
         BtnExc.Enabled = False
         BtnImp.Enabled = False
         GrpLoc.Visible = False
+        GroupBox1.Enabled = False
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click

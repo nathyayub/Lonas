@@ -76,5 +76,19 @@
         sql = "Update Tabestoque set qtdestoque=qtdestoque+" & 1 & " where codigo=" & codigo
         objbanco.executar_comando(sql)
     End Sub
+    Public Function Localizar_porData(dataini As Date, datafin As Date) As DataTable
+        Dim objds As New DataSet
 
+        Dim objda = (New OleDb.OleDbDataAdapter("RelatorioEntradaMat", objbanco.objcon))
+        objda.SelectCommand.CommandType = CommandType.StoredProcedure
+        objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo1", OleDb.OleDbType.Date))
+        objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo2", OleDb.OleDbType.Date))
+        objda.SelectCommand.Parameters("campo1").Value = dataini
+        objda.SelectCommand.Parameters("campo2").Value = datafin
+
+        objds.Tables.Clear()
+        objda.Fill(objds)
+        Return objds.Tables(0)
+
+    End Function
 End Class

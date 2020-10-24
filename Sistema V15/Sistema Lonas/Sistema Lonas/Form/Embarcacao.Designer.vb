@@ -59,7 +59,7 @@ Partial Class Embarcacao
         'txtnome
         '
         Me.txtnome.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnome.ForeColor = System.Drawing.Color.White
+        Me.txtnome.ForeColor = System.Drawing.Color.Black
         Me.txtnome.Location = New System.Drawing.Point(206, 68)
         Me.txtnome.Name = "txtnome"
         Me.txtnome.Size = New System.Drawing.Size(194, 26)
@@ -79,7 +79,7 @@ Partial Class Embarcacao
         'txtcodigo
         '
         Me.txtcodigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcodigo.ForeColor = System.Drawing.Color.White
+        Me.txtcodigo.ForeColor = System.Drawing.Color.Black
         Me.txtcodigo.Location = New System.Drawing.Point(206, 21)
         Me.txtcodigo.Name = "txtcodigo"
         Me.txtcodigo.Size = New System.Drawing.Size(194, 26)
@@ -99,7 +99,7 @@ Partial Class Embarcacao
         'txtmarca
         '
         Me.txtmarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmarca.ForeColor = System.Drawing.Color.White
+        Me.txtmarca.ForeColor = System.Drawing.Color.Black
         Me.txtmarca.Location = New System.Drawing.Point(206, 120)
         Me.txtmarca.Name = "txtmarca"
         Me.txtmarca.Size = New System.Drawing.Size(194, 26)
@@ -119,7 +119,7 @@ Partial Class Embarcacao
         'txtmodelo
         '
         Me.txtmodelo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmodelo.ForeColor = System.Drawing.Color.White
+        Me.txtmodelo.ForeColor = System.Drawing.Color.Black
         Me.txtmodelo.Location = New System.Drawing.Point(206, 174)
         Me.txtmodelo.Name = "txtmodelo"
         Me.txtmodelo.Size = New System.Drawing.Size(194, 26)
@@ -139,7 +139,7 @@ Partial Class Embarcacao
         'txtfabricacao
         '
         Me.txtfabricacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtfabricacao.ForeColor = System.Drawing.Color.White
+        Me.txtfabricacao.ForeColor = System.Drawing.Color.Black
         Me.txtfabricacao.Location = New System.Drawing.Point(206, 230)
         Me.txtfabricacao.Name = "txtfabricacao"
         Me.txtfabricacao.Size = New System.Drawing.Size(194, 26)
@@ -159,7 +159,7 @@ Partial Class Embarcacao
         'txtcliente
         '
         Me.txtcliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcliente.ForeColor = System.Drawing.Color.White
+        Me.txtcliente.ForeColor = System.Drawing.Color.Black
         Me.txtcliente.Location = New System.Drawing.Point(96, 281)
         Me.txtcliente.Name = "txtcliente"
         Me.txtcliente.Size = New System.Drawing.Size(61, 26)
@@ -179,7 +179,7 @@ Partial Class Embarcacao
         'txtmarina
         '
         Me.txtmarina.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmarina.ForeColor = System.Drawing.Color.White
+        Me.txtmarina.ForeColor = System.Drawing.Color.Black
         Me.txtmarina.Location = New System.Drawing.Point(96, 330)
         Me.txtmarina.Name = "txtmarina"
         Me.txtmarina.Size = New System.Drawing.Size(61, 26)
@@ -397,7 +397,7 @@ Partial Class Embarcacao
         'TxtNmar
         '
         Me.TxtNmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNmar.ForeColor = System.Drawing.Color.White
+        Me.TxtNmar.ForeColor = System.Drawing.Color.Black
         Me.TxtNmar.Location = New System.Drawing.Point(252, 330)
         Me.TxtNmar.Name = "TxtNmar"
         Me.TxtNmar.Size = New System.Drawing.Size(218, 26)
@@ -406,7 +406,7 @@ Partial Class Embarcacao
         'TxtNcli
         '
         Me.TxtNcli.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNcli.ForeColor = System.Drawing.Color.White
+        Me.TxtNcli.ForeColor = System.Drawing.Color.Black
         Me.TxtNcli.Location = New System.Drawing.Point(252, 281)
         Me.TxtNcli.Name = "TxtNcli"
         Me.TxtNcli.Size = New System.Drawing.Size(218, 26)

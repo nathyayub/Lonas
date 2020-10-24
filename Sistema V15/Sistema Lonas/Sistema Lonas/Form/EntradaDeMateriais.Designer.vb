@@ -58,8 +58,8 @@ Partial Class EntradaDeMateriais
         '
         Me.MskVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MskVal.Location = New System.Drawing.Point(201, 89)
-        Me.MskVal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.MskVal.Mask = "$"
+        Me.MskVal.Margin = New System.Windows.Forms.Padding(2)
+        Me.MskVal.Mask = "$999999999"
         Me.MskVal.Name = "MskVal"
         Me.MskVal.Size = New System.Drawing.Size(137, 26)
         Me.MskVal.TabIndex = 125
@@ -79,7 +79,7 @@ Partial Class EntradaDeMateriais
         '
         Me.BtnMat.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnMat.Location = New System.Drawing.Point(291, 16)
-        Me.BtnMat.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnMat.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMat.Name = "BtnMat"
         Me.BtnMat.Size = New System.Drawing.Size(47, 26)
         Me.BtnMat.TabIndex = 123
@@ -91,7 +91,7 @@ Partial Class EntradaDeMateriais
         Me.DtaBai.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtaBai.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DtaBai.Location = New System.Drawing.Point(201, 125)
-        Me.DtaBai.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DtaBai.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaBai.Name = "DtaBai"
         Me.DtaBai.Size = New System.Drawing.Size(137, 26)
         Me.DtaBai.TabIndex = 122
@@ -199,7 +199,7 @@ Partial Class EntradaDeMateriais
         '
         Me.BtnFor.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnFor.Location = New System.Drawing.Point(291, 161)
-        Me.BtnFor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnFor.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnFor.Name = "BtnFor"
         Me.BtnFor.Size = New System.Drawing.Size(47, 26)
         Me.BtnFor.TabIndex = 115
@@ -311,7 +311,7 @@ Partial Class EntradaDeMateriais
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Material, Me.QuantidadeMinima, Me.ValorEnt, Me.UltimoReabastecimento, Me.Fornecedor})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DgdGrade.Location = New System.Drawing.Point(9, 202)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(2)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.RowTemplate.Height = 24
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -383,7 +383,7 @@ Partial Class EntradaDeMateriais
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "EntradaDeMateriais"
         Me.Text = "Entrada De Materiais"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()

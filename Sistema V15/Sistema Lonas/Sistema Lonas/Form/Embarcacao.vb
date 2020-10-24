@@ -1,6 +1,7 @@
 ﻿Public Class Embarcacao
     Dim objControle As New ClsControle
     Dim objEmb As New ClsEmbarcacao
+    Dim objCli As New ClsCliente
     Dim novo As Boolean
     Public quemchamou As String = ""
     Public campochave As Integer
@@ -16,14 +17,20 @@
         BtnExc.Enabled = False
         BtnImp.Enabled = True
         BtnMar.Enabled = False
+       
     End Sub
     Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles BtnNov.Click
         objControle.Limpar_tela(Me)
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
         txtcodigo.Enabled = False
+        txtcliente.Enabled = False
+        TxtNcli.Enabled = False
+        txtmarina.Enabled = False
+        TxtNmar.Enabled = False
         txtnome.Focus()
         BtnMar.Enabled = True
+
         novo = True
     End Sub
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
@@ -118,8 +125,6 @@
         txtfabricacao.Text = objEmb.AnoFab
         txtcliente.Text = objEmb.Cliente
         txtmarina.Text = objEmb.Marina
-        TxtNmar.Text = objEmb.Nmarina
-        TxtNcli.Text = objEmb.Ncliente
     End Sub
 
     Private Sub BtnMar_Click(sender As Object, e As EventArgs) Handles BtnMar.Click

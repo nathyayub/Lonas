@@ -29,8 +29,10 @@ Partial Class FrmMenu
         Me.EmbarcaçãoMarinaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MarinaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgendamentoMediçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PedidoPorDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PedidoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmbarcaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelatorioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReláToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioGeralDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -83,10 +85,15 @@ Partial Class FrmMenu
         Me.lblvalordolar = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.grbcotacao = New System.Windows.Forms.GroupBox()
-        Me.PedidoPorDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TxtEuro = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtDolar = New System.Windows.Forms.TextBox()
+        Me.LblCodCli = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -100,7 +107,7 @@ Partial Class FrmMenu
         'ConsultasToolStripMenuItem
         '
         resources.ApplyResources(Me.ConsultasToolStripMenuItem, "ConsultasToolStripMenuItem")
-        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.EmbarcaçãoMarinaToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoPorDataToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem})
+        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.EmbarcaçãoMarinaToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoPorDataToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem})
         Me.ConsultasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem"
         '
@@ -124,6 +131,11 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.AgendamentoMediçãoToolStripMenuItem, "AgendamentoMediçãoToolStripMenuItem")
         Me.AgendamentoMediçãoToolStripMenuItem.Name = "AgendamentoMediçãoToolStripMenuItem"
         '
+        'PedidoPorDataToolStripMenuItem
+        '
+        resources.ApplyResources(Me.PedidoPorDataToolStripMenuItem, "PedidoPorDataToolStripMenuItem")
+        Me.PedidoPorDataToolStripMenuItem.Name = "PedidoPorDataToolStripMenuItem"
+        '
         'PedidoToolStripMenuItem
         '
         resources.ApplyResources(Me.PedidoToolStripMenuItem, "PedidoToolStripMenuItem")
@@ -133,6 +145,11 @@ Partial Class FrmMenu
         '
         resources.ApplyResources(Me.DespesasToolStripMenuItem, "DespesasToolStripMenuItem")
         Me.DespesasToolStripMenuItem.Name = "DespesasToolStripMenuItem"
+        '
+        'EmbarcaçãoToolStripMenuItem
+        '
+        resources.ApplyResources(Me.EmbarcaçãoToolStripMenuItem, "EmbarcaçãoToolStripMenuItem")
+        Me.EmbarcaçãoToolStripMenuItem.Name = "EmbarcaçãoToolStripMenuItem"
         '
         'RelatorioToolStripMenuItem
         '
@@ -455,10 +472,39 @@ Partial Class FrmMenu
         Me.grbcotacao.Name = "grbcotacao"
         Me.grbcotacao.TabStop = False
         '
-        'PedidoPorDataToolStripMenuItem
+        'GroupBox1
         '
-        resources.ApplyResources(Me.PedidoPorDataToolStripMenuItem, "PedidoPorDataToolStripMenuItem")
-        Me.PedidoPorDataToolStripMenuItem.Name = "PedidoPorDataToolStripMenuItem"
+        resources.ApplyResources(Me.GroupBox1, "GroupBox1")
+        Me.GroupBox1.BackColor = System.Drawing.Color.Brown
+        Me.GroupBox1.Controls.Add(Me.TxtEuro)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.txtDolar)
+        Me.GroupBox1.Controls.Add(Me.LblCodCli)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.TabStop = False
+        '
+        'TxtEuro
+        '
+        resources.ApplyResources(Me.TxtEuro, "TxtEuro")
+        Me.TxtEuro.Name = "TxtEuro"
+        '
+        'Label1
+        '
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Name = "Label1"
+        '
+        'txtDolar
+        '
+        resources.ApplyResources(Me.txtDolar, "txtDolar")
+        Me.txtDolar.Name = "txtDolar"
+        '
+        'LblCodCli
+        '
+        resources.ApplyResources(Me.LblCodCli, "LblCodCli")
+        Me.LblCodCli.ForeColor = System.Drawing.Color.White
+        Me.LblCodCli.Name = "LblCodCli"
         '
         'FrmMenu
         '
@@ -466,6 +512,7 @@ Partial Class FrmMenu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.BackColor = System.Drawing.Color.Brown
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.grbcotacao)
@@ -480,6 +527,8 @@ Partial Class FrmMenu
         Me.ToolStrip1.PerformLayout()
         Me.grbcotacao.ResumeLayout(False)
         Me.grbcotacao.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -545,5 +594,11 @@ Partial Class FrmMenu
     Friend WithEvents ToolStripSeparator14 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripButton11 As System.Windows.Forms.ToolStripButton
     Friend WithEvents PedidoPorDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents TxtEuro As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtDolar As System.Windows.Forms.TextBox
+    Friend WithEvents LblCodCli As System.Windows.Forms.Label
+    Friend WithEvents EmbarcaçãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

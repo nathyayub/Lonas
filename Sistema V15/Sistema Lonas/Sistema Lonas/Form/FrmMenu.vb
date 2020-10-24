@@ -1,4 +1,21 @@
-﻿Public Class FrmMenu
+﻿Imports System
+Imports System.IO
+Imports System.Net
+Imports System.Text
+
+Public Class FrmMenu
+
+    Private Sub FrmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim DtsDolar As String
+        Dim DtsEuro As String
+        Dim cotacaoService = New WsCotacao.FachadaWSSGSService()
+        DtsDolar = cotacaoService.getUltimoValorVO(10813).ultimoValor.svalor
+        DtsEuro = cotacaoService.getUltimoValorVO(21620).ultimoValor.svalor
+
+        txtDolar.Text = ("R$" + DtsDolar)
+        TxtEuro.Text = ("R$" + DtsEuro)
+
+    End Sub
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
         Cliente.Show()
         Cliente.MdiParent = Me
@@ -148,12 +165,6 @@
     End Sub
 
     Private Sub EvolucaçãoProdutoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EvolucaçãoProdutoToolStripMenuItem.Click
-        Dim rpt As New CrpEvolucaoProduto
-        FrmImp.CrystalReportViewer1.ReportSource = rpt
-        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
-        rpt.SummaryInfo.ReportComments = "Relatório de Evolução de Produto "
-        rpt.Refresh()
-        FrmImp.ShowDialog()
     End Sub
 
     Private Sub ToolStripButton11_Click(sender As Object, e As EventArgs) Handles ToolStripButton11.Click
@@ -165,4 +176,24 @@
         ConsultaPedidoPorData.Show()
         ConsultaPedidoPorData.MdiParent = Me
     End Sub
+
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub TxtEuro_TextChanged(sender As Object, e As EventArgs) Handles TxtEuro.TextChanged
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub EmbarcaçãoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmbarcaçãoToolStripMenuItem.Click
+        ConsultaEmbarcao.Show()
+        ConsultaEmbarcao.MdiParent = Me
+    End Sub
+
+   
 End Class

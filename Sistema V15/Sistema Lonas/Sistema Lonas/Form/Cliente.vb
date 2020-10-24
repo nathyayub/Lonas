@@ -16,8 +16,9 @@
         objControle.habilitar_botoes(Me, True)
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
-        BtnImp.Enabled = False
+        BtnImp.Enabled = True
         GrpLoc.Visible = False
+
 
     End Sub
 

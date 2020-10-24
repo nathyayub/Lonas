@@ -30,4 +30,8 @@
     Private Sub FrmConCLi_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         TxtCampo.Text = ""
     End Sub
+
+    Private Sub ConsultaEmbarcacaoMarina_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

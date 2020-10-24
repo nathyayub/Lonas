@@ -36,6 +36,7 @@ Partial Class ConsultaDespesasStr
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnimprimir = New System.Windows.Forms.Button()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -154,12 +155,22 @@ Partial Class ConsultaDespesasStr
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Data Inicial"
         '
+        'btnimprimir
+        '
+        Me.btnimprimir.Location = New System.Drawing.Point(828, 28)
+        Me.btnimprimir.Name = "btnimprimir"
+        Me.btnimprimir.Size = New System.Drawing.Size(106, 45)
+        Me.btnimprimir.TabIndex = 13
+        Me.btnimprimir.Text = "imprimir"
+        Me.btnimprimir.UseVisualStyleBackColor = True
+        '
         'ConsultaDespesasStr
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(959, 561)
+        Me.Controls.Add(Me.btnimprimir)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.DtpFin)
         Me.Controls.Add(Me.DtpIni)
@@ -187,4 +198,5 @@ Partial Class ConsultaDespesasStr
     Friend WithEvents Venc As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Desc As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Quita As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents btnimprimir As System.Windows.Forms.Button
 End Class
