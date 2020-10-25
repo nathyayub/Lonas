@@ -40,8 +40,14 @@
         ElseIf MskTel.Text = "" And TxtEma.Text = "" Then
             MsgBox("Digite o telefone ou e-mail do cliente!")
             MskTel.Focus()
-        ElseIf TxtCpf.Text = "" Then
-            MsgBox("Digite o CPF dp cliente!")
+        ElseIf TxtCpf.Text = "" And TxtCNPJ.Text = "" Then
+            MsgBox("Digite o CPF ou o CNPJ dp cliente!")
+            TxtCpf.Focus()
+        ElseIf TxtCNPJ.Text <> "" And TxtIns.Text = "" Then
+            MsgBox("Digite a Inscrição Estadual do cliente!")
+            TxtIns.Focus()
+        ElseIf TxtEma.Text = "" Then
+            MsgBox("Digite o email do cliente!")
             TxtCpf.Focus()
         ElseIf TxtEnd.Text = "" Then
             MsgBox("Digite o endereço do cliente!")
@@ -117,6 +123,8 @@
         If objCli.LocalizarPorCodigoOuNome(TxtLoc.Text) = True Then
             Call mostrar_DadosVindosDaClasse()
             objControle.habilitar_botoes(Me, True)
+            objControle.habilitar_tela(Me, False)
+
         End If
         TxtLoc.Text = ""
         TxtLoc.Focus()
@@ -151,9 +159,15 @@
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
+        GrpLoc.Visible = False
         TxtCod.Enabled = False
         TxtNom.Focus()
+        GrpLoc.Visible = False
         novo = False
+    End Sub
+
+    Private Sub TxtCNPJ_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtCNPJ.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
     Private Sub TxtCNPJ_TextChanged(sender As Object, e As EventArgs) Handles TxtCNPJ.TextChanged
@@ -164,6 +178,10 @@
             TxtCpf.Enabled = True
             TxtIns.Enabled = False
         End If
+    End Sub
+
+    Private Sub TxtCpf_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtCpf.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
     Private Sub TxtCpf_TextChanged(sender As Object, e As EventArgs) Handles TxtCpf.TextChanged
@@ -184,5 +202,17 @@
         rpt.SummaryInfo.ReportComments = "Relatório de Cliente "
         rpt.Refresh()
         FrmImp.ShowDialog()
+    End Sub
+
+    Private Sub TxtCep_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtCep.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
+    End Sub
+
+    Private Sub TxtCep_TextChanged(sender As Object, e As EventArgs) Handles TxtCep.TextChanged
+
+    End Sub
+
+    Private Sub TxtCom_TextChanged(sender As Object, e As EventArgs) Handles TxtCom.TextChanged
+
     End Sub
 End Class

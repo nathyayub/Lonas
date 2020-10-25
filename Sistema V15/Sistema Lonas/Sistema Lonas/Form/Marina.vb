@@ -28,19 +28,44 @@
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-        objmar.Codigo = Val(txtcodigo.Text)
-        objmar.NomeEmpresa = txtnomeE.Text
-        objmar.Endereco = txtEnde.Text
-        objmar.Complemento = txtcomp.Text
-        objmar.bairro = txtbairro.Text
-        objmar.cidade = txtcidade.Text
-        objmar.estado = txtestado.Text
-        objmar.CEP = txtcep.Text
-        objmar.Gravar(novo)
-        txtcodigo.Text = objmar.Codigo
+        If txtnomeE.Text = "" Then
+            MsgBox("Digite o nome da marina!")
+            txtnomeE.Focus()
+        ElseIf txtEnde.Text = "" Then
+            MsgBox("Digite o endereço da marina!")
+            txtEnde.Focus()
+        ElseIf txtbairro.Text = "" Then
+            MsgBox("Digite o bairro da marina!")
+            txtbairro.Focus()
+        ElseIf txtcidade.Text = "" Then
+            MsgBox("Digite a cidade da marina!")
+            txtcidade.Focus()
+        ElseIf txtestado.Text = "" Then
+            MsgBox("Digite o estado da marina!")
+            txtestado.Focus()
+        ElseIf txtcep.Text = "" Then
+            MsgBox("Digite o CEP da marina!")
+            txtcep.Focus()
 
-        objControle.habilitar_tela(Me, False)
-        objControle.habilitar_botoes(Me, True)
+        Else
+
+            objmar.Codigo = Val(txtcodigo.Text)
+            objmar.NomeEmpresa = txtnomeE.Text
+            objmar.Endereco = txtEnde.Text
+            objmar.Complemento = txtcomp.Text
+            objmar.bairro = txtbairro.Text
+            objmar.cidade = txtcidade.Text
+            objmar.estado = txtestado.Text
+            objmar.CEP = txtcep.Text
+
+            objmar.Gravar(novo)
+            txtcodigo.Text = objmar.Codigo
+
+            objControle.habilitar_tela(Me, False)
+            objControle.habilitar_botoes(Me, True)
+
+        End If
+
     End Sub
 
     Private Sub BtnSai_Click(sender As Object, e As EventArgs) Handles BtnSai.Click
@@ -102,6 +127,7 @@
         objControle.habilitar_botoes(Me, False)
         txtcodigo.Enabled = False
         txtnomeE.Focus()
+        GrpLoc.Visible = False
         novo = False
     End Sub
 
@@ -112,5 +138,13 @@
         txtcodigo.Enabled = False
         txtnomeE.Focus()
         novo = True
+    End Sub
+
+    Private Sub txtcep_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtcep.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
+    End Sub
+
+    Private Sub txtcep_TextChanged(sender As Object, e As EventArgs) Handles txtcep.TextChanged
+
     End Sub
 End Class

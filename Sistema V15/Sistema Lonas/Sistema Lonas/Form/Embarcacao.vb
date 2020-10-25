@@ -79,7 +79,12 @@
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
+        GrpLoc.Visible = False
         txtcodigo.Enabled = False
+        txtcliente.Enabled = False
+        TxtNcli.Enabled = False
+        txtmarina.Enabled = False
+        TxtNmar.Enabled = False
         txtnome.Focus()
         BtnMar.Enabled = True
         novo = False
@@ -111,7 +116,10 @@
     Private Sub BtnOK_Click(sender As Object, e As EventArgs) Handles BtnOK.Click
         If objEmb.LocalizarPorCodigoOuNome(TxtLoc.Text) = True Then
             Call mostrar_DadosVindosDaClasse()
+            TxtNcli.Text = ""
+            TxtNmar.Text = ""
             objControle.habilitar_botoes(Me, True)
+            BtnMar.Enabled = False
         End If
         TxtLoc.Text = ""
         TxtLoc.Focus()
@@ -145,6 +153,30 @@
         rpt.SummaryInfo.ReportComments = "Relatório de Embarcação "
         rpt.Refresh()
         FrmImp.ShowDialog()
+
+    End Sub
+
+    Private Sub txtfabricacao_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtfabricacao.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
+    End Sub
+
+    Private Sub txtfabricacao_TextChanged(sender As Object, e As EventArgs) Handles txtfabricacao.TextChanged
+
+    End Sub
+
+    Private Sub txtcliente_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtcliente.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
+    End Sub
+
+    Private Sub txtcliente_TextChanged(sender As Object, e As EventArgs) Handles txtcliente.TextChanged
+
+    End Sub
+
+    Private Sub txtmarina_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtmarina.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
+    End Sub
+
+    Private Sub txtmarina_TextChanged(sender As Object, e As EventArgs) Handles txtmarina.TextChanged
 
     End Sub
 End Class
