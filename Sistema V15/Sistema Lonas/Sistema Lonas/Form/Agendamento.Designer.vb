@@ -49,11 +49,11 @@ Partial Class Agendamento
         Me.Label8 = New System.Windows.Forms.Label()
         Me.BtnOK = New System.Windows.Forms.Button()
         Me.TxtLoc = New System.Windows.Forms.TextBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GrpDat = New System.Windows.Forms.GroupBox()
         Me.btnEmbarcacao = New System.Windows.Forms.Button()
         Me.txtEmbarcacao = New System.Windows.Forms.TextBox()
         Me.GrpLoc.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.GrpDat.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtnomcli
@@ -63,7 +63,7 @@ Partial Class Agendamento
         Me.txtnomcli.Location = New System.Drawing.Point(384, 66)
         Me.txtnomcli.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtnomcli.Name = "txtnomcli"
-        Me.txtnomcli.Size = New System.Drawing.Size(262, 26)
+        Me.txtnomcli.Size = New System.Drawing.Size(262, 30)
         Me.txtnomcli.TabIndex = 79
         '
         'btnimp
@@ -81,7 +81,7 @@ Partial Class Agendamento
         Me.btnimp.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnimp.Name = "btnimp"
         Me.btnimp.Size = New System.Drawing.Size(124, 43)
-        Me.btnimp.TabIndex = 77
+        Me.btnimp.TabIndex = 7
         Me.btnimp.Text = "&Imprimir"
         Me.btnimp.UseVisualStyleBackColor = False
         '
@@ -100,7 +100,7 @@ Partial Class Agendamento
         Me.btnalt.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnalt.Name = "btnalt"
         Me.btnalt.Size = New System.Drawing.Size(124, 43)
-        Me.btnalt.TabIndex = 76
+        Me.btnalt.TabIndex = 5
         Me.btnalt.Text = "&Alterar"
         Me.btnalt.UseVisualStyleBackColor = False
         '
@@ -119,7 +119,7 @@ Partial Class Agendamento
         Me.btnsair.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnsair.Name = "btnsair"
         Me.btnsair.Size = New System.Drawing.Size(124, 43)
-        Me.btnsair.TabIndex = 75
+        Me.btnsair.TabIndex = 8
         Me.btnsair.Text = "Sai&r"
         Me.btnsair.UseVisualStyleBackColor = False
         '
@@ -138,7 +138,7 @@ Partial Class Agendamento
         Me.btncan.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btncan.Name = "btncan"
         Me.btncan.Size = New System.Drawing.Size(124, 43)
-        Me.btncan.TabIndex = 74
+        Me.btncan.TabIndex = 6
         Me.btncan.Text = "&Cancelar"
         Me.btncan.UseVisualStyleBackColor = False
         '
@@ -157,7 +157,7 @@ Partial Class Agendamento
         Me.btnloc.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnloc.Name = "btnloc"
         Me.btnloc.Size = New System.Drawing.Size(124, 43)
-        Me.btnloc.TabIndex = 73
+        Me.btnloc.TabIndex = 4
         Me.btnloc.Text = "&Localizar"
         Me.btnloc.UseVisualStyleBackColor = False
         '
@@ -176,7 +176,7 @@ Partial Class Agendamento
         Me.btnexc.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnexc.Name = "btnexc"
         Me.btnexc.Size = New System.Drawing.Size(124, 43)
-        Me.btnexc.TabIndex = 72
+        Me.btnexc.TabIndex = 3
         Me.btnexc.Text = "&Excluir"
         Me.btnexc.UseVisualStyleBackColor = False
         '
@@ -195,7 +195,7 @@ Partial Class Agendamento
         Me.btngra.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btngra.Name = "btngra"
         Me.btngra.Size = New System.Drawing.Size(124, 43)
-        Me.btngra.TabIndex = 71
+        Me.btngra.TabIndex = 2
         Me.btngra.Text = "&Gravar"
         Me.btngra.UseVisualStyleBackColor = False
         '
@@ -214,7 +214,7 @@ Partial Class Agendamento
         Me.btnnov.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnnov.Name = "btnnov"
         Me.btnnov.Size = New System.Drawing.Size(124, 43)
-        Me.btnnov.TabIndex = 70
+        Me.btnnov.TabIndex = 1
         Me.btnnov.Text = "&Novo"
         Me.btnnov.UseVisualStyleBackColor = False
         '
@@ -224,7 +224,7 @@ Partial Class Agendamento
         Me.txtcodemb.Location = New System.Drawing.Point(221, 256)
         Me.txtcodemb.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtcodemb.Name = "txtcodemb"
-        Me.txtcodemb.Size = New System.Drawing.Size(102, 26)
+        Me.txtcodemb.Size = New System.Drawing.Size(102, 30)
         Me.txtcodemb.TabIndex = 62
         '
         'Label7
@@ -235,7 +235,7 @@ Partial Class Agendamento
         Me.Label7.Location = New System.Drawing.Point(21, 256)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(198, 22)
+        Me.Label7.Size = New System.Drawing.Size(249, 29)
         Me.Label7.TabIndex = 69
         Me.Label7.Text = "Código da embarcação:"
         '
@@ -244,8 +244,8 @@ Partial Class Agendamento
         Me.dtpmed.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpmed.Location = New System.Drawing.Point(221, 212)
         Me.dtpmed.Name = "dtpmed"
-        Me.dtpmed.Size = New System.Drawing.Size(132, 26)
-        Me.dtpmed.TabIndex = 61
+        Me.dtpmed.Size = New System.Drawing.Size(132, 30)
+        Me.dtpmed.TabIndex = 14
         '
         'Label6
         '
@@ -255,7 +255,7 @@ Partial Class Agendamento
         Me.Label6.Location = New System.Drawing.Point(21, 212)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(152, 22)
+        Me.Label6.Size = New System.Drawing.Size(189, 29)
         Me.Label6.TabIndex = 68
         Me.Label6.Text = "Data da Medição:"
         '
@@ -267,7 +267,7 @@ Partial Class Agendamento
         Me.Label5.Location = New System.Drawing.Point(247, 33)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 23)
+        Me.Label5.Size = New System.Drawing.Size(110, 29)
         Me.Label5.TabIndex = 67
         Me.Label5.Text = "Maximo:"
         '
@@ -279,7 +279,7 @@ Partial Class Agendamento
         Me.Label4.Location = New System.Drawing.Point(25, 32)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(81, 23)
+        Me.Label4.Size = New System.Drawing.Size(106, 29)
         Me.Label4.TabIndex = 66
         Me.Label4.Text = "Mínimo:"
         '
@@ -288,8 +288,8 @@ Partial Class Agendamento
         Me.dtpprazomin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpprazomin.Location = New System.Drawing.Point(109, 29)
         Me.dtpprazomin.Name = "dtpprazomin"
-        Me.dtpprazomin.Size = New System.Drawing.Size(119, 30)
-        Me.dtpprazomin.TabIndex = 60
+        Me.dtpprazomin.Size = New System.Drawing.Size(119, 36)
+        Me.dtpprazomin.TabIndex = 12
         '
         'TxtCod
         '
@@ -297,8 +297,8 @@ Partial Class Agendamento
         Me.TxtCod.Location = New System.Drawing.Point(177, 22)
         Me.TxtCod.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TxtCod.Name = "TxtCod"
-        Me.TxtCod.Size = New System.Drawing.Size(188, 26)
-        Me.TxtCod.TabIndex = 57
+        Me.TxtCod.Size = New System.Drawing.Size(188, 30)
+        Me.TxtCod.TabIndex = 9
         '
         'Txtcodcli
         '
@@ -307,16 +307,16 @@ Partial Class Agendamento
         Me.Txtcodcli.Location = New System.Drawing.Point(177, 66)
         Me.Txtcodcli.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txtcodcli.Name = "Txtcodcli"
-        Me.Txtcodcli.Size = New System.Drawing.Size(146, 26)
-        Me.Txtcodcli.TabIndex = 58
+        Me.Txtcodcli.Size = New System.Drawing.Size(146, 30)
+        Me.Txtcodcli.TabIndex = 10
         '
         'dtpprazomax
         '
         Me.dtpprazomax.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpprazomax.Location = New System.Drawing.Point(335, 29)
         Me.dtpprazomax.Name = "dtpprazomax"
-        Me.dtpprazomax.Size = New System.Drawing.Size(119, 30)
-        Me.dtpprazomax.TabIndex = 59
+        Me.dtpprazomax.Size = New System.Drawing.Size(119, 36)
+        Me.dtpprazomax.TabIndex = 13
         '
         'Label3
         '
@@ -326,7 +326,7 @@ Partial Class Agendamento
         Me.Label3.Location = New System.Drawing.Point(15, 67)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(161, 22)
+        Me.Label3.Size = New System.Drawing.Size(202, 29)
         Me.Label3.TabIndex = 65
         Me.Label3.Text = "Código do Cliente:"
         '
@@ -338,7 +338,7 @@ Partial Class Agendamento
         Me.Label1.Location = New System.Drawing.Point(15, 24)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 22)
+        Me.Label1.Size = New System.Drawing.Size(93, 29)
         Me.Label1.TabIndex = 63
         Me.Label1.Text = "Código:"
         '
@@ -349,7 +349,7 @@ Partial Class Agendamento
         Me.BtnNom.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnNom.Name = "BtnNom"
         Me.BtnNom.Size = New System.Drawing.Size(45, 26)
-        Me.BtnNom.TabIndex = 80
+        Me.BtnNom.TabIndex = 10
         Me.BtnNom.Text = "..."
         Me.BtnNom.UseVisualStyleBackColor = True
         '
@@ -374,7 +374,7 @@ Partial Class Agendamento
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(12, 30)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(203, 21)
+        Me.Label8.Size = New System.Drawing.Size(257, 27)
         Me.Label8.TabIndex = 2
         Me.Label8.Text = "Digite o Código ou Nome"
         '
@@ -390,7 +390,7 @@ Partial Class Agendamento
         Me.BtnOK.Location = New System.Drawing.Point(160, 53)
         Me.BtnOK.Name = "BtnOK"
         Me.BtnOK.Size = New System.Drawing.Size(41, 26)
-        Me.BtnOK.TabIndex = 1
+        Me.BtnOK.TabIndex = 17
         Me.BtnOK.Text = "OK"
         Me.BtnOK.UseVisualStyleBackColor = False
         '
@@ -399,23 +399,23 @@ Partial Class Agendamento
         Me.TxtLoc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtLoc.Location = New System.Drawing.Point(16, 53)
         Me.TxtLoc.Name = "TxtLoc"
-        Me.TxtLoc.Size = New System.Drawing.Size(138, 26)
-        Me.TxtLoc.TabIndex = 0
+        Me.TxtLoc.Size = New System.Drawing.Size(138, 30)
+        Me.TxtLoc.TabIndex = 16
         '
-        'GroupBox1
+        'GrpDat
         '
-        Me.GroupBox1.Controls.Add(Me.dtpprazomin)
-        Me.GroupBox1.Controls.Add(Me.dtpprazomax)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(25, 110)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(471, 72)
-        Me.GroupBox1.TabIndex = 82
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Data do Agendamento"
+        Me.GrpDat.Controls.Add(Me.dtpprazomin)
+        Me.GrpDat.Controls.Add(Me.dtpprazomax)
+        Me.GrpDat.Controls.Add(Me.Label4)
+        Me.GrpDat.Controls.Add(Me.Label5)
+        Me.GrpDat.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrpDat.ForeColor = System.Drawing.Color.White
+        Me.GrpDat.Location = New System.Drawing.Point(25, 110)
+        Me.GrpDat.Name = "GrpDat"
+        Me.GrpDat.Size = New System.Drawing.Size(471, 72)
+        Me.GrpDat.TabIndex = 11
+        Me.GrpDat.TabStop = False
+        Me.GrpDat.Text = "Data do Agendamento"
         '
         'btnEmbarcacao
         '
@@ -424,7 +424,7 @@ Partial Class Agendamento
         Me.btnEmbarcacao.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnEmbarcacao.Name = "btnEmbarcacao"
         Me.btnEmbarcacao.Size = New System.Drawing.Size(45, 26)
-        Me.btnEmbarcacao.TabIndex = 83
+        Me.btnEmbarcacao.TabIndex = 15
         Me.btnEmbarcacao.Text = "..."
         Me.btnEmbarcacao.UseVisualStyleBackColor = True
         '
@@ -435,18 +435,18 @@ Partial Class Agendamento
         Me.txtEmbarcacao.Location = New System.Drawing.Point(384, 256)
         Me.txtEmbarcacao.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtEmbarcacao.Name = "txtEmbarcacao"
-        Me.txtEmbarcacao.Size = New System.Drawing.Size(262, 26)
+        Me.txtEmbarcacao.Size = New System.Drawing.Size(262, 30)
         Me.txtEmbarcacao.TabIndex = 84
         '
         'Agendamento
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(804, 448)
         Me.Controls.Add(Me.txtEmbarcacao)
         Me.Controls.Add(Me.btnEmbarcacao)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GrpDat)
         Me.Controls.Add(Me.GrpLoc)
         Me.Controls.Add(Me.BtnNom)
         Me.Controls.Add(Me.txtnomcli)
@@ -472,8 +472,8 @@ Partial Class Agendamento
         Me.Text = "Agendamento"
         Me.GrpLoc.ResumeLayout(False)
         Me.GrpLoc.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GrpDat.ResumeLayout(False)
+        Me.GrpDat.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -504,7 +504,7 @@ Partial Class Agendamento
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents BtnOK As System.Windows.Forms.Button
     Friend WithEvents TxtLoc As System.Windows.Forms.TextBox
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents GrpDat As System.Windows.Forms.GroupBox
     Friend WithEvents btnEmbarcacao As System.Windows.Forms.Button
     Friend WithEvents txtEmbarcacao As System.Windows.Forms.TextBox
 End Class

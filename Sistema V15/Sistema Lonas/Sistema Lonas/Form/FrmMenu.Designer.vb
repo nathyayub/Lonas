@@ -33,6 +33,7 @@ Partial Class FrmMenu
         Me.PedidoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmbarcaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelatorioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReláToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioGeralDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -64,7 +65,6 @@ Partial Class FrmMenu
         Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton10 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.CadastroDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -90,7 +90,7 @@ Partial Class FrmMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtDolar = New System.Windows.Forms.TextBox()
         Me.LblCodCli = New System.Windows.Forms.Label()
-        Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EstoqueToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
@@ -108,7 +108,7 @@ Partial Class FrmMenu
         'ConsultasToolStripMenuItem
         '
         resources.ApplyResources(Me.ConsultasToolStripMenuItem, "ConsultasToolStripMenuItem")
-        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.EmbarcaçãoMarinaToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoPorDataToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.FuncionariosToolStripMenuItem})
+        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.EmbarcaçãoMarinaToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoPorDataToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.EstoqueToolStripMenuItem1})
         Me.ConsultasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem"
         '
@@ -151,6 +151,11 @@ Partial Class FrmMenu
         '
         resources.ApplyResources(Me.EmbarcaçãoToolStripMenuItem, "EmbarcaçãoToolStripMenuItem")
         Me.EmbarcaçãoToolStripMenuItem.Name = "EmbarcaçãoToolStripMenuItem"
+        '
+        'FuncionariosToolStripMenuItem
+        '
+        resources.ApplyResources(Me.FuncionariosToolStripMenuItem, "FuncionariosToolStripMenuItem")
+        Me.FuncionariosToolStripMenuItem.Name = "FuncionariosToolStripMenuItem"
         '
         'RelatorioToolStripMenuItem
         '
@@ -241,7 +246,7 @@ Partial Class FrmMenu
         Me.ToolStrip1.BackColor = System.Drawing.Color.Brown
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(56, 56)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator11, Me.ToolStripButton12, Me.ToolStripSeparator13, Me.ToolStripButton1, Me.ToolStripSeparator10, Me.ToolStripButton8, Me.ToolStripSeparator2, Me.TooMarina, Me.ToolStripSeparator14, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripButton6, Me.ToolStripSeparator7, Me.ToolStripButton10, Me.ToolStripSeparator6, Me.ToolStripButton4, Me.ToolStripSeparator1, Me.ToolStripSplitButton1, Me.ToolStripSeparator4, Me.ToolStripButton9, Me.ToolStripSeparator5, Me.ToolStripButton11, Me.ToolStripSeparator9, Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripButton5, Me.ToolStripSeparator12})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator11, Me.ToolStripButton12, Me.ToolStripSeparator13, Me.ToolStripButton1, Me.ToolStripSeparator10, Me.ToolStripButton8, Me.ToolStripSeparator2, Me.TooMarina, Me.ToolStripSeparator14, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripButton6, Me.ToolStripSeparator7, Me.ToolStripButton10, Me.ToolStripSeparator6, Me.ToolStripSeparator1, Me.ToolStripSplitButton1, Me.ToolStripSeparator4, Me.ToolStripButton9, Me.ToolStripSeparator5, Me.ToolStripButton11, Me.ToolStripSeparator9, Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripButton5, Me.ToolStripSeparator12})
         Me.ToolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
@@ -342,14 +347,6 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.ToolStripSeparator6, "ToolStripSeparator6")
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
         '
-        'ToolStripButton4
-        '
-        resources.ApplyResources(Me.ToolStripButton4, "ToolStripButton4")
-        Me.ToolStripButton4.BackColor = System.Drawing.Color.Brown
-        Me.ToolStripButton4.ForeColor = System.Drawing.Color.White
-        Me.ToolStripButton4.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        '
         'ToolStripSeparator1
         '
         resources.ApplyResources(Me.ToolStripSeparator1, "ToolStripSeparator1")
@@ -359,7 +356,7 @@ Partial Class FrmMenu
         '
         resources.ApplyResources(Me.ToolStripSplitButton1, "ToolStripSplitButton1")
         Me.ToolStripSplitButton1.BackColor = System.Drawing.Color.Brown
-        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastroDeMateriaisToolStripMenuItem, Me.EntradaDeMaterialToolStripMenuItem, Me.EstoqueToolStripMenuItem, Me.SaídaDeMaterialToolStripMenuItem})
+        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EstoqueToolStripMenuItem, Me.CadastroDeMateriaisToolStripMenuItem, Me.EntradaDeMaterialToolStripMenuItem, Me.SaídaDeMaterialToolStripMenuItem})
         Me.ToolStripSplitButton1.ForeColor = System.Drawing.Color.White
         Me.ToolStripSplitButton1.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
@@ -507,10 +504,10 @@ Partial Class FrmMenu
         Me.LblCodCli.ForeColor = System.Drawing.Color.White
         Me.LblCodCli.Name = "LblCodCli"
         '
-        'FuncionariosToolStripMenuItem
+        'EstoqueToolStripMenuItem1
         '
-        resources.ApplyResources(Me.FuncionariosToolStripMenuItem, "FuncionariosToolStripMenuItem")
-        Me.FuncionariosToolStripMenuItem.Name = "FuncionariosToolStripMenuItem"
+        resources.ApplyResources(Me.EstoqueToolStripMenuItem1, "EstoqueToolStripMenuItem1")
+        Me.EstoqueToolStripMenuItem1.Name = "EstoqueToolStripMenuItem1"
         '
         'FrmMenu
         '
@@ -546,7 +543,6 @@ Partial Class FrmMenu
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton3 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton5 As System.Windows.Forms.ToolStripButton
     Friend WithEvents lbldolar As System.Windows.Forms.Label
     Friend WithEvents lbleuro As System.Windows.Forms.Label
@@ -607,5 +603,6 @@ Partial Class FrmMenu
     Friend WithEvents LblCodCli As System.Windows.Forms.Label
     Friend WithEvents EmbarcaçãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FuncionariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EstoqueToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 
 End Class

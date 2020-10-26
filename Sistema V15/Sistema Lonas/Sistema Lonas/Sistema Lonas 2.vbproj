@@ -105,6 +105,7 @@
     <Compile Include="Class\ClsControle.vb" />
     <Compile Include="Class\ClsDespesa.vb" />
     <Compile Include="Class\ClsEmbarcacao.vb" />
+    <Compile Include="Class\ClsEstoque.vb" />
     <Compile Include="Class\ClsFornecedor.vb" />
     <Compile Include="Class\ClsFuncionario.vb" />
     <Compile Include="Class\ClsMarina.vb" />

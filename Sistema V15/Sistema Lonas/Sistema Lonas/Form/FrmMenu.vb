@@ -28,7 +28,7 @@ Public Class FrmMenu
         Agendamento.Show()
         Agendamento.MdiParent = Me
     End Sub
-    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
+    Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs)
         Materiais.Show()
         Materiais.MdiParent = Me
     End Sub
@@ -199,5 +199,10 @@ Public Class FrmMenu
     Private Sub FuncionariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FuncionariosToolStripMenuItem.Click
         ConsultaFuncionario.Show()
         ConsultaFuncionario.MdiParent = Me
+    End Sub
+
+    Private Sub EstoqueToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EstoqueToolStripMenuItem1.Click
+        Materiais.Show()
+        Materiais.MdiParent = Me
     End Sub
 End Class

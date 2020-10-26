@@ -16,7 +16,7 @@
         btnimp.Enabled = False
         GrpLoc.Visible = False
         BtnNom.Enabled = False
-        GroupBox1.Enabled = False
+        GrpDat.Enabled = False
         btnEmbarcacao.Enabled = False
 
     End Sub
@@ -27,7 +27,7 @@
         objControle.habilitar_botoes(Me, False)
         TxtCod.Enabled = False
         BtnNom.Enabled = True
-        GroupBox1.Enabled = True
+        GrpDat.Enabled = True
         Txtcodcli.Enabled = False
         txtnomcli.Enabled = False
         txtcodemb.Enabled = False
@@ -56,9 +56,12 @@
             objAg.Embarcacao = txtcodemb.Text
             objAg.Gravar(novo)
             TxtCod.Text = objAg.Codigo
-
+            dtpprazomin.Enabled = False
+            dtpprazomax.Enabled = False
             objControle.habilitar_tela(Me, False)
             objControle.habilitar_botoes(Me, True)
+            BtnNom.Enabled = False
+            btnEmbarcacao.Enabled = False
         End If
     End Sub
 
@@ -97,9 +100,17 @@
     Private Sub btnalt_Click(sender As Object, e As EventArgs) Handles btnalt.Click
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
+        GrpDat.Enabled = True
         TxtCod.Enabled = False
+        txtnomcli.Enabled = False
+        txtcodemb.Enabled = False
+        BtnNom.Enabled = True
+        btnEmbarcacao.Enabled = True
+        txtEmbarcacao.Enabled = False
+        Txtcodcli.Enabled = False
         Txtcodcli.Focus()
         novo = True
+        GrpLoc.Visible = False
     End Sub
 
     Private Sub BtnNom_Click(sender As Object, e As EventArgs) Handles BtnNom.Click
@@ -120,6 +131,8 @@
         If objAg.LocalizarPorCodigoOuNome(TxtLoc.Text) = True Then
             Call mostrar_DadosVindosDaClasse()
             objControle.habilitar_botoes(Me, True)
+            btnEmbarcacao.Enabled = False
+            BtnNom.Enabled = False
         End If
         TxtLoc.Text = ""
         TxtLoc.Focus()

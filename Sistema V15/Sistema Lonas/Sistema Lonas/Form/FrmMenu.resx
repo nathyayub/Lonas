@@ -491,6 +491,9 @@
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="EstoqueToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 26</value>
+  </data>
   <data name="&gt;&gt;EstoqueToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -574,6 +577,9 @@
   </data>
   <data name="RelátorioAgendamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 24</value>
+  </data>
+  <data name="&gt;&gt;EstoqueToolStripMenuItem1.Name" xml:space="preserve">
+    <value>EstoqueToolStripMenuItem1</value>
   </data>
   <data name="ToolStripSeparator10.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
@@ -667,6 +673,9 @@
   </data>
   <data name="ToolStripSeparator14.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
+  </data>
+  <data name="&gt;&gt;EstoqueToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ReláToolStripMenuItem.Name" xml:space="preserve">
     <value>ReláToolStripMenuItem</value>
@@ -1236,6 +1245,9 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmMenu</value>
   </data>
+  <data name="&gt;&gt;lbldolar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ToolStripSeparator13.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
   </data>
@@ -1340,9 +1352,6 @@
   </data>
   <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
     <value>HelpToolStripMenuItem</value>
-  </data>
-  <data name="ToolStripButton6.Text" xml:space="preserve">
-    <value>Pedidos</value>
   </data>
   <data name="&gt;&gt;EntradaDeMaterialToolStripMenuItem.Name" xml:space="preserve">
     <value>EntradaDeMaterialToolStripMenuItem</value>
@@ -1584,8 +1593,8 @@
   <data name="RelatorioToolStripMenuItem.Text" xml:space="preserve">
     <value>Relatorio</value>
   </data>
-  <data name="&gt;&gt;lbldolar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ToolStripButton6.Text" xml:space="preserve">
+    <value>Pedidos</value>
   </data>
   <data name="&gt;&gt;Label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

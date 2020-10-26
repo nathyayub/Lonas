@@ -44,8 +44,11 @@
         ElseIf MskVal.Text = "" Then
             MsgBox("Digite o valor do pedido!")
             MskVal.Focus()
+        ElseIf MskVal.Text = "" Then
+            MsgBox("Digite o valor do pedido!")
+            MskVal.Focus()
         ElseIf DtaPed.Value > DtaMax.Value Or DtaPed.Value < DtaMin.Value Then
-            MsgBox("Não é possivel que a data da medicao seja essa data!")
+            MsgBox("Não é possivel que a medição seja essa data!")
             TxtCodCli.Focus()
         Else
             objPed.Codigo = Val(TxtCod.Text)
