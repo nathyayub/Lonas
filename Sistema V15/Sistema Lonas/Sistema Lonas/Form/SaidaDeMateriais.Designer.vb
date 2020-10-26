@@ -48,7 +48,7 @@ Partial Class SaidaDeMateriais
         'BtnMat
         '
         Me.BtnMat.Location = New System.Drawing.Point(261, 11)
-        Me.BtnMat.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnMat.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMat.Name = "BtnMat"
         Me.BtnMat.Size = New System.Drawing.Size(47, 26)
         Me.BtnMat.TabIndex = 144
@@ -60,7 +60,7 @@ Partial Class SaidaDeMateriais
         Me.DtaRet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtaRet.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DtaRet.Location = New System.Drawing.Point(188, 91)
-        Me.DtaRet.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DtaRet.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaRet.Name = "DtaRet"
         Me.DtaRet.Size = New System.Drawing.Size(120, 26)
         Me.DtaRet.TabIndex = 143
@@ -87,7 +87,7 @@ Partial Class SaidaDeMateriais
         Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAlt.Location = New System.Drawing.Point(825, 164)
+        Me.BtnAlt.Location = New System.Drawing.Point(728, 164)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
         Me.BtnAlt.TabIndex = 141
@@ -105,7 +105,7 @@ Partial Class SaidaDeMateriais
         Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCan.Location = New System.Drawing.Point(825, 115)
+        Me.BtnCan.Location = New System.Drawing.Point(728, 115)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
         Me.BtnCan.TabIndex = 140
@@ -139,7 +139,7 @@ Partial Class SaidaDeMateriais
         Me.BtnGra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGra.Location = New System.Drawing.Point(825, 65)
+        Me.BtnGra.Location = New System.Drawing.Point(728, 65)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
         Me.BtnGra.TabIndex = 138
@@ -157,7 +157,7 @@ Partial Class SaidaDeMateriais
         Me.BtnNov.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnNov.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNov.Location = New System.Drawing.Point(825, 15)
+        Me.BtnNov.Location = New System.Drawing.Point(728, 15)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
         Me.BtnNov.TabIndex = 137
@@ -230,7 +230,7 @@ Partial Class SaidaDeMateriais
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Material, Me.QuantidadeMinima, Me.UltimoReabastecimento})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DgdGrade.Location = New System.Drawing.Point(9, 142)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(2)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.RowTemplate.Height = 24
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -270,7 +270,7 @@ Partial Class SaidaDeMateriais
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(959, 441)
+        Me.ClientSize = New System.Drawing.Size(862, 441)
         Me.Controls.Add(Me.BtnMat)
         Me.Controls.Add(Me.DtaRet)
         Me.Controls.Add(Me.Label8)
@@ -287,7 +287,7 @@ Partial Class SaidaDeMateriais
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "SaidaDeMateriais"
         Me.Text = "Saída De Materiais"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()

@@ -48,10 +48,10 @@ Partial Class ConsultaDespesasStr
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodcontPag, Me.tipo, Me.Nome, Me.Valor, Me.Venc, Me.Desc, Me.Quita})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(26, 79)
+        Me.DgdGrade.Location = New System.Drawing.Point(19, 55)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgdGrade.Size = New System.Drawing.Size(908, 450)
+        Me.DgdGrade.Size = New System.Drawing.Size(779, 433)
         Me.DgdGrade.TabIndex = 12
         '
         'CodcontPag
@@ -102,7 +102,7 @@ Partial Class ConsultaDespesasStr
         '
         Me.DtpFin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtpFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtpFin.Location = New System.Drawing.Point(500, 35)
+        Me.DtpFin.Location = New System.Drawing.Point(373, 21)
         Me.DtpFin.Name = "DtpFin"
         Me.DtpFin.Size = New System.Drawing.Size(120, 26)
         Me.DtpFin.TabIndex = 11
@@ -111,7 +111,7 @@ Partial Class ConsultaDespesasStr
         '
         Me.DtpIni.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtpIni.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtpIni.Location = New System.Drawing.Point(233, 35)
+        Me.DtpIni.Location = New System.Drawing.Point(139, 20)
         Me.DtpIni.Name = "DtpIni"
         Me.DtpIni.Size = New System.Drawing.Size(102, 26)
         Me.DtpIni.TabIndex = 10
@@ -126,9 +126,9 @@ Partial Class ConsultaDespesasStr
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(655, 28)
+        Me.Button1.Location = New System.Drawing.Point(662, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(150, 45)
+        Me.Button1.Size = New System.Drawing.Size(136, 39)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "OK"
         Me.Button1.UseVisualStyleBackColor = False
@@ -138,22 +138,22 @@ Partial Class ConsultaDespesasStr
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(397, 39)
+        Me.Label2.Location = New System.Drawing.Point(270, 24)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 22)
+        Me.Label2.Size = New System.Drawing.Size(102, 22)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Data Final"
+        Me.Label2.Text = "Data Final:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(121, 39)
+        Me.Label1.Location = New System.Drawing.Point(22, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(106, 22)
+        Me.Label1.Size = New System.Drawing.Size(111, 22)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Data Inicial"
+        Me.Label1.Text = "Data Inicial:"
         '
         'btnimprimir
         '
@@ -169,7 +169,7 @@ Partial Class ConsultaDespesasStr
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(959, 561)
+        Me.ClientSize = New System.Drawing.Size(814, 511)
         Me.Controls.Add(Me.btnimprimir)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.DtpFin)

@@ -498,3 +498,5 @@ C:\Users\vinic\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj
 C:\Users\vinic\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.FrmMenu.pt-BR.resources
 C:\Users\vinic\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas 2.vbproj.GenerateResource.Cache
 C:\Users\vinic\Desktop\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\pt-BR\Sistema Lonas.resources.dll
+C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEntradaMatRelat.resources
+C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema V15\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaSaidaMatRelat.resources

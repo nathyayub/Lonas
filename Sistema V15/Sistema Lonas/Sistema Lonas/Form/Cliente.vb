@@ -28,6 +28,8 @@
         objControle.habilitar_botoes(Me, False)
         TxtCod.Enabled = False
         TxtIns.Enabled = False
+        TxtCNPJ.Enabled = True
+        TxtIns.Enabled = True
         TxtNom.Focus()
         novo = True
     End Sub

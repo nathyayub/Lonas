@@ -90,6 +90,7 @@ Partial Class FrmMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtDolar = New System.Windows.Forms.TextBox()
         Me.LblCodCli = New System.Windows.Forms.Label()
+        Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
@@ -107,7 +108,7 @@ Partial Class FrmMenu
         'ConsultasToolStripMenuItem
         '
         resources.ApplyResources(Me.ConsultasToolStripMenuItem, "ConsultasToolStripMenuItem")
-        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.EmbarcaçãoMarinaToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoPorDataToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem})
+        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.EmbarcaçãoMarinaToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoPorDataToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.FuncionariosToolStripMenuItem})
         Me.ConsultasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem"
         '
@@ -506,6 +507,11 @@ Partial Class FrmMenu
         Me.LblCodCli.ForeColor = System.Drawing.Color.White
         Me.LblCodCli.Name = "LblCodCli"
         '
+        'FuncionariosToolStripMenuItem
+        '
+        resources.ApplyResources(Me.FuncionariosToolStripMenuItem, "FuncionariosToolStripMenuItem")
+        Me.FuncionariosToolStripMenuItem.Name = "FuncionariosToolStripMenuItem"
+        '
         'FrmMenu
         '
         resources.ApplyResources(Me, "$this")
@@ -600,5 +606,6 @@ Partial Class FrmMenu
     Friend WithEvents txtDolar As System.Windows.Forms.TextBox
     Friend WithEvents LblCodCli As System.Windows.Forms.Label
     Friend WithEvents EmbarcaçãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FuncionariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

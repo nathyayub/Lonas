@@ -57,7 +57,7 @@ Partial Class Funcionarios
         'TxtCod
         '
         Me.TxtCod.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCod.ForeColor = System.Drawing.Color.White
+        Me.TxtCod.ForeColor = System.Drawing.Color.Black
         Me.TxtCod.Location = New System.Drawing.Point(175, 23)
         Me.TxtCod.Name = "TxtCod"
         Me.TxtCod.Size = New System.Drawing.Size(127, 26)
@@ -78,7 +78,7 @@ Partial Class Funcionarios
         '
         Me.TxtNom.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNom.ForeColor = System.Drawing.Color.White
+        Me.TxtNom.ForeColor = System.Drawing.Color.Black
         Me.TxtNom.Location = New System.Drawing.Point(175, 65)
         Me.TxtNom.Name = "TxtNom"
         Me.TxtNom.Size = New System.Drawing.Size(250, 26)
@@ -99,7 +99,7 @@ Partial Class Funcionarios
         '
         Me.TxtHor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtHor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtHor.ForeColor = System.Drawing.Color.White
+        Me.TxtHor.ForeColor = System.Drawing.Color.Black
         Me.TxtHor.Location = New System.Drawing.Point(175, 110)
         Me.TxtHor.Name = "TxtHor"
         Me.TxtHor.Size = New System.Drawing.Size(127, 26)
@@ -131,7 +131,7 @@ Partial Class Funcionarios
         '
         Me.TxtEma.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.TxtEma.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEma.ForeColor = System.Drawing.Color.White
+        Me.TxtEma.ForeColor = System.Drawing.Color.Black
         Me.TxtEma.Location = New System.Drawing.Point(175, 200)
         Me.TxtEma.Name = "TxtEma"
         Me.TxtEma.Size = New System.Drawing.Size(250, 26)
@@ -152,7 +152,7 @@ Partial Class Funcionarios
         '
         Me.TxtDta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtDta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDta.ForeColor = System.Drawing.Color.White
+        Me.TxtDta.ForeColor = System.Drawing.Color.Black
         Me.TxtDta.Location = New System.Drawing.Point(175, 284)
         Me.TxtDta.Name = "TxtDta"
         Me.TxtDta.Size = New System.Drawing.Size(152, 26)
@@ -173,7 +173,7 @@ Partial Class Funcionarios
         '
         Me.TxtRg.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtRg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtRg.ForeColor = System.Drawing.Color.White
+        Me.TxtRg.ForeColor = System.Drawing.Color.Black
         Me.TxtRg.Location = New System.Drawing.Point(175, 242)
         Me.TxtRg.Name = "TxtRg"
         Me.TxtRg.Size = New System.Drawing.Size(127, 26)
@@ -235,7 +235,7 @@ Partial Class Funcionarios
         '
         Me.TxtAra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtAra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtAra.ForeColor = System.Drawing.Color.White
+        Me.TxtAra.ForeColor = System.Drawing.Color.Black
         Me.TxtAra.Location = New System.Drawing.Point(175, 326)
         Me.TxtAra.Name = "TxtAra"
         Me.TxtAra.Size = New System.Drawing.Size(152, 26)
@@ -255,7 +255,7 @@ Partial Class Funcionarios
         'MskTel
         '
         Me.MskTel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MskTel.ForeColor = System.Drawing.Color.White
+        Me.MskTel.ForeColor = System.Drawing.Color.Black
         Me.MskTel.Location = New System.Drawing.Point(175, 157)
         Me.MskTel.Margin = New System.Windows.Forms.Padding(2)
         Me.MskTel.Mask = "(99) 00000-0000"

@@ -196,4 +196,8 @@ Public Class FrmMenu
     End Sub
 
    
+    Private Sub FuncionariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FuncionariosToolStripMenuItem.Click
+        ConsultaFuncionario.Show()
+        ConsultaFuncionario.MdiParent = Me
+    End Sub
 End Class

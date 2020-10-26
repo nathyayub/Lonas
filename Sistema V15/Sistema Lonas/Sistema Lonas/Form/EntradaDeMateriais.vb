@@ -62,7 +62,10 @@
         BtnMat.Enabled = True
         BtnFor.Enabled = True
         BtnEst.Enabled = True
-
+        TxtCodFor.Enabled = False
+        TxtNomFor.Enabled = False
+        TxtCodMat.Enabled = False
+        TxtNomMat.Enabled = False
 
     End Sub
 

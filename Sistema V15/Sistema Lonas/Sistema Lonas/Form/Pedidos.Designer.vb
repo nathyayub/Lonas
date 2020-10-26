@@ -294,6 +294,7 @@ Partial Class Pedidos
         Me.MskVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MskVal.Location = New System.Drawing.Point(156, 138)
         Me.MskVal.Margin = New System.Windows.Forms.Padding(2)
+        Me.MskVal.Mask = "$999999999"
         Me.MskVal.Name = "MskVal"
         Me.MskVal.Size = New System.Drawing.Size(151, 26)
         Me.MskVal.TabIndex = 59
