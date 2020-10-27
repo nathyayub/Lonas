@@ -34,12 +34,19 @@ Partial Class ConsultaSaidaMatRelat
         '
         'btnimprimir
         '
-        Me.btnimprimir.Location = New System.Drawing.Point(627, 35)
+        Me.btnimprimir.BackColor = System.Drawing.Color.Silver
+        Me.btnimprimir.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnimprimir.FlatAppearance.BorderSize = 2
+        Me.btnimprimir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnimprimir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnimprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnimprimir.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnimprimir.Location = New System.Drawing.Point(617, 32)
         Me.btnimprimir.Name = "btnimprimir"
-        Me.btnimprimir.Size = New System.Drawing.Size(91, 29)
+        Me.btnimprimir.Size = New System.Drawing.Size(97, 36)
         Me.btnimprimir.TabIndex = 32
         Me.btnimprimir.Text = "Imprimir"
-        Me.btnimprimir.UseVisualStyleBackColor = True
+        Me.btnimprimir.UseVisualStyleBackColor = False
         '
         'DgdGrade
         '
@@ -81,9 +88,9 @@ Partial Class ConsultaSaidaMatRelat
         Me.btnok.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnok.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnok.Location = New System.Drawing.Point(481, 33)
+        Me.btnok.Location = New System.Drawing.Point(502, 32)
         Me.btnok.Name = "btnok"
-        Me.btnok.Size = New System.Drawing.Size(64, 31)
+        Me.btnok.Size = New System.Drawing.Size(97, 36)
         Me.btnok.TabIndex = 28
         Me.btnok.Text = "OK"
         Me.btnok.UseVisualStyleBackColor = False

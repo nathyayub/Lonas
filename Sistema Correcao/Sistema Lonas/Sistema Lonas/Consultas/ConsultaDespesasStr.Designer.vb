@@ -126,9 +126,9 @@ Partial Class ConsultaDespesasStr
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(662, 12)
+        Me.Button1.Location = New System.Drawing.Point(511, 16)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(136, 39)
+        Me.Button1.Size = New System.Drawing.Size(119, 35)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "OK"
         Me.Button1.UseVisualStyleBackColor = False
@@ -157,19 +157,27 @@ Partial Class ConsultaDespesasStr
         '
         'btnimprimir
         '
-        Me.btnimprimir.Location = New System.Drawing.Point(828, 28)
+        Me.btnimprimir.BackColor = System.Drawing.Color.Silver
+        Me.btnimprimir.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnimprimir.FlatAppearance.BorderSize = 2
+        Me.btnimprimir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnimprimir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnimprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnimprimir.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnimprimir.ForeColor = System.Drawing.Color.Black
+        Me.btnimprimir.Location = New System.Drawing.Point(654, 16)
         Me.btnimprimir.Name = "btnimprimir"
-        Me.btnimprimir.Size = New System.Drawing.Size(106, 45)
+        Me.btnimprimir.Size = New System.Drawing.Size(119, 35)
         Me.btnimprimir.TabIndex = 13
-        Me.btnimprimir.Text = "imprimir"
-        Me.btnimprimir.UseVisualStyleBackColor = True
+        Me.btnimprimir.Text = "Imprimir"
+        Me.btnimprimir.UseVisualStyleBackColor = False
         '
         'ConsultaDespesasStr
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(814, 511)
+        Me.ClientSize = New System.Drawing.Size(826, 506)
         Me.Controls.Add(Me.btnimprimir)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.DtpFin)

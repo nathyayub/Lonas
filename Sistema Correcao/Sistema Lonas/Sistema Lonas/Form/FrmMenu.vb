@@ -83,26 +83,12 @@ Public Class FrmMenu
         ConsultaPedido.MdiParent = Me
     End Sub
 
-    Private Sub ToolStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles ToolStrip1.ItemClicked
-
-    End Sub
-
-
     Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
         Close()
     End Sub
 
     Private Sub SairToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairToolStripMenuItem.Click
         Close()
-
-    End Sub
-
-
-    Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub ToolStripSplitButton1_ButtonClick(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -137,34 +123,16 @@ Public Class FrmMenu
     End Sub
 
 
-    Private Sub RelátorioGeralDeClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioGeralDeClienteToolStripMenuItem.Click
+    Private Sub RelátorioGeralDeClienteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim rpt As New CrpClientes
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Cliente "
-        rpt.Refresh()
+        'rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
-    Private Sub RelátorioGeralDeDespesasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioGeralDeDespesasToolStripMenuItem.Click
-        Dim rpt As New CrpDespesas
-        FrmImp.CrystalReportViewer1.ReportSource = rpt
-        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
-        rpt.SummaryInfo.ReportComments = "Relatório de Despesas "
-        rpt.Refresh()
-        FrmImp.ShowDialog()
-    End Sub
-
-    Private Sub RelátorioGeralDeEmbarcaçãoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioGeralDeEmbarcaçãoToolStripMenuItem.Click
-        Dim rpt As New CrpEmbarcacao
-        FrmImp.CrystalReportViewer1.ReportSource = rpt
-        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
-        rpt.SummaryInfo.ReportComments = "Relatório de Embarcação"
-        rpt.Refresh()
-        FrmImp.ShowDialog()
-    End Sub
-
-    Private Sub EvolucaçãoProdutoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EvolucaçãoProdutoToolStripMenuItem.Click
+    Private Sub EvolucaçãoProdutoToolStripMenuItem_Click(sender As Object, e As EventArgs)
     End Sub
 
     Private Sub ToolStripButton11_Click(sender As Object, e As EventArgs) Handles ToolStripButton11.Click
@@ -175,19 +143,6 @@ Public Class FrmMenu
     Private Sub PedidoPorDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PedidoPorDataToolStripMenuItem.Click
         ConsultaPedidoPorData.Show()
         ConsultaPedidoPorData.MdiParent = Me
-    End Sub
-
-
-    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub TxtEuro_TextChanged(sender As Object, e As EventArgs) Handles TxtEuro.TextChanged
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
     End Sub
 
     Private Sub EmbarcaçãoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmbarcaçãoToolStripMenuItem.Click
@@ -205,4 +160,79 @@ Public Class FrmMenu
         Materiais.Show()
         Materiais.MdiParent = Me
     End Sub
+
+    Private Sub RelátorioPedidoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioPedidoToolStripMenuItem.Click
+        Dim rpt As New CrpPedidos
+        FrmImp.CrystalReportViewer1.ReportSource = rpt
+        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
+        rpt.SummaryInfo.ReportComments = "Relatório de Pedidos"
+        'rpt.Refresh()
+        FrmImp.ShowDialog()
+    End Sub
+
+    Private Sub RelátorioFornecedorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioFornecedorToolStripMenuItem.Click
+        Dim rpt As New CrpFornecedor
+        FrmImp.CrystalReportViewer1.ReportSource = rpt
+        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
+        rpt.SummaryInfo.ReportComments = "Relatório de Fornecedores"
+        'rpt.Refresh()
+        FrmImp.ShowDialog()
+    End Sub
+
+    Private Sub SaídaDeMateriaisToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaídaDeMateriaisToolStripMenuItem.Click
+        ConsultaSaidaMatRelat.Show()
+        ConsultaSaidaMatRelat.MdiParent = Me
+    End Sub
+
+    Private Sub EntradaDeMateriaisToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EntradaDeMateriaisToolStripMenuItem.Click
+        ConsultaEntradaMatRelat.Show()
+        ConsultaEntradaMatRelat.MdiParent = Me
+    End Sub
+
+    Private Sub RelátorioClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioClienteToolStripMenuItem.Click
+        Dim rpt As New CrpClientes
+        FrmImp.CrystalReportViewer1.ReportSource = rpt
+        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
+        rpt.SummaryInfo.ReportComments = "Relatório de Clientes"
+        'rpt.Refresh()
+        FrmImp.ShowDialog()
+    End Sub
+
+    Private Sub RelátorioEmbacaçãoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioEmbacaçãoToolStripMenuItem.Click
+        Dim rpt As New CrpEmbarcacao
+        FrmImp.CrystalReportViewer1.ReportSource = rpt
+        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
+        rpt.SummaryInfo.ReportComments = "Relatório de Embarcação"
+        'rpt.Refresh()
+        FrmImp.ShowDialog()
+    End Sub
+
+    Private Sub RelátorioGeralDePedidosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioGeralDePedidosToolStripMenuItem.Click
+        Dim rpt As New CrpPedidos
+        FrmImp.CrystalReportViewer1.ReportSource = rpt
+        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
+        rpt.SummaryInfo.ReportComments = "Relatório de Pedidos "
+        'rpt.Refresh()
+        FrmImp.ShowDialog()
+    End Sub
+
+    Private Sub RelátorioDePedidosPorDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioDePedidosPorDataToolStripMenuItem.Click
+        ConsultaPedidoPorData.Show()
+        ConsultaPedidoPorData.MdiParent = Me
+    End Sub
+
+    Private Sub RelátorioGeralDeDespesasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioGeralDeDespesasToolStripMenuItem.Click
+        Dim rpt As New CrpDespesas
+        FrmImp.CrystalReportViewer1.ReportSource = rpt
+        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
+        rpt.SummaryInfo.ReportComments = "Relatório de Despesas "
+        'rpt.Refresh()
+        FrmImp.ShowDialog()
+    End Sub
+
+    Private Sub RelátorioDeDespesasPorDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioDeDespesasPorDataToolStripMenuItem.Click
+        ConsultaDespesasStr.Show()
+        ConsultaDespesasStr.MdiParent = Me
+    End Sub
+
 End Class

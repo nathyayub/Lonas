@@ -109,22 +109,23 @@ Partial Class Cliente
         Me.TxtEst.Location = New System.Drawing.Point(174, 415)
         Me.TxtEst.MaxLength = 2
         Me.TxtEst.Name = "TxtEst"
-        Me.TxtEst.Size = New System.Drawing.Size(204, 26)
+        Me.TxtEst.Size = New System.Drawing.Size(48, 26)
         Me.TxtEst.TabIndex = 9
         '
         'TxtCid
         '
         Me.TxtCid.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtCid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCid.Location = New System.Drawing.Point(174, 453)
+        Me.TxtCid.Location = New System.Drawing.Point(174, 454)
         Me.TxtCid.Name = "TxtCid"
-        Me.TxtCid.Size = New System.Drawing.Size(204, 26)
+        Me.TxtCid.Size = New System.Drawing.Size(247, 26)
         Me.TxtCid.TabIndex = 10
         '
         'TxtCep
         '
         Me.TxtCep.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCep.Location = New System.Drawing.Point(174, 492)
+        Me.TxtCep.MaxLength = 8
         Me.TxtCep.Name = "TxtCep"
         Me.TxtCep.Size = New System.Drawing.Size(204, 26)
         Me.TxtCep.TabIndex = 11
@@ -558,7 +559,7 @@ Partial Class Cliente
         Me.Controls.Add(Me.BtnNov)
         Me.ForeColor = System.Drawing.Color.White
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Cliente"
         Me.Text = "cliente"
         Me.GrpLoc.ResumeLayout(False)

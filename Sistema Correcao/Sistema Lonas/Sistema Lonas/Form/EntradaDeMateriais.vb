@@ -12,19 +12,6 @@
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-        If TxtCodMat.Text = "" Then
-            MsgBox("Digite o código do produto!")
-            TxtCodMat.Focus()
-        ElseIf TxtCom.Text = "" Then
-            MsgBox("Digite a quantidade comprada!")
-            TxtCom.Focus()
-        ElseIf MskVal.Text = "" Then
-            MsgBox("Digite o valor da unidade ou metro!")
-            MskVal.Focus()
-        ElseIf TxtCodFor.Text = "" Then
-            MsgBox("Digite o código do fornecedor!")
-            TxtCodFor.Focus()
-        Else
             For x = 0 To DgdGrade.Rows.Count - 1
 
                 objEnt.Material = DgdGrade.Rows(x).Cells(0).Value
@@ -40,9 +27,16 @@
 
                 objEnt.Gravar()
 
+            TxtCodMat.Clear()
+            TxtNomMat.Clear()
+            TxtCodFor.Clear()
+            TxtNomFor.Clear()
+            MskVal.Clear()
+            TxtCom.Clear()
+            DgdGrade.Rows.Clear()
+            MessageBox.Show("Gravado com sucesso!")
 
             Next
-        End If
     End Sub
 
     Private Sub EntradaDeMateriais_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -51,8 +45,8 @@
         BtnMat.Enabled = False
         BtnFor.Enabled = False
         BtnEst.Enabled = False
-
-
+        TxtCodMat.Text = Nothing
+        TxtNomMat.Text = Nothing
 
     End Sub
 
@@ -99,16 +93,28 @@
     End Sub
 
     Private Sub BtnEst_Click(sender As Object, e As EventArgs) Handles BtnEst.Click
-        If TxtNomMat.Text = "" Or TxtCom.Text = "" Or DtaBai.Text = "" Or TxtCodFor.Text = "" Then
-            MessageBox.Show("Todos os campos são obrigatorios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            TxtNomMat.Focus()
-        Else
+        If TxtCodMat.Text = "" Then
+            MsgBox("Digite o código do produto!")
+            TxtCodMat.Focus()
+        ElseIf TxtCom.Text = "" Then
+            MsgBox("Digite a quantidade comprada!")
+            TxtCom.Focus()
+        ElseIf MskVal.Text = "" Then
+            MsgBox("Digite o valor da unidade ou metro!")
+            MskVal.Focus()
+        ElseIf TxtCodFor.Text = "" Then
+            MsgBox("Digite o código do fornecedor!")
+            TxtCodFor.Focus()
+
+            Else
             DgdGrade.Rows.Add(TxtCodMat.Text, TxtNomMat.Text, TxtCom.Text, MskVal.Text, DtaBai.Text, TxtCodFor.Text)
             objMat.atualizarEstoque(TxtCodMat.Text, TxtCom.Text)
             TxtCodMat.Clear()
             TxtNomMat.Clear()
             TxtCodFor.Clear()
             TxtNomFor.Clear()
+            MskVal.Clear()
+            TxtCom.Clear()
 
             BtnEst.Enabled = True
             BtnGra.Enabled = True

@@ -4,6 +4,8 @@
     Dim novo As Boolean
     Dim objMat As New ClsCadastroMateriais
 
+    'Dim zum As Integer
+
     Public quemchamou As String = ""
     Public campochave As Integer
     Private Sub SaidaDeMateriais_Activated(sender As Object, e As EventArgs) Handles Me.Activated
@@ -11,16 +13,9 @@
         Me.Left = 0
     End Sub
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-        If TxtCodMat.Text = "" Then
-            MsgBox("Digite o nome do cliente!")
-            TxtCodMat.Focus()
-        ElseIf TxtRet.Text = "" Then
-            MsgBox("Digite o CPF dp cliente!")
-            TxtRet.Focus()
-        ElseIf DtaRet.Text = "" Then
-            MsgBox("Digite o CPF dp cliente!")
-            DtaRet.Focus()
-        Else
+
+        'zum = DgdGrade.Rows.Count
+        If DgdGrade.Rows.Count = 1 Then
             For x = 0 To DgdGrade.Rows.Count - 1
 
                 objSai.Material = DgdGrade.Rows(x).Cells(0).Value
@@ -29,12 +24,22 @@
 
                 objSai.Gravar()
 
-            Next
-        End If
+                TxtCodMat.Clear()
+                TxtNomMat.Clear()
+                TxtRet.Clear()
+                DgdGrade.Rows.Clear()
+                MessageBox.Show("Baixa no estoque efetuada com sucesso!")
 
+            Next
+        Else
+            MessageBox.Show("Retire um item por vez!")
+        End If
+        
+        'End If
     End Sub
 
     Private Sub SaidaDeMateriais_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Timoneiros2020_2000CDataSet1.TabSaidaProd' table. You can move, or remove it, as needed.
         objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, True)
         BtnMat.Enabled = False
@@ -46,6 +51,9 @@
         objControle.habilitar_tela(Me, True)
         BtnMat.Enabled = True
         BtnEst.Enabled = True
+        TxtCodMat.Enabled = False
+        TxtNomMat.Enabled = False
+
     End Sub
 
     Private Sub BtnCan_Click(sender As Object, e As EventArgs) Handles BtnCan.Click
@@ -69,10 +77,15 @@
     End Sub
 
     Private Sub BtnEst_Click(sender As Object, e As EventArgs) Handles BtnEst.Click
-
-        If TxtCodMat.Text = "" Or TxtNomMat.Text = "" Or TxtRet.Text = "" Or DtaRet.Text = "" Then
-            MessageBox.Show("Todos os campos são obrigatorios", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        If TxtCodMat.Text = "" Then
+            MsgBox("Digite o código do material!")
             TxtCodMat.Focus()
+        ElseIf TxtRet.Text = "" Then
+            MsgBox("Digite a quantidade retirada!")
+            TxtRet.Focus()
+        ElseIf DtaRet.Text = "" Then
+            MsgBox("Digite a data da retirada!")
+            DtaRet.Focus()
         Else
             DgdGrade.Rows.Add(TxtCodMat.Text, TxtNomMat.Text, TxtRet.Text, DtaRet.Text)
             objMat.baixarEstoque(TxtCodMat.Text, TxtRet.Text)

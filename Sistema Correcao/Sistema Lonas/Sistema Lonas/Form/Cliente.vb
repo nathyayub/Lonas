@@ -168,6 +168,7 @@
         novo = False
     End Sub
 
+
     Private Sub TxtCNPJ_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtCNPJ.KeyPress
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
@@ -210,11 +211,4 @@
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
-    Private Sub TxtCep_TextChanged(sender As Object, e As EventArgs) Handles TxtCep.TextChanged
-
-    End Sub
-
-    Private Sub TxtCom_TextChanged(sender As Object, e As EventArgs) Handles TxtCom.TextChanged
-
-    End Sub
 End Class

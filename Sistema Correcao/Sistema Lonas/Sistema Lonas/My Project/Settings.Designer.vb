@@ -63,6 +63,17 @@ Namespace My
                 Return CType(Me("Sistema_Lonas_br_gov_bcb_www3_FachadaWSSGSService"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\timoneiros2020_2000C"& _ 
+            ".mdb")>  _
+        Public ReadOnly Property timoneiros2020_2000CConnectionString() As String
+            Get
+                Return CType(Me("timoneiros2020_2000CConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

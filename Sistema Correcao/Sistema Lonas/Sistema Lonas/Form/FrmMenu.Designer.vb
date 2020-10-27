@@ -34,19 +34,18 @@ Partial Class FrmMenu
         Me.DespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmbarcaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EstoqueToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelatorioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReláToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelátorioGeralDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelátorioClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioEmbacaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelátorioGeralDeEmbarcaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelátorioAgendamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioPedidoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelátorioGeralDePedidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelátorioDePedidosPorDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioFornecedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelátorioMateriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EvolucaçãoProdutoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelátorioEstoqueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioDespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelátorioGeralDeDespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelátorioMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaídaDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EntradaDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -67,9 +66,9 @@ Partial Class FrmMenu
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.EstoqueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CadastroDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EntradaDeMaterialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EstoqueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaídaDeMaterialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton9 = New System.Windows.Forms.ToolStripButton()
@@ -90,7 +89,8 @@ Partial Class FrmMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtDolar = New System.Windows.Forms.TextBox()
         Me.LblCodCli = New System.Windows.Forms.Label()
-        Me.EstoqueToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelátorioGeralDeDespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelátorioDeDespesasPorDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
@@ -157,76 +157,70 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.FuncionariosToolStripMenuItem, "FuncionariosToolStripMenuItem")
         Me.FuncionariosToolStripMenuItem.Name = "FuncionariosToolStripMenuItem"
         '
+        'EstoqueToolStripMenuItem1
+        '
+        resources.ApplyResources(Me.EstoqueToolStripMenuItem1, "EstoqueToolStripMenuItem1")
+        Me.EstoqueToolStripMenuItem1.Name = "EstoqueToolStripMenuItem1"
+        '
         'RelatorioToolStripMenuItem
         '
         resources.ApplyResources(Me.RelatorioToolStripMenuItem, "RelatorioToolStripMenuItem")
-        Me.RelatorioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReláToolStripMenuItem, Me.RelátorioEmbacaçãoToolStripMenuItem, Me.RelátorioAgendamentoToolStripMenuItem, Me.RelátorioPedidoToolStripMenuItem, Me.RelátorioFornecedorToolStripMenuItem, Me.RelátorioMateriasToolStripMenuItem, Me.RelátorioEstoqueToolStripMenuItem, Me.RelátorioDespesasToolStripMenuItem})
+        Me.RelatorioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelátorioClienteToolStripMenuItem, Me.RelátorioEmbacaçãoToolStripMenuItem, Me.RelátorioPedidoToolStripMenuItem, Me.RelátorioFornecedorToolStripMenuItem, Me.RelátorioDespesasToolStripMenuItem, Me.RelátorioMateriaisToolStripMenuItem})
         Me.RelatorioToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.RelatorioToolStripMenuItem.Name = "RelatorioToolStripMenuItem"
         '
-        'ReláToolStripMenuItem
+        'RelátorioClienteToolStripMenuItem
         '
-        resources.ApplyResources(Me.ReláToolStripMenuItem, "ReláToolStripMenuItem")
-        Me.ReláToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelátorioGeralDeClienteToolStripMenuItem})
-        Me.ReláToolStripMenuItem.Name = "ReláToolStripMenuItem"
-        '
-        'RelátorioGeralDeClienteToolStripMenuItem
-        '
-        resources.ApplyResources(Me.RelátorioGeralDeClienteToolStripMenuItem, "RelátorioGeralDeClienteToolStripMenuItem")
-        Me.RelátorioGeralDeClienteToolStripMenuItem.Name = "RelátorioGeralDeClienteToolStripMenuItem"
+        resources.ApplyResources(Me.RelátorioClienteToolStripMenuItem, "RelátorioClienteToolStripMenuItem")
+        Me.RelátorioClienteToolStripMenuItem.Name = "RelátorioClienteToolStripMenuItem"
         '
         'RelátorioEmbacaçãoToolStripMenuItem
         '
         resources.ApplyResources(Me.RelátorioEmbacaçãoToolStripMenuItem, "RelátorioEmbacaçãoToolStripMenuItem")
-        Me.RelátorioEmbacaçãoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelátorioGeralDeEmbarcaçãoToolStripMenuItem})
         Me.RelátorioEmbacaçãoToolStripMenuItem.Name = "RelátorioEmbacaçãoToolStripMenuItem"
-        '
-        'RelátorioGeralDeEmbarcaçãoToolStripMenuItem
-        '
-        resources.ApplyResources(Me.RelátorioGeralDeEmbarcaçãoToolStripMenuItem, "RelátorioGeralDeEmbarcaçãoToolStripMenuItem")
-        Me.RelátorioGeralDeEmbarcaçãoToolStripMenuItem.Name = "RelátorioGeralDeEmbarcaçãoToolStripMenuItem"
-        '
-        'RelátorioAgendamentoToolStripMenuItem
-        '
-        resources.ApplyResources(Me.RelátorioAgendamentoToolStripMenuItem, "RelátorioAgendamentoToolStripMenuItem")
-        Me.RelátorioAgendamentoToolStripMenuItem.Name = "RelátorioAgendamentoToolStripMenuItem"
         '
         'RelátorioPedidoToolStripMenuItem
         '
         resources.ApplyResources(Me.RelátorioPedidoToolStripMenuItem, "RelátorioPedidoToolStripMenuItem")
+        Me.RelátorioPedidoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelátorioGeralDePedidosToolStripMenuItem, Me.RelátorioDePedidosPorDataToolStripMenuItem})
         Me.RelátorioPedidoToolStripMenuItem.Name = "RelátorioPedidoToolStripMenuItem"
+        '
+        'RelátorioGeralDePedidosToolStripMenuItem
+        '
+        resources.ApplyResources(Me.RelátorioGeralDePedidosToolStripMenuItem, "RelátorioGeralDePedidosToolStripMenuItem")
+        Me.RelátorioGeralDePedidosToolStripMenuItem.Name = "RelátorioGeralDePedidosToolStripMenuItem"
+        '
+        'RelátorioDePedidosPorDataToolStripMenuItem
+        '
+        resources.ApplyResources(Me.RelátorioDePedidosPorDataToolStripMenuItem, "RelátorioDePedidosPorDataToolStripMenuItem")
+        Me.RelátorioDePedidosPorDataToolStripMenuItem.Name = "RelátorioDePedidosPorDataToolStripMenuItem"
         '
         'RelátorioFornecedorToolStripMenuItem
         '
         resources.ApplyResources(Me.RelátorioFornecedorToolStripMenuItem, "RelátorioFornecedorToolStripMenuItem")
         Me.RelátorioFornecedorToolStripMenuItem.Name = "RelátorioFornecedorToolStripMenuItem"
         '
-        'RelátorioMateriasToolStripMenuItem
-        '
-        resources.ApplyResources(Me.RelátorioMateriasToolStripMenuItem, "RelátorioMateriasToolStripMenuItem")
-        Me.RelátorioMateriasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EvolucaçãoProdutoToolStripMenuItem})
-        Me.RelátorioMateriasToolStripMenuItem.Name = "RelátorioMateriasToolStripMenuItem"
-        '
-        'EvolucaçãoProdutoToolStripMenuItem
-        '
-        resources.ApplyResources(Me.EvolucaçãoProdutoToolStripMenuItem, "EvolucaçãoProdutoToolStripMenuItem")
-        Me.EvolucaçãoProdutoToolStripMenuItem.Name = "EvolucaçãoProdutoToolStripMenuItem"
-        '
-        'RelátorioEstoqueToolStripMenuItem
-        '
-        resources.ApplyResources(Me.RelátorioEstoqueToolStripMenuItem, "RelátorioEstoqueToolStripMenuItem")
-        Me.RelátorioEstoqueToolStripMenuItem.Name = "RelátorioEstoqueToolStripMenuItem"
-        '
         'RelátorioDespesasToolStripMenuItem
         '
         resources.ApplyResources(Me.RelátorioDespesasToolStripMenuItem, "RelátorioDespesasToolStripMenuItem")
-        Me.RelátorioDespesasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelátorioGeralDeDespesasToolStripMenuItem})
+        Me.RelátorioDespesasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelátorioGeralDeDespesasToolStripMenuItem, Me.RelátorioDeDespesasPorDataToolStripMenuItem})
         Me.RelátorioDespesasToolStripMenuItem.Name = "RelátorioDespesasToolStripMenuItem"
         '
-        'RelátorioGeralDeDespesasToolStripMenuItem
+        'RelátorioMateriaisToolStripMenuItem
         '
-        resources.ApplyResources(Me.RelátorioGeralDeDespesasToolStripMenuItem, "RelátorioGeralDeDespesasToolStripMenuItem")
-        Me.RelátorioGeralDeDespesasToolStripMenuItem.Name = "RelátorioGeralDeDespesasToolStripMenuItem"
+        resources.ApplyResources(Me.RelátorioMateriaisToolStripMenuItem, "RelátorioMateriaisToolStripMenuItem")
+        Me.RelátorioMateriaisToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaídaDeMateriaisToolStripMenuItem, Me.EntradaDeMateriaisToolStripMenuItem})
+        Me.RelátorioMateriaisToolStripMenuItem.Name = "RelátorioMateriaisToolStripMenuItem"
+        '
+        'SaídaDeMateriaisToolStripMenuItem
+        '
+        resources.ApplyResources(Me.SaídaDeMateriaisToolStripMenuItem, "SaídaDeMateriaisToolStripMenuItem")
+        Me.SaídaDeMateriaisToolStripMenuItem.Name = "SaídaDeMateriaisToolStripMenuItem"
+        '
+        'EntradaDeMateriaisToolStripMenuItem
+        '
+        resources.ApplyResources(Me.EntradaDeMateriaisToolStripMenuItem, "EntradaDeMateriaisToolStripMenuItem")
+        Me.EntradaDeMateriaisToolStripMenuItem.Name = "EntradaDeMateriaisToolStripMenuItem"
         '
         'HelpToolStripMenuItem
         '
@@ -361,6 +355,11 @@ Partial Class FrmMenu
         Me.ToolStripSplitButton1.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
         '
+        'EstoqueToolStripMenuItem
+        '
+        resources.ApplyResources(Me.EstoqueToolStripMenuItem, "EstoqueToolStripMenuItem")
+        Me.EstoqueToolStripMenuItem.Name = "EstoqueToolStripMenuItem"
+        '
         'CadastroDeMateriaisToolStripMenuItem
         '
         resources.ApplyResources(Me.CadastroDeMateriaisToolStripMenuItem, "CadastroDeMateriaisToolStripMenuItem")
@@ -372,11 +371,6 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.EntradaDeMaterialToolStripMenuItem, "EntradaDeMaterialToolStripMenuItem")
         Me.EntradaDeMaterialToolStripMenuItem.BackColor = System.Drawing.Color.Brown
         Me.EntradaDeMaterialToolStripMenuItem.Name = "EntradaDeMaterialToolStripMenuItem"
-        '
-        'EstoqueToolStripMenuItem
-        '
-        resources.ApplyResources(Me.EstoqueToolStripMenuItem, "EstoqueToolStripMenuItem")
-        Me.EstoqueToolStripMenuItem.Name = "EstoqueToolStripMenuItem"
         '
         'SaídaDeMaterialToolStripMenuItem
         '
@@ -504,10 +498,15 @@ Partial Class FrmMenu
         Me.LblCodCli.ForeColor = System.Drawing.Color.White
         Me.LblCodCli.Name = "LblCodCli"
         '
-        'EstoqueToolStripMenuItem1
+        'RelátorioGeralDeDespesasToolStripMenuItem
         '
-        resources.ApplyResources(Me.EstoqueToolStripMenuItem1, "EstoqueToolStripMenuItem1")
-        Me.EstoqueToolStripMenuItem1.Name = "EstoqueToolStripMenuItem1"
+        resources.ApplyResources(Me.RelátorioGeralDeDespesasToolStripMenuItem, "RelátorioGeralDeDespesasToolStripMenuItem")
+        Me.RelátorioGeralDeDespesasToolStripMenuItem.Name = "RelátorioGeralDeDespesasToolStripMenuItem"
+        '
+        'RelátorioDeDespesasPorDataToolStripMenuItem
+        '
+        resources.ApplyResources(Me.RelátorioDeDespesasPorDataToolStripMenuItem, "RelátorioDeDespesasPorDataToolStripMenuItem")
+        Me.RelátorioDeDespesasPorDataToolStripMenuItem.Name = "RelátorioDeDespesasPorDataToolStripMenuItem"
         '
         'FrmMenu
         '
@@ -581,18 +580,11 @@ Partial Class FrmMenu
     Friend WithEvents CadastroDeMateriaisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripButton10 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSeparator6 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ReláToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RelátorioAgendamentoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RelátorioClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RelátorioPedidoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RelátorioFornecedorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RelátorioMateriasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RelátorioEstoqueToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RelátorioDespesasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RelátorioGeralDeClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RelátorioGeralDeDespesasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RelátorioEmbacaçãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RelátorioGeralDeEmbarcaçãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EvolucaçãoProdutoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator14 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripButton11 As System.Windows.Forms.ToolStripButton
     Friend WithEvents PedidoPorDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -604,5 +596,12 @@ Partial Class FrmMenu
     Friend WithEvents EmbarcaçãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FuncionariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EstoqueToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RelátorioMateriaisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SaídaDeMateriaisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EntradaDeMateriaisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RelátorioGeralDePedidosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RelátorioDePedidosPorDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RelátorioGeralDeDespesasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RelátorioDeDespesasPorDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
