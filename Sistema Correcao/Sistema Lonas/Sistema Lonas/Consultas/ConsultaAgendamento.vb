@@ -1,16 +1,13 @@
 ﻿Public Class ConsultaAgendamento
 
-    Dim objagen As New ClsAgendamento
+    Dim objAgen As New ClsAgendamento
+    Dim objdtLimpo As New DataTable
     Private Sub ConsultaAgendamento_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         Me.Top = 0
         Me.Left = 0
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        DgdGrade.DataSource = objagen.LocalizarFiltro(TxtCampo.Text)
-    End Sub
-
-    Private Sub ConsultaAgendamento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub TxtCampo_TextChanged(sender As Object, e As EventArgs) Handles TxtCampo.TextChanged
+        DgdGrade.DataSource = objAgen.LocalizarFiltro(TxtCampo.Text)
     End Sub
 End Class

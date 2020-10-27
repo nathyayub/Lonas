@@ -24,7 +24,6 @@ Partial Class Agendamento
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Agendamento))
         Me.txtnomcli = New System.Windows.Forms.TextBox()
-        Me.btnimp = New System.Windows.Forms.Button()
         Me.btnalt = New System.Windows.Forms.Button()
         Me.btnsair = New System.Windows.Forms.Button()
         Me.btncan = New System.Windows.Forms.Button()
@@ -66,25 +65,6 @@ Partial Class Agendamento
         Me.txtnomcli.Size = New System.Drawing.Size(262, 30)
         Me.txtnomcli.TabIndex = 79
         '
-        'btnimp
-        '
-        Me.btnimp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnimp.BackColor = System.Drawing.Color.Silver
-        Me.btnimp.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnimp.FlatAppearance.BorderSize = 2
-        Me.btnimp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnimp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnimp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnimp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnimp.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnimp.Location = New System.Drawing.Point(667, 332)
-        Me.btnimp.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnimp.Name = "btnimp"
-        Me.btnimp.Size = New System.Drawing.Size(124, 43)
-        Me.btnimp.TabIndex = 7
-        Me.btnimp.Text = "&Imprimir"
-        Me.btnimp.UseVisualStyleBackColor = False
-        '
         'btnalt
         '
         Me.btnalt.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -115,7 +95,7 @@ Partial Class Agendamento
         Me.btnsair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnsair.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsair.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnsair.Location = New System.Drawing.Point(667, 385)
+        Me.btnsair.Location = New System.Drawing.Point(667, 332)
         Me.btnsair.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnsair.Name = "btnsair"
         Me.btnsair.Size = New System.Drawing.Size(124, 43)
@@ -450,7 +430,6 @@ Partial Class Agendamento
         Me.Controls.Add(Me.GrpLoc)
         Me.Controls.Add(Me.BtnNom)
         Me.Controls.Add(Me.txtnomcli)
-        Me.Controls.Add(Me.btnimp)
         Me.Controls.Add(Me.btnalt)
         Me.Controls.Add(Me.btnsair)
         Me.Controls.Add(Me.btncan)
@@ -479,7 +458,6 @@ Partial Class Agendamento
 
     End Sub
     Friend WithEvents txtnomcli As System.Windows.Forms.TextBox
-    Friend WithEvents btnimp As System.Windows.Forms.Button
     Friend WithEvents btnalt As System.Windows.Forms.Button
     Friend WithEvents btnsair As System.Windows.Forms.Button
     Friend WithEvents btncan As System.Windows.Forms.Button

@@ -13,7 +13,6 @@
         objControle.habilitar_botoes(Me, True)
         btnalt.Enabled = False
         btnexc.Enabled = False
-        btnimp.Enabled = False
         GrpLoc.Visible = False
         BtnNom.Enabled = False
         GrpDat.Enabled = False
@@ -93,7 +92,7 @@
             objControle.Limpar_tela(Me)
             btnexc.Enabled = False
             btnalt.Enabled = False
-            btnimp.Enabled = False
+
         End If
     End Sub
 

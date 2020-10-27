@@ -138,11 +138,12 @@
         End If
     End Function
 
-    Public Function LocalizarFiltro(campo As Integer) As DataTable
-
-        sql = "SELECT TabPedido.CodPed, TabPedido.CodCli, TabPedido.Nomcli, TabCliente.Tel, TabPedido.ValPedTot, TabPedido.DataPed, TabPedido.PraMin, TabPedido.PraMax," & _
-        "TabPedido.Pago, TabPedido.DtPag, TabPedido.Pedido FROM TabCliente INNER JOIN TabPedido ON TabCliente.CodCli = TabPedido.CodCli WHERE codped = " & campo
-
+    Public Function LocalizarFiltro(campo As String) As DataTable
+        If IsNumeric(campo) Then
+            sql = "select * from TabPedido where codped=" & campo
+        Else
+            sql = "select * from TabPedido where nomcli like '" & campo & "%' order by nomcli"
+        End If
         objdtLocal = objbanco.localizar(sql)
         Return objdtLocal
     End Function

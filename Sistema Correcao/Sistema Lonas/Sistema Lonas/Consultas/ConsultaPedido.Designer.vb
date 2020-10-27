@@ -37,16 +37,16 @@ Partial Class ConsultaPedido
         Me.Pago = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.DtPag = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnok = New System.Windows.Forms.Button()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TxtCampo
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(12, 53)
+        Me.TxtCampo.Location = New System.Drawing.Point(16, 65)
+        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtCampo.Name = "TxtCampo"
-        Me.TxtCampo.Size = New System.Drawing.Size(229, 26)
+        Me.TxtCampo.Size = New System.Drawing.Size(304, 30)
         Me.TxtCampo.TabIndex = 8
         '
         'Label1
@@ -54,9 +54,10 @@ Partial Class ConsultaPedido
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 21)
+        Me.Label1.Location = New System.Drawing.Point(16, 26)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(218, 22)
+        Me.Label1.Size = New System.Drawing.Size(273, 29)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Digite o código do pedido"
         '
@@ -64,9 +65,11 @@ Partial Class ConsultaPedido
         '
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodPed, Me.CodCli, Me.NomCli, Me.Tel, Me.ValPedTot, Me.DataPet, Me.PraMin, Me.PraMax, Me.Pago, Me.DtPag, Me.Column1})
-        Me.DgdGrade.Location = New System.Drawing.Point(12, 95)
+        Me.DgdGrade.Enabled = False
+        Me.DgdGrade.Location = New System.Drawing.Point(16, 117)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4)
         Me.DgdGrade.Name = "DgdGrade"
-        Me.DgdGrade.Size = New System.Drawing.Size(1147, 264)
+        Me.DgdGrade.Size = New System.Drawing.Size(1143, 325)
         Me.DgdGrade.TabIndex = 9
         '
         'CodPed
@@ -137,33 +140,17 @@ Partial Class ConsultaPedido
         Me.Column1.HeaderText = "Pedido"
         Me.Column1.Name = "Column1"
         '
-        'btnok
-        '
-        Me.btnok.BackColor = System.Drawing.Color.Silver
-        Me.btnok.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnok.FlatAppearance.BorderSize = 2
-        Me.btnok.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnok.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnok.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnok.Location = New System.Drawing.Point(247, 43)
-        Me.btnok.Name = "btnok"
-        Me.btnok.Size = New System.Drawing.Size(114, 37)
-        Me.btnok.TabIndex = 10
-        Me.btnok.Text = "OK"
-        Me.btnok.UseVisualStyleBackColor = False
-        '
         'ConsultaPedido
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(1173, 390)
-        Me.Controls.Add(Me.btnok)
+        Me.ClientSize = New System.Drawing.Size(1211, 480)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ConsultaPedido"
         Me.Text = "Consulta Pedido"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
@@ -174,7 +161,6 @@ Partial Class ConsultaPedido
     Friend WithEvents TxtCampo As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DgdGrade As System.Windows.Forms.DataGridView
-    Friend WithEvents btnok As System.Windows.Forms.Button
     Friend WithEvents CodPed As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CodCli As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NomCli As System.Windows.Forms.DataGridViewTextBoxColumn

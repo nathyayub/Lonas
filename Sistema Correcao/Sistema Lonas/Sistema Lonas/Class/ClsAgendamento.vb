@@ -108,8 +108,12 @@
         m_medi = objdtLocal.Rows(0).Item(4)
         m_emba = objdtLocal.Rows(0).Item(5)
     End Sub
-    Public Function LocalizarFiltro(campo As Integer) As DataTable
-        sql = "SELECT * from VwAgendamento"
+    Public Function LocalizarFiltro(campo As String) As DataTable
+        If IsNumeric(campo) Then
+            sql = "select * from VwAgendamento where codag=" & campo
+        Else
+            sql = "select * from VwAgendamento where nomcli like '" & campo & "%' order by nomcli"
+        End If
         objdtLocal = objbanco.localizar(sql)
         Return objdtLocal
     End Function

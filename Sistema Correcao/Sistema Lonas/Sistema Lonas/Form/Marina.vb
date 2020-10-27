@@ -23,7 +23,6 @@
         objControle.habilitar_botoes(Me, True)
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
-        BtnImp.Enabled = False
         GrpLoc.Visible = False
     End Sub
 
@@ -117,7 +116,6 @@
             objControle.Limpar_tela(Me)
             BtnExc.Enabled = False
             BtnAlt.Enabled = False
-            BtnImp.Enabled = False
         End If
     End Sub
 
@@ -145,6 +143,10 @@
     End Sub
 
     Private Sub txtcep_TextChanged(sender As Object, e As EventArgs) Handles txtcep.TextChanged
+
+    End Sub
+
+    Private Sub BtnImp_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

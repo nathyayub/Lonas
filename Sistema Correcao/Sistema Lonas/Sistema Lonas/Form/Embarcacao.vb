@@ -65,6 +65,8 @@
 
             objControle.habilitar_tela(Me, False)
             objControle.habilitar_botoes(Me, True)
+
+            BtnMar.Enabled = False
         End If
     End Sub
     Private Sub BtnExc_Click(sender As Object, e As EventArgs) Handles BtnExc.Click
@@ -177,6 +179,10 @@
     End Sub
 
     Private Sub txtmarina_TextChanged(sender As Object, e As EventArgs) Handles txtmarina.TextChanged
+
+    End Sub
+
+    Private Sub txtmodelo_TextChanged(sender As Object, e As EventArgs) Handles txtmodelo.TextChanged
 
     End Sub
 End Class

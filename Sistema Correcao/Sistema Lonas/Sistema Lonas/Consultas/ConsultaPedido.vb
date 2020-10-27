@@ -1,5 +1,5 @@
 ﻿Public Class ConsultaPedido
-    Dim objped As New ClsPedido
+    Dim objPed As New ClsPedido
     Public quemChamou As String = ""
     Dim objdtLimpo As New DataTable
 
@@ -8,7 +8,7 @@
         Me.Left = 0
     End Sub
 
-    Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
-        DgdGrade.DataSource = objped.LocalizarFiltro(TxtCampo.Text)
+    Private Sub TxtCampo_TextChanged(sender As Object, e As EventArgs) Handles TxtCampo.TextChanged
+        DgdGrade.DataSource = objPed.LocalizarFiltro(TxtCampo.Text)
     End Sub
 End Class

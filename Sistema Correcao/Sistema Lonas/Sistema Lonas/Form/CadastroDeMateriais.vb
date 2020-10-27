@@ -17,7 +17,7 @@
         objControle.habilitar_botoes(Me, True)
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
-        BtnImp.Enabled = False
+
         GrpLoc.Visible = False
     End Sub
 
@@ -32,11 +32,17 @@
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
         If TxtNom.Text = "" Then
-            MsgBox("Digite o código do produto!")
+            MsgBox("Digite o Nome do material!")
             TxtNom.Focus()
         ElseIf CboUni.Text = "" Then
-            MsgBox("Digite a quantidade comprada!")
+            MsgBox("Digite a unidade de medida do material!")
             CboUni.Focus()
+        ElseIf TxtMin.Text = "" Then
+            MsgBox("Digite a Quantidade Mínima do material!")
+            TxtMin.Focus()
+        ElseIf TxtMax.Text = "" Then
+            MsgBox("Digite a Quantidade Maxima do material!")
+            TxtMax.Focus()
         Else
             objCad.Codigo = Val(TxtCod.Text)
             objCad.NomeMaterial = TxtNom.Text
@@ -99,17 +105,31 @@
             objControle.Limpar_tela(Me)
             BtnExc.Enabled = False
             BtnAlt.Enabled = False
-            BtnImp.Enabled = False
         End If
     End Sub
 
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
+        GrpLoc.Visible = False
         TxtCod.Enabled = False
         TxtNom.Focus()
         novo = False
     End Sub
 
-    
+    Private Sub TxtMin_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMin.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
+    End Sub
+
+    Private Sub TxtMin_TextChanged(sender As Object, e As EventArgs) Handles TxtMin.TextChanged
+
+    End Sub
+
+    Private Sub TxtMax_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMax.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
+    End Sub
+
+    Private Sub TxtMax_TextChanged(sender As Object, e As EventArgs) Handles TxtMax.TextChanged
+
+    End Sub
 End Class

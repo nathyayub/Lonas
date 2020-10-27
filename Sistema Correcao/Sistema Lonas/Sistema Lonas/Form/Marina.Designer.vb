@@ -23,7 +23,6 @@ Partial Class Marina
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Marina))
-        Me.BtnImp = New System.Windows.Forms.Button()
         Me.BtnAlt = New System.Windows.Forms.Button()
         Me.BtnSai = New System.Windows.Forms.Button()
         Me.BtnCan = New System.Windows.Forms.Button()
@@ -53,25 +52,6 @@ Partial Class Marina
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GrpLoc.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'BtnImp
-        '
-        Me.BtnImp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnImp.BackColor = System.Drawing.Color.Silver
-        Me.BtnImp.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.BtnImp.FlatAppearance.BorderSize = 2
-        Me.BtnImp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnImp.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnImp.Location = New System.Drawing.Point(839, 388)
-        Me.BtnImp.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnImp.Name = "BtnImp"
-        Me.BtnImp.Size = New System.Drawing.Size(165, 53)
-        Me.BtnImp.TabIndex = 132
-        Me.BtnImp.Text = "&Imprimir"
-        Me.BtnImp.UseVisualStyleBackColor = False
         '
         'BtnAlt
         '
@@ -103,7 +83,7 @@ Partial Class Marina
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(839, 449)
+        Me.BtnSai.Location = New System.Drawing.Point(839, 388)
         Me.BtnSai.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(165, 53)
@@ -431,7 +411,6 @@ Partial Class Marina
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(1020, 512)
-        Me.Controls.Add(Me.BtnImp)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
         Me.Controls.Add(Me.BtnCan)
@@ -466,7 +445,6 @@ Partial Class Marina
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents BtnImp As System.Windows.Forms.Button
     Friend WithEvents BtnAlt As System.Windows.Forms.Button
     Friend WithEvents BtnSai As System.Windows.Forms.Button
     Friend WithEvents BtnCan As System.Windows.Forms.Button

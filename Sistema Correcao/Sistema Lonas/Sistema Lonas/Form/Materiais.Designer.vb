@@ -26,6 +26,13 @@ Partial Class Materiais
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
         Me.txtCampo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -35,6 +42,7 @@ Partial Class Materiais
         Me.DgdGrade.AllowUserToDeleteRows = False
         Me.DgdGrade.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DgdGrade.Location = New System.Drawing.Point(20, 123)
         Me.DgdGrade.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -65,6 +73,55 @@ Partial Class Materiais
         Me.Label1.TabIndex = 44
         Me.Label1.Text = "Digite o nome ou código do material no Estoque"
         '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "CodigoMat"
+        Me.Column1.HeaderText = "Código do Material"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 142
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "Produto"
+        Me.Column2.HeaderText = "Material"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 87
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "UniMed"
+        Me.Column3.HeaderText = "Unidade de Medida"
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 105
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "DesPro"
+        Me.Column4.HeaderText = "Descrição do Material"
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 114
+        '
+        'Column5
+        '
+        Me.Column5.DataPropertyName = "QtdMin"
+        Me.Column5.HeaderText = "Quantidade Mínima"
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 145
+        '
+        'Column6
+        '
+        Me.Column6.DataPropertyName = "QtdMax"
+        Me.Column6.HeaderText = "Quantidade Maxima"
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 148
+        '
+        'Column7
+        '
+        Me.Column7.DataPropertyName = "QtdAtu"
+        Me.Column7.HeaderText = "Quantidade Atual"
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 135
+        '
         'Materiais
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -86,4 +143,11 @@ Partial Class Materiais
     Friend WithEvents DgdGrade As System.Windows.Forms.DataGridView
     Friend WithEvents txtCampo As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

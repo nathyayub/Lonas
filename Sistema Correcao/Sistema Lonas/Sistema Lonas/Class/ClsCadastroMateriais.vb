@@ -113,7 +113,7 @@
         If IsNumeric(campo) Then
             sql = "select * from tabitensfornecido where codigomat=" & campo
         Else
-            sql = "select * from tabitensfornecido where produto like '" & campo & "%' order by produto"
+            sql = "select * from tabitensfornecido where Produto like '" & campo & "%' order by Produto"
         End If
         objdtLocal = objbanco.localizar(sql)
         Return objdtLocal
