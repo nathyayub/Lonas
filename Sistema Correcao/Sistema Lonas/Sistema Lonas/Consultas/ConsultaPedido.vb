@@ -12,4 +12,20 @@
         DgdGrade.DataSource = objPed.LocalizarFiltro(TxtCampo.Text)
     End Sub
 
+    Private Sub DgdGrade_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgdGrade.CellContentClick
+
+    End Sub
+
+    Private Sub DgdGrade_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgdGrade.CellContentDoubleClick
+        If quemChamou.ToUpper = "PAGAMENTO" Then
+            Pagamento.txtcodped.Text = DgdGrade.CurrentRow.Cells(1).Value
+            Pagamento.txtnomecli.Text = DgdGrade.CurrentRow.Cells(3).Value
+        Else
+            Pedidos.quemchamou = Me.Name
+            Pedidos.Show()
+        End If
+        quemChamou = ""
+        Me.Close()
+
+    End Sub
 End Class

@@ -31,7 +31,6 @@ Partial Class Pedidos
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.BtnImp = New System.Windows.Forms.Button()
         Me.BtnAlt = New System.Windows.Forms.Button()
         Me.BtnSai = New System.Windows.Forms.Button()
         Me.BtnCan = New System.Windows.Forms.Button()
@@ -145,24 +144,6 @@ Partial Class Pedidos
         Me.Label9.TabIndex = 49
         Me.Label9.Text = "Data do Pagamento:"
         '
-        'BtnImp
-        '
-        Me.BtnImp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnImp.BackColor = System.Drawing.Color.Silver
-        Me.BtnImp.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.BtnImp.FlatAppearance.BorderSize = 2
-        Me.BtnImp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnImp.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnImp.Location = New System.Drawing.Point(678, 309)
-        Me.BtnImp.Name = "BtnImp"
-        Me.BtnImp.Size = New System.Drawing.Size(124, 43)
-        Me.BtnImp.TabIndex = 13
-        Me.BtnImp.Text = "&Imprimir"
-        Me.BtnImp.UseVisualStyleBackColor = False
-        '
         'BtnAlt
         '
         Me.BtnAlt.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -192,7 +173,7 @@ Partial Class Pedidos
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(678, 358)
+        Me.BtnSai.Location = New System.Drawing.Point(678, 312)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
         Me.BtnSai.TabIndex = 14
@@ -494,7 +475,6 @@ Partial Class Pedidos
         Me.Controls.Add(Me.ChbPag)
         Me.Controls.Add(Me.GrpLoc)
         Me.Controls.Add(Me.MskVal)
-        Me.Controls.Add(Me.BtnImp)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
         Me.Controls.Add(Me.BtnCan)
@@ -528,7 +508,6 @@ Partial Class Pedidos
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents BtnImp As System.Windows.Forms.Button
     Friend WithEvents BtnAlt As System.Windows.Forms.Button
     Friend WithEvents BtnSai As System.Windows.Forms.Button
     Friend WithEvents BtnCan As System.Windows.Forms.Button

@@ -15,7 +15,6 @@
         objControle.habilitar_botoes(Me, True)
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
-        BtnImp.Enabled = True
         BtnMar.Enabled = False
        
     End Sub
@@ -74,7 +73,6 @@
             objControle.Limpar_tela(Me)
             BtnExc.Enabled = False
             BtnAlt.Enabled = False
-            BtnImp.Enabled = False
         End If
 
     End Sub
@@ -147,7 +145,7 @@
         ConsultaCliente.ShowDialog()
     End Sub
 
-    Private Sub BtnImp_Click(sender As Object, e As EventArgs) Handles BtnImp.Click
+    Private Sub BtnImp_Click(sender As Object, e As EventArgs)
 
         Dim rpt As New CrpEmbarcacao
         FrmImp.CrystalReportViewer1.ReportSource = rpt

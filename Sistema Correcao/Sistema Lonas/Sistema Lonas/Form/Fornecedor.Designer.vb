@@ -29,7 +29,6 @@ Partial Class Fornecedor
         Me.Label6 = New System.Windows.Forms.Label()
         Me.BtnOK = New System.Windows.Forms.Button()
         Me.TxtLoc = New System.Windows.Forms.TextBox()
-        Me.BtnImp = New System.Windows.Forms.Button()
         Me.BtnAlt = New System.Windows.Forms.Button()
         Me.BtnSai = New System.Windows.Forms.Button()
         Me.BtnCan = New System.Windows.Forms.Button()
@@ -110,24 +109,6 @@ Partial Class Fornecedor
         Me.TxtLoc.Size = New System.Drawing.Size(138, 26)
         Me.TxtLoc.TabIndex = 0
         '
-        'BtnImp
-        '
-        Me.BtnImp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnImp.BackColor = System.Drawing.Color.Silver
-        Me.BtnImp.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.BtnImp.FlatAppearance.BorderSize = 2
-        Me.BtnImp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnImp.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnImp.Location = New System.Drawing.Point(622, 310)
-        Me.BtnImp.Name = "BtnImp"
-        Me.BtnImp.Size = New System.Drawing.Size(124, 43)
-        Me.BtnImp.TabIndex = 12
-        Me.BtnImp.Text = "&Imprimir"
-        Me.BtnImp.UseVisualStyleBackColor = False
-        '
         'BtnAlt
         '
         Me.BtnAlt.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -139,7 +120,7 @@ Partial Class Fornecedor
         Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAlt.Location = New System.Drawing.Point(622, 211)
+        Me.BtnAlt.Location = New System.Drawing.Point(622, 218)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
         Me.BtnAlt.TabIndex = 10
@@ -157,7 +138,7 @@ Partial Class Fornecedor
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(622, 358)
+        Me.BtnSai.Location = New System.Drawing.Point(622, 315)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
         Me.BtnSai.TabIndex = 13
@@ -175,7 +156,7 @@ Partial Class Fornecedor
         Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCan.Location = New System.Drawing.Point(622, 259)
+        Me.BtnCan.Location = New System.Drawing.Point(622, 266)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
         Me.BtnCan.TabIndex = 11
@@ -193,7 +174,7 @@ Partial Class Fornecedor
         Me.BtnLoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLoc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnLoc.Location = New System.Drawing.Point(622, 161)
+        Me.BtnLoc.Location = New System.Drawing.Point(622, 168)
         Me.BtnLoc.Name = "BtnLoc"
         Me.BtnLoc.Size = New System.Drawing.Size(124, 44)
         Me.BtnLoc.TabIndex = 9
@@ -211,7 +192,7 @@ Partial Class Fornecedor
         Me.BtnExc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnExc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnExc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnExc.Location = New System.Drawing.Point(622, 111)
+        Me.BtnExc.Location = New System.Drawing.Point(622, 118)
         Me.BtnExc.Name = "BtnExc"
         Me.BtnExc.Size = New System.Drawing.Size(124, 43)
         Me.BtnExc.TabIndex = 8
@@ -229,7 +210,7 @@ Partial Class Fornecedor
         Me.BtnGra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGra.Location = New System.Drawing.Point(622, 62)
+        Me.BtnGra.Location = New System.Drawing.Point(622, 69)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
         Me.BtnGra.TabIndex = 7
@@ -247,7 +228,7 @@ Partial Class Fornecedor
         Me.BtnNov.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnNov.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNov.Location = New System.Drawing.Point(622, 12)
+        Me.BtnNov.Location = New System.Drawing.Point(622, 19)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
         Me.BtnNov.TabIndex = 0
@@ -275,6 +256,7 @@ Partial Class Fornecedor
         '
         Me.txtcnpj.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcnpj.Location = New System.Drawing.Point(178, 139)
+        Me.txtcnpj.MaxLength = 12
         Me.txtcnpj.Name = "txtcnpj"
         Me.txtcnpj.Size = New System.Drawing.Size(180, 26)
         Me.txtcnpj.TabIndex = 3
@@ -361,7 +343,6 @@ Partial Class Fornecedor
         Me.Controls.Add(Me.txtcod)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.GrpLoc)
-        Me.Controls.Add(Me.BtnImp)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
         Me.Controls.Add(Me.BtnCan)
@@ -393,7 +374,6 @@ Partial Class Fornecedor
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents BtnOK As System.Windows.Forms.Button
     Friend WithEvents TxtLoc As System.Windows.Forms.TextBox
-    Friend WithEvents BtnImp As System.Windows.Forms.Button
     Friend WithEvents BtnAlt As System.Windows.Forms.Button
     Friend WithEvents BtnSai As System.Windows.Forms.Button
     Friend WithEvents BtnCan As System.Windows.Forms.Button

@@ -37,7 +37,6 @@ Partial Class Embarcacao
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtmarina = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.BtnImp = New System.Windows.Forms.Button()
         Me.BtnAlt = New System.Windows.Forms.Button()
         Me.BtnSai = New System.Windows.Forms.Button()
         Me.BtnCan = New System.Windows.Forms.Button()
@@ -197,24 +196,6 @@ Partial Class Embarcacao
         Me.Label7.TabIndex = 46
         Me.Label7.Text = "Marina:"
         '
-        'BtnImp
-        '
-        Me.BtnImp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnImp.BackColor = System.Drawing.Color.Silver
-        Me.BtnImp.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.BtnImp.FlatAppearance.BorderSize = 2
-        Me.BtnImp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnImp.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnImp.Location = New System.Drawing.Point(680, 321)
-        Me.BtnImp.Name = "BtnImp"
-        Me.BtnImp.Size = New System.Drawing.Size(124, 43)
-        Me.BtnImp.TabIndex = 13
-        Me.BtnImp.Text = "&Imprimir"
-        Me.BtnImp.UseVisualStyleBackColor = False
-        '
         'BtnAlt
         '
         Me.BtnAlt.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -244,7 +225,7 @@ Partial Class Embarcacao
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(680, 370)
+        Me.BtnSai.Location = New System.Drawing.Point(680, 323)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
         Me.BtnSai.TabIndex = 14
@@ -394,7 +375,7 @@ Partial Class Embarcacao
         Me.BtnMar.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnMar.ForeColor = System.Drawing.Color.Black
         Me.BtnMar.Location = New System.Drawing.Point(162, 328)
-        Me.BtnMar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnMar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMar.Name = "BtnMar"
         Me.BtnMar.Size = New System.Drawing.Size(47, 29)
         Me.BtnMar.TabIndex = 7
@@ -430,7 +411,7 @@ Partial Class Embarcacao
         Me.BtnCli.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCli.ForeColor = System.Drawing.Color.Black
         Me.BtnCli.Location = New System.Drawing.Point(162, 281)
-        Me.BtnCli.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnCli.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCli.Name = "BtnCli"
         Me.BtnCli.Size = New System.Drawing.Size(47, 28)
         Me.BtnCli.TabIndex = 6
@@ -448,7 +429,6 @@ Partial Class Embarcacao
         Me.Controls.Add(Me.TxtNmar)
         Me.Controls.Add(Me.BtnMar)
         Me.Controls.Add(Me.GrpLoc)
-        Me.Controls.Add(Me.BtnImp)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
         Me.Controls.Add(Me.BtnCan)
@@ -471,7 +451,7 @@ Partial Class Embarcacao
         Me.Controls.Add(Me.txtnome)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Embarcacao"
         Me.Text = "Embarcação"
         Me.GrpLoc.ResumeLayout(False)
@@ -494,7 +474,6 @@ Partial Class Embarcacao
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtmarina As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents BtnImp As System.Windows.Forms.Button
     Friend WithEvents BtnAlt As System.Windows.Forms.Button
     Friend WithEvents BtnSai As System.Windows.Forms.Button
     Friend WithEvents BtnCan As System.Windows.Forms.Button

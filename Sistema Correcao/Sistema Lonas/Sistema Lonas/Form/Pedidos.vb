@@ -29,7 +29,6 @@
         objControle.habilitar_botoes(Me, True)
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
-        BtnImp.Enabled = False
         GrpLoc.Visible = False
         GroupBox1.Enabled = False
     End Sub
@@ -47,9 +46,6 @@
         ElseIf MskVal.Text = "" Then
             MsgBox("Digite o valor do pedido!")
             MskVal.Focus()
-        ElseIf DtaPed.Value > DtaMax.Value Or DtaPed.Value < DtaMin.Value Then
-            MsgBox("Não é possivel que a medição seja essa data!")
-            TxtCodCli.Focus()
         Else
             objPed.Codigo = Val(TxtCod.Text)
             objPed.Nomecli = TxtCli.Text

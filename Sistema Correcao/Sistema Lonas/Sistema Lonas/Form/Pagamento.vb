@@ -26,6 +26,9 @@
         ElseIf txtval.Text = "" Then
             MsgBox("Digite o valor do pedido!")
             txtval.Focus()
+        ElseIf txtForma.Text = "" Then
+            MsgBox("Digite a forma de pagamento!")
+            txtForma.Focus()
         ElseIf dtpvenc.Text = "" Then
             MsgBox("Digite a data de vencimento!")
             dtpvenc.Focus()

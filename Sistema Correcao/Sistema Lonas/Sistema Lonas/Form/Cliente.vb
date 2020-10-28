@@ -16,7 +16,6 @@
         objControle.habilitar_botoes(Me, True)
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
-        BtnImp.Enabled = True
         GrpLoc.Visible = False
 
 
@@ -154,7 +153,6 @@
             objControle.Limpar_tela(Me)
             BtnExc.Enabled = False
             BtnAlt.Enabled = False
-            BtnImp.Enabled = False
         End If
     End Sub
 
@@ -198,7 +196,7 @@
     End Sub
 
    
-    Private Sub BtnImp_Click(sender As Object, e As EventArgs) Handles BtnImp.Click
+    Private Sub BtnImp_Click(sender As Object, e As EventArgs)
         Dim rpt As New CrpClientes
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"

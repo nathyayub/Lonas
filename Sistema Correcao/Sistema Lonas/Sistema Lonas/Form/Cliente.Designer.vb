@@ -53,7 +53,6 @@ Partial Class Cliente
         Me.Label5 = New System.Windows.Forms.Label()
         Me.BtnOK = New System.Windows.Forms.Button()
         Me.TxtLoc = New System.Windows.Forms.TextBox()
-        Me.BtnImp = New System.Windows.Forms.Button()
         Me.BtnAlt = New System.Windows.Forms.Button()
         Me.BtnSai = New System.Windows.Forms.Button()
         Me.BtnCan = New System.Windows.Forms.Button()
@@ -322,7 +321,7 @@ Partial Class Cliente
         Me.GrpLoc.Controls.Add(Me.TxtLoc)
         Me.GrpLoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrpLoc.ForeColor = System.Drawing.Color.White
-        Me.GrpLoc.Location = New System.Drawing.Point(494, 419)
+        Me.GrpLoc.Location = New System.Drawing.Point(495, 404)
         Me.GrpLoc.Name = "GrpLoc"
         Me.GrpLoc.Size = New System.Drawing.Size(230, 90)
         Me.GrpLoc.TabIndex = 75
@@ -364,25 +363,6 @@ Partial Class Cliente
         Me.TxtLoc.Size = New System.Drawing.Size(138, 26)
         Me.TxtLoc.TabIndex = 0
         '
-        'BtnImp
-        '
-        Me.BtnImp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnImp.BackColor = System.Drawing.Color.Silver
-        Me.BtnImp.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.BtnImp.FlatAppearance.BorderSize = 2
-        Me.BtnImp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnImp.Font = New System.Drawing.Font("Times New Roman", 15.0!)
-        Me.BtnImp.ForeColor = System.Drawing.Color.Black
-        Me.BtnImp.Location = New System.Drawing.Point(601, 322)
-        Me.BtnImp.Name = "BtnImp"
-        Me.BtnImp.Size = New System.Drawing.Size(124, 43)
-        Me.BtnImp.TabIndex = 18
-        Me.BtnImp.Text = "&Imprimir"
-        Me.BtnImp.UseVisualStyleBackColor = False
-        '
         'BtnAlt
         '
         Me.BtnAlt.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -414,7 +394,7 @@ Partial Class Cliente
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.BtnSai.ForeColor = System.Drawing.Color.Black
-        Me.BtnSai.Location = New System.Drawing.Point(601, 370)
+        Me.BtnSai.Location = New System.Drawing.Point(601, 322)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
         Me.BtnSai.TabIndex = 19
@@ -549,7 +529,6 @@ Partial Class Cliente
         Me.Controls.Add(Me.TxtCod)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GrpLoc)
-        Me.Controls.Add(Me.BtnImp)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
         Me.Controls.Add(Me.BtnCan)
@@ -598,7 +577,6 @@ Partial Class Cliente
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents BtnOK As System.Windows.Forms.Button
     Friend WithEvents TxtLoc As System.Windows.Forms.TextBox
-    Friend WithEvents BtnImp As System.Windows.Forms.Button
     Friend WithEvents BtnAlt As System.Windows.Forms.Button
     Friend WithEvents BtnSai As System.Windows.Forms.Button
     Friend WithEvents BtnCan As System.Windows.Forms.Button
