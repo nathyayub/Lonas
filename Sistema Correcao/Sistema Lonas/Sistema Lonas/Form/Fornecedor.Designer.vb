@@ -56,7 +56,7 @@ Partial Class Fornecedor
         Me.txtcod.Location = New System.Drawing.Point(178, 49)
         Me.txtcod.Name = "txtcod"
         Me.txtcod.Size = New System.Drawing.Size(180, 26)
-        Me.txtcod.TabIndex = 89
+        Me.txtcod.TabIndex = 1
         '
         'Label5
         '
@@ -124,7 +124,7 @@ Partial Class Fornecedor
         Me.BtnImp.Location = New System.Drawing.Point(622, 310)
         Me.BtnImp.Name = "BtnImp"
         Me.BtnImp.Size = New System.Drawing.Size(124, 43)
-        Me.BtnImp.TabIndex = 86
+        Me.BtnImp.TabIndex = 12
         Me.BtnImp.Text = "&Imprimir"
         Me.BtnImp.UseVisualStyleBackColor = False
         '
@@ -142,7 +142,7 @@ Partial Class Fornecedor
         Me.BtnAlt.Location = New System.Drawing.Point(622, 211)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
-        Me.BtnAlt.TabIndex = 85
+        Me.BtnAlt.TabIndex = 10
         Me.BtnAlt.Text = "&Alterar"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -160,7 +160,7 @@ Partial Class Fornecedor
         Me.BtnSai.Location = New System.Drawing.Point(622, 358)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
-        Me.BtnSai.TabIndex = 84
+        Me.BtnSai.TabIndex = 13
         Me.BtnSai.Text = "Sai&r"
         Me.BtnSai.UseVisualStyleBackColor = False
         '
@@ -178,7 +178,7 @@ Partial Class Fornecedor
         Me.BtnCan.Location = New System.Drawing.Point(622, 259)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
-        Me.BtnCan.TabIndex = 83
+        Me.BtnCan.TabIndex = 11
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -196,7 +196,7 @@ Partial Class Fornecedor
         Me.BtnLoc.Location = New System.Drawing.Point(622, 161)
         Me.BtnLoc.Name = "BtnLoc"
         Me.BtnLoc.Size = New System.Drawing.Size(124, 44)
-        Me.BtnLoc.TabIndex = 82
+        Me.BtnLoc.TabIndex = 9
         Me.BtnLoc.Text = "&Localizar"
         Me.BtnLoc.UseVisualStyleBackColor = False
         '
@@ -214,7 +214,7 @@ Partial Class Fornecedor
         Me.BtnExc.Location = New System.Drawing.Point(622, 111)
         Me.BtnExc.Name = "BtnExc"
         Me.BtnExc.Size = New System.Drawing.Size(124, 43)
-        Me.BtnExc.TabIndex = 81
+        Me.BtnExc.TabIndex = 8
         Me.BtnExc.Text = "&Excluir"
         Me.BtnExc.UseVisualStyleBackColor = False
         '
@@ -232,7 +232,7 @@ Partial Class Fornecedor
         Me.BtnGra.Location = New System.Drawing.Point(622, 62)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
-        Me.BtnGra.TabIndex = 80
+        Me.BtnGra.TabIndex = 7
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -250,7 +250,7 @@ Partial Class Fornecedor
         Me.BtnNov.Location = New System.Drawing.Point(622, 12)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
-        Me.BtnNov.TabIndex = 79
+        Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
@@ -261,7 +261,7 @@ Partial Class Fornecedor
         Me.txttel.MaxLength = 10
         Me.txttel.Name = "txttel"
         Me.txttel.Size = New System.Drawing.Size(180, 26)
-        Me.txttel.TabIndex = 78
+        Me.txttel.TabIndex = 4
         '
         'txtven
         '
@@ -269,7 +269,7 @@ Partial Class Fornecedor
         Me.txtven.Location = New System.Drawing.Point(177, 239)
         Me.txtven.Name = "txtven"
         Me.txtven.Size = New System.Drawing.Size(180, 26)
-        Me.txtven.TabIndex = 77
+        Me.txtven.TabIndex = 5
         '
         'txtcnpj
         '
@@ -277,15 +277,15 @@ Partial Class Fornecedor
         Me.txtcnpj.Location = New System.Drawing.Point(178, 139)
         Me.txtcnpj.Name = "txtcnpj"
         Me.txtcnpj.Size = New System.Drawing.Size(180, 26)
-        Me.txtcnpj.TabIndex = 12
+        Me.txtcnpj.TabIndex = 3
         '
         'txtnom
         '
         Me.txtnom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnom.Location = New System.Drawing.Point(177, 91)
+        Me.txtnom.Location = New System.Drawing.Point(178, 93)
         Me.txtnom.Name = "txtnom"
         Me.txtnom.Size = New System.Drawing.Size(180, 26)
-        Me.txtnom.TabIndex = 75
+        Me.txtnom.TabIndex = 2
         '
         'Label4
         '
@@ -334,10 +334,10 @@ Partial Class Fornecedor
         'TxtPix
         '
         Me.TxtPix.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPix.Location = New System.Drawing.Point(177, 287)
+        Me.TxtPix.Location = New System.Drawing.Point(178, 287)
         Me.TxtPix.Name = "TxtPix"
         Me.TxtPix.Size = New System.Drawing.Size(180, 26)
-        Me.TxtPix.TabIndex = 95
+        Me.TxtPix.TabIndex = 6
         '
         'Label7
         '
@@ -378,7 +378,7 @@ Partial Class Fornecedor
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Fornecedor"
         Me.Text = "Fornecedor"
         Me.GrpLoc.ResumeLayout(False)

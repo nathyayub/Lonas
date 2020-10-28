@@ -64,11 +64,10 @@ Partial Class Marina
         Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAlt.Location = New System.Drawing.Point(839, 266)
-        Me.BtnAlt.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnAlt.Location = New System.Drawing.Point(629, 216)
         Me.BtnAlt.Name = "BtnAlt"
-        Me.BtnAlt.Size = New System.Drawing.Size(165, 53)
-        Me.BtnAlt.TabIndex = 131
+        Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
+        Me.BtnAlt.TabIndex = 12
         Me.BtnAlt.Text = "&Alterar"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -83,11 +82,10 @@ Partial Class Marina
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(839, 388)
-        Me.BtnSai.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnSai.Location = New System.Drawing.Point(629, 315)
         Me.BtnSai.Name = "BtnSai"
-        Me.BtnSai.Size = New System.Drawing.Size(165, 53)
-        Me.BtnSai.TabIndex = 130
+        Me.BtnSai.Size = New System.Drawing.Size(124, 43)
+        Me.BtnSai.TabIndex = 14
         Me.BtnSai.Text = "Sai&r"
         Me.BtnSai.UseVisualStyleBackColor = False
         '
@@ -102,11 +100,10 @@ Partial Class Marina
         Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCan.Location = New System.Drawing.Point(839, 327)
-        Me.BtnCan.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnCan.Location = New System.Drawing.Point(629, 266)
         Me.BtnCan.Name = "BtnCan"
-        Me.BtnCan.Size = New System.Drawing.Size(165, 53)
-        Me.BtnCan.TabIndex = 129
+        Me.BtnCan.Size = New System.Drawing.Size(124, 43)
+        Me.BtnCan.TabIndex = 13
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -121,11 +118,10 @@ Partial Class Marina
         Me.BtnLoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLoc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnLoc.Location = New System.Drawing.Point(839, 206)
-        Me.BtnLoc.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnLoc.Location = New System.Drawing.Point(629, 167)
         Me.BtnLoc.Name = "BtnLoc"
-        Me.BtnLoc.Size = New System.Drawing.Size(165, 54)
-        Me.BtnLoc.TabIndex = 128
+        Me.BtnLoc.Size = New System.Drawing.Size(124, 44)
+        Me.BtnLoc.TabIndex = 11
         Me.BtnLoc.Text = "&Localizar"
         Me.BtnLoc.UseVisualStyleBackColor = False
         '
@@ -140,11 +136,10 @@ Partial Class Marina
         Me.BtnExc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnExc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnExc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnExc.Location = New System.Drawing.Point(839, 143)
-        Me.BtnExc.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnExc.Location = New System.Drawing.Point(629, 116)
         Me.BtnExc.Name = "BtnExc"
-        Me.BtnExc.Size = New System.Drawing.Size(165, 53)
-        Me.BtnExc.TabIndex = 127
+        Me.BtnExc.Size = New System.Drawing.Size(124, 43)
+        Me.BtnExc.TabIndex = 10
         Me.BtnExc.Text = "&Excluir"
         Me.BtnExc.UseVisualStyleBackColor = False
         '
@@ -159,11 +154,10 @@ Partial Class Marina
         Me.BtnGra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGra.Location = New System.Drawing.Point(839, 84)
-        Me.BtnGra.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnGra.Location = New System.Drawing.Point(629, 68)
         Me.BtnGra.Name = "BtnGra"
-        Me.BtnGra.Size = New System.Drawing.Size(165, 53)
-        Me.BtnGra.TabIndex = 126
+        Me.BtnGra.Size = New System.Drawing.Size(124, 43)
+        Me.BtnGra.TabIndex = 9
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -178,76 +172,69 @@ Partial Class Marina
         Me.BtnNov.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnNov.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNov.Location = New System.Drawing.Point(839, 21)
-        Me.BtnNov.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnNov.Location = New System.Drawing.Point(629, 17)
         Me.BtnNov.Name = "BtnNov"
-        Me.BtnNov.Size = New System.Drawing.Size(165, 53)
-        Me.BtnNov.TabIndex = 125
+        Me.BtnNov.Size = New System.Drawing.Size(124, 43)
+        Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
         'txtcep
         '
         Me.txtcep.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcep.Location = New System.Drawing.Point(213, 400)
-        Me.txtcep.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtcep.Location = New System.Drawing.Point(80, 330)
         Me.txtcep.MaxLength = 7
         Me.txtcep.Name = "txtcep"
-        Me.txtcep.Size = New System.Drawing.Size(285, 30)
-        Me.txtcep.TabIndex = 123
+        Me.txtcep.Size = New System.Drawing.Size(215, 26)
+        Me.txtcep.TabIndex = 8
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(15, 400)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(11, 330)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(65, 29)
+        Me.Label8.Size = New System.Drawing.Size(52, 22)
         Me.Label8.TabIndex = 124
         Me.Label8.Text = "CEP:"
         '
         'txtestado
         '
         Me.txtestado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtestado.Location = New System.Drawing.Point(213, 344)
-        Me.txtestado.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtestado.Location = New System.Drawing.Point(85, 285)
         Me.txtestado.MaxLength = 2
         Me.txtestado.Name = "txtestado"
-        Me.txtestado.Size = New System.Drawing.Size(285, 30)
-        Me.txtestado.TabIndex = 121
+        Me.txtestado.Size = New System.Drawing.Size(82, 26)
+        Me.txtestado.TabIndex = 7
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(15, 289)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(11, 243)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(90, 29)
+        Me.Label6.Size = New System.Drawing.Size(73, 22)
         Me.Label6.TabIndex = 122
         Me.Label6.Text = "Cidade:"
         '
         'txtcidade
         '
         Me.txtcidade.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcidade.Location = New System.Drawing.Point(213, 289)
-        Me.txtcidade.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtcidade.Location = New System.Drawing.Point(85, 241)
         Me.txtcidade.Name = "txtcidade"
-        Me.txtcidade.Size = New System.Drawing.Size(285, 30)
-        Me.txtcidade.TabIndex = 119
+        Me.txtcidade.Size = New System.Drawing.Size(271, 26)
+        Me.txtcidade.TabIndex = 6
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(15, 351)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(11, 287)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(88, 29)
+        Me.Label7.Size = New System.Drawing.Size(70, 22)
         Me.Label7.TabIndex = 120
         Me.Label7.Text = "Estado:"
         '
@@ -258,11 +245,9 @@ Partial Class Marina
         Me.GrpLoc.Controls.Add(Me.TxtLoc)
         Me.GrpLoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrpLoc.ForeColor = System.Drawing.Color.White
-        Me.GrpLoc.Location = New System.Drawing.Point(519, 7)
-        Me.GrpLoc.Margin = New System.Windows.Forms.Padding(4)
+        Me.GrpLoc.Location = New System.Drawing.Point(389, 6)
         Me.GrpLoc.Name = "GrpLoc"
-        Me.GrpLoc.Padding = New System.Windows.Forms.Padding(4)
-        Me.GrpLoc.Size = New System.Drawing.Size(307, 111)
+        Me.GrpLoc.Size = New System.Drawing.Size(230, 90)
         Me.GrpLoc.TabIndex = 118
         Me.GrpLoc.TabStop = False
         Me.GrpLoc.Text = "Localizar"
@@ -271,20 +256,18 @@ Partial Class Marina
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(16, 37)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(12, 30)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(229, 25)
+        Me.Label9.Size = New System.Drawing.Size(185, 20)
         Me.Label9.TabIndex = 2
         Me.Label9.Text = "Digite o Código ou Nome"
         '
         'BtnOK
         '
         Me.BtnOK.ForeColor = System.Drawing.Color.Black
-        Me.BtnOK.Location = New System.Drawing.Point(213, 65)
-        Me.BtnOK.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnOK.Location = New System.Drawing.Point(160, 53)
         Me.BtnOK.Name = "BtnOK"
-        Me.BtnOK.Size = New System.Drawing.Size(55, 32)
+        Me.BtnOK.Size = New System.Drawing.Size(41, 26)
         Me.BtnOK.TabIndex = 1
         Me.BtnOK.Text = "OK"
         Me.BtnOK.UseVisualStyleBackColor = True
@@ -292,41 +275,37 @@ Partial Class Marina
         'TxtLoc
         '
         Me.TxtLoc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TxtLoc.Location = New System.Drawing.Point(21, 65)
-        Me.TxtLoc.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtLoc.Location = New System.Drawing.Point(16, 53)
         Me.TxtLoc.Name = "TxtLoc"
-        Me.TxtLoc.Size = New System.Drawing.Size(183, 30)
+        Me.TxtLoc.Size = New System.Drawing.Size(138, 26)
         Me.TxtLoc.TabIndex = 0
         '
         'txtbairro
         '
         Me.txtbairro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtbairro.Location = New System.Drawing.Point(213, 241)
-        Me.txtbairro.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtbairro.Location = New System.Drawing.Point(85, 197)
         Me.txtbairro.Name = "txtbairro"
-        Me.txtbairro.Size = New System.Drawing.Size(285, 30)
-        Me.txtbairro.TabIndex = 116
+        Me.txtbairro.Size = New System.Drawing.Size(271, 26)
+        Me.txtbairro.TabIndex = 5
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(15, 241)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(11, 199)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(81, 29)
+        Me.Label5.Size = New System.Drawing.Size(68, 22)
         Me.Label5.TabIndex = 117
         Me.Label5.Text = "Bairro:"
         '
         'txtcomp
         '
         Me.txtcomp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcomp.Location = New System.Drawing.Point(213, 193)
-        Me.txtcomp.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtcomp.Location = New System.Drawing.Point(142, 154)
         Me.txtcomp.Name = "txtcomp"
-        Me.txtcomp.Size = New System.Drawing.Size(285, 30)
-        Me.txtcomp.TabIndex = 114
+        Me.txtcomp.Size = New System.Drawing.Size(153, 26)
+        Me.txtcomp.TabIndex = 4
         Me.txtcomp.Tag = "x"
         '
         'Label4
@@ -334,31 +313,28 @@ Partial Class Marina
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(15, 193)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(11, 156)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(163, 29)
+        Me.Label4.Size = New System.Drawing.Size(125, 22)
         Me.Label4.TabIndex = 115
         Me.Label4.Text = "Complemento:"
         '
         'txtEnde
         '
         Me.txtEnde.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEnde.Location = New System.Drawing.Point(213, 143)
-        Me.txtEnde.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtEnde.Location = New System.Drawing.Point(108, 110)
         Me.txtEnde.Name = "txtEnde"
-        Me.txtEnde.Size = New System.Drawing.Size(285, 30)
-        Me.txtEnde.TabIndex = 112
+        Me.txtEnde.Size = New System.Drawing.Size(248, 26)
+        Me.txtEnde.TabIndex = 3
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(15, 143)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(11, 112)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 29)
+        Me.Label3.Size = New System.Drawing.Size(91, 22)
         Me.Label3.TabIndex = 113
         Me.Label3.Text = "Endereço:"
         '
@@ -366,51 +342,47 @@ Partial Class Marina
         '
         Me.txtcodigo.Enabled = False
         Me.txtcodigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcodigo.Location = New System.Drawing.Point(213, 31)
-        Me.txtcodigo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtcodigo.Location = New System.Drawing.Point(91, 25)
         Me.txtcodigo.Name = "txtcodigo"
-        Me.txtcodigo.Size = New System.Drawing.Size(100, 30)
-        Me.txtcodigo.TabIndex = 110
+        Me.txtcodigo.Size = New System.Drawing.Size(76, 26)
+        Me.txtcodigo.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(15, 31)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(11, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(93, 29)
+        Me.Label2.Size = New System.Drawing.Size(74, 22)
         Me.Label2.TabIndex = 111
         Me.Label2.Text = "Código:"
         '
         'txtnomeE
         '
         Me.txtnomeE.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnomeE.Location = New System.Drawing.Point(213, 86)
-        Me.txtnomeE.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtnomeE.Location = New System.Drawing.Point(80, 67)
         Me.txtnomeE.Name = "txtnomeE"
-        Me.txtnomeE.Size = New System.Drawing.Size(285, 30)
-        Me.txtnomeE.TabIndex = 108
+        Me.txtnomeE.Size = New System.Drawing.Size(215, 26)
+        Me.txtnomeE.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(15, 86)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(11, 67)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 29)
+        Me.Label1.Size = New System.Drawing.Size(63, 22)
         Me.Label1.TabIndex = 109
         Me.Label1.Text = "Nome:"
         '
         'Marina
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(1020, 512)
+        Me.ClientSize = New System.Drawing.Size(765, 416)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
         Me.Controls.Add(Me.BtnCan)
@@ -436,7 +408,6 @@ Partial Class Marina
         Me.Controls.Add(Me.txtnomeE)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Marina"
         Me.Text = "Marina"
         Me.GrpLoc.ResumeLayout(False)

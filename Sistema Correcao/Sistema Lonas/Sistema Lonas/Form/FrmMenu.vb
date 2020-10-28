@@ -12,8 +12,8 @@ Public Class FrmMenu
         DtsDolar = cotacaoService.getUltimoValorVO(10813).ultimoValor.svalor
         DtsEuro = cotacaoService.getUltimoValorVO(21620).ultimoValor.svalor
 
-        txtDolar.Text = ("R$" + DtsDolar)
-        TxtEuro.Text = ("R$" + DtsEuro)
+        TxtDolarCota.Text = ("R$" + DtsDolar)
+        txtEuroCota.Text = ("R$" + DtsEuro)
 
     End Sub
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
@@ -235,4 +235,16 @@ Public Class FrmMenu
         ConsultaDespesasStr.MdiParent = Me
     End Sub
 
+    Private Sub txtEuroCota_TextChanged(sender As Object, e As EventArgs) Handles txtEuroCota.TextChanged
+
+    End Sub
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+    Private Sub TxtDolarCota_TextChanged(sender As Object, e As EventArgs) Handles TxtDolarCota.TextChanged
+
+    End Sub
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
 End Class

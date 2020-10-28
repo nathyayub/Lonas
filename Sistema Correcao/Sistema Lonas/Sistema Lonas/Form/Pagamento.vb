@@ -33,6 +33,7 @@
             objPag.Codigo = Val(txtcod.Text)
             objPag.Pedido = txtcodped.Text
             objPag.Valor = txtval.Text
+            objPag.FormaPagamento = txtForma.Text
             objPag.Vencimento = dtpvenc.Text
             objPag.Recebimento = chbrec.Checked
             objPag.Gravar(novo)
@@ -99,6 +100,7 @@
         txtcod.Text = objPag.Codigo
         txtcodped.Text = objPag.Pedido
         txtval.Text = objPag.Valor
+        txtForma.Text = objPag.FormaPagamento
         dtpvenc.Text = objPag.Vencimento
         chbrec.Checked = objPag.Recebimento
     End Sub

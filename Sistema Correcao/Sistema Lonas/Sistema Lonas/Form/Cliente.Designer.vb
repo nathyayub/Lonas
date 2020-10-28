@@ -70,7 +70,7 @@ Partial Class Cliente
         Me.TxtIns.Location = New System.Drawing.Point(174, 219)
         Me.TxtIns.Name = "TxtIns"
         Me.TxtIns.Size = New System.Drawing.Size(204, 26)
-        Me.TxtIns.TabIndex = 4
+        Me.TxtIns.TabIndex = 5
         Me.TxtIns.Tag = "x"
         '
         'Label14
@@ -89,7 +89,7 @@ Partial Class Cliente
         Me.TxtCNPJ.Location = New System.Drawing.Point(174, 181)
         Me.TxtCNPJ.Name = "TxtCNPJ"
         Me.TxtCNPJ.Size = New System.Drawing.Size(204, 26)
-        Me.TxtCNPJ.TabIndex = 3
+        Me.TxtCNPJ.TabIndex = 4
         Me.TxtCNPJ.Tag = "x"
         '
         'Label12
@@ -106,11 +106,11 @@ Partial Class Cliente
         '
         Me.TxtEst.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtEst.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtEst.Location = New System.Drawing.Point(174, 415)
+        Me.TxtEst.Location = New System.Drawing.Point(174, 416)
         Me.TxtEst.MaxLength = 2
         Me.TxtEst.Name = "TxtEst"
-        Me.TxtEst.Size = New System.Drawing.Size(48, 26)
-        Me.TxtEst.TabIndex = 9
+        Me.TxtEst.Size = New System.Drawing.Size(127, 26)
+        Me.TxtEst.TabIndex = 10
         '
         'TxtCid
         '
@@ -118,8 +118,8 @@ Partial Class Cliente
         Me.TxtCid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCid.Location = New System.Drawing.Point(174, 454)
         Me.TxtCid.Name = "TxtCid"
-        Me.TxtCid.Size = New System.Drawing.Size(247, 26)
-        Me.TxtCid.TabIndex = 10
+        Me.TxtCid.Size = New System.Drawing.Size(287, 26)
+        Me.TxtCid.TabIndex = 11
         '
         'TxtCep
         '
@@ -128,7 +128,7 @@ Partial Class Cliente
         Me.TxtCep.MaxLength = 8
         Me.TxtCep.Name = "TxtCep"
         Me.TxtCep.Size = New System.Drawing.Size(204, 26)
-        Me.TxtCep.TabIndex = 11
+        Me.TxtCep.TabIndex = 12
         '
         'TxtBai
         '
@@ -136,8 +136,8 @@ Partial Class Cliente
         Me.TxtBai.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBai.Location = New System.Drawing.Point(174, 378)
         Me.TxtBai.Name = "TxtBai"
-        Me.TxtBai.Size = New System.Drawing.Size(204, 26)
-        Me.TxtBai.TabIndex = 8
+        Me.TxtBai.Size = New System.Drawing.Size(287, 26)
+        Me.TxtBai.TabIndex = 9
         '
         'TxtCom
         '
@@ -146,7 +146,7 @@ Partial Class Cliente
         Me.TxtCom.Location = New System.Drawing.Point(174, 339)
         Me.TxtCom.Name = "TxtCom"
         Me.TxtCom.Size = New System.Drawing.Size(130, 26)
-        Me.TxtCom.TabIndex = 7
+        Me.TxtCom.TabIndex = 8
         Me.TxtCom.Tag = "x"
         '
         'TxtEnd
@@ -156,7 +156,7 @@ Partial Class Cliente
         Me.TxtEnd.Location = New System.Drawing.Point(174, 300)
         Me.TxtEnd.Name = "TxtEnd"
         Me.TxtEnd.Size = New System.Drawing.Size(330, 26)
-        Me.TxtEnd.TabIndex = 6
+        Me.TxtEnd.TabIndex = 7
         '
         'TxtCpf
         '
@@ -165,7 +165,7 @@ Partial Class Cliente
         Me.TxtCpf.MaxLength = 11
         Me.TxtCpf.Name = "TxtCpf"
         Me.TxtCpf.Size = New System.Drawing.Size(204, 26)
-        Me.TxtCpf.TabIndex = 2
+        Me.TxtCpf.TabIndex = 3
         Me.TxtCpf.Tag = "x"
         '
         'Label13
@@ -246,7 +246,7 @@ Partial Class Cliente
         Me.MskTel.Name = "MskTel"
         Me.MskTel.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
         Me.MskTel.Size = New System.Drawing.Size(204, 26)
-        Me.MskTel.TabIndex = 1
+        Me.MskTel.TabIndex = 2
         '
         'TxtEma
         '
@@ -255,7 +255,7 @@ Partial Class Cliente
         Me.TxtEma.Location = New System.Drawing.Point(174, 258)
         Me.TxtEma.Name = "TxtEma"
         Me.TxtEma.Size = New System.Drawing.Size(330, 26)
-        Me.TxtEma.TabIndex = 5
+        Me.TxtEma.TabIndex = 6
         '
         'Label4
         '
@@ -284,7 +284,7 @@ Partial Class Cliente
         Me.TxtNom.Location = New System.Drawing.Point(174, 57)
         Me.TxtNom.Name = "TxtNom"
         Me.TxtNom.Size = New System.Drawing.Size(330, 26)
-        Me.TxtNom.TabIndex = 0
+        Me.TxtNom.TabIndex = 1
         '
         'Label2
         '
@@ -512,7 +512,7 @@ Partial Class Cliente
         Me.BtnNov.Location = New System.Drawing.Point(601, 24)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
-        Me.BtnNov.TabIndex = 12
+        Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '

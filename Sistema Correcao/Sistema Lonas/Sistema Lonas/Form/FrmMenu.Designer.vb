@@ -43,6 +43,8 @@ Partial Class FrmMenu
         Me.RelátorioDePedidosPorDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioFornecedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioDespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelátorioGeralDeDespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RelátorioDeDespesasPorDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaídaDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EntradaDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -64,7 +66,6 @@ Partial Class FrmMenu
         Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton10 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.EstoqueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CadastroDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -89,12 +90,16 @@ Partial Class FrmMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtDolar = New System.Windows.Forms.TextBox()
         Me.LblCodCli = New System.Windows.Forms.Label()
-        Me.RelátorioGeralDeDespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RelátorioDeDespesasPorDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TxtDolarCota = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtEuroCota = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -206,6 +211,16 @@ Partial Class FrmMenu
         Me.RelátorioDespesasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RelátorioGeralDeDespesasToolStripMenuItem, Me.RelátorioDeDespesasPorDataToolStripMenuItem})
         Me.RelátorioDespesasToolStripMenuItem.Name = "RelátorioDespesasToolStripMenuItem"
         '
+        'RelátorioGeralDeDespesasToolStripMenuItem
+        '
+        resources.ApplyResources(Me.RelátorioGeralDeDespesasToolStripMenuItem, "RelátorioGeralDeDespesasToolStripMenuItem")
+        Me.RelátorioGeralDeDespesasToolStripMenuItem.Name = "RelátorioGeralDeDespesasToolStripMenuItem"
+        '
+        'RelátorioDeDespesasPorDataToolStripMenuItem
+        '
+        resources.ApplyResources(Me.RelátorioDeDespesasPorDataToolStripMenuItem, "RelátorioDeDespesasPorDataToolStripMenuItem")
+        Me.RelátorioDeDespesasPorDataToolStripMenuItem.Name = "RelátorioDeDespesasPorDataToolStripMenuItem"
+        '
         'RelátorioMateriaisToolStripMenuItem
         '
         resources.ApplyResources(Me.RelátorioMateriaisToolStripMenuItem, "RelátorioMateriaisToolStripMenuItem")
@@ -240,7 +255,7 @@ Partial Class FrmMenu
         Me.ToolStrip1.BackColor = System.Drawing.Color.Brown
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(56, 56)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator11, Me.ToolStripButton12, Me.ToolStripSeparator13, Me.ToolStripButton1, Me.ToolStripSeparator10, Me.ToolStripButton8, Me.ToolStripSeparator2, Me.TooMarina, Me.ToolStripSeparator14, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripButton6, Me.ToolStripSeparator7, Me.ToolStripButton10, Me.ToolStripSeparator6, Me.ToolStripSeparator1, Me.ToolStripSplitButton1, Me.ToolStripSeparator4, Me.ToolStripButton9, Me.ToolStripSeparator5, Me.ToolStripButton11, Me.ToolStripSeparator9, Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripButton5, Me.ToolStripSeparator12})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator11, Me.ToolStripButton12, Me.ToolStripSeparator13, Me.ToolStripButton1, Me.ToolStripSeparator10, Me.ToolStripButton8, Me.ToolStripSeparator2, Me.TooMarina, Me.ToolStripSeparator14, Me.ToolStripButton3, Me.ToolStripSeparator8, Me.ToolStripButton6, Me.ToolStripSeparator7, Me.ToolStripButton10, Me.ToolStripSeparator6, Me.ToolStripSplitButton1, Me.ToolStripSeparator4, Me.ToolStripButton9, Me.ToolStripSeparator5, Me.ToolStripButton11, Me.ToolStripSeparator9, Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripButton5, Me.ToolStripSeparator12})
         Me.ToolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
@@ -340,11 +355,6 @@ Partial Class FrmMenu
         '
         resources.ApplyResources(Me.ToolStripSeparator6, "ToolStripSeparator6")
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        '
-        'ToolStripSeparator1
-        '
-        resources.ApplyResources(Me.ToolStripSeparator1, "ToolStripSeparator1")
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         '
         'ToolStripSplitButton1
         '
@@ -498,15 +508,38 @@ Partial Class FrmMenu
         Me.LblCodCli.ForeColor = System.Drawing.Color.White
         Me.LblCodCli.Name = "LblCodCli"
         '
-        'RelátorioGeralDeDespesasToolStripMenuItem
+        'GroupBox2
         '
-        resources.ApplyResources(Me.RelátorioGeralDeDespesasToolStripMenuItem, "RelátorioGeralDeDespesasToolStripMenuItem")
-        Me.RelátorioGeralDeDespesasToolStripMenuItem.Name = "RelátorioGeralDeDespesasToolStripMenuItem"
+        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.Controls.Add(Me.txtEuroCota)
+        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Controls.Add(Me.TxtDolarCota)
+        Me.GroupBox2.Controls.Add(Me.Label2)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.White
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.TabStop = False
         '
-        'RelátorioDeDespesasPorDataToolStripMenuItem
+        'TxtDolarCota
         '
-        resources.ApplyResources(Me.RelátorioDeDespesasPorDataToolStripMenuItem, "RelátorioDeDespesasPorDataToolStripMenuItem")
-        Me.RelátorioDeDespesasPorDataToolStripMenuItem.Name = "RelátorioDeDespesasPorDataToolStripMenuItem"
+        resources.ApplyResources(Me.TxtDolarCota, "TxtDolarCota")
+        Me.TxtDolarCota.Name = "TxtDolarCota"
+        '
+        'Label2
+        '
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Name = "Label2"
+        '
+        'txtEuroCota
+        '
+        resources.ApplyResources(Me.txtEuroCota, "txtEuroCota")
+        Me.txtEuroCota.Name = "txtEuroCota"
+        '
+        'Label3
+        '
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Name = "Label3"
         '
         'FrmMenu
         '
@@ -514,6 +547,7 @@ Partial Class FrmMenu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.BackColor = System.Drawing.Color.Brown
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -531,6 +565,8 @@ Partial Class FrmMenu
         Me.grbcotacao.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -563,7 +599,6 @@ Partial Class FrmMenu
     Friend WithEvents ToolStripSeparator4 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripSeparator5 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripSeparator11 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripSeparator10 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripSeparator9 As System.Windows.Forms.ToolStripSeparator
@@ -603,5 +638,10 @@ Partial Class FrmMenu
     Friend WithEvents RelátorioDePedidosPorDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RelátorioGeralDeDespesasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RelátorioDeDespesasPorDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents txtEuroCota As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents TxtDolarCota As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

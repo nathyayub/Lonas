@@ -2,6 +2,7 @@
     Dim m_cod As Integer
     Dim m_ped As Integer
     Dim m_val As Single
+    Dim m_forma As String
     Dim m_venc As Date
     Dim m_rec As Boolean
 
@@ -36,6 +37,15 @@
         End Set
     End Property
 
+    Public Property FormaPagamento() As String
+        Get
+            Return m_forma
+        End Get
+        Set(ByVal value As String)
+            m_forma = value
+        End Set
+    End Property
+
     Public Property Vencimento() As Date
         Get
             Return m_venc
@@ -56,12 +66,12 @@
 
     Public Sub Gravar(novo As Boolean)
         If novo = True Then
-            sql = "insert into tabcontreceb (pedido, valor, venc, rec) values ('" & m_ped & "', '" & m_val & "','" & m_venc & "'," & m_rec & ")"
+            sql = "insert into tabcontreceb (pedido, valor, FormadePagamento, venc, rec) values ('" & m_ped & "', '" & m_val & "','" & m_forma & "','" & m_venc & "'," & m_rec & ")"
             objbanco.executar_comando(sql)
             sql = "select max(codcontreceb) as codigo from tabcontreceb"
             m_cod = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update tabcontreceb set pedido='" & m_ped & "', valor='" & m_val & "', venc='" & m_venc & "', rec =" & m_rec & " where codcontreceb=" & m_cod
+            sql = "Update tabcontreceb set pedido='" & m_ped & "', valor='" & m_val & "', FormadePagamento='" & m_forma & "', venc='" & m_venc & "', rec =" & m_rec & " where codcontreceb=" & m_cod
             objbanco.executar_comando(sql)
         End If
 
@@ -94,7 +104,8 @@
         m_cod = objdtLocal.Rows(0).Item(0)
         m_ped = objdtLocal.Rows(0).Item(1)
         m_val = objdtLocal.Rows(0).Item(2)
-        m_venc = objdtLocal.Rows(0).Item(3)
-        m_rec = objdtLocal.Rows(0).Item(4)
+        m_forma = objdtLocal.Rows(0).Item(3)
+        m_venc = objdtLocal.Rows(0).Item(4)
+        m_rec = objdtLocal.Rows(0).Item(5)
     End Sub
 End Class

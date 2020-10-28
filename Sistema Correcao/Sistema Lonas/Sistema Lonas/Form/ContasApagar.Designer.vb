@@ -55,11 +55,11 @@ Partial Class ContasApagar
         '
         'DtpVen
         '
-        Me.DtpVen.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DtpVen.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.DtpVen.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtpVen.Location = New System.Drawing.Point(130, 135)
+        Me.DtpVen.Location = New System.Drawing.Point(129, 138)
         Me.DtpVen.Name = "DtpVen"
-        Me.DtpVen.Size = New System.Drawing.Size(117, 30)
+        Me.DtpVen.Size = New System.Drawing.Size(117, 26)
         Me.DtpVen.TabIndex = 126
         '
         'GrpLoc
@@ -250,11 +250,10 @@ Partial Class ContasApagar
         '
         'TxtTipName
         '
-        Me.TxtTipName.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTipName.Location = New System.Drawing.Point(253, 57)
-        Me.TxtTipName.Multiline = True
+        Me.TxtTipName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.TxtTipName.Location = New System.Drawing.Point(259, 58)
         Me.TxtTipName.Name = "TxtTipName"
-        Me.TxtTipName.Size = New System.Drawing.Size(168, 24)
+        Me.TxtTipName.Size = New System.Drawing.Size(162, 26)
         Me.TxtTipName.TabIndex = 116
         '
         'BTNtip
@@ -262,7 +261,7 @@ Partial Class ContasApagar
         Me.BTNtip.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNtip.Location = New System.Drawing.Point(188, 58)
         Me.BTNtip.Name = "BTNtip"
-        Me.BTNtip.Size = New System.Drawing.Size(59, 24)
+        Me.BTNtip.Size = New System.Drawing.Size(65, 26)
         Me.BTNtip.TabIndex = 115
         Me.BTNtip.Text = "..."
         Me.BTNtip.UseVisualStyleBackColor = True
@@ -281,7 +280,7 @@ Partial Class ContasApagar
         '
         'TxtDes
         '
-        Me.TxtDes.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtDes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtDes.Location = New System.Drawing.Point(129, 214)
         Me.TxtDes.Multiline = True
         Me.TxtDes.Name = "TxtDes"
@@ -290,29 +289,27 @@ Partial Class ContasApagar
         '
         'TxtVal
         '
-        Me.TxtVal.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtVal.Location = New System.Drawing.Point(132, 93)
+        Me.TxtVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.TxtVal.Location = New System.Drawing.Point(132, 96)
         Me.TxtVal.Name = "TxtVal"
-        Me.TxtVal.Size = New System.Drawing.Size(100, 30)
+        Me.TxtVal.Size = New System.Drawing.Size(100, 26)
         Me.TxtVal.TabIndex = 112
         '
         'TxtTip
         '
-        Me.TxtTip.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtTip.Location = New System.Drawing.Point(130, 58)
-        Me.TxtTip.Multiline = True
         Me.TxtTip.Name = "TxtTip"
-        Me.TxtTip.Size = New System.Drawing.Size(52, 24)
+        Me.TxtTip.Size = New System.Drawing.Size(52, 26)
         Me.TxtTip.TabIndex = 111
         '
         'TxtCodc
         '
         Me.TxtCodc.Enabled = False
-        Me.TxtCodc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCodc.Location = New System.Drawing.Point(126, 22)
-        Me.TxtCodc.Multiline = True
+        Me.TxtCodc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.TxtCodc.Location = New System.Drawing.Point(130, 20)
         Me.TxtCodc.Name = "TxtCodc"
-        Me.TxtCodc.Size = New System.Drawing.Size(100, 20)
+        Me.TxtCodc.Size = New System.Drawing.Size(127, 26)
         Me.TxtCodc.TabIndex = 110
         '
         'Label5
