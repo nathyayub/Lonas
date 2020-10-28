@@ -47,10 +47,8 @@ Partial Class Pagamento
         Me.txtcod = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Timoneiros2020_2000CDataSet1 = New Sistema_Lonas.timoneiros2020_2000CDataSet()
         Me.txtForma = New System.Windows.Forms.TextBox()
         Me.GrpLoc.SuspendLayout()
-        CType(Me.Timoneiros2020_2000CDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'chbrec
@@ -351,8 +349,6 @@ Partial Class Pagamento
         '
         'Timoneiros2020_2000CDataSet1
         '
-        Me.Timoneiros2020_2000CDataSet1.DataSetName = "timoneiros2020_2000CDataSet"
-        Me.Timoneiros2020_2000CDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'txtForma
         '
@@ -395,7 +391,6 @@ Partial Class Pagamento
         Me.Text = "Pagamento"
         Me.GrpLoc.ResumeLayout(False)
         Me.GrpLoc.PerformLayout()
-        CType(Me.Timoneiros2020_2000CDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -424,6 +419,5 @@ Partial Class Pagamento
     Friend WithEvents txtcod As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Timoneiros2020_2000CDataSet1 As Sistema_Lonas.timoneiros2020_2000CDataSet
     Friend WithEvents txtForma As System.Windows.Forms.TextBox
 End Class

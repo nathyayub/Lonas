@@ -31,4 +31,13 @@
         Me.Close()
     End Sub
 
+   
+   
+    Private Sub DgdGrade_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgdGrade.CellContentClick
+
+    End Sub
+
+    Private Sub ConsultaCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

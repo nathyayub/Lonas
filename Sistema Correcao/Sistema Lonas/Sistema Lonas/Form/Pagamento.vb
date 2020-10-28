@@ -2,6 +2,7 @@
     Dim objControle As New ClsControle
     Dim objPag As New ClsPagamento
     Dim novo As Boolean
+    Public quemchamou As String = ""
     Private Sub Pagamento_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         Me.Top = 0
         Me.Left = 0
@@ -14,7 +15,6 @@
         btnverificar.Enabled = False
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
-        BtnImp.Enabled = False
         GrpLoc.Visible = False
 
     End Sub
@@ -65,7 +65,6 @@
             objControle.Limpar_tela(Me)
             BtnExc.Enabled = False
             BtnAlt.Enabled = False
-            BtnImp.Enabled = False
         End If
     End Sub
 

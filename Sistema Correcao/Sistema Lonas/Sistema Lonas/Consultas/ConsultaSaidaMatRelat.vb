@@ -1,6 +1,9 @@
 ﻿Public Class ConsultaSaidaMatRelat
     Dim objentsai As New ClsSaidaDeMaterial
-
+    Private Sub ConsultaSaidaMatRelat_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Me.Top = 0
+        Me.Left = 0
+    End Sub
     Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
         DgdGrade.DataSource = objentsai.Localizar_porData(DtpIni.Text, DtpFin.Text)
     End Sub

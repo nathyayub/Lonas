@@ -634,7 +634,6 @@ C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.exe
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.xml
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.pdb
-C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\bin\Debug\timoneiros2020_2000C.mdb
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\bin\Debug\Sistema Lonas.exe
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\bin\Debug\Sistema Lonas.pdb
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\bin\Debug\Sistema Lonas.xml

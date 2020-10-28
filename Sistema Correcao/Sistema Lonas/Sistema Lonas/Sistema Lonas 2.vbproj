@@ -29,7 +29,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -37,6 +37,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Sistema Lonas.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -352,16 +353,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Settings.vb" />
-    <Compile Include="timoneiros2020_2000CDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>timoneiros2020_2000CDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="timoneiros2020_2000CDataSet1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>timoneiros2020_2000CDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Web References\WsCotacao\Reference.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -509,28 +500,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="timoneiros2020_2000CDataSet.xsc">
-      <DependentUpon>timoneiros2020_2000CDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="timoneiros2020_2000CDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>timoneiros2020_2000CDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="timoneiros2020_2000CDataSet.xss">
-      <DependentUpon>timoneiros2020_2000CDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="timoneiros2020_2000CDataSet1.xsc">
-      <DependentUpon>timoneiros2020_2000CDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="timoneiros2020_2000CDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>timoneiros2020_2000CDataSet1.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="timoneiros2020_2000CDataSet1.xss">
-      <DependentUpon>timoneiros2020_2000CDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Web References\WsCotacao\FachadaWSSGS.wsdl" />
     <None Include="Web References\WsCotacao\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -565,11 +534,6 @@
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="timoneiros2020_2000C.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <WebReferenceUrl Include="https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/FachadaWSSGS.wsdl">

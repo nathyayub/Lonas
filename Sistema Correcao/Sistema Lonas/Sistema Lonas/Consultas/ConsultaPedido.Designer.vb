@@ -61,10 +61,13 @@ Partial Class ConsultaPedido
         '
         'DgdGrade
         '
+        Me.DgdGrade.AllowUserToAddRows = False
+        Me.DgdGrade.AllowUserToDeleteRows = False
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodPed, Me.CodCli, Me.NomCli, Me.Tel, Me.ValPedTot, Me.DataPet, Me.PraMin, Me.PraMax, Me.Pago, Me.DtPag, Me.Column1})
         Me.DgdGrade.Location = New System.Drawing.Point(12, 95)
         Me.DgdGrade.Name = "DgdGrade"
+        Me.DgdGrade.ReadOnly = True
         Me.DgdGrade.Size = New System.Drawing.Size(857, 264)
         Me.DgdGrade.TabIndex = 9
         '
@@ -73,54 +76,63 @@ Partial Class ConsultaPedido
         Me.CodPed.DataPropertyName = "CodPed"
         Me.CodPed.HeaderText = "Código do Pedido"
         Me.CodPed.Name = "CodPed"
+        Me.CodPed.ReadOnly = True
         '
         'CodCli
         '
         Me.CodCli.DataPropertyName = "CodCli"
         Me.CodCli.HeaderText = "Código do Cliente"
         Me.CodCli.Name = "CodCli"
+        Me.CodCli.ReadOnly = True
         '
         'NomCli
         '
         Me.NomCli.DataPropertyName = "NomCli"
         Me.NomCli.HeaderText = "Nome do Cliente"
         Me.NomCli.Name = "NomCli"
+        Me.NomCli.ReadOnly = True
         '
         'Tel
         '
         Me.Tel.DataPropertyName = "Tel"
         Me.Tel.HeaderText = "Telefone do Cliente"
         Me.Tel.Name = "Tel"
+        Me.Tel.ReadOnly = True
         '
         'ValPedTot
         '
         Me.ValPedTot.DataPropertyName = "ValPedTot"
         Me.ValPedTot.HeaderText = "Valor Total"
         Me.ValPedTot.Name = "ValPedTot"
+        Me.ValPedTot.ReadOnly = True
         '
         'DataPet
         '
         Me.DataPet.DataPropertyName = "DataPed"
         Me.DataPet.HeaderText = "Data do Pedido"
         Me.DataPet.Name = "DataPet"
+        Me.DataPet.ReadOnly = True
         '
         'PraMin
         '
         Me.PraMin.DataPropertyName = "PraMin"
         Me.PraMin.HeaderText = "Prazo Mínimo"
         Me.PraMin.Name = "PraMin"
+        Me.PraMin.ReadOnly = True
         '
         'PraMax
         '
         Me.PraMax.DataPropertyName = "PraMax"
         Me.PraMax.HeaderText = "Prazo Máximo"
         Me.PraMax.Name = "PraMax"
+        Me.PraMax.ReadOnly = True
         '
         'Pago
         '
         Me.Pago.DataPropertyName = "Pago"
         Me.Pago.HeaderText = "Pago"
         Me.Pago.Name = "Pago"
+        Me.Pago.ReadOnly = True
         Me.Pago.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
@@ -129,12 +141,14 @@ Partial Class ConsultaPedido
         Me.DtPag.DataPropertyName = "DtPag"
         Me.DtPag.HeaderText = "Data do Pagamento"
         Me.DtPag.Name = "DtPag"
+        Me.DtPag.ReadOnly = True
         '
         'Column1
         '
         Me.Column1.DataPropertyName = "Pedido"
         Me.Column1.HeaderText = "Pedido"
         Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
         '
         'ConsultaPedido
         '

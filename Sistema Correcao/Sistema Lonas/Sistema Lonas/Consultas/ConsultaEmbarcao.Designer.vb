@@ -39,7 +39,7 @@ Partial Class ConsultaEmbarcao
         'TxtCampo
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(23, 52)
+        Me.TxtCampo.Location = New System.Drawing.Point(19, 35)
         Me.TxtCampo.Name = "TxtCampo"
         Me.TxtCampo.Size = New System.Drawing.Size(477, 26)
         Me.TxtCampo.TabIndex = 17
@@ -49,7 +49,7 @@ Partial Class ConsultaEmbarcao
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(19, 27)
+        Me.Label1.Location = New System.Drawing.Point(15, 10)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(204, 22)
         Me.Label1.TabIndex = 16
@@ -63,7 +63,7 @@ Partial Class ConsultaEmbarcao
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.EndMar, Me.Complemento, Me.Column3, Me.Cidade, Me.Estado})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(23, 94)
+        Me.DgdGrade.Location = New System.Drawing.Point(19, 77)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(644, 339)
@@ -123,7 +123,7 @@ Partial Class ConsultaEmbarcao
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(691, 474)
+        Me.ClientSize = New System.Drawing.Size(683, 443)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
