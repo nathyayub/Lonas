@@ -28,7 +28,6 @@ Partial Class ContasApagar
         Me.Label8 = New System.Windows.Forms.Label()
         Me.BtnOK = New System.Windows.Forms.Button()
         Me.TxtLoc = New System.Windows.Forms.TextBox()
-        Me.BtnImp = New System.Windows.Forms.Button()
         Me.BtnAlt = New System.Windows.Forms.Button()
         Me.BtnSai = New System.Windows.Forms.Button()
         Me.BtnCan = New System.Windows.Forms.Button()
@@ -60,7 +59,7 @@ Partial Class ContasApagar
         Me.DtpVen.Location = New System.Drawing.Point(129, 138)
         Me.DtpVen.Name = "DtpVen"
         Me.DtpVen.Size = New System.Drawing.Size(117, 26)
-        Me.DtpVen.TabIndex = 126
+        Me.DtpVen.TabIndex = 3
         '
         'GrpLoc
         '
@@ -104,24 +103,6 @@ Partial Class ContasApagar
         Me.TxtLoc.Size = New System.Drawing.Size(138, 26)
         Me.TxtLoc.TabIndex = 0
         '
-        'BtnImp
-        '
-        Me.BtnImp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnImp.BackColor = System.Drawing.Color.Silver
-        Me.BtnImp.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.BtnImp.FlatAppearance.BorderSize = 2
-        Me.BtnImp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BtnImp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnImp.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnImp.Location = New System.Drawing.Point(476, 352)
-        Me.BtnImp.Name = "BtnImp"
-        Me.BtnImp.Size = New System.Drawing.Size(100, 36)
-        Me.BtnImp.TabIndex = 124
-        Me.BtnImp.Text = "&Imprimir"
-        Me.BtnImp.UseVisualStyleBackColor = False
-        '
         'BtnAlt
         '
         Me.BtnAlt.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -136,7 +117,7 @@ Partial Class ContasApagar
         Me.BtnAlt.Location = New System.Drawing.Point(476, 194)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(100, 36)
-        Me.BtnAlt.TabIndex = 123
+        Me.BtnAlt.TabIndex = 10
         Me.BtnAlt.Text = "&Alterar"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -151,10 +132,10 @@ Partial Class ContasApagar
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(476, 394)
+        Me.BtnSai.Location = New System.Drawing.Point(476, 356)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(100, 36)
-        Me.BtnSai.TabIndex = 122
+        Me.BtnSai.TabIndex = 13
         Me.BtnSai.Text = "Sai&r"
         Me.BtnSai.UseVisualStyleBackColor = False
         '
@@ -172,7 +153,7 @@ Partial Class ContasApagar
         Me.BtnCan.Location = New System.Drawing.Point(476, 310)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(100, 36)
-        Me.BtnCan.TabIndex = 121
+        Me.BtnCan.TabIndex = 12
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -190,7 +171,7 @@ Partial Class ContasApagar
         Me.BtnLoc.Location = New System.Drawing.Point(476, 152)
         Me.BtnLoc.Name = "BtnLoc"
         Me.BtnLoc.Size = New System.Drawing.Size(100, 36)
-        Me.BtnLoc.TabIndex = 120
+        Me.BtnLoc.TabIndex = 9
         Me.BtnLoc.Text = "&Localizar"
         Me.BtnLoc.UseVisualStyleBackColor = False
         '
@@ -208,7 +189,7 @@ Partial Class ContasApagar
         Me.BtnExc.Location = New System.Drawing.Point(476, 110)
         Me.BtnExc.Name = "BtnExc"
         Me.BtnExc.Size = New System.Drawing.Size(100, 36)
-        Me.BtnExc.TabIndex = 119
+        Me.BtnExc.TabIndex = 8
         Me.BtnExc.Text = "&Excluir"
         Me.BtnExc.UseVisualStyleBackColor = False
         '
@@ -226,7 +207,7 @@ Partial Class ContasApagar
         Me.BtnGra.Location = New System.Drawing.Point(476, 68)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(100, 36)
-        Me.BtnGra.TabIndex = 118
+        Me.BtnGra.TabIndex = 7
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -244,7 +225,7 @@ Partial Class ContasApagar
         Me.BtnNov.Location = New System.Drawing.Point(476, 26)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(100, 36)
-        Me.BtnNov.TabIndex = 117
+        Me.BtnNov.TabIndex = 6
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
@@ -262,7 +243,7 @@ Partial Class ContasApagar
         Me.BTNtip.Location = New System.Drawing.Point(188, 58)
         Me.BTNtip.Name = "BTNtip"
         Me.BTNtip.Size = New System.Drawing.Size(65, 26)
-        Me.BTNtip.TabIndex = 115
+        Me.BTNtip.TabIndex = 1
         Me.BTNtip.Text = "..."
         Me.BTNtip.UseVisualStyleBackColor = True
         '
@@ -274,7 +255,7 @@ Partial Class ContasApagar
         Me.CbcVen.Location = New System.Drawing.Point(132, 175)
         Me.CbcVen.Name = "CbcVen"
         Me.CbcVen.Size = New System.Drawing.Size(91, 26)
-        Me.CbcVen.TabIndex = 114
+        Me.CbcVen.TabIndex = 4
         Me.CbcVen.Text = "Quitada"
         Me.CbcVen.UseVisualStyleBackColor = True
         '
@@ -285,7 +266,7 @@ Partial Class ContasApagar
         Me.TxtDes.Multiline = True
         Me.TxtDes.Name = "TxtDes"
         Me.TxtDes.Size = New System.Drawing.Size(292, 80)
-        Me.TxtDes.TabIndex = 113
+        Me.TxtDes.TabIndex = 5
         '
         'TxtVal
         '
@@ -381,7 +362,7 @@ Partial Class ContasApagar
         Me.BtnGravarNovo.Location = New System.Drawing.Point(458, 236)
         Me.BtnGravarNovo.Name = "BtnGravarNovo"
         Me.BtnGravarNovo.Size = New System.Drawing.Size(118, 66)
-        Me.BtnGravarNovo.TabIndex = 127
+        Me.BtnGravarNovo.TabIndex = 11
         Me.BtnGravarNovo.Text = "&Gravar Novo Tipo"
         Me.BtnGravarNovo.UseVisualStyleBackColor = False
         '
@@ -405,7 +386,6 @@ Partial Class ContasApagar
         Me.Controls.Add(Me.BtnGravarNovo)
         Me.Controls.Add(Me.DtpVen)
         Me.Controls.Add(Me.GrpLoc)
-        Me.Controls.Add(Me.BtnImp)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
         Me.Controls.Add(Me.BtnCan)
@@ -441,7 +421,6 @@ Partial Class ContasApagar
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents BtnOK As System.Windows.Forms.Button
     Friend WithEvents TxtLoc As System.Windows.Forms.TextBox
-    Friend WithEvents BtnImp As System.Windows.Forms.Button
     Friend WithEvents BtnAlt As System.Windows.Forms.Button
     Friend WithEvents BtnSai As System.Windows.Forms.Button
     Friend WithEvents BtnCan As System.Windows.Forms.Button

@@ -345,7 +345,7 @@ Partial Class Marina
         Me.txtcodigo.Location = New System.Drawing.Point(91, 25)
         Me.txtcodigo.Name = "txtcodigo"
         Me.txtcodigo.Size = New System.Drawing.Size(76, 26)
-        Me.txtcodigo.TabIndex = 1
+        Me.txtcodigo.TabIndex = 111
         '
         'Label2
         '

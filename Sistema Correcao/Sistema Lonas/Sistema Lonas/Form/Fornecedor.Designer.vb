@@ -55,7 +55,7 @@ Partial Class Fornecedor
         Me.txtcod.Location = New System.Drawing.Point(178, 49)
         Me.txtcod.Name = "txtcod"
         Me.txtcod.Size = New System.Drawing.Size(180, 26)
-        Me.txtcod.TabIndex = 1
+        Me.txtcod.TabIndex = 111
         '
         'Label5
         '

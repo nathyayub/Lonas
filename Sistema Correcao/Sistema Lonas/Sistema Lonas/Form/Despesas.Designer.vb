@@ -45,7 +45,7 @@ Partial Class Despesas
         Me.TxtNom.Location = New System.Drawing.Point(96, 77)
         Me.TxtNom.Name = "TxtNom"
         Me.TxtNom.Size = New System.Drawing.Size(193, 26)
-        Me.TxtNom.TabIndex = 78
+        Me.TxtNom.TabIndex = 1
         '
         'Label2
         '
@@ -91,7 +91,7 @@ Partial Class Despesas
         Me.BtnSai.Location = New System.Drawing.Point(322, 223)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
-        Me.BtnSai.TabIndex = 86
+        Me.BtnSai.TabIndex = 6
         Me.BtnSai.Text = "Sai&r"
         Me.BtnSai.UseVisualStyleBackColor = False
         '
@@ -109,7 +109,7 @@ Partial Class Despesas
         Me.BtnGra.Location = New System.Drawing.Point(322, 70)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
-        Me.BtnGra.TabIndex = 85
+        Me.BtnGra.TabIndex = 3
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -127,7 +127,7 @@ Partial Class Despesas
         Me.BtnNov.Location = New System.Drawing.Point(322, 21)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
-        Me.BtnNov.TabIndex = 84
+        Me.BtnNov.TabIndex = 2
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
@@ -145,7 +145,7 @@ Partial Class Despesas
         Me.BtnCan.Location = New System.Drawing.Point(322, 171)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 46)
-        Me.BtnCan.TabIndex = 125
+        Me.BtnCan.TabIndex = 5
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -163,7 +163,7 @@ Partial Class Despesas
         Me.BtnLoc.Location = New System.Drawing.Point(322, 119)
         Me.BtnLoc.Name = "BtnLoc"
         Me.BtnLoc.Size = New System.Drawing.Size(124, 46)
-        Me.BtnLoc.TabIndex = 124
+        Me.BtnLoc.TabIndex = 4
         Me.BtnLoc.Text = "&Localizar"
         Me.BtnLoc.UseVisualStyleBackColor = False
         '

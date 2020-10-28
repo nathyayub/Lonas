@@ -82,7 +82,7 @@ Partial Class Funcionarios
         Me.TxtNom.Location = New System.Drawing.Point(175, 65)
         Me.TxtNom.Name = "TxtNom"
         Me.TxtNom.Size = New System.Drawing.Size(250, 26)
-        Me.TxtNom.TabIndex = 35
+        Me.TxtNom.TabIndex = 1
         '
         'Label2
         '
@@ -103,7 +103,7 @@ Partial Class Funcionarios
         Me.TxtHor.Location = New System.Drawing.Point(175, 110)
         Me.TxtHor.Name = "TxtHor"
         Me.TxtHor.Size = New System.Drawing.Size(127, 26)
-        Me.TxtHor.TabIndex = 37
+        Me.TxtHor.TabIndex = 2
         '
         'Label3
         '
@@ -135,7 +135,7 @@ Partial Class Funcionarios
         Me.TxtEma.Location = New System.Drawing.Point(175, 200)
         Me.TxtEma.Name = "TxtEma"
         Me.TxtEma.Size = New System.Drawing.Size(250, 26)
-        Me.TxtEma.TabIndex = 41
+        Me.TxtEma.TabIndex = 4
         '
         'Label5
         '
@@ -156,7 +156,7 @@ Partial Class Funcionarios
         Me.TxtDta.Location = New System.Drawing.Point(175, 284)
         Me.TxtDta.Name = "TxtDta"
         Me.TxtDta.Size = New System.Drawing.Size(152, 26)
-        Me.TxtDta.TabIndex = 43
+        Me.TxtDta.TabIndex = 6
         '
         'Label6
         '
@@ -177,7 +177,7 @@ Partial Class Funcionarios
         Me.TxtRg.Location = New System.Drawing.Point(175, 242)
         Me.TxtRg.Name = "TxtRg"
         Me.TxtRg.Size = New System.Drawing.Size(127, 26)
-        Me.TxtRg.TabIndex = 45
+        Me.TxtRg.TabIndex = 5
         '
         'Label7
         '
@@ -239,7 +239,7 @@ Partial Class Funcionarios
         Me.TxtAra.Location = New System.Drawing.Point(175, 326)
         Me.TxtAra.Name = "TxtAra"
         Me.TxtAra.Size = New System.Drawing.Size(152, 26)
-        Me.TxtAra.TabIndex = 56
+        Me.TxtAra.TabIndex = 7
         '
         'Label9
         '
@@ -261,7 +261,7 @@ Partial Class Funcionarios
         Me.MskTel.Mask = "(99) 00000-0000"
         Me.MskTel.Name = "MskTel"
         Me.MskTel.Size = New System.Drawing.Size(188, 26)
-        Me.MskTel.TabIndex = 58
+        Me.MskTel.TabIndex = 3
         '
         'BtnImp
         '
@@ -278,7 +278,7 @@ Partial Class Funcionarios
         Me.BtnImp.Location = New System.Drawing.Point(709, 318)
         Me.BtnImp.Name = "BtnImp"
         Me.BtnImp.Size = New System.Drawing.Size(124, 43)
-        Me.BtnImp.TabIndex = 82
+        Me.BtnImp.TabIndex = 13
         Me.BtnImp.Text = "&Imprimir"
         Me.BtnImp.UseVisualStyleBackColor = False
         '
@@ -297,7 +297,7 @@ Partial Class Funcionarios
         Me.BtnAlt.Location = New System.Drawing.Point(709, 218)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
-        Me.BtnAlt.TabIndex = 81
+        Me.BtnAlt.TabIndex = 11
         Me.BtnAlt.Text = "&Alterar"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -316,7 +316,7 @@ Partial Class Funcionarios
         Me.BtnSai.Location = New System.Drawing.Point(709, 366)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
-        Me.BtnSai.TabIndex = 80
+        Me.BtnSai.TabIndex = 14
         Me.BtnSai.Text = "Sai&r"
         Me.BtnSai.UseVisualStyleBackColor = False
         '
@@ -335,7 +335,7 @@ Partial Class Funcionarios
         Me.BtnCan.Location = New System.Drawing.Point(709, 267)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
-        Me.BtnCan.TabIndex = 79
+        Me.BtnCan.TabIndex = 12
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -354,7 +354,7 @@ Partial Class Funcionarios
         Me.BtnLoc.Location = New System.Drawing.Point(709, 168)
         Me.BtnLoc.Name = "BtnLoc"
         Me.BtnLoc.Size = New System.Drawing.Size(124, 44)
-        Me.BtnLoc.TabIndex = 78
+        Me.BtnLoc.TabIndex = 10
         Me.BtnLoc.Text = "&Localizar"
         Me.BtnLoc.UseVisualStyleBackColor = False
         '
@@ -373,7 +373,7 @@ Partial Class Funcionarios
         Me.BtnExc.Location = New System.Drawing.Point(709, 119)
         Me.BtnExc.Name = "BtnExc"
         Me.BtnExc.Size = New System.Drawing.Size(124, 43)
-        Me.BtnExc.TabIndex = 77
+        Me.BtnExc.TabIndex = 9
         Me.BtnExc.Text = "&Excluir"
         Me.BtnExc.UseVisualStyleBackColor = False
         '
@@ -392,7 +392,7 @@ Partial Class Funcionarios
         Me.BtnGra.Location = New System.Drawing.Point(709, 69)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
-        Me.BtnGra.TabIndex = 76
+        Me.BtnGra.TabIndex = 8
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -411,7 +411,7 @@ Partial Class Funcionarios
         Me.BtnNov.Location = New System.Drawing.Point(709, 20)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
-        Me.BtnNov.TabIndex = 75
+        Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '

@@ -51,6 +51,8 @@
         objControle.Limpar_tela(Me)
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
+        txtcodped.Enabled = False
+        txtnomecli.Enabled = False
         txtcod.Enabled = False
         txtnomecli.Enabled = False
         btnverificar.Enabled = True

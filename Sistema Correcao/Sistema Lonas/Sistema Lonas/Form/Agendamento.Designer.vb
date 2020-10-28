@@ -194,7 +194,7 @@ Partial Class Agendamento
         Me.btnnov.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnnov.Name = "btnnov"
         Me.btnnov.Size = New System.Drawing.Size(124, 43)
-        Me.btnnov.TabIndex = 0
+        Me.btnnov.TabIndex = 3
         Me.btnnov.Text = "&Novo"
         Me.btnnov.UseVisualStyleBackColor = False
         '
@@ -225,7 +225,7 @@ Partial Class Agendamento
         Me.dtpmed.Location = New System.Drawing.Point(180, 208)
         Me.dtpmed.Name = "dtpmed"
         Me.dtpmed.Size = New System.Drawing.Size(132, 26)
-        Me.dtpmed.TabIndex = 3
+        Me.dtpmed.TabIndex = 2
         '
         'Label6
         '
@@ -288,7 +288,7 @@ Partial Class Agendamento
         Me.Txtcodcli.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Txtcodcli.Name = "Txtcodcli"
         Me.Txtcodcli.Size = New System.Drawing.Size(146, 26)
-        Me.Txtcodcli.TabIndex = 10
+        Me.Txtcodcli.TabIndex = 22
         '
         'dtpprazomax
         '

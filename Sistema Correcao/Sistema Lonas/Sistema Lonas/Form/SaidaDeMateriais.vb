@@ -4,8 +4,6 @@
     Dim novo As Boolean
     Dim objMat As New ClsCadastroMateriais
 
-    'Dim zum As Integer
-
     Public quemchamou As String = ""
     Public campochave As Integer
     Private Sub SaidaDeMateriais_Activated(sender As Object, e As EventArgs) Handles Me.Activated
@@ -14,32 +12,25 @@
     End Sub
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
 
-        'zum = DgdGrade.Rows.Count
-        If DgdGrade.Rows.Count = 1 Then
-            For x = 0 To DgdGrade.Rows.Count - 1
+        For x = 0 To DgdGrade.Rows.Count - DgdGrade.Rows.Count
 
-                objSai.Material = DgdGrade.Rows(x).Cells(0).Value
-                objSai.Quantidade = DgdGrade.Rows(x).Cells(2).Value
-                objSai.Data = DgdGrade.Rows(x).Cells(3).Value
+            objSai.Material = DgdGrade.Rows(x).Cells(0).Value
+            objSai.Quantidade = DgdGrade.Rows(x).Cells(2).Value
+            objSai.Data = DgdGrade.Rows(x).Cells(3).Value
 
-                objSai.Gravar()
+            objSai.Gravar()
 
-                TxtCodMat.Clear()
-                TxtNomMat.Clear()
-                TxtRet.Clear()
-                DgdGrade.Rows.Clear()
-                MessageBox.Show("Baixa no estoque efetuada com sucesso!")
+            TxtCodMat.Clear()
+            TxtNomMat.Clear()
+            TxtRet.Clear()
+            DgdGrade.Rows.Clear()
+            MessageBox.Show("Baixa no estoque efetuada com sucesso!")
 
-            Next
-        Else
-            MessageBox.Show("Retire um item por vez!")
-        End If
-        
-        'End If
+        Next
+
     End Sub
 
     Private Sub SaidaDeMateriais_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Timoneiros2020_2000CDataSet1.TabSaidaProd' table. You can move, or remove it, as needed.
         objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, True)
         BtnMat.Enabled = False

@@ -34,7 +34,6 @@ Partial Class SaidaDeMateriais
         Me.TxtRet = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TxtNomMat = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TxtCodMat = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
@@ -51,7 +50,7 @@ Partial Class SaidaDeMateriais
         Me.BtnMat.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMat.Name = "BtnMat"
         Me.BtnMat.Size = New System.Drawing.Size(47, 26)
-        Me.BtnMat.TabIndex = 144
+        Me.BtnMat.TabIndex = 1
         Me.BtnMat.Text = "..."
         Me.BtnMat.UseVisualStyleBackColor = True
         '
@@ -63,7 +62,7 @@ Partial Class SaidaDeMateriais
         Me.DtaRet.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaRet.Name = "DtaRet"
         Me.DtaRet.Size = New System.Drawing.Size(120, 26)
-        Me.DtaRet.TabIndex = 143
+        Me.DtaRet.TabIndex = 3
         '
         'Label8
         '
@@ -90,7 +89,7 @@ Partial Class SaidaDeMateriais
         Me.BtnAlt.Location = New System.Drawing.Point(699, 154)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
-        Me.BtnAlt.TabIndex = 141
+        Me.BtnAlt.TabIndex = 7
         Me.BtnAlt.Text = "Sair"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -108,7 +107,7 @@ Partial Class SaidaDeMateriais
         Me.BtnCan.Location = New System.Drawing.Point(699, 105)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
-        Me.BtnCan.TabIndex = 140
+        Me.BtnCan.TabIndex = 6
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -124,7 +123,7 @@ Partial Class SaidaDeMateriais
         Me.BtnEst.Location = New System.Drawing.Point(317, 90)
         Me.BtnEst.Name = "BtnEst"
         Me.BtnEst.Size = New System.Drawing.Size(56, 27)
-        Me.BtnEst.TabIndex = 139
+        Me.BtnEst.TabIndex = 4
         Me.BtnEst.Text = "OK"
         Me.BtnEst.UseVisualStyleBackColor = False
         '
@@ -142,7 +141,7 @@ Partial Class SaidaDeMateriais
         Me.BtnGra.Location = New System.Drawing.Point(699, 55)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
-        Me.BtnGra.TabIndex = 138
+        Me.BtnGra.TabIndex = 5
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -160,7 +159,7 @@ Partial Class SaidaDeMateriais
         Me.BtnNov.Location = New System.Drawing.Point(699, 5)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
-        Me.BtnNov.TabIndex = 137
+        Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
@@ -170,7 +169,7 @@ Partial Class SaidaDeMateriais
         Me.TxtRet.Location = New System.Drawing.Point(188, 53)
         Me.TxtRet.Name = "TxtRet"
         Me.TxtRet.Size = New System.Drawing.Size(120, 26)
-        Me.TxtRet.TabIndex = 135
+        Me.TxtRet.TabIndex = 2
         '
         'Label3
         '
@@ -186,21 +185,10 @@ Partial Class SaidaDeMateriais
         'TxtNomMat
         '
         Me.TxtNomMat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNomMat.Location = New System.Drawing.Point(474, 11)
+        Me.TxtNomMat.Location = New System.Drawing.Point(317, 10)
         Me.TxtNomMat.Name = "TxtNomMat"
         Me.TxtNomMat.Size = New System.Drawing.Size(214, 26)
         Me.TxtNomMat.TabIndex = 133
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(313, 13)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(161, 22)
-        Me.Label2.TabIndex = 134
-        Me.Label2.Text = "Nome do Material:"
         '
         'TxtCodMat
         '
@@ -282,7 +270,6 @@ Partial Class SaidaDeMateriais
         Me.Controls.Add(Me.TxtRet)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TxtNomMat)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TxtCodMat)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
@@ -306,7 +293,6 @@ Partial Class SaidaDeMateriais
     Friend WithEvents TxtRet As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents TxtNomMat As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TxtCodMat As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DgdGrade As System.Windows.Forms.DataGridView

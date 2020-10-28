@@ -60,7 +60,7 @@ Partial Class EntradaDeMateriais
         Me.MskVal.Mask = "$999999999"
         Me.MskVal.Name = "MskVal"
         Me.MskVal.Size = New System.Drawing.Size(137, 26)
-        Me.MskVal.TabIndex = 125
+        Me.MskVal.TabIndex = 3
         '
         'Label4
         '
@@ -80,7 +80,7 @@ Partial Class EntradaDeMateriais
         Me.BtnMat.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMat.Name = "BtnMat"
         Me.BtnMat.Size = New System.Drawing.Size(47, 26)
-        Me.BtnMat.TabIndex = 123
+        Me.BtnMat.TabIndex = 1
         Me.BtnMat.Text = "..."
         Me.BtnMat.UseVisualStyleBackColor = True
         '
@@ -92,7 +92,7 @@ Partial Class EntradaDeMateriais
         Me.DtaBai.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaBai.Name = "DtaBai"
         Me.DtaBai.Size = New System.Drawing.Size(137, 26)
-        Me.DtaBai.TabIndex = 122
+        Me.DtaBai.TabIndex = 4
         '
         'Label8
         '
@@ -119,7 +119,7 @@ Partial Class EntradaDeMateriais
         Me.BtnAlt.Location = New System.Drawing.Point(668, 158)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
-        Me.BtnAlt.TabIndex = 120
+        Me.BtnAlt.TabIndex = 9
         Me.BtnAlt.Text = "Sair"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -137,7 +137,7 @@ Partial Class EntradaDeMateriais
         Me.BtnCan.Location = New System.Drawing.Point(668, 108)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
-        Me.BtnCan.TabIndex = 119
+        Me.BtnCan.TabIndex = 8
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -153,7 +153,7 @@ Partial Class EntradaDeMateriais
         Me.BtnEst.Location = New System.Drawing.Point(556, 163)
         Me.BtnEst.Name = "BtnEst"
         Me.BtnEst.Size = New System.Drawing.Size(54, 35)
-        Me.BtnEst.TabIndex = 118
+        Me.BtnEst.TabIndex = 6
         Me.BtnEst.Text = "OK"
         Me.BtnEst.UseVisualStyleBackColor = False
         '
@@ -171,7 +171,7 @@ Partial Class EntradaDeMateriais
         Me.BtnGra.Location = New System.Drawing.Point(668, 59)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
-        Me.BtnGra.TabIndex = 117
+        Me.BtnGra.TabIndex = 7
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -189,7 +189,7 @@ Partial Class EntradaDeMateriais
         Me.BtnNov.Location = New System.Drawing.Point(668, 8)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
-        Me.BtnNov.TabIndex = 116
+        Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
@@ -200,7 +200,7 @@ Partial Class EntradaDeMateriais
         Me.BtnFor.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnFor.Name = "BtnFor"
         Me.BtnFor.Size = New System.Drawing.Size(47, 26)
-        Me.BtnFor.TabIndex = 115
+        Me.BtnFor.TabIndex = 5
         Me.BtnFor.Text = "..."
         Me.BtnFor.UseVisualStyleBackColor = True
         '
@@ -238,7 +238,7 @@ Partial Class EntradaDeMateriais
         Me.TxtCom.Location = New System.Drawing.Point(201, 55)
         Me.TxtCom.Name = "TxtCom"
         Me.TxtCom.Size = New System.Drawing.Size(137, 26)
-        Me.TxtCom.TabIndex = 109
+        Me.TxtCom.TabIndex = 2
         '
         'Label3
         '

@@ -82,7 +82,7 @@ Partial Class Embarcacao
         Me.txtcodigo.Location = New System.Drawing.Point(92, 21)
         Me.txtcodigo.Name = "txtcodigo"
         Me.txtcodigo.Size = New System.Drawing.Size(114, 26)
-        Me.txtcodigo.TabIndex = 1
+        Me.txtcodigo.TabIndex = 122
         '
         'Label2
         '

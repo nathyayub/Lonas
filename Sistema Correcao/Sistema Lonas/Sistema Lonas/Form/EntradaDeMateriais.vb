@@ -12,20 +12,17 @@
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-            For x = 0 To DgdGrade.Rows.Count - 1
+        For x = 0 To DgdGrade.Rows.Count - DgdGrade.Rows.Count
 
-                objEnt.Material = DgdGrade.Rows(x).Cells(0).Value
+            objEnt.Material = DgdGrade.Rows(x).Cells(0).Value
 
 
-                objEnt.Quantidade = DgdGrade.Rows(x).Cells(2).Value
+            objEnt.Quantidade = DgdGrade.Rows(x).Cells(2).Value
+            objEnt.Valor = DgdGrade.Rows(x).Cells(3).Value
+            objEnt.Data = DgdGrade.Rows(x).Cells(4).Value
+            objEnt.Fornecedor = DgdGrade.Rows(x).Cells(5).Value
 
-                objEnt.Valor = DgdGrade.Rows(x).Cells(3).Value
-
-                objEnt.Data = DgdGrade.Rows(x).Cells(4).Value
-
-                objEnt.Fornecedor = DgdGrade.Rows(x).Cells(5).Value
-
-                objEnt.Gravar()
+            objEnt.Gravar()
 
             TxtCodMat.Clear()
             TxtNomMat.Clear()
@@ -36,7 +33,7 @@
             DgdGrade.Rows.Clear()
             MessageBox.Show("Gravado com sucesso!")
 
-            Next
+        Next
     End Sub
 
     Private Sub EntradaDeMateriais_Load(sender As Object, e As EventArgs) Handles MyBase.Load

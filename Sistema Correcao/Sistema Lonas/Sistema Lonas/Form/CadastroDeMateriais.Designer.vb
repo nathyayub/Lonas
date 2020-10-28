@@ -55,7 +55,7 @@ Partial Class CadastroDeMateriais
         Me.TxtMax.Location = New System.Drawing.Point(211, 189)
         Me.TxtMax.Name = "TxtMax"
         Me.TxtMax.Size = New System.Drawing.Size(177, 26)
-        Me.TxtMax.TabIndex = 11
+        Me.TxtMax.TabIndex = 4
         '
         'Label7
         '
@@ -74,7 +74,7 @@ Partial Class CadastroDeMateriais
         Me.TxtMin.Location = New System.Drawing.Point(211, 149)
         Me.TxtMin.Name = "TxtMin"
         Me.TxtMin.Size = New System.Drawing.Size(177, 26)
-        Me.TxtMin.TabIndex = 10
+        Me.TxtMin.TabIndex = 3
         '
         'Label4
         '
@@ -94,10 +94,10 @@ Partial Class CadastroDeMateriais
         Me.CboUni.FormattingEnabled = True
         Me.CboUni.Items.AddRange(New Object() {"Unidade", "Metros", "Litros", "Quilogramas", "Metros Cúbicos"})
         Me.CboUni.Location = New System.Drawing.Point(211, 103)
-        Me.CboUni.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CboUni.Margin = New System.Windows.Forms.Padding(2)
         Me.CboUni.Name = "CboUni"
         Me.CboUni.Size = New System.Drawing.Size(177, 28)
-        Me.CboUni.TabIndex = 9
+        Me.CboUni.TabIndex = 2
         '
         'TxtCod
         '
@@ -173,7 +173,7 @@ Partial Class CadastroDeMateriais
         Me.BtnAlt.Location = New System.Drawing.Point(651, 214)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
-        Me.BtnAlt.TabIndex = 5
+        Me.BtnAlt.TabIndex = 9
         Me.BtnAlt.Text = "&Alterar"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -191,7 +191,7 @@ Partial Class CadastroDeMateriais
         Me.BtnSai.Location = New System.Drawing.Point(650, 311)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
-        Me.BtnSai.TabIndex = 7
+        Me.BtnSai.TabIndex = 11
         Me.BtnSai.Text = "Sai&r"
         Me.BtnSai.UseVisualStyleBackColor = False
         '
@@ -209,7 +209,7 @@ Partial Class CadastroDeMateriais
         Me.BtnCan.Location = New System.Drawing.Point(651, 262)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
-        Me.BtnCan.TabIndex = 6
+        Me.BtnCan.TabIndex = 10
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -227,7 +227,7 @@ Partial Class CadastroDeMateriais
         Me.BtnLoc.Location = New System.Drawing.Point(651, 163)
         Me.BtnLoc.Name = "BtnLoc"
         Me.BtnLoc.Size = New System.Drawing.Size(124, 44)
-        Me.BtnLoc.TabIndex = 4
+        Me.BtnLoc.TabIndex = 8
         Me.BtnLoc.Text = "&Localizar"
         Me.BtnLoc.UseVisualStyleBackColor = False
         '
@@ -245,7 +245,7 @@ Partial Class CadastroDeMateriais
         Me.BtnExc.Location = New System.Drawing.Point(651, 114)
         Me.BtnExc.Name = "BtnExc"
         Me.BtnExc.Size = New System.Drawing.Size(124, 43)
-        Me.BtnExc.TabIndex = 3
+        Me.BtnExc.TabIndex = 7
         Me.BtnExc.Text = "&Excluir"
         Me.BtnExc.UseVisualStyleBackColor = False
         '
@@ -263,7 +263,7 @@ Partial Class CadastroDeMateriais
         Me.BtnGra.Location = New System.Drawing.Point(651, 64)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
-        Me.BtnGra.TabIndex = 2
+        Me.BtnGra.TabIndex = 6
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -281,7 +281,7 @@ Partial Class CadastroDeMateriais
         Me.BtnNov.Location = New System.Drawing.Point(651, 15)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
-        Me.BtnNov.TabIndex = 1
+        Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
@@ -292,7 +292,7 @@ Partial Class CadastroDeMateriais
         Me.TxtDes.Multiline = True
         Me.TxtDes.Name = "TxtDes"
         Me.TxtDes.Size = New System.Drawing.Size(262, 81)
-        Me.TxtDes.TabIndex = 12
+        Me.TxtDes.TabIndex = 5
         Me.TxtDes.Tag = "x"
         '
         'TxtNom
@@ -301,7 +301,7 @@ Partial Class CadastroDeMateriais
         Me.TxtNom.Location = New System.Drawing.Point(211, 64)
         Me.TxtNom.Name = "TxtNom"
         Me.TxtNom.Size = New System.Drawing.Size(177, 26)
-        Me.TxtNom.TabIndex = 8
+        Me.TxtNom.TabIndex = 1
         '
         'Label3
         '
@@ -363,7 +363,7 @@ Partial Class CadastroDeMateriais
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "CadastroDeMateriais"
         Me.Text = "CadastroDeMateriais"
         Me.GrpLoc.ResumeLayout(False)
