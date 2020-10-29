@@ -111,11 +111,18 @@
             Return True
         End If
     End Function
-    Public Function LocalizarFiltro(campo As String) As DataTable
+    Public Function LocalizarFiltroB(campo As String) As DataTable
         If IsNumeric(campo) Then
             sql = "select * from TabEmbarcaçao where codigo=" & campo
         Else
             sql = "select * from TabEmbarcaçao where nomeBarco like '" & campo & "%' order by nomeBarco"
+        End If
+        objdtLocal = objbanco.localizar(sql)
+        Return objdtLocal
+    End Function
+    Public Function LocalizarFiltro(campo As String) As DataTable
+        If IsNumeric(campo) Then
+            sql = "select * from VwClienteEmbarcao where Cliente=" & campo
         End If
         objdtLocal = objbanco.localizar(sql)
         Return objdtLocal

@@ -126,16 +126,16 @@
     <Compile Include="Consultas\ConsultaDespesasStr.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\Marina.Designer.vb">
-      <DependentUpon>Marina.vb</DependentUpon>
+    <Compile Include="Consultas\ConEmbarcacao.Designer.vb">
+      <DependentUpon>ConEmbarcacao.vb</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\Marina.vb">
+    <Compile Include="Consultas\ConEmbarcacao.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\ConsultaEmbarcao.Designer.vb">
-      <DependentUpon>ConsultaEmbarcao.vb</DependentUpon>
+    <Compile Include="Consultas\ConsultaEmbarcaoComClie.Designer.vb">
+      <DependentUpon>ConsultaEmbarcaoComClie.vb</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\ConsultaEmbarcao.vb">
+    <Compile Include="Consultas\ConsultaEmbarcaoComClie.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\ConsultaEntradaMatRelat.designer.vb">
@@ -198,16 +198,16 @@
     <Compile Include="Consultas\ConsultaAgendamento.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\ContasApagar.designer.vb">
-      <DependentUpon>ContasApagar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form\ContasApagar.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form\Agendamento.Designer.vb">
       <DependentUpon>Agendamento.vb</DependentUpon>
     </Compile>
     <Compile Include="Form\Agendamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ContasApagar.designer.vb">
+      <DependentUpon>ContasApagar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ContasApagar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\CadastroDeMateriais.Designer.vb">
@@ -376,11 +376,11 @@
     <EmbeddedResource Include="Consultas\ConsultaDespesasStr.resx">
       <DependentUpon>ConsultaDespesasStr.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\Marina.resx">
-      <DependentUpon>Marina.vb</DependentUpon>
+    <EmbeddedResource Include="Consultas\ConEmbarcacao.resx">
+      <DependentUpon>ConEmbarcacao.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\ConsultaEmbarcao.resx">
-      <DependentUpon>ConsultaEmbarcao.vb</DependentUpon>
+    <EmbeddedResource Include="Consultas\ConsultaEmbarcaoComClie.resx">
+      <DependentUpon>ConsultaEmbarcaoComClie.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaEntradaMatRelat.resx">
       <DependentUpon>ConsultaEntradaMatRelat.vb</DependentUpon>
@@ -409,11 +409,11 @@
     <EmbeddedResource Include="Consultas\ConsultaTipoDespesa.resx">
       <DependentUpon>ConsultaTipoDespesa.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\ContasApagar.resx">
-      <DependentUpon>ContasApagar.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\Agendamento.resx">
       <DependentUpon>Agendamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ContasApagar.resx">
+      <DependentUpon>ContasApagar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\CadastroDeMateriais.resx">
       <DependentUpon>CadastroDeMateriais.vb</DependentUpon>

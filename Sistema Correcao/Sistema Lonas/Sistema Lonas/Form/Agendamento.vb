@@ -144,7 +144,7 @@
     End Sub
 
     Private Sub btnEmbarcacao_Click(sender As Object, e As EventArgs) Handles btnEmbarcacao.Click
-        ConsultaEmbarcao.quemChamou = Me.Name
-        ConsultaEmbarcao.ShowDialog()
+        ConsultaEmbarcaoComClie.quemChamou = Me.Name
+        ConsultaEmbarcaoComClie.ShowDialog()
     End Sub
 End Class

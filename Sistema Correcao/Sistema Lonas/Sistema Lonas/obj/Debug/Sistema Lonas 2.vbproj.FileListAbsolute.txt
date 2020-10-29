@@ -642,8 +642,6 @@ C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaAgendamento.resources
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaCliente.resources
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaDespesasStr.resources
-C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEmbarcacaoMarina.resources
-C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEmbarcao.resources
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEntradaMatRelat.resources
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaFornecedor.resources
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaFuncionario.resources
@@ -675,3 +673,5 @@ C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\pt-BR\Sistema Lonas.resources.dll
 C:\Users\vinic\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.FrmLogin.resources
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.FrmLogin.resources
+C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.CoEmbarcacao.resources
+C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEmbarcaoComClie.resources

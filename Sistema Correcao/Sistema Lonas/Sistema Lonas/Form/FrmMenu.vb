@@ -54,11 +54,6 @@ Public Class FrmMenu
         ConsultaCliente.MdiParent = Me
     End Sub
 
-    Private Sub EmbarcaçãoMarinaToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        ConsultaEmbarcacaoMarina.Show()
-        ConsultaEmbarcacaoMarina.MdiParent = Me
-    End Sub
-
     Private Sub MarinaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarinaToolStripMenuItem.Click
         ConsultaMarina.Show()
         ConsultaMarina.MdiParent = Me
@@ -150,8 +145,8 @@ Public Class FrmMenu
     End Sub
 
     Private Sub EmbarcaçãoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmbarcaçãoToolStripMenuItem.Click
-        ConsultaEmbarcao.Show()
-        ConsultaEmbarcao.MdiParent = Me
+        CoEmbarcacao.Show()
+        CoEmbarcacao.MdiParent = Me
     End Sub
 
 
