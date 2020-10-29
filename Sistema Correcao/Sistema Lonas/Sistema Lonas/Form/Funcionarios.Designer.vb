@@ -32,7 +32,6 @@ Partial Class Funcionarios
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TxtEma = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TxtDta = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TxtRg = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -51,6 +50,7 @@ Partial Class Funcionarios
         Me.BtnExc = New System.Windows.Forms.Button()
         Me.BtnGra = New System.Windows.Forms.Button()
         Me.BtnNov = New System.Windows.Forms.Button()
+        Me.dtpadmissao = New System.Windows.Forms.DateTimePicker()
         Me.GrpLoc.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,7 +58,7 @@ Partial Class Funcionarios
         '
         Me.TxtCod.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCod.ForeColor = System.Drawing.Color.Black
-        Me.TxtCod.Location = New System.Drawing.Point(175, 23)
+        Me.TxtCod.Location = New System.Drawing.Point(97, 25)
         Me.TxtCod.Name = "TxtCod"
         Me.TxtCod.Size = New System.Drawing.Size(127, 26)
         Me.TxtCod.TabIndex = 33
@@ -79,7 +79,7 @@ Partial Class Funcionarios
         Me.TxtNom.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNom.ForeColor = System.Drawing.Color.Black
-        Me.TxtNom.Location = New System.Drawing.Point(175, 65)
+        Me.TxtNom.Location = New System.Drawing.Point(97, 66)
         Me.TxtNom.Name = "TxtNom"
         Me.TxtNom.Size = New System.Drawing.Size(250, 26)
         Me.TxtNom.TabIndex = 1
@@ -100,7 +100,7 @@ Partial Class Funcionarios
         Me.TxtHor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtHor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtHor.ForeColor = System.Drawing.Color.Black
-        Me.TxtHor.Location = New System.Drawing.Point(175, 110)
+        Me.TxtHor.Location = New System.Drawing.Point(97, 112)
         Me.TxtHor.Name = "TxtHor"
         Me.TxtHor.Size = New System.Drawing.Size(127, 26)
         Me.TxtHor.TabIndex = 2
@@ -132,7 +132,7 @@ Partial Class Funcionarios
         Me.TxtEma.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.TxtEma.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtEma.ForeColor = System.Drawing.Color.Black
-        Me.TxtEma.Location = New System.Drawing.Point(175, 200)
+        Me.TxtEma.Location = New System.Drawing.Point(86, 200)
         Me.TxtEma.Name = "TxtEma"
         Me.TxtEma.Size = New System.Drawing.Size(250, 26)
         Me.TxtEma.TabIndex = 4
@@ -147,16 +147,6 @@ Partial Class Funcionarios
         Me.Label5.Size = New System.Drawing.Size(63, 22)
         Me.Label5.TabIndex = 42
         Me.Label5.Text = "Email:"
-        '
-        'TxtDta
-        '
-        Me.TxtDta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TxtDta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDta.ForeColor = System.Drawing.Color.Black
-        Me.TxtDta.Location = New System.Drawing.Point(175, 284)
-        Me.TxtDta.Name = "TxtDta"
-        Me.TxtDta.Size = New System.Drawing.Size(152, 26)
-        Me.TxtDta.TabIndex = 6
         '
         'Label6
         '
@@ -174,9 +164,10 @@ Partial Class Funcionarios
         Me.TxtRg.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtRg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtRg.ForeColor = System.Drawing.Color.Black
-        Me.TxtRg.Location = New System.Drawing.Point(175, 242)
+        Me.TxtRg.Location = New System.Drawing.Point(86, 242)
+        Me.TxtRg.MaxLength = 15
         Me.TxtRg.Name = "TxtRg"
-        Me.TxtRg.Size = New System.Drawing.Size(127, 26)
+        Me.TxtRg.Size = New System.Drawing.Size(141, 26)
         Me.TxtRg.TabIndex = 5
         '
         'Label7
@@ -236,7 +227,7 @@ Partial Class Funcionarios
         Me.TxtAra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtAra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtAra.ForeColor = System.Drawing.Color.Black
-        Me.TxtAra.Location = New System.Drawing.Point(175, 326)
+        Me.TxtAra.Location = New System.Drawing.Point(171, 326)
         Me.TxtAra.Name = "TxtAra"
         Me.TxtAra.Size = New System.Drawing.Size(152, 26)
         Me.TxtAra.TabIndex = 7
@@ -256,7 +247,7 @@ Partial Class Funcionarios
         '
         Me.MskTel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MskTel.ForeColor = System.Drawing.Color.Black
-        Me.MskTel.Location = New System.Drawing.Point(175, 157)
+        Me.MskTel.Location = New System.Drawing.Point(102, 159)
         Me.MskTel.Margin = New System.Windows.Forms.Padding(2)
         Me.MskTel.Mask = "(99) 00000-0000"
         Me.MskTel.Name = "MskTel"
@@ -415,12 +406,22 @@ Partial Class Funcionarios
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
+        'dtpadmissao
+        '
+        Me.dtpadmissao.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpadmissao.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpadmissao.Location = New System.Drawing.Point(183, 285)
+        Me.dtpadmissao.Name = "dtpadmissao"
+        Me.dtpadmissao.Size = New System.Drawing.Size(140, 26)
+        Me.dtpadmissao.TabIndex = 58
+        '
         'Funcionarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(845, 429)
+        Me.Controls.Add(Me.dtpadmissao)
         Me.Controls.Add(Me.BtnImp)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
@@ -435,7 +436,6 @@ Partial Class Funcionarios
         Me.Controls.Add(Me.GrpLoc)
         Me.Controls.Add(Me.TxtRg)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TxtDta)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TxtEma)
         Me.Controls.Add(Me.Label5)
@@ -465,7 +465,6 @@ Partial Class Funcionarios
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents TxtEma As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TxtDta As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents TxtRg As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
@@ -484,4 +483,5 @@ Partial Class Funcionarios
     Friend WithEvents BtnExc As System.Windows.Forms.Button
     Friend WithEvents BtnGra As System.Windows.Forms.Button
     Friend WithEvents BtnNov As System.Windows.Forms.Button
+    Friend WithEvents dtpadmissao As System.Windows.Forms.DateTimePicker
 End Class

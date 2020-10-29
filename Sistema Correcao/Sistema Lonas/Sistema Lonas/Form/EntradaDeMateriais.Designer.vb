@@ -75,14 +75,20 @@ Partial Class EntradaDeMateriais
         '
         'BtnMat
         '
+        Me.BtnMat.BackColor = System.Drawing.Color.Silver
+        Me.BtnMat.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnMat.FlatAppearance.BorderSize = 2
+        Me.BtnMat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnMat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnMat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMat.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnMat.Location = New System.Drawing.Point(260, 16)
+        Me.BtnMat.Location = New System.Drawing.Point(260, 15)
         Me.BtnMat.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMat.Name = "BtnMat"
-        Me.BtnMat.Size = New System.Drawing.Size(47, 26)
+        Me.BtnMat.Size = New System.Drawing.Size(47, 28)
         Me.BtnMat.TabIndex = 1
         Me.BtnMat.Text = "..."
-        Me.BtnMat.UseVisualStyleBackColor = True
+        Me.BtnMat.UseVisualStyleBackColor = False
         '
         'DtaBai
         '
@@ -150,9 +156,9 @@ Partial Class EntradaDeMateriais
         Me.BtnEst.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEst.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEst.Location = New System.Drawing.Point(556, 163)
+        Me.BtnEst.Location = New System.Drawing.Point(555, 154)
         Me.BtnEst.Name = "BtnEst"
-        Me.BtnEst.Size = New System.Drawing.Size(54, 35)
+        Me.BtnEst.Size = New System.Drawing.Size(55, 35)
         Me.BtnEst.TabIndex = 6
         Me.BtnEst.Text = "OK"
         Me.BtnEst.UseVisualStyleBackColor = False
@@ -195,20 +201,26 @@ Partial Class EntradaDeMateriais
         '
         'BtnFor
         '
+        Me.BtnFor.BackColor = System.Drawing.Color.Silver
+        Me.BtnFor.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnFor.FlatAppearance.BorderSize = 2
+        Me.BtnFor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnFor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnFor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnFor.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnFor.Location = New System.Drawing.Point(260, 163)
+        Me.BtnFor.Location = New System.Drawing.Point(260, 161)
         Me.BtnFor.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnFor.Name = "BtnFor"
-        Me.BtnFor.Size = New System.Drawing.Size(47, 26)
+        Me.BtnFor.Size = New System.Drawing.Size(47, 28)
         Me.BtnFor.TabIndex = 5
         Me.BtnFor.Text = "..."
-        Me.BtnFor.UseVisualStyleBackColor = True
+        Me.BtnFor.UseVisualStyleBackColor = False
         '
         'TxtNomFor
         '
         Me.TxtNomFor.Enabled = False
         Me.TxtNomFor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNomFor.Location = New System.Drawing.Point(313, 162)
+        Me.TxtNomFor.Location = New System.Drawing.Point(313, 163)
         Me.TxtNomFor.Name = "TxtNomFor"
         Me.TxtNomFor.Size = New System.Drawing.Size(223, 26)
         Me.TxtNomFor.TabIndex = 113
@@ -216,7 +228,7 @@ Partial Class EntradaDeMateriais
         'TxtCodFor
         '
         Me.TxtCodFor.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCodFor.Location = New System.Drawing.Point(201, 162)
+        Me.TxtCodFor.Location = New System.Drawing.Point(201, 163)
         Me.TxtCodFor.Name = "TxtCodFor"
         Me.TxtCodFor.Size = New System.Drawing.Size(54, 26)
         Me.TxtCodFor.TabIndex = 111

@@ -126,10 +126,10 @@
     <Compile Include="Consultas\ConsultaDespesasStr.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas\ConsultaEmbarcacaoMarina.Designer.vb">
-      <DependentUpon>ConsultaEmbarcacaoMarina.vb</DependentUpon>
+    <Compile Include="Consultas\Marina.Designer.vb">
+      <DependentUpon>Marina.vb</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\ConsultaEmbarcacaoMarina.vb">
+    <Compile Include="Consultas\Marina.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\ConsultaEmbarcao.Designer.vb">
@@ -242,10 +242,10 @@
     <Compile Include="Form\EntradaDeMateriais.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Form\Frmlogin.Designer.vb">
+      <DependentUpon>Frmlogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form1.vb">
+    <Compile Include="Form\Frmlogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Fornecedor.Designer.vb">
@@ -376,8 +376,8 @@
     <EmbeddedResource Include="Consultas\ConsultaDespesasStr.resx">
       <DependentUpon>ConsultaDespesasStr.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\ConsultaEmbarcacaoMarina.resx">
-      <DependentUpon>ConsultaEmbarcacaoMarina.vb</DependentUpon>
+    <EmbeddedResource Include="Consultas\Marina.resx">
+      <DependentUpon>Marina.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaEmbarcao.resx">
       <DependentUpon>ConsultaEmbarcao.vb</DependentUpon>
@@ -430,8 +430,8 @@
     <EmbeddedResource Include="Form\EntradaDeMateriais.resx">
       <DependentUpon>EntradaDeMateriais.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Form\Frmlogin.resx">
+      <DependentUpon>Frmlogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Fornecedor.resx">
       <DependentUpon>Fornecedor.vb</DependentUpon>

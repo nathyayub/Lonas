@@ -59,7 +59,7 @@ Partial Class Embarcacao
         '
         Me.txtnome.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtnome.ForeColor = System.Drawing.Color.Black
-        Me.txtnome.Location = New System.Drawing.Point(212, 68)
+        Me.txtnome.Location = New System.Drawing.Point(212, 66)
         Me.txtnome.Name = "txtnome"
         Me.txtnome.Size = New System.Drawing.Size(194, 26)
         Me.txtnome.TabIndex = 2
@@ -69,7 +69,7 @@ Partial Class Embarcacao
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 70)
+        Me.Label1.Location = New System.Drawing.Point(12, 68)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(194, 22)
         Me.Label1.TabIndex = 34
@@ -79,7 +79,7 @@ Partial Class Embarcacao
         '
         Me.txtcodigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcodigo.ForeColor = System.Drawing.Color.Black
-        Me.txtcodigo.Location = New System.Drawing.Point(92, 21)
+        Me.txtcodigo.Location = New System.Drawing.Point(92, 25)
         Me.txtcodigo.Name = "txtcodigo"
         Me.txtcodigo.Size = New System.Drawing.Size(114, 26)
         Me.txtcodigo.TabIndex = 122
@@ -89,7 +89,7 @@ Partial Class Embarcacao
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(12, 23)
+        Me.Label2.Location = New System.Drawing.Point(12, 27)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(74, 22)
         Me.Label2.TabIndex = 36
@@ -99,7 +99,7 @@ Partial Class Embarcacao
         '
         Me.txtmarca.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtmarca.ForeColor = System.Drawing.Color.Black
-        Me.txtmarca.Location = New System.Drawing.Point(92, 122)
+        Me.txtmarca.Location = New System.Drawing.Point(92, 112)
         Me.txtmarca.Name = "txtmarca"
         Me.txtmarca.Size = New System.Drawing.Size(194, 26)
         Me.txtmarca.TabIndex = 3
@@ -109,7 +109,7 @@ Partial Class Embarcacao
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(19, 124)
+        Me.Label3.Location = New System.Drawing.Point(19, 114)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(67, 22)
         Me.Label3.TabIndex = 38
@@ -119,7 +119,7 @@ Partial Class Embarcacao
         '
         Me.txtmodelo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtmodelo.ForeColor = System.Drawing.Color.Black
-        Me.txtmodelo.Location = New System.Drawing.Point(92, 176)
+        Me.txtmodelo.Location = New System.Drawing.Point(92, 158)
         Me.txtmodelo.Name = "txtmodelo"
         Me.txtmodelo.Size = New System.Drawing.Size(194, 26)
         Me.txtmodelo.TabIndex = 4
@@ -129,7 +129,7 @@ Partial Class Embarcacao
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(13, 178)
+        Me.Label4.Location = New System.Drawing.Point(13, 160)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(78, 22)
         Me.Label4.TabIndex = 40
@@ -139,7 +139,7 @@ Partial Class Embarcacao
         '
         Me.txtfabricacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtfabricacao.ForeColor = System.Drawing.Color.Black
-        Me.txtfabricacao.Location = New System.Drawing.Point(186, 230)
+        Me.txtfabricacao.Location = New System.Drawing.Point(184, 206)
         Me.txtfabricacao.MaxLength = 4
         Me.txtfabricacao.Name = "txtfabricacao"
         Me.txtfabricacao.Size = New System.Drawing.Size(194, 26)
@@ -150,7 +150,7 @@ Partial Class Embarcacao
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(13, 230)
+        Me.Label5.Location = New System.Drawing.Point(11, 206)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(167, 22)
         Me.Label5.TabIndex = 42
@@ -160,7 +160,7 @@ Partial Class Embarcacao
         '
         Me.txtcliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcliente.ForeColor = System.Drawing.Color.Black
-        Me.txtcliente.Location = New System.Drawing.Point(92, 281)
+        Me.txtcliente.Location = New System.Drawing.Point(95, 254)
         Me.txtcliente.Name = "txtcliente"
         Me.txtcliente.Size = New System.Drawing.Size(60, 26)
         Me.txtcliente.TabIndex = 43
@@ -170,7 +170,7 @@ Partial Class Embarcacao
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(13, 281)
+        Me.Label6.Location = New System.Drawing.Point(16, 254)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(73, 22)
         Me.Label6.TabIndex = 44
@@ -180,7 +180,7 @@ Partial Class Embarcacao
         '
         Me.txtmarina.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtmarina.ForeColor = System.Drawing.Color.Black
-        Me.txtmarina.Location = New System.Drawing.Point(92, 330)
+        Me.txtmarina.Location = New System.Drawing.Point(95, 303)
         Me.txtmarina.Name = "txtmarina"
         Me.txtmarina.Size = New System.Drawing.Size(60, 26)
         Me.txtmarina.TabIndex = 45
@@ -190,7 +190,7 @@ Partial Class Embarcacao
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(13, 330)
+        Me.Label7.Location = New System.Drawing.Point(16, 303)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(73, 22)
         Me.Label7.TabIndex = 46
@@ -374,7 +374,7 @@ Partial Class Embarcacao
         Me.BtnMar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMar.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnMar.ForeColor = System.Drawing.Color.Black
-        Me.BtnMar.Location = New System.Drawing.Point(162, 328)
+        Me.BtnMar.Location = New System.Drawing.Point(165, 301)
         Me.BtnMar.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMar.Name = "BtnMar"
         Me.BtnMar.Size = New System.Drawing.Size(47, 29)
@@ -386,7 +386,7 @@ Partial Class Embarcacao
         '
         Me.TxtNmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNmar.ForeColor = System.Drawing.Color.Black
-        Me.TxtNmar.Location = New System.Drawing.Point(223, 331)
+        Me.TxtNmar.Location = New System.Drawing.Point(226, 304)
         Me.TxtNmar.Name = "TxtNmar"
         Me.TxtNmar.Size = New System.Drawing.Size(218, 26)
         Me.TxtNmar.TabIndex = 59
@@ -395,7 +395,7 @@ Partial Class Embarcacao
         '
         Me.TxtNcli.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNcli.ForeColor = System.Drawing.Color.Black
-        Me.TxtNcli.Location = New System.Drawing.Point(223, 281)
+        Me.TxtNcli.Location = New System.Drawing.Point(226, 254)
         Me.TxtNcli.Name = "TxtNcli"
         Me.TxtNcli.Size = New System.Drawing.Size(218, 26)
         Me.TxtNcli.TabIndex = 61
@@ -410,7 +410,7 @@ Partial Class Embarcacao
         Me.BtnCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCli.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCli.ForeColor = System.Drawing.Color.Black
-        Me.BtnCli.Location = New System.Drawing.Point(162, 281)
+        Me.BtnCli.Location = New System.Drawing.Point(165, 254)
         Me.BtnCli.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCli.Name = "BtnCli"
         Me.BtnCli.Size = New System.Drawing.Size(47, 28)

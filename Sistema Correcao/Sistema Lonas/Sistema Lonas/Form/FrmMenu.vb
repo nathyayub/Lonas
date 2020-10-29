@@ -5,8 +5,11 @@ Imports System.Text
 
 Public Class FrmMenu
 
+
+
+
+
     Private Sub FrmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        FrmLogin.ShowDialog()
         Dim DtsDolar As String
         Dim DtsEuro As String
         Dim cotacaoService = New WsCotacao.FachadaWSSGSService()
@@ -51,7 +54,7 @@ Public Class FrmMenu
         ConsultaCliente.MdiParent = Me
     End Sub
 
-    Private Sub EmbarcaçãoMarinaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmbarcaçãoMarinaToolStripMenuItem.Click
+    Private Sub EmbarcaçãoMarinaToolStripMenuItem_Click(sender As Object, e As EventArgs)
         ConsultaEmbarcacaoMarina.Show()
         ConsultaEmbarcacaoMarina.MdiParent = Me
     End Sub
@@ -151,7 +154,7 @@ Public Class FrmMenu
         ConsultaEmbarcao.MdiParent = Me
     End Sub
 
-   
+
     Private Sub FuncionariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FuncionariosToolStripMenuItem.Click
         ConsultaFuncionario.Show()
         ConsultaFuncionario.MdiParent = Me
@@ -235,17 +238,8 @@ Public Class FrmMenu
         ConsultaDespesasStr.Show()
         ConsultaDespesasStr.MdiParent = Me
     End Sub
-
-    Private Sub txtEuroCota_TextChanged(sender As Object, e As EventArgs) Handles txtEuroCota.TextChanged
-
+    Private Sub FrmMenu_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+        FrmLogin.Close()
     End Sub
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
-    End Sub
-    Private Sub TxtDolarCota_TextChanged(sender As Object, e As EventArgs) Handles TxtDolarCota.TextChanged
-
-    End Sub
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
 End Class

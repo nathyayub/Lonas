@@ -46,13 +46,15 @@ Partial Class CadastroDeMateriais
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.GrpDat = New System.Windows.Forms.GroupBox()
         Me.GrpLoc.SuspendLayout()
+        Me.GrpDat.SuspendLayout()
         Me.SuspendLayout()
         '
         'TxtMax
         '
         Me.TxtMax.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtMax.Location = New System.Drawing.Point(211, 189)
+        Me.TxtMax.Location = New System.Drawing.Point(377, 29)
         Me.TxtMax.Name = "TxtMax"
         Me.TxtMax.Size = New System.Drawing.Size(177, 26)
         Me.TxtMax.TabIndex = 4
@@ -62,16 +64,16 @@ Partial Class CadastroDeMateriais
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(10, 149)
+        Me.Label7.Location = New System.Drawing.Point(19, 31)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(182, 22)
+        Me.Label7.Size = New System.Drawing.Size(77, 22)
         Me.Label7.TabIndex = 133
-        Me.Label7.Text = "Quantidaded Mínima:"
+        Me.Label7.Text = "Mínima:"
         '
         'TxtMin
         '
         Me.TxtMin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtMin.Location = New System.Drawing.Point(211, 149)
+        Me.TxtMin.Location = New System.Drawing.Point(100, 29)
         Me.TxtMin.Name = "TxtMin"
         Me.TxtMin.Size = New System.Drawing.Size(177, 26)
         Me.TxtMin.TabIndex = 3
@@ -81,11 +83,11 @@ Partial Class CadastroDeMateriais
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(17, 191)
+        Me.Label4.Location = New System.Drawing.Point(292, 31)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(175, 22)
+        Me.Label4.Size = New System.Drawing.Size(80, 22)
         Me.Label4.TabIndex = 131
-        Me.Label4.Text = "Quantidade Máxima:"
+        Me.Label4.Text = "Máxima:"
         '
         'CboUni
         '
@@ -93,18 +95,18 @@ Partial Class CadastroDeMateriais
         Me.CboUni.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CboUni.FormattingEnabled = True
         Me.CboUni.Items.AddRange(New Object() {"Unidade", "Metros", "Litros", "Quilogramas", "Metros Cúbicos"})
-        Me.CboUni.Location = New System.Drawing.Point(211, 103)
+        Me.CboUni.Location = New System.Drawing.Point(187, 107)
         Me.CboUni.Margin = New System.Windows.Forms.Padding(2)
         Me.CboUni.Name = "CboUni"
-        Me.CboUni.Size = New System.Drawing.Size(177, 28)
+        Me.CboUni.Size = New System.Drawing.Size(188, 28)
         Me.CboUni.TabIndex = 2
         '
         'TxtCod
         '
         Me.TxtCod.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCod.Location = New System.Drawing.Point(211, 26)
+        Me.TxtCod.Location = New System.Drawing.Point(90, 19)
         Me.TxtCod.Name = "TxtCod"
-        Me.TxtCod.Size = New System.Drawing.Size(58, 26)
+        Me.TxtCod.Size = New System.Drawing.Size(177, 26)
         Me.TxtCod.TabIndex = 129
         '
         'Label5
@@ -112,7 +114,7 @@ Partial Class CadastroDeMateriais
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(10, 26)
+        Me.Label5.Location = New System.Drawing.Point(10, 19)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(74, 22)
         Me.Label5.TabIndex = 128
@@ -288,19 +290,19 @@ Partial Class CadastroDeMateriais
         'TxtDes
         '
         Me.TxtDes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDes.Location = New System.Drawing.Point(211, 234)
+        Me.TxtDes.Location = New System.Drawing.Point(211, 243)
         Me.TxtDes.Multiline = True
         Me.TxtDes.Name = "TxtDes"
-        Me.TxtDes.Size = New System.Drawing.Size(262, 81)
+        Me.TxtDes.Size = New System.Drawing.Size(379, 81)
         Me.TxtDes.TabIndex = 5
         Me.TxtDes.Tag = "x"
         '
         'TxtNom
         '
         Me.TxtNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNom.Location = New System.Drawing.Point(211, 64)
+        Me.TxtNom.Location = New System.Drawing.Point(187, 60)
         Me.TxtNom.Name = "TxtNom"
-        Me.TxtNom.Size = New System.Drawing.Size(177, 26)
+        Me.TxtNom.Size = New System.Drawing.Size(188, 26)
         Me.TxtNom.TabIndex = 1
         '
         'Label3
@@ -308,7 +310,7 @@ Partial Class CadastroDeMateriais
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(10, 234)
+        Me.Label3.Location = New System.Drawing.Point(10, 243)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(195, 22)
         Me.Label3.TabIndex = 116
@@ -319,7 +321,7 @@ Partial Class CadastroDeMateriais
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(10, 103)
+        Me.Label2.Location = New System.Drawing.Point(10, 109)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(172, 22)
         Me.Label2.TabIndex = 115
@@ -330,11 +332,26 @@ Partial Class CadastroDeMateriais
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(10, 63)
+        Me.Label1.Location = New System.Drawing.Point(10, 61)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(161, 22)
         Me.Label1.TabIndex = 114
         Me.Label1.Text = "Nome do Material:"
+        '
+        'GrpDat
+        '
+        Me.GrpDat.Controls.Add(Me.Label7)
+        Me.GrpDat.Controls.Add(Me.TxtMax)
+        Me.GrpDat.Controls.Add(Me.Label4)
+        Me.GrpDat.Controls.Add(Me.TxtMin)
+        Me.GrpDat.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GrpDat.ForeColor = System.Drawing.Color.White
+        Me.GrpDat.Location = New System.Drawing.Point(14, 148)
+        Me.GrpDat.Name = "GrpDat"
+        Me.GrpDat.Size = New System.Drawing.Size(576, 72)
+        Me.GrpDat.TabIndex = 134
+        Me.GrpDat.TabStop = False
+        Me.GrpDat.Text = "Quantidade"
         '
         'CadastroDeMateriais
         '
@@ -342,10 +359,7 @@ Partial Class CadastroDeMateriais
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(784, 418)
-        Me.Controls.Add(Me.TxtMax)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TxtMin)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.GrpDat)
         Me.Controls.Add(Me.CboUni)
         Me.Controls.Add(Me.TxtCod)
         Me.Controls.Add(Me.Label5)
@@ -368,6 +382,8 @@ Partial Class CadastroDeMateriais
         Me.Text = "CadastroDeMateriais"
         Me.GrpLoc.ResumeLayout(False)
         Me.GrpLoc.PerformLayout()
+        Me.GrpDat.ResumeLayout(False)
+        Me.GrpDat.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -395,4 +411,5 @@ Partial Class CadastroDeMateriais
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents GrpDat As System.Windows.Forms.GroupBox
 End Class

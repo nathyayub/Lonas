@@ -300,9 +300,9 @@ Partial Class Pedidos
         Me.lblCli.AutoSize = True
         Me.lblCli.Location = New System.Drawing.Point(12, 30)
         Me.lblCli.Name = "lblCli"
-        Me.lblCli.Size = New System.Drawing.Size(185, 20)
+        Me.lblCli.Size = New System.Drawing.Size(117, 20)
         Me.lblCli.TabIndex = 2
-        Me.lblCli.Text = "Digite o Código ou Nome"
+        Me.lblCli.Text = "Digite o Código"
         '
         'BtnOK
         '

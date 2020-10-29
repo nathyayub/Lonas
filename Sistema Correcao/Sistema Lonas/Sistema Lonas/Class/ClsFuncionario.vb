@@ -4,7 +4,7 @@
     Dim m_hora As String
     Dim m_tel As String
     Dim m_email As String
-    Dim m_dtadm As String
+    Dim m_dtadm As Date
     Dim m_rg As String
     Dim m_atuacao As String
 
@@ -52,11 +52,11 @@
             m_email = value
         End Set
     End Property
-    Public Property DtAdmissao As String
+    Public Property DtAdmissao As Date
         Get
             Return m_dtadm
         End Get
-        Set(value As String)
+        Set(value As Date)
             m_dtadm = value
         End Set
     End Property

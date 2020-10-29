@@ -25,13 +25,13 @@ Partial Class ConsultaMarina
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaMarina))
         Me.TxtCampo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DgdGrade = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CEPMar = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EndMar = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CEPMar = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DgdGrade = New System.Windows.Forms.DataGridView()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -54,6 +54,48 @@ Partial Class ConsultaMarina
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Digite o código ou nome"
         '
+        'EndMar
+        '
+        Me.EndMar.DataPropertyName = "endereco"
+        Me.EndMar.HeaderText = "Endereço"
+        Me.EndMar.Name = "EndMar"
+        Me.EndMar.Width = 78
+        '
+        'CEPMar
+        '
+        Me.CEPMar.DataPropertyName = "cep"
+        Me.CEPMar.HeaderText = "CEP"
+        Me.CEPMar.Name = "CEPMar"
+        Me.CEPMar.Width = 53
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "Cidade"
+        Me.Column4.HeaderText = "Cidade"
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 65
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "Estado"
+        Me.Column3.HeaderText = "Estado"
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 65
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "NomeMarina"
+        Me.Column2.HeaderText = "Marina"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 64
+        '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "codigo"
+        Me.Column1.HeaderText = "Código"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 65
+        '
         'DgdGrade
         '
         Me.DgdGrade.AllowUserToAddRows = False
@@ -67,48 +109,6 @@ Partial Class ConsultaMarina
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(644, 339)
         Me.DgdGrade.TabIndex = 3
-        '
-        'Column1
-        '
-        Me.Column1.DataPropertyName = "codigo"
-        Me.Column1.HeaderText = "Código"
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 65
-        '
-        'Column2
-        '
-        Me.Column2.DataPropertyName = "NomeMarina"
-        Me.Column2.HeaderText = "Marina"
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 64
-        '
-        'Column3
-        '
-        Me.Column3.DataPropertyName = "Estado"
-        Me.Column3.HeaderText = "Estado"
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 65
-        '
-        'Column4
-        '
-        Me.Column4.DataPropertyName = "Cidade"
-        Me.Column4.HeaderText = "Cidade"
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 65
-        '
-        'CEPMar
-        '
-        Me.CEPMar.DataPropertyName = "cep"
-        Me.CEPMar.HeaderText = "CEP"
-        Me.CEPMar.Name = "CEPMar"
-        Me.CEPMar.Width = 53
-        '
-        'EndMar
-        '
-        Me.EndMar.DataPropertyName = "endereco"
-        Me.EndMar.HeaderText = "Endereço"
-        Me.EndMar.Name = "EndMar"
-        Me.EndMar.Width = 78
         '
         'ConsultaMarina
         '
@@ -130,11 +130,11 @@ Partial Class ConsultaMarina
     End Sub
     Friend WithEvents TxtCampo As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DgdGrade As System.Windows.Forms.DataGridView
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents CEPMar As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EndMar As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CEPMar As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DgdGrade As System.Windows.Forms.DataGridView
 End Class

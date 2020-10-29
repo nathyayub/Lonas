@@ -183,7 +183,7 @@ Partial Class Marina
         '
         Me.txtcep.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcep.Location = New System.Drawing.Point(80, 330)
-        Me.txtcep.MaxLength = 7
+        Me.txtcep.MaxLength = 8
         Me.txtcep.Name = "txtcep"
         Me.txtcep.Size = New System.Drawing.Size(215, 26)
         Me.txtcep.TabIndex = 8

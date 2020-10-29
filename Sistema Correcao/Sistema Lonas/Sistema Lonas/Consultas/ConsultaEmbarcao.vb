@@ -8,7 +8,6 @@
         Me.Left = 0
     End Sub
 
-
     Private Sub TxtCampo_TextChanged(sender As Object, e As EventArgs) Handles TxtCampo.TextChanged
         DgdGrade.DataSource = objemb.LocalizarFiltro(TxtCampo.Text)
     End Sub

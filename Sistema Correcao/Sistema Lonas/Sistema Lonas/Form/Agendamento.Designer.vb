@@ -360,9 +360,9 @@ Partial Class Agendamento
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(12, 30)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(203, 21)
+        Me.Label8.Size = New System.Drawing.Size(129, 21)
         Me.Label8.TabIndex = 2
-        Me.Label8.Text = "Digite o Código ou Nome"
+        Me.Label8.Text = "Digite o Código"
         '
         'BtnOK
         '

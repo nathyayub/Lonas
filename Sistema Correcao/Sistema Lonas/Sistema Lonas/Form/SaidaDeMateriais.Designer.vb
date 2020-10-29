@@ -46,13 +46,20 @@ Partial Class SaidaDeMateriais
         '
         'BtnMat
         '
-        Me.BtnMat.Location = New System.Drawing.Point(261, 11)
+        Me.BtnMat.BackColor = System.Drawing.Color.Silver
+        Me.BtnMat.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnMat.FlatAppearance.BorderSize = 2
+        Me.BtnMat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnMat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnMat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMat.Font = New System.Drawing.Font("Times New Roman", 14.0!)
+        Me.BtnMat.Location = New System.Drawing.Point(261, 10)
         Me.BtnMat.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMat.Name = "BtnMat"
-        Me.BtnMat.Size = New System.Drawing.Size(47, 26)
+        Me.BtnMat.Size = New System.Drawing.Size(47, 28)
         Me.BtnMat.TabIndex = 1
         Me.BtnMat.Text = "..."
-        Me.BtnMat.UseVisualStyleBackColor = True
+        Me.BtnMat.UseVisualStyleBackColor = False
         '
         'DtaRet
         '
@@ -120,9 +127,9 @@ Partial Class SaidaDeMateriais
         Me.BtnEst.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEst.Font = New System.Drawing.Font("Times New Roman", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEst.Location = New System.Drawing.Point(317, 90)
+        Me.BtnEst.Location = New System.Drawing.Point(317, 82)
         Me.BtnEst.Name = "BtnEst"
-        Me.BtnEst.Size = New System.Drawing.Size(56, 27)
+        Me.BtnEst.Size = New System.Drawing.Size(55, 35)
         Me.BtnEst.TabIndex = 4
         Me.BtnEst.Text = "OK"
         Me.BtnEst.UseVisualStyleBackColor = False

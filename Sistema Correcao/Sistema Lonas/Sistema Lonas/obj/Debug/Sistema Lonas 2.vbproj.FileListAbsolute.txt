@@ -674,3 +674,4 @@ C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas 2.vbproj.GenerateResource.Cache
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\pt-BR\Sistema Lonas.resources.dll
 C:\Users\vinic\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.FrmLogin.resources
+C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.FrmLogin.resources

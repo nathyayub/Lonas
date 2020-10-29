@@ -81,9 +81,9 @@ Partial Class ContasApagar
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(12, 30)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(185, 20)
+        Me.Label8.Size = New System.Drawing.Size(117, 20)
         Me.Label8.TabIndex = 2
-        Me.Label8.Text = "Digite o Código ou Nome"
+        Me.Label8.Text = "Digite o Código"
         '
         'BtnOK
         '
@@ -232,20 +232,26 @@ Partial Class ContasApagar
         'TxtTipName
         '
         Me.TxtTipName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.TxtTipName.Location = New System.Drawing.Point(259, 58)
+        Me.TxtTipName.Location = New System.Drawing.Point(237, 60)
         Me.TxtTipName.Name = "TxtTipName"
         Me.TxtTipName.Size = New System.Drawing.Size(162, 26)
         Me.TxtTipName.TabIndex = 116
         '
         'BTNtip
         '
+        Me.BTNtip.BackColor = System.Drawing.Color.Silver
+        Me.BTNtip.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BTNtip.FlatAppearance.BorderSize = 2
+        Me.BTNtip.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BTNtip.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BTNtip.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNtip.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNtip.Location = New System.Drawing.Point(188, 58)
         Me.BTNtip.Name = "BTNtip"
-        Me.BTNtip.Size = New System.Drawing.Size(65, 26)
+        Me.BTNtip.Size = New System.Drawing.Size(42, 28)
         Me.BTNtip.TabIndex = 1
         Me.BTNtip.Text = "..."
-        Me.BTNtip.UseVisualStyleBackColor = True
+        Me.BTNtip.UseVisualStyleBackColor = False
         '
         'CbcVen
         '
@@ -273,13 +279,13 @@ Partial Class ContasApagar
         Me.TxtVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtVal.Location = New System.Drawing.Point(132, 96)
         Me.TxtVal.Name = "TxtVal"
-        Me.TxtVal.Size = New System.Drawing.Size(100, 26)
+        Me.TxtVal.Size = New System.Drawing.Size(114, 26)
         Me.TxtVal.TabIndex = 112
         '
         'TxtTip
         '
         Me.TxtTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.TxtTip.Location = New System.Drawing.Point(130, 58)
+        Me.TxtTip.Location = New System.Drawing.Point(131, 58)
         Me.TxtTip.Name = "TxtTip"
         Me.TxtTip.Size = New System.Drawing.Size(52, 26)
         Me.TxtTip.TabIndex = 111

@@ -43,9 +43,9 @@
         ElseIf TxtRg.Text = "" Then
             MsgBox("Digite o RG do funcionario!")
             TxtRg.Focus()
-        ElseIf TxtDta.Text = "" Then
+        ElseIf dtpadmissao.Text = "" Then
             MsgBox("Digite a data de adimissão do funcionario!")
-            TxtDta.Focus()
+            dtpadmissao.Focus()
         ElseIf TxtAra.Text = "" Then
             MsgBox("Digite a área de atuação do funcionario!")
             TxtAra.Focus()
@@ -56,7 +56,7 @@
             objFun.Telefone = MskTel.Text
             objFun.Email = TxtEma.Text
             objFun.RG = TxtRg.Text
-            objFun.DtAdmissao = TxtDta.Text
+            objFun.DtAdmissao = dtpadmissao.Text
             objFun.Atuacao = TxtAra.Text
             objFun.Email = TxtEma.Text
             objFun.Gravar(novo)
@@ -120,7 +120,7 @@
         MskTel.Text = objFun.Telefone
         TxtEma.Text = objFun.Email
         TxtRg.Text = objFun.RG
-        TxtDta.Text = objFun.DtAdmissao
+        dtpadmissao.Text = objFun.DtAdmissao
         TxtAra.Text = objFun.Atuacao
     End Sub
 End Class

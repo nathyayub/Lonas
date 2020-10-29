@@ -67,6 +67,7 @@ Partial Class Cliente
         '
         Me.TxtIns.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtIns.Location = New System.Drawing.Point(174, 219)
+        Me.TxtIns.MaxLength = 9
         Me.TxtIns.Name = "TxtIns"
         Me.TxtIns.Size = New System.Drawing.Size(204, 26)
         Me.TxtIns.TabIndex = 5
@@ -86,6 +87,7 @@ Partial Class Cliente
         '
         Me.TxtCNPJ.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCNPJ.Location = New System.Drawing.Point(174, 181)
+        Me.TxtCNPJ.MaxLength = 14
         Me.TxtCNPJ.Name = "TxtCNPJ"
         Me.TxtCNPJ.Size = New System.Drawing.Size(204, 26)
         Me.TxtCNPJ.TabIndex = 4
