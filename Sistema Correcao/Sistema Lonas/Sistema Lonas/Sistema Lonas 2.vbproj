@@ -113,6 +113,7 @@
     <Compile Include="Class\ClsPagamento.vb" />
     <Compile Include="Class\ClsEntradaMateriais.vb" />
     <Compile Include="Class\ClsSaidaDeMaterial.vb" />
+    <Compile Include="Class\MdlAcesso.vb" />
     <Compile Include="Consultas\ConsultaCliente.Designer.vb">
       <DependentUpon>ConsultaCliente.vb</DependentUpon>
     </Compile>
@@ -239,6 +240,12 @@
       <DependentUpon>EntradaDeMateriais.vb</DependentUpon>
     </Compile>
     <Compile Include="Form\EntradaDeMateriais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Fornecedor.Designer.vb">
@@ -422,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\EntradaDeMateriais.resx">
       <DependentUpon>EntradaDeMateriais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Fornecedor.resx">
       <DependentUpon>Fornecedor.vb</DependentUpon>

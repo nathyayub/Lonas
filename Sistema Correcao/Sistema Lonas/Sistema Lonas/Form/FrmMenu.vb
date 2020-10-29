@@ -6,6 +6,7 @@ Imports System.Text
 Public Class FrmMenu
 
     Private Sub FrmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FrmLogin.ShowDialog()
         Dim DtsDolar As String
         Dim DtsEuro As String
         Dim cotacaoService = New WsCotacao.FachadaWSSGSService()

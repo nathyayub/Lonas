@@ -1,6 +1,7 @@
-﻿Public Class ClsBanco
-    Dim conexao As String = "Provider=microsoft.ace.oledb.12.0;data source=timoneiros2020_2000C.mdb"
+﻿Imports System.Data.OleDb
 
+Public Class ClsBanco
+    Dim conexao As String = "Provider=microsoft.ace.oledb.12.0;data source=timoneiros2020_2000C.mdb"
     Public objcon As New OleDb.OleDbConnection(conexao)
     Private Sub abrir_banco()
         objcon.Open()
@@ -27,5 +28,7 @@
         objda.Fill(objdt)
         Return objdt
     End Function
+
+    
 
 End Class

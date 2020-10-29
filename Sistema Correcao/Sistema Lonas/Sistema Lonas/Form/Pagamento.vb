@@ -26,9 +26,9 @@
         ElseIf txtval.Text = "" Then
             MsgBox("Digite o valor do pedido!")
             txtval.Focus()
-        ElseIf txtForma.Text = "" Then
+        ElseIf CboPag.Text = "" Then
             MsgBox("Digite a forma de pagamento!")
-            txtForma.Focus()
+            CboPag.Focus()
         ElseIf dtpvenc.Text = "" Then
             MsgBox("Digite a data de vencimento!")
             dtpvenc.Focus()
@@ -36,7 +36,7 @@
             objPag.Codigo = Val(txtcod.Text)
             objPag.Pedido = txtcodped.Text
             objPag.Valor = txtval.Text
-            objPag.FormaPagamento = txtForma.Text
+            objPag.FormaPagamento = CboPag.SelectedItem.ToString
             objPag.Vencimento = dtpvenc.Text
             objPag.Recebimento = chbrec.Checked
             objPag.Gravar(novo)
@@ -104,7 +104,7 @@
         txtcod.Text = objPag.Codigo
         txtcodped.Text = objPag.Pedido
         txtval.Text = objPag.Valor
-        txtForma.Text = objPag.FormaPagamento
+        CboPag.SelectedItem = objPag.FormaPagamento
         dtpvenc.Text = objPag.Vencimento
         chbrec.Checked = objPag.Recebimento
     End Sub
