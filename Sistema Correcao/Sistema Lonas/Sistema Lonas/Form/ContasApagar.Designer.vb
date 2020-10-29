@@ -58,7 +58,7 @@ Partial Class ContasApagar
         Me.DtpVen.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DtpVen.Location = New System.Drawing.Point(129, 138)
         Me.DtpVen.Name = "DtpVen"
-        Me.DtpVen.Size = New System.Drawing.Size(117, 26)
+        Me.DtpVen.Size = New System.Drawing.Size(117, 30)
         Me.DtpVen.TabIndex = 3
         '
         'GrpLoc
@@ -81,7 +81,7 @@ Partial Class ContasApagar
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(12, 30)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(117, 20)
+        Me.Label8.Size = New System.Drawing.Size(145, 25)
         Me.Label8.TabIndex = 2
         Me.Label8.Text = "Digite o Código"
         '
@@ -100,7 +100,7 @@ Partial Class ContasApagar
         Me.TxtLoc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtLoc.Location = New System.Drawing.Point(16, 53)
         Me.TxtLoc.Name = "TxtLoc"
-        Me.TxtLoc.Size = New System.Drawing.Size(138, 26)
+        Me.TxtLoc.Size = New System.Drawing.Size(138, 30)
         Me.TxtLoc.TabIndex = 0
         '
         'BtnAlt
@@ -114,7 +114,7 @@ Partial Class ContasApagar
         Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAlt.Location = New System.Drawing.Point(476, 194)
+        Me.BtnAlt.Location = New System.Drawing.Point(492, 194)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(100, 36)
         Me.BtnAlt.TabIndex = 10
@@ -132,7 +132,7 @@ Partial Class ContasApagar
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(476, 356)
+        Me.BtnSai.Location = New System.Drawing.Point(492, 356)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(100, 36)
         Me.BtnSai.TabIndex = 13
@@ -150,7 +150,7 @@ Partial Class ContasApagar
         Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCan.Location = New System.Drawing.Point(476, 310)
+        Me.BtnCan.Location = New System.Drawing.Point(492, 310)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(100, 36)
         Me.BtnCan.TabIndex = 12
@@ -168,7 +168,7 @@ Partial Class ContasApagar
         Me.BtnLoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLoc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnLoc.Location = New System.Drawing.Point(476, 152)
+        Me.BtnLoc.Location = New System.Drawing.Point(492, 152)
         Me.BtnLoc.Name = "BtnLoc"
         Me.BtnLoc.Size = New System.Drawing.Size(100, 36)
         Me.BtnLoc.TabIndex = 9
@@ -186,7 +186,7 @@ Partial Class ContasApagar
         Me.BtnExc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnExc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnExc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnExc.Location = New System.Drawing.Point(476, 110)
+        Me.BtnExc.Location = New System.Drawing.Point(492, 110)
         Me.BtnExc.Name = "BtnExc"
         Me.BtnExc.Size = New System.Drawing.Size(100, 36)
         Me.BtnExc.TabIndex = 8
@@ -204,7 +204,7 @@ Partial Class ContasApagar
         Me.BtnGra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGra.Location = New System.Drawing.Point(476, 68)
+        Me.BtnGra.Location = New System.Drawing.Point(492, 68)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(100, 36)
         Me.BtnGra.TabIndex = 7
@@ -222,7 +222,7 @@ Partial Class ContasApagar
         Me.BtnNov.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnNov.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNov.Location = New System.Drawing.Point(476, 26)
+        Me.BtnNov.Location = New System.Drawing.Point(492, 26)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(100, 36)
         Me.BtnNov.TabIndex = 6
@@ -234,7 +234,7 @@ Partial Class ContasApagar
         Me.TxtTipName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtTipName.Location = New System.Drawing.Point(237, 60)
         Me.TxtTipName.Name = "TxtTipName"
-        Me.TxtTipName.Size = New System.Drawing.Size(162, 26)
+        Me.TxtTipName.Size = New System.Drawing.Size(162, 30)
         Me.TxtTipName.TabIndex = 116
         '
         'BTNtip
@@ -260,7 +260,7 @@ Partial Class ContasApagar
         Me.CbcVen.ForeColor = System.Drawing.Color.White
         Me.CbcVen.Location = New System.Drawing.Point(132, 175)
         Me.CbcVen.Name = "CbcVen"
-        Me.CbcVen.Size = New System.Drawing.Size(91, 26)
+        Me.CbcVen.Size = New System.Drawing.Size(114, 33)
         Me.CbcVen.TabIndex = 4
         Me.CbcVen.Text = "Quitada"
         Me.CbcVen.UseVisualStyleBackColor = True
@@ -273,13 +273,14 @@ Partial Class ContasApagar
         Me.TxtDes.Name = "TxtDes"
         Me.TxtDes.Size = New System.Drawing.Size(292, 80)
         Me.TxtDes.TabIndex = 5
+        Me.TxtDes.Tag = ""
         '
         'TxtVal
         '
         Me.TxtVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtVal.Location = New System.Drawing.Point(132, 96)
         Me.TxtVal.Name = "TxtVal"
-        Me.TxtVal.Size = New System.Drawing.Size(114, 26)
+        Me.TxtVal.Size = New System.Drawing.Size(114, 30)
         Me.TxtVal.TabIndex = 112
         '
         'TxtTip
@@ -287,7 +288,7 @@ Partial Class ContasApagar
         Me.TxtTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtTip.Location = New System.Drawing.Point(131, 58)
         Me.TxtTip.Name = "TxtTip"
-        Me.TxtTip.Size = New System.Drawing.Size(52, 26)
+        Me.TxtTip.Size = New System.Drawing.Size(52, 30)
         Me.TxtTip.TabIndex = 111
         '
         'TxtCodc
@@ -296,7 +297,7 @@ Partial Class ContasApagar
         Me.TxtCodc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TxtCodc.Location = New System.Drawing.Point(130, 20)
         Me.TxtCodc.Name = "TxtCodc"
-        Me.TxtCodc.Size = New System.Drawing.Size(127, 26)
+        Me.TxtCodc.Size = New System.Drawing.Size(127, 30)
         Me.TxtCodc.TabIndex = 110
         '
         'Label5
@@ -306,7 +307,7 @@ Partial Class ContasApagar
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(22, 216)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(97, 22)
+        Me.Label5.Size = New System.Drawing.Size(118, 29)
         Me.Label5.TabIndex = 109
         Me.Label5.Text = "Descrição:"
         '
@@ -317,7 +318,7 @@ Partial Class ContasApagar
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(39, 175)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(78, 22)
+        Me.Label6.Size = New System.Drawing.Size(98, 29)
         Me.Label6.TabIndex = 108
         Me.Label6.Text = "Quitada:"
         '
@@ -328,7 +329,7 @@ Partial Class ContasApagar
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(9, 139)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(107, 22)
+        Me.Label3.Size = New System.Drawing.Size(139, 29)
         Me.Label3.TabIndex = 107
         Me.Label3.Text = "Vencimento:"
         '
@@ -339,7 +340,7 @@ Partial Class ContasApagar
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(64, 97)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 22)
+        Me.Label4.Size = New System.Drawing.Size(72, 29)
         Me.Label4.TabIndex = 106
         Me.Label4.Text = "Valor:"
         '
@@ -350,7 +351,7 @@ Partial Class ContasApagar
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(48, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 22)
+        Me.Label1.Size = New System.Drawing.Size(93, 29)
         Me.Label1.TabIndex = 104
         Me.Label1.Text = "Código:"
         '
@@ -365,7 +366,7 @@ Partial Class ContasApagar
         Me.BtnGravarNovo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGravarNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGravarNovo.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGravarNovo.Location = New System.Drawing.Point(458, 236)
+        Me.BtnGravarNovo.Location = New System.Drawing.Point(474, 236)
         Me.BtnGravarNovo.Name = "BtnGravarNovo"
         Me.BtnGravarNovo.Size = New System.Drawing.Size(118, 66)
         Me.BtnGravarNovo.TabIndex = 11
@@ -379,16 +380,16 @@ Partial Class ContasApagar
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(69, 57)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 22)
+        Me.Label2.Size = New System.Drawing.Size(64, 29)
         Me.Label2.TabIndex = 105
         Me.Label2.Text = "Tipo:"
         '
         'ContasApagar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(588, 463)
+        Me.ClientSize = New System.Drawing.Size(604, 463)
         Me.Controls.Add(Me.BtnGravarNovo)
         Me.Controls.Add(Me.DtpVen)
         Me.Controls.Add(Me.GrpLoc)

@@ -26,22 +26,38 @@
         objControle.habilitar_botoes(Me, False)
         TxtCodc.Enabled = False
         BTNtip.Enabled = True
+        TxtTip.Enabled = False
+        TxtTipName.Enabled = False
         TxtTip.Focus()
         novo = True
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-        objCon.Codigo = Val(TxtCodc.Text)
-        objCon.tipo = TxtTip.Text
-        objCon.Valor = TxtVal.Text
-        objCon.Vencimento = DtpVen.Text
-        objCon.Quitada = CbcVen.Checked
-        objCon.Descricao = TxtDes.Text
-        objCon.Gravar(novo)
-        TxtCodc.Text = objCon.Codigo
 
-        objControle.habilitar_tela(Me, False)
-        objControle.habilitar_botoes(Me, True)
+        If TxtTip.Text = "" Then
+            MsgBox("Selecione o tipo da conta!")
+            TxtTip.Focus()
+        ElseIf TxtVal.Text = "" Then
+            MsgBox("Digite o valor do pagamento!")
+            TxtVal.Focus()
+        ElseIf DtpVen.Text = "" Then
+            MsgBox("Digite o a data co vencimento!")
+            DtpVen.Focus()
+        Else
+            objCon.Codigo = Val(TxtCodc.Text)
+            objCon.tipo = TxtTip.Text
+            objCon.Valor = TxtVal.Text
+            objCon.Vencimento = DtpVen.Text
+            objCon.Quitada = CbcVen.Checked
+            objCon.Descricao = TxtDes.Text
+            objCon.Gravar(novo)
+            TxtCodc.Text = objCon.Codigo
+
+            objControle.habilitar_tela(Me, False)
+            objControle.habilitar_botoes(Me, True)
+        End If
+
+        
     End Sub
 
     Private Sub BtnSai_Click(sender As Object, e As EventArgs) Handles BtnSai.Click
@@ -98,5 +114,24 @@
 
     Private Sub TxtDes_TextChanged(sender As Object, e As EventArgs) Handles TxtDes.TextChanged
 
+    End Sub
+
+    Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
+        objControle.habilitar_tela(Me, True)
+        objControle.habilitar_botoes(Me, False)
+        GrpLoc.Visible = False
+        TxtCodc.Enabled = False
+
+        TxtVal.Focus()
+        GrpLoc.Visible = False
+        novo = False
+    End Sub
+
+    Private Sub BtnExc_Click(sender As Object, e As EventArgs) Handles BtnExc.Click
+        If objCon.Excluir(TxtCodc.Text) = True Then
+            objControle.Limpar_tela(Me)
+            BtnExc.Enabled = False
+            BtnAlt.Enabled = False
+        End If
     End Sub
 End Class
