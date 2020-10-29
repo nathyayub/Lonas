@@ -121,7 +121,9 @@
         objControle.habilitar_botoes(Me, False)
         GrpLoc.Visible = False
         TxtCodc.Enabled = False
-
+        TxtTip.Enabled = False
+        TxtTipName.Enabled = False
+        BTNtip.Enabled = True
         TxtVal.Focus()
         GrpLoc.Visible = False
         novo = False
