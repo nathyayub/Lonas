@@ -60,7 +60,8 @@
             objPed.Gravar(novo)
 
             TxtCod.Text = objPed.Codigo
-
+            GroupBox1.Enabled = False
+            TxtCodCli.Enabled = False
             objControle.habilitar_tela(Me, False)
             objControle.habilitar_botoes(Me, True)
         End If
@@ -128,7 +129,10 @@
         objControle.habilitar_botoes(Me, False)
         TxtCod.Enabled = False
         TxtCli.Enabled = False
-
+        TxtCodCli.Enabled = False
+        GroupBox1.Enabled = True
+        DtaMax.Enabled = True
+        DtaMin.Enabled = True
         TxtCodCli.Focus()
         novo = False
     End Sub

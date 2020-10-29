@@ -17,7 +17,8 @@
         objControle.habilitar_botoes(Me, True)
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
-
+        TxtMin.Enabled = False
+        TxtMax.Enabled = False
         GrpLoc.Visible = False
     End Sub
 
@@ -26,6 +27,8 @@
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
         TxtCod.Enabled = False
+        TxtMin.Enabled = True
+        TxtMax.Enabled = True
         TxtNom.Focus()
         novo = True
     End Sub
@@ -53,6 +56,8 @@
             objCad.Gravar(novo)
             TxtCod.Text = objCad.Codigo
 
+            TxtMin.Enabled = False
+            TxtMax.Enabled = False
             objControle.habilitar_tela(Me, False)
             objControle.habilitar_botoes(Me, True)
         End If
@@ -71,6 +76,8 @@
 
     Private Sub BtnCan_Click(sender As Object, e As EventArgs) Handles BtnCan.Click
         CadastroDeMateriais_Load(Nothing, Nothing)
+        TxtMin.Text = ""
+        TxtMax.Text = ""
     End Sub
 
     Private Sub TxtLoc_TextChanged(sender As Object, e As EventArgs) Handles TxtLoc.TextChanged
@@ -113,6 +120,9 @@
         objControle.habilitar_botoes(Me, False)
         GrpLoc.Visible = False
         TxtCod.Enabled = False
+        TxtMin.Enabled = True
+        TxtMax.Enabled = True
+
         TxtNom.Focus()
         novo = False
     End Sub

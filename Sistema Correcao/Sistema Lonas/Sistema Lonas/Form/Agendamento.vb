@@ -16,6 +16,8 @@
         GrpLoc.Visible = False
         BtnNom.Enabled = False
         GrpDat.Enabled = False
+        dtpprazomin.Enabled = False
+        dtpprazomax.Enabled = False
         btnEmbarcacao.Enabled = False
 
     End Sub
@@ -30,6 +32,8 @@
         Txtcodcli.Enabled = False
         txtnomcli.Enabled = False
         txtcodemb.Enabled = False
+        dtpprazomin.Enabled = True
+        dtpprazomax.Enabled = True
         txtEmbarcacao.Enabled = False
         btnEmbarcacao.Enabled = True
         Txtcodcli.Focus()
@@ -107,6 +111,8 @@
         btnEmbarcacao.Enabled = True
         txtEmbarcacao.Enabled = False
         Txtcodcli.Enabled = False
+        dtpprazomin.Enabled = True
+        dtpprazomax.Enabled = True
         Txtcodcli.Focus()
         novo = True
         GrpLoc.Visible = False
