@@ -1,5 +1,5 @@
 ﻿Public Class ClsControle
-
+   
     Public Sub Limpar_tela(tela As Object)
         Dim controle As Object
         For Each controle In tela.controls

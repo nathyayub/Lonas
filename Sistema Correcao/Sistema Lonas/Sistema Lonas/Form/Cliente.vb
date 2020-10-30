@@ -17,7 +17,12 @@
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
         GrpLoc.Visible = False
-
+        TxtEst.Enabled = False
+        TxtCid.Enabled = False
+        TxtBai.Enabled = False
+        TxtEnd.Enabled = False
+        TxtCom.Enabled = False
+        btnConsultarCep.Enabled = False
 
     End Sub
 
@@ -29,6 +34,12 @@
         TxtIns.Enabled = False
         TxtCNPJ.Enabled = True
         TxtIns.Enabled = True
+        TxtEst.Enabled = False
+        TxtCid.Enabled = False
+        TxtBai.Enabled = False
+        TxtEnd.Enabled = False
+        TxtCom.Enabled = False
+        btnConsultarCep.Enabled = True
         TxtNom.Focus()
         novo = True
     End Sub
@@ -88,12 +99,11 @@
 
                 objCli.Gravar(novo)
                 TxtCod.Text = objCli.Codigo
-
                 objControle.habilitar_tela(Me, False)
                 objControle.habilitar_botoes(Me, True)
             End If
         End If
-
+        btnConsultarCep.Enabled = False
 
     End Sub
 
@@ -128,6 +138,7 @@
 
         End If
         TxtLoc.Text = ""
+        btnConsultarCep.Enabled = False
         TxtLoc.Focus()
     End Sub
 
@@ -161,6 +172,12 @@
         objControle.habilitar_botoes(Me, False)
         GrpLoc.Visible = False
         TxtCod.Enabled = False
+        TxtEst.Enabled = False
+        TxtCid.Enabled = False
+        TxtBai.Enabled = False
+        TxtEnd.Enabled = False
+        TxtCom.Enabled = False
+        btnConsultarCep.Enabled = True
 
         TxtNom.Focus()
         GrpLoc.Visible = False
@@ -168,11 +185,11 @@
     End Sub
 
 
-    Private Sub TxtCNPJ_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtCNPJ.KeyPress
+    Private Sub TxtCNPJ_KeyPress(sender As Object, e As KeyPressEventArgs)
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
-    Private Sub TxtCNPJ_TextChanged(sender As Object, e As EventArgs) Handles TxtCNPJ.TextChanged
+    Private Sub TxtCNPJ_TextChanged(sender As Object, e As EventArgs)
         If TxtCNPJ.Text <> "" Then
             TxtCpf.Enabled = False
             TxtIns.Enabled = True
@@ -182,11 +199,11 @@
         End If
     End Sub
 
-    Private Sub TxtCpf_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtCpf.KeyPress
+    Private Sub TxtCpf_KeyPress(sender As Object, e As KeyPressEventArgs)
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
-    Private Sub TxtCpf_TextChanged(sender As Object, e As EventArgs) Handles TxtCpf.TextChanged
+    Private Sub TxtCpf_TextChanged(sender As Object, e As EventArgs)
         If TxtCpf.Text <> "" Then
             TxtCNPJ.Enabled = False
             TxtIns.Enabled = False
@@ -206,8 +223,21 @@
         FrmImp.ShowDialog()
     End Sub
 
-    Private Sub TxtCep_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtCep.KeyPress
+    Private Sub TxtCep_KeyPress(sender As Object, e As KeyPressEventArgs)
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
+    Private Sub btnConsultarCep_Click(sender As Object, e As EventArgs) Handles btnConsultarCep.Click
+        Try
+            Dim Ws = New WsCep.AtendeClienteClient()
+            Dim Resposta = Ws.consultaCEP(TxtCep.Text)
+            TxtEnd.Text = Resposta.end
+            TxtCom.Text = Resposta.complemento2
+            TxtBai.Text = Resposta.bairro
+            TxtEst.Text = Resposta.uf
+            TxtCid.Text = Resposta.cidade
+        Catch ex As Exception
+            MsgBox("Erro ao encontrar CEP.", vbCritical)
+        End Try
+    End Sub
 End Class

@@ -1,6 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
-
+Imports System.Windows.Forms
 Public Class FrmLogin
     Private Sub PLogin(ByVal login As String, ByVal senha As String)
         Dim dr As OleDbDataReader = Nothing
@@ -15,7 +15,9 @@ Public Class FrmLogin
                     Me.Hide()
                     FrmMenu.Show()
                 Else
-                    MsgBox("Os dados não conferem")
+                    MsgBox("Usuário e/ou senha inválidos", vbInformation)
+                    txtusuario.Text = ""
+                    txtsenha.Text = ""
                 End If
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -37,5 +39,16 @@ Public Class FrmLogin
         Else
             txtsenha.PasswordChar = "*"
         End If
+    End Sub
+    Private Sub FrmLogin_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+
+        Select Case e.KeyCode
+
+            Case Keys.Enter
+
+                SendKeys.Send("{Tab}")
+
+        End Select
+
     End Sub
 End Class

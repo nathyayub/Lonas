@@ -26,11 +26,6 @@ Partial Class ConsultaEmbarcaoComClie
         Me.TxtCampo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -50,56 +45,20 @@ Partial Class ConsultaEmbarcaoComClie
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(15, 10)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(133, 22)
+        Me.Label1.Size = New System.Drawing.Size(130, 22)
         Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Digite o código"
+        Me.Label1.Text = "Código Cliente"
         '
         'DgdGrade
         '
         Me.DgdGrade.AllowUserToAddRows = False
         Me.DgdGrade.AllowUserToDeleteRows = False
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        Me.DgdGrade.Location = New System.Drawing.Point(19, 77)
+        Me.DgdGrade.Location = New System.Drawing.Point(19, 67)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.ReadOnly = True
         Me.DgdGrade.Size = New System.Drawing.Size(644, 339)
         Me.DgdGrade.TabIndex = 18
-        '
-        'Column1
-        '
-        Me.Column1.DataPropertyName = "codigo"
-        Me.Column1.HeaderText = "Código da embarcação"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.DataPropertyName = "cliente"
-        Me.Column2.HeaderText = "Cliente"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.DataPropertyName = "nomebarco"
-        Me.Column3.HeaderText = "Nome da embarcação"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.DataPropertyName = "marina"
-        Me.Column4.HeaderText = "Código Marina"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        '
-        'Column5
-        '
-        Me.Column5.DataPropertyName = "nomemarina"
-        Me.Column5.HeaderText = "Nome Marina"
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
         '
         'ConsultaEmbarcaoComClie
         '
@@ -121,9 +80,4 @@ Partial Class ConsultaEmbarcaoComClie
     Friend WithEvents TxtCampo As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DgdGrade As System.Windows.Forms.DataGridView
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

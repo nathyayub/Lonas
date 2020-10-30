@@ -50,6 +50,8 @@
         ElseIf txtcodemb.Text = Nothing Then
             MsgBox("Digite o código da embarcação!")
             txtcodemb.Focus()
+        ElseIf Txtcodcli.Text <> ConsultaEmbarcaoComClie.TxtCampo.Text Then
+            MsgBox("Cliente não condiz com embarcação", MsgBoxStyle.Exclamation, "Aviso")
         Else
             objAg.Codigo = Val(TxtCod.Text)
             objAg.Cli = Txtcodcli.Text
@@ -144,7 +146,15 @@
     End Sub
 
     Private Sub btnEmbarcacao_Click(sender As Object, e As EventArgs) Handles btnEmbarcacao.Click
-        ConsultaEmbarcaoComClie.quemChamou = Me.Name
-        ConsultaEmbarcaoComClie.ShowDialog()
+        If Txtcodcli.TextLength > 0 Then
+            ConsultaEmbarcaoComClie.quemChamou = Me.Name
+            ConsultaEmbarcaoComClie.ShowDialog()
+        ElseIf Txtcodcli.TextLength = 0 Then
+            MsgBox("Colocar o cliente primeiro", MsgBoxStyle.Exclamation, "Aviso")
+        End If
+        If MsgBoxResult.Ok Then
+            ConsultaEmbarcaoComClie.Close()
+        End If
+
     End Sub
 End Class

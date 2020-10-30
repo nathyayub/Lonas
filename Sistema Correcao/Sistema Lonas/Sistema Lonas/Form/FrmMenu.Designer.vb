@@ -29,9 +29,9 @@ Partial Class FrmMenu
         Me.ToolStripSeparator13 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator10 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.TooMarina = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator14 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
@@ -63,11 +63,6 @@ Partial Class FrmMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtDolar = New System.Windows.Forms.TextBox()
         Me.LblCodCli = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.txtEuroCota = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TxtDolarCota = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.ConsultasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MarinaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -93,11 +88,19 @@ Partial Class FrmMenu
         Me.EntradaDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtEuroCota = New System.Windows.Forms.TextBox()
+        Me.TxtDolarCota = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -142,19 +145,6 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.ToolStripSeparator10, "ToolStripSeparator10")
         Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
         '
-        'ToolStripButton8
-        '
-        resources.ApplyResources(Me.ToolStripButton8, "ToolStripButton8")
-        Me.ToolStripButton8.BackColor = System.Drawing.Color.Brown
-        Me.ToolStripButton8.ForeColor = System.Drawing.Color.White
-        Me.ToolStripButton8.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
-        Me.ToolStripButton8.Name = "ToolStripButton8"
-        '
-        'ToolStripSeparator2
-        '
-        resources.ApplyResources(Me.ToolStripSeparator2, "ToolStripSeparator2")
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        '
         'TooMarina
         '
         resources.ApplyResources(Me.TooMarina, "TooMarina")
@@ -162,6 +152,19 @@ Partial Class FrmMenu
         Me.TooMarina.ForeColor = System.Drawing.Color.White
         Me.TooMarina.Margin = New System.Windows.Forms.Padding(0, 1, 0, 1)
         Me.TooMarina.Name = "TooMarina"
+        '
+        'ToolStripSeparator2
+        '
+        resources.ApplyResources(Me.ToolStripSeparator2, "ToolStripSeparator2")
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        '
+        'ToolStripButton8
+        '
+        resources.ApplyResources(Me.ToolStripButton8, "ToolStripButton8")
+        Me.ToolStripButton8.BackColor = System.Drawing.Color.Brown
+        Me.ToolStripButton8.ForeColor = System.Drawing.Color.White
+        Me.ToolStripButton8.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
+        Me.ToolStripButton8.Name = "ToolStripButton8"
         '
         'ToolStripSeparator14
         '
@@ -359,39 +362,6 @@ Partial Class FrmMenu
         Me.LblCodCli.ForeColor = System.Drawing.Color.White
         Me.LblCodCli.Name = "LblCodCli"
         '
-        'GroupBox2
-        '
-        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
-        Me.GroupBox2.Controls.Add(Me.txtEuroCota)
-        Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.TxtDolarCota)
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.ForeColor = System.Drawing.Color.White
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.TabStop = False
-        '
-        'txtEuroCota
-        '
-        resources.ApplyResources(Me.txtEuroCota, "txtEuroCota")
-        Me.txtEuroCota.Name = "txtEuroCota"
-        '
-        'Label3
-        '
-        resources.ApplyResources(Me.Label3, "Label3")
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Name = "Label3"
-        '
-        'TxtDolarCota
-        '
-        resources.ApplyResources(Me.TxtDolarCota, "TxtDolarCota")
-        Me.TxtDolarCota.Name = "TxtDolarCota"
-        '
-        'Label2
-        '
-        resources.ApplyResources(Me.Label2, "Label2")
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Name = "Label2"
-        '
         'ConsultasToolStripMenuItem
         '
         resources.ApplyResources(Me.ConsultasToolStripMenuItem, "ConsultasToolStripMenuItem")
@@ -528,13 +498,60 @@ Partial Class FrmMenu
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsultasToolStripMenuItem, Me.RelatorioToolStripMenuItem, Me.SairToolStripMenuItem})
         Me.MenuStrip1.Name = "MenuStrip1"
         '
+        'Panel1
+        '
+        resources.ApplyResources(Me.Panel1, "Panel1")
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Name = "Panel1"
+        '
+        'Panel2
+        '
+        resources.ApplyResources(Me.Panel2, "Panel2")
+        Me.Panel2.BackColor = System.Drawing.Color.Brown
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel2.Controls.Add(Me.txtEuroCota)
+        Me.Panel2.Controls.Add(Me.TxtDolarCota)
+        Me.Panel2.Controls.Add(Me.Label7)
+        Me.Panel2.Controls.Add(Me.Label8)
+        Me.Panel2.Name = "Panel2"
+        '
+        'txtEuroCota
+        '
+        resources.ApplyResources(Me.txtEuroCota, "txtEuroCota")
+        Me.txtEuroCota.Name = "txtEuroCota"
+        '
+        'TxtDolarCota
+        '
+        resources.ApplyResources(Me.TxtDolarCota, "TxtDolarCota")
+        Me.TxtDolarCota.Name = "TxtDolarCota"
+        '
+        'Label7
+        '
+        resources.ApplyResources(Me.Label7, "Label7")
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Name = "Label7"
+        '
+        'Label8
+        '
+        resources.ApplyResources(Me.Label8, "Label8")
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Name = "Label8"
+        '
+        'Label5
+        '
+        resources.ApplyResources(Me.Label5, "Label5")
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Name = "Label5"
+        '
         'FrmMenu
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.BackColor = System.Drawing.Color.Brown
-        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -550,10 +567,12 @@ Partial Class FrmMenu
         Me.grbcotacao.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -598,11 +617,6 @@ Partial Class FrmMenu
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtDolar As System.Windows.Forms.TextBox
     Friend WithEvents LblCodCli As System.Windows.Forms.Label
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents txtEuroCota As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TxtDolarCota As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ConsultasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MarinaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -628,5 +642,12 @@ Partial Class FrmMenu
     Friend WithEvents EntradaDeMateriaisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SairToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents txtEuroCota As System.Windows.Forms.TextBox
+    Friend WithEvents TxtDolarCota As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 
 End Class

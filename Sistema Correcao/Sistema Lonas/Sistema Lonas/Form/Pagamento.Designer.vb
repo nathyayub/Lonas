@@ -360,7 +360,7 @@ Partial Class Pagamento
         Me.CboPag.FormattingEnabled = True
         Me.CboPag.Items.AddRange(New Object() {"Cartão Debito", "Cartão Credito", "Boleto", "Dinheiro", "Cheque", "TED"})
         Me.CboPag.Location = New System.Drawing.Point(196, 150)
-        Me.CboPag.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CboPag.Margin = New System.Windows.Forms.Padding(2)
         Me.CboPag.Name = "CboPag"
         Me.CboPag.Size = New System.Drawing.Size(204, 28)
         Me.CboPag.TabIndex = 112

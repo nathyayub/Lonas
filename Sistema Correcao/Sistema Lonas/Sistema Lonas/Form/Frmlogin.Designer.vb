@@ -31,8 +31,8 @@ Partial Class FrmLogin
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.cbcSenha = New System.Windows.Forms.CheckBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,7 +51,7 @@ Partial Class FrmLogin
         Me.btnlogin.Margin = New System.Windows.Forms.Padding(2)
         Me.btnlogin.Name = "btnlogin"
         Me.btnlogin.Size = New System.Drawing.Size(180, 42)
-        Me.btnlogin.TabIndex = 3
+        Me.btnlogin.TabIndex = 2
         Me.btnlogin.Text = "Entrar"
         Me.btnlogin.UseVisualStyleBackColor = False
         '
@@ -133,6 +133,17 @@ Partial Class FrmLogin
         Me.Panel2.Size = New System.Drawing.Size(495, 178)
         Me.Panel2.TabIndex = 0
         '
+        'cbcSenha
+        '
+        Me.cbcSenha.AutoSize = True
+        Me.cbcSenha.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbcSenha.Location = New System.Drawing.Point(100, 97)
+        Me.cbcSenha.Name = "cbcSenha"
+        Me.cbcSenha.Size = New System.Drawing.Size(104, 23)
+        Me.cbcSenha.TabIndex = 3
+        Me.cbcSenha.Text = "Exibir Senha"
+        Me.cbcSenha.UseVisualStyleBackColor = True
+        '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -143,17 +154,6 @@ Partial Class FrmLogin
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
-        'cbcSenha
-        '
-        Me.cbcSenha.AutoSize = True
-        Me.cbcSenha.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbcSenha.Location = New System.Drawing.Point(100, 97)
-        Me.cbcSenha.Name = "cbcSenha"
-        Me.cbcSenha.Size = New System.Drawing.Size(104, 23)
-        Me.cbcSenha.TabIndex = 2
-        Me.cbcSenha.Text = "Exibir Senha"
-        Me.cbcSenha.UseVisualStyleBackColor = True
-        '
         'FrmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -163,9 +163,10 @@ Partial Class FrmLogin
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmLogin"
-        Me.Text = "Login"
+        Me.Text = "f"
         Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

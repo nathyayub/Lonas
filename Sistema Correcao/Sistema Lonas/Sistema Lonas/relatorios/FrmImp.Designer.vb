@@ -22,6 +22,7 @@ Partial Class FrmImp
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmImp))
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.SuspendLayout()
         '
@@ -42,6 +43,7 @@ Partial Class FrmImp
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(838, 646)
         Me.Controls.Add(Me.CrystalReportViewer1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmImp"
         Me.Text = "Impressão"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
