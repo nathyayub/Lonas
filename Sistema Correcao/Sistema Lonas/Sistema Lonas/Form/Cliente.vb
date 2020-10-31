@@ -32,7 +32,7 @@
         objControle.habilitar_botoes(Me, False)
         TxtCod.Enabled = False
         TxtIns.Enabled = False
-        TxtCNPJ.Enabled = True
+        mskCNPJ.Enabled = True
         TxtIns.Enabled = True
         TxtEst.Enabled = False
         TxtCid.Enabled = False
@@ -52,15 +52,15 @@
         ElseIf MskTel.Text = "" And TxtEma.Text = "" Then
             MsgBox("Digite o telefone ou e-mail do cliente!")
             MskTel.Focus()
-        ElseIf TxtCpf.Text = "" And TxtCNPJ.Text = "" Then
+        ElseIf mskCpf.Text = "" And mskCNPJ.Text = "" Then
             MsgBox("Digite o CPF ou o CNPJ dp cliente!")
-            TxtCpf.Focus()
-        ElseIf TxtCNPJ.Text <> "" And TxtIns.Text = "" Then
+            mskCpf.Focus()
+        ElseIf mskCNPJ.Text <> "" And TxtIns.Text = "" Then
             MsgBox("Digite a Inscrição Estadual do cliente!")
             TxtIns.Focus()
         ElseIf TxtEma.Text = "" Then
             MsgBox("Digite o email do cliente!")
-            TxtCpf.Focus()
+            mskCpf.Focus()
         ElseIf TxtEnd.Text = "" Then
             MsgBox("Digite o endereço do cliente!")
             TxtEnd.Focus()
@@ -83,10 +83,10 @@
                 objCli.Nome = TxtNom.Text
                 objCli.Telefone = MskTel.Text
 
-                objCli.CNPJ = TxtCNPJ.Text
+                objCli.CNPJ = mskCNPJ.Text
                 objCli.Inscricao = TxtIns.Text
 
-                objCli.Cpf = TxtCpf.Text
+                objCli.Cpf = mskCpf.Text
 
 
                 objCli.Email = TxtEma.Text
@@ -146,7 +146,7 @@
         TxtCod.Text = objCli.Codigo
         TxtNom.Text = objCli.Nome
         MskTel.Text = objCli.Telefone
-        TxtCpf.Text = objCli.Cpf
+        mskCpf.Text = objCli.Cpf
         TxtEma.Text = objCli.Email
         TxtEnd.Text = objCli.Endereco
         TxtCom.Text = objCli.Complemento
@@ -154,7 +154,7 @@
         TxtEst.Text = objCli.Estado
         TxtCid.Text = objCli.Cidade
         TxtCep.Text = objCli.Cep
-        TxtCNPJ.Text = objCli.CNPJ
+        mskCNPJ.Text = objCli.CNPJ
         TxtIns.Text = objCli.Inscricao
 
     End Sub
@@ -189,12 +189,12 @@
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
-    Private Sub TxtCNPJ_TextChanged(sender As Object, e As EventArgs)
-        If TxtCNPJ.Text <> "" Then
-            TxtCpf.Enabled = False
+    Private Sub mskCNPJ_TextChanged(sender As Object, e As EventArgs)
+        If mskCNPJ.Text <> "" Then
+            mskCpf.Enabled = False
             TxtIns.Enabled = True
         Else
-            TxtCpf.Enabled = True
+            mskCpf.Enabled = True
             TxtIns.Enabled = False
         End If
     End Sub
@@ -203,17 +203,17 @@
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
-    Private Sub TxtCpf_TextChanged(sender As Object, e As EventArgs)
-        If TxtCpf.Text <> "" Then
-            TxtCNPJ.Enabled = False
+    Private Sub mskCpf_TextChanged(sender As Object, e As EventArgs)
+        If mskCpf.Text <> "" Then
+            mskCNPJ.Enabled = False
             TxtIns.Enabled = False
         Else
-            TxtCNPJ.Enabled = True
+            mskCNPJ.Enabled = True
             TxtIns.Enabled = False
         End If
     End Sub
 
-   
+
     Private Sub BtnImp_Click(sender As Object, e As EventArgs)
         Dim rpt As New CrpClientes
         FrmImp.CrystalReportViewer1.ReportSource = rpt

@@ -59,8 +59,8 @@ Partial Class Cliente
         Me.BtnNov = New System.Windows.Forms.Button()
         Me.TxtCep = New System.Windows.Forms.MaskedTextBox()
         Me.btnConsultarCep = New System.Windows.Forms.Button()
-        Me.TxtCpf = New System.Windows.Forms.MaskedTextBox()
-        Me.TxtCNPJ = New System.Windows.Forms.MaskedTextBox()
+        Me.mskCpf = New System.Windows.Forms.MaskedTextBox()
+        Me.mskCNPJ = New System.Windows.Forms.MaskedTextBox()
         Me.GrpLoc.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -501,23 +501,23 @@ Partial Class Cliente
         Me.btnConsultarCep.Text = "Consultar CEP"
         Me.btnConsultarCep.UseVisualStyleBackColor = False
         '
-        'TxtCpf
+        'mskCpf
         '
-        Me.TxtCpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.TxtCpf.Location = New System.Drawing.Point(174, 142)
-        Me.TxtCpf.Mask = "000,000,000-00"
-        Me.TxtCpf.Name = "TxtCpf"
-        Me.TxtCpf.Size = New System.Drawing.Size(203, 26)
-        Me.TxtCpf.TabIndex = 91
+        Me.mskCpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.mskCpf.Location = New System.Drawing.Point(174, 142)
+        Me.mskCpf.Mask = "000,000,000-00"
+        Me.mskCpf.Name = "mskCpf"
+        Me.mskCpf.Size = New System.Drawing.Size(203, 26)
+        Me.mskCpf.TabIndex = 91
         '
-        'TxtCNPJ
+        'mskCNPJ
         '
-        Me.TxtCNPJ.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.TxtCNPJ.Location = New System.Drawing.Point(174, 181)
-        Me.TxtCNPJ.Mask = "99,999,999/9999-99"
-        Me.TxtCNPJ.Name = "TxtCNPJ"
-        Me.TxtCNPJ.Size = New System.Drawing.Size(203, 26)
-        Me.TxtCNPJ.TabIndex = 92
+        Me.mskCNPJ.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.mskCNPJ.Location = New System.Drawing.Point(174, 181)
+        Me.mskCNPJ.Mask = "99,999,999/9999-99"
+        Me.mskCNPJ.Name = "mskCNPJ"
+        Me.mskCNPJ.Size = New System.Drawing.Size(203, 26)
+        Me.mskCNPJ.TabIndex = 92
         '
         'Cliente
         '
@@ -525,8 +525,8 @@ Partial Class Cliente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(744, 560)
-        Me.Controls.Add(Me.TxtCNPJ)
-        Me.Controls.Add(Me.TxtCpf)
+        Me.Controls.Add(Me.mskCNPJ)
+        Me.Controls.Add(Me.mskCpf)
         Me.Controls.Add(Me.btnConsultarCep)
         Me.Controls.Add(Me.TxtCep)
         Me.Controls.Add(Me.TxtIns)
@@ -607,6 +607,6 @@ Partial Class Cliente
     Friend WithEvents BtnNov As System.Windows.Forms.Button
     Friend WithEvents TxtCep As System.Windows.Forms.MaskedTextBox
     Friend WithEvents btnConsultarCep As System.Windows.Forms.Button
-    Friend WithEvents TxtCpf As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents TxtCNPJ As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents mskCpf As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents mskCNPJ As System.Windows.Forms.MaskedTextBox
 End Class
