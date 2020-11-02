@@ -49,13 +49,10 @@
 
     Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles BtnNov.Click
         objControle.Limpar_tela(Me)
-        objControle.habilitar_tela(Me, True)
+        objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, False)
-        txtcodped.Enabled = False
-        txtnomecli.Enabled = False
-        txtcod.Enabled = False
-        txtnomecli.Enabled = False
         btnverificar.Enabled = True
+        CboPag.Enabled = True
         txtval.Focus()
         novo = True
     End Sub
@@ -76,9 +73,10 @@
     End Sub
 
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
-        objControle.habilitar_tela(Me, True)
+        objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, False)
-        txtcod.Enabled = False
+        btnverificar.Enabled = True
+        CboPag.Enabled = True
         txtcodped.Focus()
         novo = False
     End Sub

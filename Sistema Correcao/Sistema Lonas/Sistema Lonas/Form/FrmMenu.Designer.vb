@@ -67,8 +67,9 @@ Partial Class FrmMenu
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MarinaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgendamentoMediçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PedidoPorDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PedidoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PedidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PedidoPorDataToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmbarcaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -365,7 +366,7 @@ Partial Class FrmMenu
         'ConsultasToolStripMenuItem
         '
         resources.ApplyResources(Me.ConsultasToolStripMenuItem, "ConsultasToolStripMenuItem")
-        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoPorDataToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.EstoqueToolStripMenuItem1})
+        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.EstoqueToolStripMenuItem1})
         Me.ConsultasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem"
         '
@@ -384,15 +385,21 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.AgendamentoMediçãoToolStripMenuItem, "AgendamentoMediçãoToolStripMenuItem")
         Me.AgendamentoMediçãoToolStripMenuItem.Name = "AgendamentoMediçãoToolStripMenuItem"
         '
-        'PedidoPorDataToolStripMenuItem
-        '
-        resources.ApplyResources(Me.PedidoPorDataToolStripMenuItem, "PedidoPorDataToolStripMenuItem")
-        Me.PedidoPorDataToolStripMenuItem.Name = "PedidoPorDataToolStripMenuItem"
-        '
         'PedidoToolStripMenuItem
         '
         resources.ApplyResources(Me.PedidoToolStripMenuItem, "PedidoToolStripMenuItem")
+        Me.PedidoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PedidosToolStripMenuItem, Me.PedidoPorDataToolStripMenuItem1})
         Me.PedidoToolStripMenuItem.Name = "PedidoToolStripMenuItem"
+        '
+        'PedidosToolStripMenuItem
+        '
+        resources.ApplyResources(Me.PedidosToolStripMenuItem, "PedidosToolStripMenuItem")
+        Me.PedidosToolStripMenuItem.Name = "PedidosToolStripMenuItem"
+        '
+        'PedidoPorDataToolStripMenuItem1
+        '
+        resources.ApplyResources(Me.PedidoPorDataToolStripMenuItem1, "PedidoPorDataToolStripMenuItem1")
+        Me.PedidoPorDataToolStripMenuItem1.Name = "PedidoPorDataToolStripMenuItem1"
         '
         'DespesasToolStripMenuItem
         '
@@ -621,7 +628,6 @@ Partial Class FrmMenu
     Friend WithEvents ClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MarinaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AgendamentoMediçãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PedidoPorDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PedidoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DespesasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EmbarcaçãoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -649,5 +655,7 @@ Partial Class FrmMenu
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents PedidosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PedidoPorDataToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 
 End Class

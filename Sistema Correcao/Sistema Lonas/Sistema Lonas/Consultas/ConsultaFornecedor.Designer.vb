@@ -39,7 +39,7 @@ Partial Class ConsultaFornecedor
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCampo.Location = New System.Drawing.Point(33, 54)
-        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtCampo.Name = "TxtCampo"
         Me.TxtCampo.Size = New System.Drawing.Size(697, 30)
         Me.TxtCampo.TabIndex = 8
@@ -65,7 +65,7 @@ Partial Class ConsultaFornecedor
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3, Me.EmaCli, Me.PIX})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DgdGrade.Location = New System.Drawing.Point(33, 94)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(699, 417)
@@ -125,7 +125,7 @@ Partial Class ConsultaFornecedor
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "ConsultaFornecedor"
-        Me.Text = "Consulta Fornecedor"
+        Me.Text = "Consulta de Fornecedor"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

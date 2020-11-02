@@ -78,16 +78,25 @@ Public Class FrmMenu
         Marina.MdiParent = Me
     End Sub
     Private Sub PedidoToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles PedidoToolStripMenuItem.Click
-        ConsultaPedido.Show()
-        ConsultaPedido.MdiParent = Me
+        
     End Sub
 
     Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
-        Close()
+        If MessageBox.Show("Deseja Fechar o Sistema?",
+                           "Aviso",
+                           MessageBoxButtons.YesNo,
+                           MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            End
+        End If
     End Sub
 
     Private Sub SairToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairToolStripMenuItem.Click
-        Close()
+        If MessageBox.Show("Deseja Fechar o Sistema?",
+                           "Aviso",
+                           MessageBoxButtons.YesNo,
+                           MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            End
+        End If
 
     End Sub
 
@@ -139,11 +148,6 @@ Public Class FrmMenu
         ContasApagar.MdiParent = Me
     End Sub
 
-    Private Sub PedidoPorDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PedidoPorDataToolStripMenuItem.Click
-        ConsultaPedidoPorData.Show()
-        ConsultaPedidoPorData.MdiParent = Me
-    End Sub
-
     Private Sub EmbarcaçãoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmbarcaçãoToolStripMenuItem.Click
         CoEmbarcacao.Show()
         CoEmbarcacao.MdiParent = Me
@@ -158,15 +162,6 @@ Public Class FrmMenu
     Private Sub EstoqueToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EstoqueToolStripMenuItem1.Click
         Materiais.Show()
         Materiais.MdiParent = Me
-    End Sub
-
-    Private Sub RelátorioPedidoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioPedidoToolStripMenuItem.Click
-        Dim rpt As New CrpPedidos
-        FrmImp.CrystalReportViewer1.ReportSource = rpt
-        rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
-        rpt.SummaryInfo.ReportComments = "Relatório de Pedidos"
-        'rpt.Refresh()
-        FrmImp.ShowDialog()
     End Sub
 
     Private Sub RelátorioFornecedorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RelátorioFornecedorToolStripMenuItem.Click
@@ -238,4 +233,13 @@ Public Class FrmMenu
     End Sub
 
   
+    Private Sub PedidoPorDataToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PedidoPorDataToolStripMenuItem1.Click
+        ConsultaPedidoPorData.Show()
+        ConsultaPedidoPorData.MdiParent = Me
+    End Sub
+
+    Private Sub PedidosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PedidosToolStripMenuItem.Click
+        ConsultaPedido.Show()
+        ConsultaPedido.MdiParent = Me
+    End Sub
 End Class

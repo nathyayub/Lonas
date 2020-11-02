@@ -416,7 +416,7 @@ Partial Class ContasApagar
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ContasApagar"
-        Me.Text = "ContasApagar"
+        Me.Text = "Contas a Pagar"
         Me.GrpLoc.ResumeLayout(False)
         Me.GrpLoc.PerformLayout()
         Me.ResumeLayout(False)

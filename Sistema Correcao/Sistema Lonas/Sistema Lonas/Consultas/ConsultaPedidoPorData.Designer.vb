@@ -40,28 +40,31 @@ Partial Class ConsultaPedidoPorData
         Me.DgdGrade.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(18, 56)
+        Me.DgdGrade.Location = New System.Drawing.Point(24, 69)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgdGrade.Size = New System.Drawing.Size(780, 435)
+        Me.DgdGrade.Size = New System.Drawing.Size(1040, 535)
         Me.DgdGrade.TabIndex = 24
         '
         'DtpFin
         '
         Me.DtpFin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtpFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtpFin.Location = New System.Drawing.Point(373, 18)
+        Me.DtpFin.Location = New System.Drawing.Point(497, 22)
+        Me.DtpFin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DtpFin.Name = "DtpFin"
-        Me.DtpFin.Size = New System.Drawing.Size(102, 26)
+        Me.DtpFin.Size = New System.Drawing.Size(135, 30)
         Me.DtpFin.TabIndex = 23
         '
         'DtpIni
         '
         Me.DtpIni.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtpIni.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtpIni.Location = New System.Drawing.Point(133, 15)
+        Me.DtpIni.Location = New System.Drawing.Point(177, 18)
+        Me.DtpIni.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DtpIni.Name = "DtpIni"
-        Me.DtpIni.Size = New System.Drawing.Size(102, 26)
+        Me.DtpIni.Size = New System.Drawing.Size(135, 30)
         Me.DtpIni.TabIndex = 22
         '
         'btnok
@@ -73,9 +76,10 @@ Partial Class ConsultaPedidoPorData
         Me.btnok.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnok.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnok.Location = New System.Drawing.Point(549, 9)
+        Me.btnok.Location = New System.Drawing.Point(732, 11)
+        Me.btnok.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnok.Name = "btnok"
-        Me.btnok.Size = New System.Drawing.Size(113, 40)
+        Me.btnok.Size = New System.Drawing.Size(151, 49)
         Me.btnok.TabIndex = 21
         Me.btnok.Text = "OK"
         Me.btnok.UseVisualStyleBackColor = False
@@ -85,9 +89,10 @@ Partial Class ConsultaPedidoPorData
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(270, 20)
+        Me.Label2.Location = New System.Drawing.Point(360, 25)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(99, 22)
+        Me.Label2.Size = New System.Drawing.Size(122, 29)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Data Final:"
         '
@@ -96,9 +101,10 @@ Partial Class ConsultaPedidoPorData
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(20, 18)
+        Me.Label1.Location = New System.Drawing.Point(27, 22)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(109, 22)
+        Me.Label1.Size = New System.Drawing.Size(133, 29)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Data Inicial:"
         '
@@ -111,19 +117,20 @@ Partial Class ConsultaPedidoPorData
         Me.btnimprimir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnimprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnimprimir.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnimprimir.Location = New System.Drawing.Point(685, 10)
+        Me.btnimprimir.Location = New System.Drawing.Point(913, 12)
+        Me.btnimprimir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnimprimir.Name = "btnimprimir"
-        Me.btnimprimir.Size = New System.Drawing.Size(113, 40)
+        Me.btnimprimir.Size = New System.Drawing.Size(151, 49)
         Me.btnimprimir.TabIndex = 25
         Me.btnimprimir.Text = "Imprimir"
         Me.btnimprimir.UseVisualStyleBackColor = False
         '
         'ConsultaPedidoPorData
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(814, 511)
+        Me.ClientSize = New System.Drawing.Size(1085, 629)
         Me.Controls.Add(Me.btnimprimir)
         Me.Controls.Add(Me.DgdGrade)
         Me.Controls.Add(Me.DtpFin)
@@ -132,8 +139,9 @@ Partial Class ConsultaPedidoPorData
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "ConsultaPedidoPorData"
-        Me.Text = "Consulta Pedido Por Data"
+        Me.Text = "Consulta de Pedido por Data"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

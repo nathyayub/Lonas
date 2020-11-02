@@ -34,9 +34,10 @@ Partial Class ConsultaTipoDespesa
         'TxtCampo
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(12, 34)
+        Me.TxtCampo.Location = New System.Drawing.Point(16, 42)
+        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TxtCampo.Name = "TxtCampo"
-        Me.TxtCampo.Size = New System.Drawing.Size(477, 26)
+        Me.TxtCampo.Size = New System.Drawing.Size(635, 30)
         Me.TxtCampo.TabIndex = 8
         '
         'Label1
@@ -44,9 +45,10 @@ Partial Class ConsultaTipoDespesa
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 8)
+        Me.Label1.Location = New System.Drawing.Point(16, 10)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(180, 20)
+        Me.Label1.Size = New System.Drawing.Size(221, 25)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Digite o código ou nome"
         '
@@ -58,10 +60,11 @@ Partial Class ConsultaTipoDespesa
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Tipo})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(12, 75)
+        Me.DgdGrade.Location = New System.Drawing.Point(16, 92)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgdGrade.Size = New System.Drawing.Size(477, 339)
+        Me.DgdGrade.Size = New System.Drawing.Size(636, 417)
         Me.DgdGrade.TabIndex = 6
         '
         'Column1
@@ -69,27 +72,28 @@ Partial Class ConsultaTipoDespesa
         Me.Column1.DataPropertyName = "codigo"
         Me.Column1.HeaderText = "Código"
         Me.Column1.Name = "Column1"
-        Me.Column1.Width = 65
+        Me.Column1.Width = 81
         '
         'Tipo
         '
         Me.Tipo.DataPropertyName = "Nome"
         Me.Tipo.HeaderText = "Tipo"
         Me.Tipo.Name = "Tipo"
-        Me.Tipo.Width = 53
+        Me.Tipo.Width = 65
         '
         'ConsultaTipoDespesa
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(500, 427)
+        Me.ClientSize = New System.Drawing.Size(667, 526)
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DgdGrade)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "ConsultaTipoDespesa"
-        Me.Text = "Consulta Tipo Despesa"
+        Me.Text = "Consulta Tipo de Despesa"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
