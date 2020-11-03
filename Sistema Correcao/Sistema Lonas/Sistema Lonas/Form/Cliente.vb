@@ -23,7 +23,7 @@
         TxtEnd.Enabled = False
         TxtCom.Enabled = False
         btnConsultarCep.Enabled = False
-
+       
     End Sub
 
     Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles BtnNov.Click
@@ -189,29 +189,8 @@
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
-    Private Sub mskCNPJ_TextChanged(sender As Object, e As EventArgs)
-        If mskCNPJ.Text <> "" Then
-            mskCpf.Enabled = False
-            TxtIns.Enabled = True
-        Else
-            mskCpf.Enabled = True
-            TxtIns.Enabled = False
-        End If
-    End Sub
+    
 
-    Private Sub TxtCpf_KeyPress(sender As Object, e As KeyPressEventArgs)
-        e.Handled = objControle.So_numeros(e.KeyChar)
-    End Sub
-
-    Private Sub mskCpf_TextChanged(sender As Object, e As EventArgs)
-        If mskCpf.Text <> "" Then
-            mskCNPJ.Enabled = False
-            TxtIns.Enabled = False
-        Else
-            mskCNPJ.Enabled = True
-            TxtIns.Enabled = False
-        End If
-    End Sub
 
 
     Private Sub BtnImp_Click(sender As Object, e As EventArgs)
@@ -239,5 +218,31 @@
         Catch ex As Exception
             MsgBox("Erro ao encontrar CEP.", vbCritical)
         End Try
+    End Sub
+
+  
+    Private Sub mskCNPJ_TextChanged(sender As Object, e As EventArgs) Handles mskCNPJ.TextChanged
+        If mskCNPJ.Text <> "" Then
+            mskCpf.Enabled = False
+            TxtIns.Enabled = True
+        Else
+            mskCpf.Enabled = True
+            TxtIns.Enabled = False
+        End If
+    End Sub
+
+    Private Sub TxtCpf_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mskCpf.KeyPress
+        e.Handled = objControle.So_numeros(e.KeyChar)
+    End Sub
+
+    Private Sub mskCpf_TextChanged(sender As Object, e As EventArgs) Handles mskCpf.TextChanged
+        If mskCpf.Text <> "" Then
+            mskCNPJ.Enabled = False
+            TxtIns.Enabled = False
+        Else
+            mskCNPJ.Enabled = True
+            TxtIns.Enabled = False
+        End If
+
     End Sub
 End Class

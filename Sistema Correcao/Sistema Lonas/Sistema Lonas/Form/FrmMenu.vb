@@ -10,15 +10,19 @@ Public Class FrmMenu
 
 
     Private Sub FrmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim DtsDolar As String
-        Dim DtsEuro As String
-        Dim cotacaoService = New WsCotacao.FachadaWSSGSService()
-        DtsDolar = cotacaoService.getUltimoValorVO(10813).ultimoValor.svalor
-        DtsEuro = cotacaoService.getUltimoValorVO(21620).ultimoValor.svalor
+        Try
+            Dim DtsDolar As String
+            Dim DtsEuro As String
+            Dim cotacaoService = New WsCotacao.FachadaWSSGSService()
+            DtsDolar = cotacaoService.getUltimoValorVO(10813).ultimoValor.svalor
+            DtsEuro = cotacaoService.getUltimoValorVO(21620).ultimoValor.svalor
 
-        TxtDolarCota.Text = ("R$" + DtsDolar)
-        txtEuroCota.Text = ("R$" + DtsEuro)
-
+            TxtDolarCota.Text = ("R$" + DtsDolar)
+            txtEuroCota.Text = ("R$" + DtsEuro)
+     
+        Catch ex As Exception
+            MsgBox("Erro de conexão com a internet", "Aviso" & vbExclamation)
+        End Try
     End Sub
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
         Cliente.Show()
