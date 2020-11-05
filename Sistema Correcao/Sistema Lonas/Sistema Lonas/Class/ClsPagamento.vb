@@ -5,6 +5,8 @@
     Dim m_forma As String
     Dim m_venc As Date
     Dim m_rec As Boolean
+    Dim m_vis As Boolean
+    Dim m_tot As Single
 
     Dim sql As String
     Dim objbanco As New ClsBanco
@@ -55,6 +57,24 @@
         End Set
     End Property
 
+    Public Property Vista() As Boolean
+        Get
+            Return m_vis
+        End Get
+        Set(ByVal value As Boolean)
+            m_vis = value
+        End Set
+    End Property
+
+    Public Property Total() As Single
+        Get
+            Return m_tot
+        End Get
+        Set(ByVal value As Single)
+            m_tot = value
+        End Set
+    End Property
+
     Public Property Recebimento() As Boolean
         Get
             Return m_rec
@@ -66,12 +86,12 @@
 
     Public Sub Gravar(novo As Boolean)
         If novo = True Then
-            sql = "insert into TabContReceb (pedido, valor, FormadePagamento, venc, rec) values ('" & m_ped & "', '" & m_val & "','" & m_forma & "','" & m_venc & "'," & m_rec & ")"
+            sql = "insert into TabContReceb (pedido, valor, FormadePagamento, venc, rec, total, vista) values ('" & m_ped & "', '" & m_val & "','" & m_forma & "','" & m_venc & "'," & m_rec & ", '" & m_tot & "', " & m_vis & ")"
             objbanco.executar_comando(sql)
             sql = "select max(CodContReceb) as codigo from TabContReceb"
             m_cod = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update TabContReceb set pedido='" & m_ped & "', valor='" & m_val & "', FormadePagamento='" & m_forma & "', venc='" & m_venc & "', rec =" & m_rec & " where CodContReceb=" & m_cod
+            sql = "Update TabContReceb set pedido='" & m_ped & "', valor='" & m_val & "', FormadePagamento='" & m_forma & "', venc='" & m_venc & "', rec =" & m_rec & ", total='" & m_tot & "', vista=" & m_vis & " where CodContReceb=" & m_cod
             objbanco.executar_comando(sql)
         End If
 
@@ -107,5 +127,7 @@
         m_forma = objdtLocal.Rows(0).Item(3)
         m_venc = objdtLocal.Rows(0).Item(4)
         m_rec = objdtLocal.Rows(0).Item(5)
+        m_tot = objdtLocal.Rows(0).Item(6)
+        m_vis = objdtLocal.Rows(0).Item(7)
     End Sub
 End Class

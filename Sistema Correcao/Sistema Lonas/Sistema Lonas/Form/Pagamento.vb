@@ -39,6 +39,8 @@
             objPag.FormaPagamento = CboPag.SelectedItem.ToString
             objPag.Vencimento = dtpvenc.Text
             objPag.Recebimento = chbrec.Checked
+            objPag.Vista = ChbVis.Checked
+            objPag.Total = TxtPag.Text
             objPag.Gravar(novo)
             txtcod.Text = objPag.Codigo
 
@@ -105,6 +107,8 @@
         CboPag.SelectedItem = objPag.FormaPagamento
         dtpvenc.Text = objPag.Vencimento
         chbrec.Checked = objPag.Recebimento
+        ChbVis.Checked = objPag.Vista
+        TxtPag.Text = objPag.Total
     End Sub
 
     Private Sub TxtLoc_TextChanged(sender As Object, e As EventArgs) Handles TxtLoc.TextChanged
@@ -118,5 +122,23 @@
     Private Sub btnverificar_Click(sender As Object, e As EventArgs) Handles btnverificar.Click
         ConsultaPedido.quemChamou = Me.Name
         ConsultaPedido.ShowDialog()
+    End Sub
+
+    Private Sub CboPag_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CboPag.SelectedIndexChanged
+        If CboPag.Text.ToUpper = "DINHEIRO" Or CboPag.Text.ToUpper = "BOLETO" Then
+            ChbVis.Enabled = True
+        Else
+            ChbVis.Enabled = False
+            ChbVis.Checked = False
+            TxtPag.Text = txtval.Text
+        End If
+    End Sub
+
+    Private Sub ChbVis_CheckedChanged(sender As Object, e As EventArgs) Handles ChbVis.CheckedChanged
+        If ChbVis.Checked = True Then
+            TxtPag.Text = txtval.Text * 0.93
+        Else
+            TxtPag.Text = txtval.Text
+        End If
     End Sub
 End Class

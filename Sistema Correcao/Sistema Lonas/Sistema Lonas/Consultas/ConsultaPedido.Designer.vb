@@ -35,7 +35,6 @@ Partial Class ConsultaPedido
         Me.PraMin = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PraMax = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Pago = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.DtPag = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -44,7 +43,7 @@ Partial Class ConsultaPedido
         '
         Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCampo.Location = New System.Drawing.Point(16, 65)
-        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtCampo.Name = "TxtCampo"
         Me.TxtCampo.Size = New System.Drawing.Size(304, 30)
         Me.TxtCampo.TabIndex = 8
@@ -66,9 +65,9 @@ Partial Class ConsultaPedido
         Me.DgdGrade.AllowUserToAddRows = False
         Me.DgdGrade.AllowUserToDeleteRows = False
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodPed, Me.CodCli, Me.NomCli, Me.Tel, Me.ValPedTot, Me.DataPet, Me.PraMin, Me.PraMax, Me.Pago, Me.DtPag, Me.Column1})
+        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodPed, Me.CodCli, Me.NomCli, Me.Tel, Me.ValPedTot, Me.DataPet, Me.PraMin, Me.PraMax, Me.Pago, Me.Column1})
         Me.DgdGrade.Location = New System.Drawing.Point(16, 117)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.ReadOnly = True
         Me.DgdGrade.Size = New System.Drawing.Size(1143, 325)
@@ -139,13 +138,6 @@ Partial Class ConsultaPedido
         Me.Pago.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
-        'DtPag
-        '
-        Me.DtPag.DataPropertyName = "DtPag"
-        Me.DtPag.HeaderText = "Data do Pagamento"
-        Me.DtPag.Name = "DtPag"
-        Me.DtPag.ReadOnly = True
-        '
         'Column1
         '
         Me.Column1.DataPropertyName = "Pedido"
@@ -163,7 +155,7 @@ Partial Class ConsultaPedido
         Me.Controls.Add(Me.TxtCampo)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ConsultaPedido"
         Me.Text = "Consulta de Pedido"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
@@ -183,6 +175,5 @@ Partial Class ConsultaPedido
     Friend WithEvents PraMin As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PraMax As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Pago As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents DtPag As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
