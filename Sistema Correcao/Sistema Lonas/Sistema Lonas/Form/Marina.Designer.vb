@@ -30,7 +30,6 @@ Partial Class Marina
         Me.BtnExc = New System.Windows.Forms.Button()
         Me.BtnGra = New System.Windows.Forms.Button()
         Me.BtnNov = New System.Windows.Forms.Button()
-        Me.txtcep = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtestado = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -50,6 +49,8 @@ Partial Class Marina
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtnomeE = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnConsultarCep = New System.Windows.Forms.Button()
+        Me.TxtCep = New System.Windows.Forms.MaskedTextBox()
         Me.GrpLoc.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -179,21 +180,12 @@ Partial Class Marina
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
-        'txtcep
-        '
-        Me.txtcep.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcep.Location = New System.Drawing.Point(80, 330)
-        Me.txtcep.MaxLength = 8
-        Me.txtcep.Name = "txtcep"
-        Me.txtcep.Size = New System.Drawing.Size(215, 26)
-        Me.txtcep.TabIndex = 8
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(11, 330)
+        Me.Label8.Location = New System.Drawing.Point(12, 116)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(52, 22)
         Me.Label8.TabIndex = 124
@@ -202,7 +194,7 @@ Partial Class Marina
         'txtestado
         '
         Me.txtestado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtestado.Location = New System.Drawing.Point(85, 285)
+        Me.txtestado.Location = New System.Drawing.Point(142, 332)
         Me.txtestado.MaxLength = 2
         Me.txtestado.Name = "txtestado"
         Me.txtestado.Size = New System.Drawing.Size(82, 26)
@@ -213,7 +205,7 @@ Partial Class Marina
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(11, 243)
+        Me.Label6.Location = New System.Drawing.Point(11, 298)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(73, 22)
         Me.Label6.TabIndex = 122
@@ -222,7 +214,7 @@ Partial Class Marina
         'txtcidade
         '
         Me.txtcidade.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcidade.Location = New System.Drawing.Point(85, 241)
+        Me.txtcidade.Location = New System.Drawing.Point(142, 294)
         Me.txtcidade.Name = "txtcidade"
         Me.txtcidade.Size = New System.Drawing.Size(271, 26)
         Me.txtcidade.TabIndex = 6
@@ -232,7 +224,7 @@ Partial Class Marina
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(11, 287)
+        Me.Label7.Location = New System.Drawing.Point(11, 342)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(70, 22)
         Me.Label7.TabIndex = 120
@@ -283,7 +275,7 @@ Partial Class Marina
         'txtbairro
         '
         Me.txtbairro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtbairro.Location = New System.Drawing.Point(85, 197)
+        Me.txtbairro.Location = New System.Drawing.Point(142, 252)
         Me.txtbairro.Name = "txtbairro"
         Me.txtbairro.Size = New System.Drawing.Size(271, 26)
         Me.txtbairro.TabIndex = 5
@@ -293,7 +285,7 @@ Partial Class Marina
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(11, 199)
+        Me.Label5.Location = New System.Drawing.Point(11, 254)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(68, 22)
         Me.Label5.TabIndex = 117
@@ -302,7 +294,7 @@ Partial Class Marina
         'txtcomp
         '
         Me.txtcomp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcomp.Location = New System.Drawing.Point(142, 154)
+        Me.txtcomp.Location = New System.Drawing.Point(142, 209)
         Me.txtcomp.Name = "txtcomp"
         Me.txtcomp.Size = New System.Drawing.Size(153, 26)
         Me.txtcomp.TabIndex = 4
@@ -313,7 +305,7 @@ Partial Class Marina
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(11, 156)
+        Me.Label4.Location = New System.Drawing.Point(11, 211)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(125, 22)
         Me.Label4.TabIndex = 115
@@ -322,7 +314,7 @@ Partial Class Marina
         'txtEnde
         '
         Me.txtEnde.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEnde.Location = New System.Drawing.Point(108, 110)
+        Me.txtEnde.Location = New System.Drawing.Point(142, 163)
         Me.txtEnde.Name = "txtEnde"
         Me.txtEnde.Size = New System.Drawing.Size(248, 26)
         Me.txtEnde.TabIndex = 3
@@ -332,7 +324,7 @@ Partial Class Marina
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(11, 112)
+        Me.Label3.Location = New System.Drawing.Point(11, 167)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(91, 22)
         Me.Label3.TabIndex = 113
@@ -342,7 +334,7 @@ Partial Class Marina
         '
         Me.txtcodigo.Enabled = False
         Me.txtcodigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcodigo.Location = New System.Drawing.Point(91, 25)
+        Me.txtcodigo.Location = New System.Drawing.Point(142, 25)
         Me.txtcodigo.Name = "txtcodigo"
         Me.txtcodigo.Size = New System.Drawing.Size(76, 26)
         Me.txtcodigo.TabIndex = 111
@@ -361,7 +353,7 @@ Partial Class Marina
         'txtnomeE
         '
         Me.txtnomeE.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnomeE.Location = New System.Drawing.Point(80, 67)
+        Me.txtnomeE.Location = New System.Drawing.Point(142, 70)
         Me.txtnomeE.Name = "txtnomeE"
         Me.txtnomeE.Size = New System.Drawing.Size(215, 26)
         Me.txtnomeE.TabIndex = 2
@@ -377,12 +369,40 @@ Partial Class Marina
         Me.Label1.TabIndex = 109
         Me.Label1.Text = "Nome:"
         '
+        'btnConsultarCep
+        '
+        Me.btnConsultarCep.BackColor = System.Drawing.Color.Silver
+        Me.btnConsultarCep.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnConsultarCep.FlatAppearance.BorderSize = 2
+        Me.btnConsultarCep.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnConsultarCep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnConsultarCep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsultarCep.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsultarCep.ForeColor = System.Drawing.Color.Black
+        Me.btnConsultarCep.Location = New System.Drawing.Point(302, 113)
+        Me.btnConsultarCep.Name = "btnConsultarCep"
+        Me.btnConsultarCep.Size = New System.Drawing.Size(120, 28)
+        Me.btnConsultarCep.TabIndex = 125
+        Me.btnConsultarCep.Text = "Consultar CEP"
+        Me.btnConsultarCep.UseVisualStyleBackColor = False
+        '
+        'TxtCep
+        '
+        Me.TxtCep.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCep.Location = New System.Drawing.Point(142, 116)
+        Me.TxtCep.Mask = "00000-000"
+        Me.TxtCep.Name = "TxtCep"
+        Me.TxtCep.Size = New System.Drawing.Size(94, 26)
+        Me.TxtCep.TabIndex = 126
+        '
         'Marina
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(765, 416)
+        Me.Controls.Add(Me.TxtCep)
+        Me.Controls.Add(Me.btnConsultarCep)
         Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.BtnSai)
         Me.Controls.Add(Me.BtnCan)
@@ -390,7 +410,6 @@ Partial Class Marina
         Me.Controls.Add(Me.BtnExc)
         Me.Controls.Add(Me.BtnGra)
         Me.Controls.Add(Me.BtnNov)
-        Me.Controls.Add(Me.txtcep)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txtestado)
         Me.Controls.Add(Me.Label6)
@@ -423,7 +442,6 @@ Partial Class Marina
     Friend WithEvents BtnExc As System.Windows.Forms.Button
     Friend WithEvents BtnGra As System.Windows.Forms.Button
     Friend WithEvents BtnNov As System.Windows.Forms.Button
-    Friend WithEvents txtcep As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtestado As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -443,4 +461,6 @@ Partial Class Marina
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtnomeE As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnConsultarCep As System.Windows.Forms.Button
+    Friend WithEvents TxtCep As System.Windows.Forms.MaskedTextBox
 End Class

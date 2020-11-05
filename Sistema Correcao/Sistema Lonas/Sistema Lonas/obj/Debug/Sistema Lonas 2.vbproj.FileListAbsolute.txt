@@ -625,7 +625,6 @@ C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\bin\Debug\Sistema Lonas.xml
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\bin\Debug\pt-BR\Sistema Lonas.resources.dll
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\pt-BR\Sistema Lonas.resources.dll
-C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\bin\Debug\timoneiros2020_2000C.mdb
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\bin\Debug\Sistema Lonas.exe.config
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.exe
 C:\Users\igork\OneDrive\Área de Trabalho\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema Lonas.xml
@@ -676,3 +675,4 @@ C:\Users\vinic\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lona
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.CoEmbarcacao.resources
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEmbarcaoComClie.resources
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.FrmLogin.resources
+C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaFinanceiro.resources

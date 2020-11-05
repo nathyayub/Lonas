@@ -64,6 +64,7 @@
             objControle.habilitar_botoes(Me, True)
 
         End If
+        btnConsultarCep.Enabled = False
 
     End Sub
 
@@ -135,18 +136,38 @@
         objControle.habilitar_botoes(Me, False)
         txtcodigo.Enabled = False
         txtnomeE.Focus()
+        txtestado.Enabled = False
+        txtcidade.Enabled = False
+        txtbairro.Enabled = False
+        txtEnde.Enabled = False
+        txtcomp.Enabled = False
+        btnConsultarCep.Enabled = True
         novo = True
     End Sub
 
-    Private Sub txtcep_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtcep.KeyPress
+    Private Sub txtcep_KeyPress(sender As Object, e As KeyPressEventArgs)
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
 
-    Private Sub txtcep_TextChanged(sender As Object, e As EventArgs) Handles txtcep.TextChanged
+    Private Sub txtcep_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub BtnImp_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub btnConsultarCep_Click(sender As Object, e As EventArgs) Handles btnConsultarCep.Click
+        Try
+            Dim Ws = New WsCep.AtendeClienteClient()
+            Dim Resposta = Ws.consultaCEP(txtcep.Text)
+            txtEnde.Text = Resposta.end
+            txtcomp.Text = Resposta.complemento2
+            txtbairro.Text = Resposta.bairro
+            txtestado.Text = Resposta.uf
+            txtcidade.Text = Resposta.cidade
+        Catch ex As Exception
+            MsgBox("Erro ao encontrar CEP.", vbCritical)
+        End Try
     End Sub
 End Class

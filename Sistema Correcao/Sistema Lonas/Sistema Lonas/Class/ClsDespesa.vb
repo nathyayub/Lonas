@@ -76,6 +76,38 @@
 
     End Function
 
+    Public Function Localizar_porDataD(dataini As Date, datafin As Date) As DataTable
+        Dim objds As New DataSet
+
+        Dim objda = (New OleDb.OleDbDataAdapter("RelatorioFinanceiro", objbanco.objcon))
+        objda.SelectCommand.CommandType = CommandType.StoredProcedure
+        objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo1", OleDb.OleDbType.Date))
+        objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo2", OleDb.OleDbType.Date))
+        objda.SelectCommand.Parameters("campo1").Value = dataini
+        objda.SelectCommand.Parameters("campo2").Value = datafin
+
+        objds.Tables.Clear()
+        objda.Fill(objds)
+        Return objds.Tables(0)
+
+    End Function
+
+    Public Function Localizar_porDataP(dataini As Date, datafin As Date) As DataTable
+        Dim objds As New DataSet
+
+        Dim objda = (New OleDb.OleDbDataAdapter("RelatorioFinanceiro", objbanco.objcon))
+        objda.SelectCommand.CommandType = CommandType.StoredProcedure
+        objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo1", OleDb.OleDbType.Date))
+        objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo2", OleDb.OleDbType.Date))
+        objda.SelectCommand.Parameters("campo1").Value = dataini
+        objda.SelectCommand.Parameters("campo2").Value = datafin
+
+        objds.Tables.Clear()
+        objda.Fill(objds)
+        Return objds.Tables(0)
+
+    End Function
+
     Private Sub mostrar_DadosVindosDoBanco()
         m_cod = objdtLocal.Rows(0).Item(0)
         m_nome = objdtLocal.Rows(0).Item(1)
