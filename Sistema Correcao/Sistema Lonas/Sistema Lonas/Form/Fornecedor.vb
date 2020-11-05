@@ -17,6 +17,7 @@
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
         GrpLoc.Visible = False
+        mskCnpj.Mask = "00,000,000/0000-00"
     End Sub
 
     Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles BtnNov.Click
@@ -33,25 +34,24 @@
         If txtnom.Text = "" Then
             MsgBox("Digite o nome da empresa!")
             txtnom.Focus()
-        ElseIf txtcnpj.Text = "" Then
-            MsgBox("Digite o CNPJ da empresa!")
-            txtcnpj.Focus()
         ElseIf txttel.Text = "" Then
             MsgBox("Digite o telefone de contato da empresa!")
             txttel.Focus()
         ElseIf txtven.Text = "" Then
             MsgBox("Digite o nome do vendedor que atendeu a Lonas Timoneiro!")
             txtven.Focus()
+        ElseIf mskCnpj.Text = "  .   .   /    -" Then
+            MsgBox("Digite o CNPJ do Fornecedor!", vbInformation)
+            mskCnpj.Focus()
         Else
             objFor.Codigo = Val(txtcod.Text)
             objFor.NomeEmpresa = txtnom.Text
-            objFor.CNPJ = txtcnpj.Text
+            objFor.CNPJ = mskCnpj.Text
             objFor.Telefone = txttel.Text
             objFor.NomeVendedor = txtven.Text
             objFor.Pix = TxtPix.Text
             objFor.Gravar(novo)
             txtcod.Text = objFor.Codigo
-
             objControle.habilitar_tela(Me, False)
             objControle.habilitar_botoes(Me, True)
         End If
@@ -93,7 +93,7 @@
         txtcod.Text = objFor.Codigo
         txtnom.Text = objFor.NomeEmpresa
         txttel.Text = objFor.Telefone
-        txtcnpj.Text = objFor.CNPJ
+        mskCnpj.Text = objFor.CNPJ
         txtven.Text = objFor.NomeVendedor
         TxtPix.Text = objFor.Pix
 
@@ -122,5 +122,16 @@
         rpt.SummaryInfo.ReportComments = "Relatório de Embarcação "
         rpt.Refresh()
         FrmImp.ShowDialog()
+    End Sub
+
+    Private Sub mskCnpj_Validated(sender As Object, e As EventArgs) Handles mskCnpj.Validated
+        Dim Valida As New ClsValidadorCPFeCNPJ
+        Valida.cnpj = mskCnpj.Text
+        If Valida.isCnpjValido = False Then
+            MsgBox("CNPJ inválido!", vbOK & vbInformation)
+            mskCnpj.Text = ""
+        Else
+            mskCnpj.Mask = "00,000,000/0000-00"
+        End If
     End Sub
 End Class

@@ -23,7 +23,11 @@
         TxtEnd.Enabled = False
         TxtCom.Enabled = False
         btnConsultarCep.Enabled = False
-       
+        mskCNPJ.Mask = "00,000,000/0000-00"
+        mskCpf.Mask = "000,000,000-00"
+        RADpf.Checked = True
+        RADpf.Enabled = False
+        RADpj.Enabled = False
     End Sub
 
     Private Sub BtnNov_Click(sender As Object, e As EventArgs) Handles BtnNov.Click
@@ -38,24 +42,25 @@
         TxtCid.Enabled = False
         TxtBai.Enabled = False
         TxtEnd.Enabled = False
-        TxtCom.Enabled = False
+        TxtCom.Enabled = True
+        RADpf.Enabled = True
+        RADpj.Enabled = True
         btnConsultarCep.Enabled = True
         TxtNom.Focus()
         novo = True
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
-
         If TxtNom.Text = "" Then
             MsgBox("Digite o nome do cliente!")
             TxtNom.Focus()
         ElseIf MskTel.Text = "" And TxtEma.Text = "" Then
             MsgBox("Digite o telefone ou e-mail do cliente!")
             MskTel.Focus()
-        ElseIf mskCpf.Text = "" And mskCNPJ.Text = "" Then
+        ElseIf mskCpf.Text = "   .   .   -" And mskCNPJ.Text = "  .   .   /    -" Then
             MsgBox("Digite o CPF ou o CNPJ dp cliente!")
             mskCpf.Focus()
-        ElseIf mskCNPJ.Text <> "" And TxtIns.Text = "" Then
+        ElseIf mskCNPJ.Text <> "  .   .   /    -" And TxtIns.Text = "" Then
             MsgBox("Digite a Inscrição Estadual do cliente!")
             TxtIns.Focus()
         ElseIf TxtEma.Text = "" Then
@@ -64,6 +69,9 @@
         ElseIf TxtEnd.Text = "" Then
             MsgBox("Digite o endereço do cliente!")
             TxtEnd.Focus()
+        ElseIf TxtCom.Text = "" Then
+            MsgBox("Digite o complemento do cliente!")
+            TxtCom.Focus()
         ElseIf TxtBai.Text = "" Then
             MsgBox("Digite o bairro do cliente!")
             TxtBai.Focus()
@@ -76,35 +84,30 @@
         ElseIf TxtCep.Text = "" Then
             MsgBox("Digite o CEP do cliente!")
             TxtCep.Focus()
-        Else
-            If objControle.Testar_vazio(Me) <> True Then
+        ElseIf objControle.Testar_vazio(Me) <> True Then
 
-                objCli.Codigo = Val(TxtCod.Text)
-                objCli.Nome = TxtNom.Text
-                objCli.Telefone = MskTel.Text
+            objCli.Codigo = Val(TxtCod.Text)
+            objCli.Nome = TxtNom.Text
+            objCli.Telefone = MskTel.Text
+            objCli.Cpf = mskCpf.Text
+            objCli.CNPJ = mskCNPJ.Text
+            objCli.Inscricao = TxtIns.Text
+            objCli.Email = TxtEma.Text
+            objCli.Endereco = TxtEnd.Text
+            objCli.Complemento = TxtCom.Text
+            objCli.Bairro = TxtBai.Text
+            objCli.Estado = TxtEst.Text
+            objCli.Cidade = TxtCid.Text
+            objCli.Cep = TxtCep.Text
 
-                objCli.CNPJ = mskCNPJ.Text
-                objCli.Inscricao = TxtIns.Text
-
-                objCli.Cpf = mskCpf.Text
-
-
-                objCli.Email = TxtEma.Text
-                objCli.Endereco = TxtEnd.Text
-                objCli.Complemento = TxtCom.Text
-                objCli.Bairro = TxtBai.Text
-                objCli.Estado = TxtEst.Text
-                objCli.Cidade = TxtCid.Text
-                objCli.Cep = TxtCep.Text
-
-                objCli.Gravar(novo)
-                TxtCod.Text = objCli.Codigo
-                objControle.habilitar_tela(Me, False)
-                objControle.habilitar_botoes(Me, True)
-            End If
+            objCli.Gravar(novo)
+            TxtCod.Text = objCli.Codigo
+            objControle.habilitar_tela(Me, False)
+            objControle.habilitar_botoes(Me, True)
+            btnConsultarCep.Enabled = False
+            RADpf.Enabled = False
+            RADpj.Enabled = False
         End If
-        btnConsultarCep.Enabled = False
-
     End Sub
 
     Private Sub BtnSai_Click(sender As Object, e As EventArgs) Handles BtnSai.Click
@@ -137,6 +140,15 @@
             objControle.habilitar_tela(Me, False)
 
         End If
+        If mskCpf.Text <> "   .   .   -" Then
+            RADpf.Checked = True
+            RADpj.Checked = False
+        ElseIf mskCNPJ.Text <> "  .   .   /    -" Then
+            RADpj.Checked = True
+            RADpf.Checked = False
+        End If
+        RADpf.Enabled = False
+        RADpj.Enabled = False
         TxtLoc.Text = ""
         btnConsultarCep.Enabled = False
         TxtLoc.Focus()
@@ -160,11 +172,15 @@
     End Sub
 
     Private Sub BtnExc_Click(sender As Object, e As EventArgs) Handles BtnExc.Click
-        If objCli.Excluir(TxtCod.Text) = True Then
-            objControle.Limpar_tela(Me)
-            BtnExc.Enabled = False
-            BtnAlt.Enabled = False
-        End If
+        Try
+            If objCli.Excluir(TxtCod.Text) = True Then
+                objControle.Limpar_tela(Me)
+                BtnExc.Enabled = False
+                BtnAlt.Enabled = False
+            End If
+        Catch ex As Exception
+            MsgBox("Você não pode excluir um cliente que já tem embarcações e pedidos registrados", vbInformation)
+        End Try
     End Sub
 
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
@@ -176,9 +192,10 @@
         TxtCid.Enabled = False
         TxtBai.Enabled = False
         TxtEnd.Enabled = False
-        TxtCom.Enabled = False
+        TxtCom.Enabled = True
         btnConsultarCep.Enabled = True
-
+        RADpf.Enabled = True
+        RADpj.Enabled = True
         TxtNom.Focus()
         GrpLoc.Visible = False
         novo = False
@@ -188,10 +205,6 @@
     Private Sub TxtCNPJ_KeyPress(sender As Object, e As KeyPressEventArgs)
         e.Handled = objControle.So_numeros(e.KeyChar)
     End Sub
-
-    
-
-
 
     Private Sub BtnImp_Click(sender As Object, e As EventArgs)
         Dim rpt As New CrpClientes
@@ -219,30 +232,54 @@
             MsgBox("Erro ao encontrar CEP.", vbCritical)
         End Try
     End Sub
-
-  
-    Private Sub mskCNPJ_TextChanged(sender As Object, e As EventArgs) Handles mskCNPJ.TextChanged
-        If mskCNPJ.Text <> "" Then
-            mskCpf.Enabled = False
-            TxtIns.Enabled = True
+    Private Sub RADpf_CheckedChanged(sender As Object, e As EventArgs) Handles RADpf.CheckedChanged
+        mskCpf.Visible = True
+        mskCNPJ.Visible = False
+        LblCpf.Visible = True
+        LblCnpj.Visible = False
+        LblIns.Visible = False
+        TxtIns.Visible = False
+        If RADpf.Checked = True Then
+            mskCNPJ.Text = ""
+            TxtIns.Text = ""
         Else
-            mskCpf.Enabled = True
-            TxtIns.Enabled = False
+
         End If
     End Sub
 
-    Private Sub TxtCpf_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mskCpf.KeyPress
-        e.Handled = objControle.So_numeros(e.KeyChar)
+    Private Sub RADpj_CheckedChanged(sender As Object, e As EventArgs) Handles RADpj.CheckedChanged
+        mskCpf.Visible = False
+        mskCNPJ.Visible = True
+        LblCpf.Visible = False
+        LblCnpj.Visible = True
+        LblIns.Visible = True
+        TxtIns.Visible = True
+        If RADpj.Checked = True Then
+            mskCpf.Text = ""
+        Else
+
+        End If
     End Sub
 
-    Private Sub mskCpf_TextChanged(sender As Object, e As EventArgs) Handles mskCpf.TextChanged
-        If mskCpf.Text <> "" Then
-            mskCNPJ.Enabled = False
-            TxtIns.Enabled = False
+    Private Sub mskCpf_Validated(sender As Object, e As EventArgs) Handles mskCpf.Validated
+        Dim Valida As New ClsValidadorCPFeCNPJ
+            Valida.cpf = mskCpf.Text
+        If Valida.isCpfValido = False Then
+            MsgBox("CPF inválido!", vbOK & vbInformation)
+            mskCpf.Text = ""
         Else
-            mskCNPJ.Enabled = True
-            TxtIns.Enabled = False
+            mskCpf.Mask = "000,000,000-00"
         End If
+    End Sub
 
+    Private Sub mskCNPJ_Validated(sender As Object, e As EventArgs) Handles mskCNPJ.Validated
+        Dim Valida As New ClsValidadorCPFeCNPJ
+        Valida.cnpj = mskCNPJ.Text
+        If Valida.isCnpjValido = False Then
+            MsgBox("CNPJ inválido!", vbOK & vbInformation)
+            mskCNPJ.Text = ""
+        Else
+            mskCNPJ.Mask = "00,000,000/0000-00"
+        End If
     End Sub
 End Class

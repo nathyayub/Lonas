@@ -24,6 +24,7 @@
         BtnAlt.Enabled = False
         BtnExc.Enabled = False
         GrpLoc.Visible = False
+        btnConsultarCep.Enabled = False
     End Sub
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
@@ -36,6 +37,9 @@
         ElseIf txtbairro.Text = "" Then
             MsgBox("Digite o bairro da marina!")
             txtbairro.Focus()
+        ElseIf txtcomp.Text = "" Then
+            MsgBox("Digite o complemento da marina!")
+            txtcomp.Focus()
         ElseIf txtcidade.Text = "" Then
             MsgBox("Digite a cidade da marina!")
             txtcidade.Focus()
@@ -62,7 +66,7 @@
 
             objControle.habilitar_tela(Me, False)
             objControle.habilitar_botoes(Me, True)
-
+            btnConsultarCep.Enabled = False
         End If
         btnConsultarCep.Enabled = False
 
@@ -124,6 +128,12 @@
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
+        btnConsultarCep.Enabled = True
+        txtcomp.Enabled = True
+        txtEnde.Enabled = False
+        txtbairro.Enabled = False
+        txtestado.Enabled = False
+        txtcidade.Enabled = False
         txtcodigo.Enabled = False
         txtnomeE.Focus()
         GrpLoc.Visible = False
@@ -140,21 +150,13 @@
         txtcidade.Enabled = False
         txtbairro.Enabled = False
         txtEnde.Enabled = False
-        txtcomp.Enabled = False
+        txtcomp.Enabled = True
         btnConsultarCep.Enabled = True
         novo = True
     End Sub
 
     Private Sub txtcep_KeyPress(sender As Object, e As KeyPressEventArgs)
         e.Handled = objControle.So_numeros(e.KeyChar)
-    End Sub
-
-    Private Sub txtcep_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub BtnImp_Click(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub btnConsultarCep_Click(sender As Object, e As EventArgs) Handles btnConsultarCep.Click

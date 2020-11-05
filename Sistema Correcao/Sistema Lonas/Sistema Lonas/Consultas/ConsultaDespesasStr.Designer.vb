@@ -24,6 +24,12 @@ Partial Class ConsultaDespesasStr
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaDespesasStr))
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
+        Me.DtpFin = New System.Windows.Forms.DateTimePicker()
+        Me.DtpIni = New System.Windows.Forms.DateTimePicker()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnimprimir = New System.Windows.Forms.Button()
         Me.CodcontPag = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nome = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -31,12 +37,6 @@ Partial Class ConsultaDespesasStr
         Me.Venc = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Desc = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Quita = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.DtpFin = New System.Windows.Forms.DateTimePicker()
-        Me.DtpIni = New System.Windows.Forms.DateTimePicker()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnimprimir = New System.Windows.Forms.Button()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -53,50 +53,6 @@ Partial Class ConsultaDespesasStr
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(780, 435)
         Me.DgdGrade.TabIndex = 12
-        '
-        'CodcontPag
-        '
-        Me.CodcontPag.DataPropertyName = "CodcontPag"
-        Me.CodcontPag.HeaderText = "Codigo Da Despesa"
-        Me.CodcontPag.Name = "CodcontPag"
-        '
-        'tipo
-        '
-        Me.tipo.DataPropertyName = "tipo"
-        Me.tipo.HeaderText = "Código Do Tipo"
-        Me.tipo.Name = "tipo"
-        '
-        'Nome
-        '
-        Me.Nome.DataPropertyName = "Nome"
-        Me.Nome.HeaderText = "Nome da despesa"
-        Me.Nome.Name = "Nome"
-        '
-        'Valor
-        '
-        Me.Valor.DataPropertyName = "Valor"
-        Me.Valor.HeaderText = "Valor"
-        Me.Valor.Name = "Valor"
-        '
-        'Venc
-        '
-        Me.Venc.DataPropertyName = "Venc"
-        Me.Venc.HeaderText = "Data Vencimento"
-        Me.Venc.Name = "Venc"
-        '
-        'Desc
-        '
-        Me.Desc.DataPropertyName = "Desc"
-        Me.Desc.HeaderText = "Descrição"
-        Me.Desc.Name = "Desc"
-        '
-        'Quita
-        '
-        Me.Quita.DataPropertyName = "Quita"
-        Me.Quita.HeaderText = "Quitada"
-        Me.Quita.Name = "Quita"
-        Me.Quita.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Quita.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'DtpFin
         '
@@ -172,6 +128,50 @@ Partial Class ConsultaDespesasStr
         Me.btnimprimir.Text = "Imprimir"
         Me.btnimprimir.UseVisualStyleBackColor = False
         '
+        'CodcontPag
+        '
+        Me.CodcontPag.DataPropertyName = "CodcontPag"
+        Me.CodcontPag.HeaderText = "Codigo Da Despesa"
+        Me.CodcontPag.Name = "CodcontPag"
+        '
+        'tipo
+        '
+        Me.tipo.DataPropertyName = "tipo"
+        Me.tipo.HeaderText = "Código Do Tipo"
+        Me.tipo.Name = "tipo"
+        '
+        'Nome
+        '
+        Me.Nome.DataPropertyName = "Nome"
+        Me.Nome.HeaderText = "Nome da despesa"
+        Me.Nome.Name = "Nome"
+        '
+        'Valor
+        '
+        Me.Valor.DataPropertyName = "Valor"
+        Me.Valor.HeaderText = "Valor"
+        Me.Valor.Name = "Valor"
+        '
+        'Venc
+        '
+        Me.Venc.DataPropertyName = "Venci"
+        Me.Venc.HeaderText = "Data Vencimento"
+        Me.Venc.Name = "Venc"
+        '
+        'Desc
+        '
+        Me.Desc.DataPropertyName = "Descricao"
+        Me.Desc.HeaderText = "Descrição"
+        Me.Desc.Name = "Desc"
+        '
+        'Quita
+        '
+        Me.Quita.DataPropertyName = "Quita"
+        Me.Quita.HeaderText = "Quitada"
+        Me.Quita.Name = "Quita"
+        Me.Quita.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Quita.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
         'ConsultaDespesasStr
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -199,6 +199,7 @@ Partial Class ConsultaDespesasStr
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnimprimir As System.Windows.Forms.Button
     Friend WithEvents CodcontPag As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents tipo As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Nome As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -206,5 +207,4 @@ Partial Class ConsultaDespesasStr
     Friend WithEvents Venc As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Desc As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Quita As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents btnimprimir As System.Windows.Forms.Button
 End Class

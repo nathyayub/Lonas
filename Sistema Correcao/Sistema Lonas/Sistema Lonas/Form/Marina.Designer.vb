@@ -298,7 +298,7 @@ Partial Class Marina
         Me.txtcomp.Name = "txtcomp"
         Me.txtcomp.Size = New System.Drawing.Size(153, 26)
         Me.txtcomp.TabIndex = 4
-        Me.txtcomp.Tag = "x"
+        Me.txtcomp.Tag = ""
         '
         'Label4
         '
@@ -379,7 +379,7 @@ Partial Class Marina
         Me.btnConsultarCep.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConsultarCep.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConsultarCep.ForeColor = System.Drawing.Color.Black
-        Me.btnConsultarCep.Location = New System.Drawing.Point(302, 113)
+        Me.btnConsultarCep.Location = New System.Drawing.Point(242, 116)
         Me.btnConsultarCep.Name = "btnConsultarCep"
         Me.btnConsultarCep.Size = New System.Drawing.Size(120, 28)
         Me.btnConsultarCep.TabIndex = 125

@@ -36,7 +36,6 @@ Partial Class Fornecedor
         Me.BtnExc = New System.Windows.Forms.Button()
         Me.BtnGra = New System.Windows.Forms.Button()
         Me.BtnNov = New System.Windows.Forms.Button()
-        Me.txtcnpj = New System.Windows.Forms.TextBox()
         Me.txtnom = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -46,6 +45,7 @@ Partial Class Fornecedor
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txttel = New System.Windows.Forms.MaskedTextBox()
         Me.txtven = New System.Windows.Forms.TextBox()
+        Me.mskCnpj = New System.Windows.Forms.MaskedTextBox()
         Me.GrpLoc.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -235,15 +235,6 @@ Partial Class Fornecedor
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
-        'txtcnpj
-        '
-        Me.txtcnpj.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcnpj.Location = New System.Drawing.Point(178, 120)
-        Me.txtcnpj.MaxLength = 14
-        Me.txtcnpj.Name = "txtcnpj"
-        Me.txtcnpj.Size = New System.Drawing.Size(204, 26)
-        Me.txtcnpj.TabIndex = 3
-        '
         'txtnom
         '
         Me.txtnom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -257,7 +248,7 @@ Partial Class Fornecedor
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(5, 223)
+        Me.Label4.Location = New System.Drawing.Point(5, 219)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(168, 22)
         Me.Label4.TabIndex = 74
@@ -268,7 +259,7 @@ Partial Class Fornecedor
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(82, 174)
+        Me.Label3.Location = New System.Drawing.Point(82, 170)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(85, 22)
         Me.Label3.TabIndex = 73
@@ -299,7 +290,7 @@ Partial Class Fornecedor
         'TxtPix
         '
         Me.TxtPix.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPix.Location = New System.Drawing.Point(178, 268)
+        Me.TxtPix.Location = New System.Drawing.Point(178, 264)
         Me.TxtPix.Name = "TxtPix"
         Me.TxtPix.Size = New System.Drawing.Size(204, 26)
         Me.TxtPix.TabIndex = 6
@@ -309,7 +300,7 @@ Partial Class Fornecedor
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(5, 271)
+        Me.Label7.Location = New System.Drawing.Point(5, 267)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(145, 22)
         Me.Label7.TabIndex = 94
@@ -318,7 +309,7 @@ Partial Class Fornecedor
         'txttel
         '
         Me.txttel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txttel.Location = New System.Drawing.Point(178, 172)
+        Me.txttel.Location = New System.Drawing.Point(178, 168)
         Me.txttel.Mask = "(99) 00000-0000"
         Me.txttel.Name = "txttel"
         Me.txttel.PromptChar = Global.Microsoft.VisualBasic.ChrW(32)
@@ -328,10 +319,19 @@ Partial Class Fornecedor
         'txtven
         '
         Me.txtven.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtven.Location = New System.Drawing.Point(177, 220)
+        Me.txtven.Location = New System.Drawing.Point(177, 216)
         Me.txtven.Name = "txtven"
         Me.txtven.Size = New System.Drawing.Size(205, 26)
         Me.txtven.TabIndex = 5
+        '
+        'mskCnpj
+        '
+        Me.mskCnpj.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.mskCnpj.Location = New System.Drawing.Point(178, 119)
+        Me.mskCnpj.Mask = "00,000,000/0000-00"
+        Me.mskCnpj.Name = "mskCnpj"
+        Me.mskCnpj.Size = New System.Drawing.Size(204, 26)
+        Me.mskCnpj.TabIndex = 114
         '
         'Fornecedor
         '
@@ -339,6 +339,7 @@ Partial Class Fornecedor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(794, 396)
+        Me.Controls.Add(Me.mskCnpj)
         Me.Controls.Add(Me.txttel)
         Me.Controls.Add(Me.TxtPix)
         Me.Controls.Add(Me.Label7)
@@ -353,7 +354,6 @@ Partial Class Fornecedor
         Me.Controls.Add(Me.BtnGra)
         Me.Controls.Add(Me.BtnNov)
         Me.Controls.Add(Me.txtven)
-        Me.Controls.Add(Me.txtcnpj)
         Me.Controls.Add(Me.txtnom)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -382,7 +382,6 @@ Partial Class Fornecedor
     Friend WithEvents BtnExc As System.Windows.Forms.Button
     Friend WithEvents BtnGra As System.Windows.Forms.Button
     Friend WithEvents BtnNov As System.Windows.Forms.Button
-    Friend WithEvents txtcnpj As System.Windows.Forms.TextBox
     Friend WithEvents txtnom As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -392,4 +391,5 @@ Partial Class Fornecedor
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txttel As System.Windows.Forms.MaskedTextBox
     Friend WithEvents txtven As System.Windows.Forms.TextBox
+    Friend WithEvents mskCnpj As System.Windows.Forms.MaskedTextBox
 End Class

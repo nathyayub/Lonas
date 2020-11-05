@@ -29,7 +29,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -113,6 +113,7 @@
     <Compile Include="Class\ClsPagamento.vb" />
     <Compile Include="Class\ClsEntradaMateriais.vb" />
     <Compile Include="Class\ClsSaidaDeMaterial.vb" />
+    <Compile Include="Class\ClsValidadorCPFeCNPJ.vb" />
     <Compile Include="Class\MdlAcesso.vb" />
     <Compile Include="Consultas\ConsultaCliente.Designer.vb">
       <DependentUpon>ConsultaCliente.vb</DependentUpon>
@@ -142,12 +143,6 @@
       <DependentUpon>ConsultaEntradaMatRelat.vb</DependentUpon>
     </Compile>
     <Compile Include="Consultas\ConsultaEntradaMatRelat.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Consultas\ConsultaFinanceiro.Designer.vb">
-      <DependentUpon>ConsultaFinanceiro.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Consultas\ConsultaFinanceiro.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\ConsultaFornecedor.Designer.vb">
@@ -341,12 +336,6 @@
       <DependentUpon>CrpEntradaMat.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="relatorios\CrpFinanceiro.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrpFinanceiro.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="relatorios\CrpFornecedor.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -401,9 +390,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaEntradaMatRelat.resx">
       <DependentUpon>ConsultaEntradaMatRelat.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\ConsultaFinanceiro.resx">
-      <DependentUpon>ConsultaFinanceiro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaFornecedor.resx">
       <DependentUpon>ConsultaFornecedor.vb</DependentUpon>
@@ -501,10 +487,6 @@
     <EmbeddedResource Include="relatorios\CrpEntradaMat.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrpEntradaMat.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="relatorios\CrpFinanceiro.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrpFinanceiro.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="relatorios\CrpFornecedor.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

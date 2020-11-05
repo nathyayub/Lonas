@@ -71,7 +71,7 @@
             sql = "select max(codigofor) as codigo from tabcadfornecedore"
             m_codi = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update tabcadfornecedore set nomemp='" & m_nome & "', '" & m_tele & "', '" & m_vend & "','" & m_cnpj & "', '" & m_pix & "' where codigofor=" & m_codi
+            sql = "Update tabcadfornecedore set nomemp='" & m_nome & "', tel= '" & m_tele & "',nomvend= '" & m_vend & "',cnpj='" & m_cnpj & "', pix='" & m_pix & "' where codigofor=" & m_codi
             objbanco.executar_comando(sql)
         End If
     End Sub

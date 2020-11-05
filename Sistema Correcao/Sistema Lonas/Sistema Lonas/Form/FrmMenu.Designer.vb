@@ -96,6 +96,7 @@ Partial Class FrmMenu
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -502,7 +503,7 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.BackColor = System.Drawing.Color.Brown
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsultasToolStripMenuItem, Me.RelatorioToolStripMenuItem, Me.SairToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsultasToolStripMenuItem, Me.RelatorioToolStripMenuItem, Me.AjudaToolStripMenuItem, Me.SairToolStripMenuItem})
         Me.MenuStrip1.Name = "MenuStrip1"
         '
         'Panel1
@@ -551,6 +552,12 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Name = "Label5"
+        '
+        'AjudaToolStripMenuItem
+        '
+        resources.ApplyResources(Me.AjudaToolStripMenuItem, "AjudaToolStripMenuItem")
+        Me.AjudaToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.AjudaToolStripMenuItem.Name = "AjudaToolStripMenuItem"
         '
         'FrmMenu
         '
@@ -657,5 +664,6 @@ Partial Class FrmMenu
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents PedidosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PedidoPorDataToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AjudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

@@ -5,7 +5,7 @@
         For Each controle In tela.controls
             If TypeOf controle Is TextBox Or TypeOf controle Is MaskedTextBox Then
                 controle.Text = ""
-            ElseIf TypeOf controle Is RadioButton Or TypeOf controle Is CheckBox Then
+            ElseIf TypeOf controle Is CheckBox Then
                 controle.checked = False
             End If
         Next
