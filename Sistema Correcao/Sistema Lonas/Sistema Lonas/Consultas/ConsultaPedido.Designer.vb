@@ -34,7 +34,6 @@ Partial Class ConsultaPedido
         Me.DataPet = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PraMin = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PraMax = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Pago = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -65,7 +64,7 @@ Partial Class ConsultaPedido
         Me.DgdGrade.AllowUserToAddRows = False
         Me.DgdGrade.AllowUserToDeleteRows = False
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodPed, Me.CodCli, Me.NomCli, Me.Tel, Me.ValPedTot, Me.DataPet, Me.PraMin, Me.PraMax, Me.Pago, Me.Column1})
+        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodPed, Me.CodCli, Me.NomCli, Me.Tel, Me.ValPedTot, Me.DataPet, Me.PraMin, Me.PraMax, Me.Column1})
         Me.DgdGrade.Location = New System.Drawing.Point(16, 117)
         Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4)
         Me.DgdGrade.Name = "DgdGrade"
@@ -129,15 +128,6 @@ Partial Class ConsultaPedido
         Me.PraMax.Name = "PraMax"
         Me.PraMax.ReadOnly = True
         '
-        'Pago
-        '
-        Me.Pago.DataPropertyName = "Pago"
-        Me.Pago.HeaderText = "Pago"
-        Me.Pago.Name = "Pago"
-        Me.Pago.ReadOnly = True
-        Me.Pago.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Pago.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        '
         'Column1
         '
         Me.Column1.DataPropertyName = "Pedido"
@@ -174,6 +164,5 @@ Partial Class ConsultaPedido
     Friend WithEvents DataPet As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PraMin As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PraMax As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Pago As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

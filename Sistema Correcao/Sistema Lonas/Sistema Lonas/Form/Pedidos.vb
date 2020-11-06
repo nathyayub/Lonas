@@ -54,7 +54,6 @@
             objPed.DataDoPedido = DtaPed.Text
             objPed.PrazoMinimo = DtaMin.Text
             objPed.PrazoMaximo = DtaMax.Text
-            objPed.CheckPagamento = ChbPag.Checked
             objPed.Pedido = CboPed.SelectedItem.ToString
             objPed.Gravar(novo)
 
@@ -109,7 +108,6 @@
         DtaPed.Text = objPed.DataDoPedido
         DtaMin.Text = objPed.PrazoMinimo
         DtaMax.Text = objPed.PrazoMaximo
-        ChbPag.Checked = objPed.CheckPagamento
         CboPed.SelectedItem = objPed.Pedido
 
     End Sub

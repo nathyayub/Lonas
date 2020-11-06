@@ -6,7 +6,6 @@
     Dim m_DatP As Date
     Dim m_Pmin As Date
     Dim m_pmax As Date
-    Dim m_ChenkDPag As Boolean
     Dim m_pedido As String
 
     Dim sql As String
@@ -75,15 +74,6 @@
         End Set
     End Property
 
-    Public Property CheckPagamento() As Boolean
-        Get
-            Return m_ChenkDPag
-        End Get
-        Set(ByVal value As Boolean)
-            m_ChenkDPag = value
-        End Set
-    End Property
-
     Public Property Pedido() As String
         Get
             Return m_pedido
@@ -96,12 +86,12 @@
 
     Public Sub Gravar(novo As Boolean)
         If novo = True Then
-            sql = "insert into tabpedido (codcli, nomcli, Valpedtot, dataped, pramin, pramax, pago, Pedido) values ('" & m_codcli & "', '" & m_nomcli & "', '" & m_Vtot & "', '" & m_DatP & "','" & m_Pmin & "','" & m_pmax & "'," & m_ChenkDPag & ",'" & m_pedido & "')"
+            sql = "insert into tabpedido (codcli, nomcli, Valpedtot, dataped, pramin, pramax, Pedido) values ('" & m_codcli & "', '" & m_nomcli & "', '" & m_Vtot & "', '" & m_DatP & "','" & m_Pmin & "','" & m_pmax & "','" & m_pedido & "')"
             objbanco.executar_comando(sql)
             sql = "select max(codped) as codigo from tabpedido"
             m_cod = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update tabpedido set codcli='" & m_codcli & "', nomcli='" & m_nomcli & "', Valpedtot='" & m_Vtot & "', dataped='" & m_DatP & "', pramin ='" & m_Pmin & "', pramax ='" & m_pmax & "', pago=" & m_ChenkDPag & ", Pedido='" & m_pedido & "' where codped=" & m_cod
+            sql = "Update tabpedido set codcli='" & m_codcli & "', nomcli='" & m_nomcli & "', Valpedtot='" & m_Vtot & "', dataped='" & m_DatP & "', pramin ='" & m_Pmin & "', pramax ='" & m_pmax & "', Pedido='" & m_pedido & "' where codped=" & m_cod
             objbanco.executar_comando(sql)
         End If
     End Sub
@@ -146,8 +136,7 @@
         m_DatP = objdtLocal.Rows(0).Item(4)
         m_Pmin = objdtLocal.Rows(0).Item(5)
         m_pmax = objdtLocal.Rows(0).Item(6)
-        m_ChenkDPag = objdtLocal.Rows(0).Item(7)
-        m_pedido = objdtLocal.Rows(0).Item(8)
+        m_pedido = objdtLocal.Rows(0).Item(7)
     End Sub
 
     Public Function Localizar_porData(dataini As Date, datafin As Date) As DataTable

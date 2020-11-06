@@ -53,6 +53,8 @@
         objControle.Limpar_tela(Me)
         objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, False)
+        dtpvenc.Enabled = True
+        chbrec.Enabled = True
         btnverificar.Enabled = True
         CboPag.Enabled = True
         txtval.Focus()
@@ -78,6 +80,8 @@
         objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, False)
         btnverificar.Enabled = True
+        dtpvenc.Enabled = True
+        chbrec.Enabled = True
         CboPag.Enabled = True
         txtcodped.Focus()
         novo = False

@@ -17,8 +17,6 @@
             Pagamento.txtcodped.Text = DgdGrade.CurrentRow.Cells(1).Value
             Pagamento.txtnomecli.Text = DgdGrade.CurrentRow.Cells(3).Value
             Pagamento.txtval.Text = DgdGrade.CurrentRow.Cells(4).Value
-            Pagamento.dtpvenc.Text = DgdGrade.CurrentRow.Cells(7).Value
-            Pagamento.chbrec.Checked = DgdGrade.CurrentRow.Cells(8).Value
         Else
             Cliente.quemchamou = Me.Name
             Cliente.Show()

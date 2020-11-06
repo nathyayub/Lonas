@@ -132,6 +132,7 @@ Partial Class Pagamento
         Me.chbrec.Name = "chbrec"
         Me.chbrec.Size = New System.Drawing.Size(18, 17)
         Me.chbrec.TabIndex = 121
+        Me.chbrec.Tag = ""
         Me.chbrec.UseVisualStyleBackColor = True
         '
         'GrpLoc
@@ -344,7 +345,7 @@ Partial Class Pagamento
         '
         Me.dtpvenc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpvenc.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpvenc.Location = New System.Drawing.Point(245, 285)
+        Me.dtpvenc.Location = New System.Drawing.Point(317, 286)
         Me.dtpvenc.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpvenc.Name = "dtpvenc"
         Me.dtpvenc.Size = New System.Drawing.Size(167, 30)
@@ -370,9 +371,9 @@ Partial Class Pagamento
         Me.Label4.Location = New System.Drawing.Point(17, 286)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(216, 29)
+        Me.Label4.Size = New System.Drawing.Size(292, 29)
         Me.Label4.TabIndex = 133
-        Me.Label4.Text = "Data do Pagamento:"
+        Me.Label4.Text = "Data do Último Pagamento:"
         '
         'txtval
         '
