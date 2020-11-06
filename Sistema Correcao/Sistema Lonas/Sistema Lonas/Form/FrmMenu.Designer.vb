@@ -89,6 +89,7 @@ Partial Class FrmMenu
         Me.EntradaDeMateriaisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtEuroCota = New System.Windows.Forms.TextBox()
@@ -96,7 +97,6 @@ Partial Class FrmMenu
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -506,6 +506,12 @@ Partial Class FrmMenu
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsultasToolStripMenuItem, Me.RelatorioToolStripMenuItem, Me.AjudaToolStripMenuItem, Me.SairToolStripMenuItem})
         Me.MenuStrip1.Name = "MenuStrip1"
         '
+        'AjudaToolStripMenuItem
+        '
+        resources.ApplyResources(Me.AjudaToolStripMenuItem, "AjudaToolStripMenuItem")
+        Me.AjudaToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.AjudaToolStripMenuItem.Name = "AjudaToolStripMenuItem"
+        '
         'Panel1
         '
         resources.ApplyResources(Me.Panel1, "Panel1")
@@ -552,12 +558,6 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Name = "Label5"
-        '
-        'AjudaToolStripMenuItem
-        '
-        resources.ApplyResources(Me.AjudaToolStripMenuItem, "AjudaToolStripMenuItem")
-        Me.AjudaToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.AjudaToolStripMenuItem.Name = "AjudaToolStripMenuItem"
         '
         'FrmMenu
         '
