@@ -2,7 +2,9 @@
     Dim objControle As New ClsControle
     Dim objAg As New ClsAgendamento
     Dim novo As Boolean
+    Dim Cli As New ConsultaEmbarcaoComClie
     Public quemchamou As String = ""
+    Public cliEmba As String
     Private Sub Agendamento_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         Me.Top = 0
         Me.Left = 0
@@ -47,10 +49,10 @@
         ElseIf dtpmed.Value > dtpprazomax.Value Or dtpmed.Value < dtpprazomin.Value Then
             MsgBox("Não é possivel que a data da medicao seja essa data!")
             Txtcodcli.Focus()
-        ElseIf txtcodemb.Text = Nothing Then
+        ElseIf txtcodemb.Text = "" Then
             MsgBox("Digite o código da embarcação!")
             txtcodemb.Focus()
-        ElseIf Txtcodcli.Text <> ConsultaEmbarcaoComClie.TxtCampo.Text Then
+        ElseIf Txtcodcli.Text <> cliEmba Then
             MsgBox("Cliente não condiz com embarcação", MsgBoxStyle.Exclamation, "Aviso")
         Else
             objAg.Codigo = Val(TxtCod.Text)

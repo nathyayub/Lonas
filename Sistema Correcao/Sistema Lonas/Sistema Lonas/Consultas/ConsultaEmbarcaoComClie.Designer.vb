@@ -23,7 +23,7 @@ Partial Class ConsultaEmbarcaoComClie
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaEmbarcaoComClie))
-        Me.TxtCampo = New System.Windows.Forms.TextBox()
+        Me.TxtCampoEmbarcacao = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -31,12 +31,12 @@ Partial Class ConsultaEmbarcaoComClie
         '
         'TxtCampo
         '
-        Me.TxtCampo.Enabled = False
-        Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(19, 35)
-        Me.TxtCampo.Name = "TxtCampo"
-        Me.TxtCampo.Size = New System.Drawing.Size(477, 26)
-        Me.TxtCampo.TabIndex = 17
+        Me.TxtCampoEmbarcacao.Enabled = False
+        Me.TxtCampoEmbarcacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCampoEmbarcacao.Location = New System.Drawing.Point(19, 35)
+        Me.TxtCampoEmbarcacao.Name = "TxtCampo"
+        Me.TxtCampoEmbarcacao.Size = New System.Drawing.Size(477, 26)
+        Me.TxtCampoEmbarcacao.TabIndex = 17
         '
         'Label1
         '
@@ -67,7 +67,7 @@ Partial Class ConsultaEmbarcaoComClie
         Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(683, 443)
         Me.Controls.Add(Me.DgdGrade)
-        Me.Controls.Add(Me.TxtCampo)
+        Me.Controls.Add(Me.TxtCampoEmbarcacao)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ConsultaEmbarcaoComClie"
@@ -77,7 +77,7 @@ Partial Class ConsultaEmbarcaoComClie
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TxtCampo As System.Windows.Forms.TextBox
+    Friend WithEvents TxtCampoEmbarcacao As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DgdGrade As System.Windows.Forms.DataGridView
 End Class

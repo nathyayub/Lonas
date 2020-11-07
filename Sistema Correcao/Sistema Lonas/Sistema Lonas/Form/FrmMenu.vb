@@ -248,8 +248,6 @@ Public Class FrmMenu
     End Sub
 
     Private Sub AjudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AjudaToolStripMenuItem.Click
-        Using tmp As New FileStream("Ajuda.pdf", FileMode.Open)
-        End Using
         Process.Start("Ajuda.pdf")
     End Sub
 End Class
