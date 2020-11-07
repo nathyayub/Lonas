@@ -29,7 +29,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -318,16 +318,16 @@
       <DependentUpon>CrpClientes.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="relatorios\CrpEmbarcacao.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrpEmbarcacao.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="relatorios\CrpDespesas.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrpDespesas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="relatorios\CrpEmbarcacao.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpEmbarcacao.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="relatorios\CrpEntradaMat.vb">
@@ -476,13 +476,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrpClientes.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="relatorios\CrpEmbarcacao.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrpEmbarcacao.vb</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="relatorios\CrpDespesas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrpDespesas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relatorios\CrpEmbarcacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpEmbarcacao.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="relatorios\CrpEntradaMat.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

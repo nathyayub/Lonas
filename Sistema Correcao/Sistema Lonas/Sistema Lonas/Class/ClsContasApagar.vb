@@ -63,12 +63,12 @@
 
     Public Sub Gravar(novo As Boolean)
         If novo = True Then
-            sql = "insert into TabContPag (tipo, Valor, Venc, Quita, Descricao) values ('" & m_tipo & "', '" & m_valor & "', '" & m_vencimento & "'," & m_quitada & ",'" & m_descricao & "')"
+            sql = "insert into TabContPag (tipo, Valor, Venci, Quita, Descricao) values ('" & m_tipo & "', '" & m_valor & "', '" & m_vencimento & "'," & m_quitada & ",'" & m_descricao & "')"
             objbanco.executar_comando(sql)
             sql = "select max(CodcontPag) as codigo from TabContPag"
             m_CodcontPag = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update TabContPag set tipo='" & m_tipo & "', valor='" & m_valor & "', Venc='" & m_vencimento & "', Quita =" & m_quitada & ", Descricao ='" & m_descricao & "' where CodcontPag=" & m_CodcontPag
+            sql = "Update TabContPag set tipo='" & m_tipo & "', valor='" & m_valor & "', Venci='" & m_vencimento & "', Quita =" & m_quitada & ", Descricao ='" & m_descricao & "' where CodcontPag=" & m_CodcontPag
             objbanco.executar_comando(sql)
         End If
     End Sub

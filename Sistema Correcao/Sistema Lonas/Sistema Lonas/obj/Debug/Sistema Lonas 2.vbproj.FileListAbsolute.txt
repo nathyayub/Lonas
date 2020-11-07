@@ -675,4 +675,3 @@ C:\Users\vinic\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lona
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.CoEmbarcacao.resources
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaEmbarcaoComClie.resources
 C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.FrmLogin.resources
-C:\Users\User\Desktop\Sistema_Lonas\Sistema Correcao\Sistema Lonas\Sistema Lonas\obj\Debug\Sistema_Lonas.ConsultaFinanceiro.resources

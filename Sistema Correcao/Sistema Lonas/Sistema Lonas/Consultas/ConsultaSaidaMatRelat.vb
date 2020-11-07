@@ -15,7 +15,7 @@
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Saída de Materiais"
-        'rpt.Refresh()
+        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 

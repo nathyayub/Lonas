@@ -14,8 +14,8 @@
         rpt.SetDataSource(DgdGrade.DataSource)
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
-        rpt.SummaryInfo.ReportComments = "Relatório Financeiro"
-        'rpt.Refresh()
+        rpt.SummaryInfo.ReportComments = "Relatório de Despesas"
+        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 End Class
