@@ -140,6 +140,7 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Cliente "
+        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -172,6 +173,7 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Fornecedores"
+        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -190,6 +192,7 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Clientes"
+        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -198,6 +201,7 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Embarcação"
+        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -206,6 +210,7 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Pedidos "
+        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -219,6 +224,7 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Despesas "
+        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
