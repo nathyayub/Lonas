@@ -19,7 +19,7 @@ Public Class FrmMenu
 
             TxtDolarCota.Text = ("R$" + DtsDolar)
             txtEuroCota.Text = ("R$" + DtsEuro)
-     
+
         Catch ex As Exception
             MsgBox("Erro de conexão com a internet", "Aviso" & vbExclamation)
         End Try
@@ -82,7 +82,7 @@ Public Class FrmMenu
         Marina.MdiParent = Me
     End Sub
     Private Sub PedidoToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles PedidoToolStripMenuItem.Click
-        
+
     End Sub
 
     Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
@@ -140,7 +140,6 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Cliente "
-        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -173,7 +172,6 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Fornecedores"
-        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -192,7 +190,6 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Clientes"
-        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -201,7 +198,6 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Embarcação"
-        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -210,7 +206,6 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Pedidos "
-        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -224,7 +219,6 @@ Public Class FrmMenu
         FrmImp.CrystalReportViewer1.ReportSource = rpt
         rpt.SummaryInfo.ReportTitle = "Lonas Timoneiros"
         rpt.SummaryInfo.ReportComments = "Relatório de Despesas "
-        rpt.Refresh()
         FrmImp.ShowDialog()
     End Sub
 
@@ -236,7 +230,7 @@ Public Class FrmMenu
         FrmLogin.Close()
     End Sub
 
-  
+
     Private Sub PedidoPorDataToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PedidoPorDataToolStripMenuItem1.Click
         ConsultaPedidoPorData.Show()
         ConsultaPedidoPorData.MdiParent = Me

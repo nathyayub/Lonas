@@ -44,13 +44,13 @@
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles btngra.Click
         If Txtcodcli.Text = "" Then
-            MsgBox("Digite o código do cliente!")
+            MsgBox("Digite o código do cliente!", vbInformation)
             Txtcodcli.Focus()
         ElseIf dtpmed.Value > dtpprazomax.Value Or dtpmed.Value < dtpprazomin.Value Then
-            MsgBox("Não é possivel que a data da medicao seja essa data!")
+            MsgBox("Não é possivel que a data da medicao seja essa data!", vbInformation)
             Txtcodcli.Focus()
         ElseIf txtcodemb.Text = "" Then
-            MsgBox("Digite o código da embarcação!")
+            MsgBox("Digite o código da embarcação!", vbInformation)
             txtcodemb.Focus()
         ElseIf Txtcodcli.Text <> cliEmba Then
             MsgBox("Cliente não condiz com embarcação", MsgBoxStyle.Exclamation, "Aviso")

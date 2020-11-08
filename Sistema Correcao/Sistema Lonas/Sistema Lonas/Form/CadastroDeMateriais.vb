@@ -35,16 +35,16 @@
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
         If TxtNom.Text = "" Then
-            MsgBox("Digite o Nome do material!")
+            MsgBox("Digite o Nome do material!", vbInformation)
             TxtNom.Focus()
         ElseIf CboUni.Text = "" Then
-            MsgBox("Digite a unidade de medida do material!")
+            MsgBox("Digite a unidade de medida do material!", vbInformation)
             CboUni.Focus()
         ElseIf TxtMin.Text = "" Then
-            MsgBox("Digite a Quantidade Mínima do material!")
+            MsgBox("Digite a Quantidade Mínima do material!", vbInformation)
             TxtMin.Focus()
         ElseIf TxtMax.Text = "" Then
-            MsgBox("Digite a Quantidade Maxima do material!")
+            MsgBox("Digite a Quantidade Maxima do material!", vbInformation)
             TxtMax.Focus()
         Else
             objCad.Codigo = Val(TxtCod.Text)

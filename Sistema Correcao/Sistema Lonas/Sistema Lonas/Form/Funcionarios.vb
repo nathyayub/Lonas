@@ -29,25 +29,25 @@
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
 
         If TxtNom.Text = "" Then
-            MsgBox("Digite o nome do funcionario!")
+            MsgBox("Digite o nome do funcionario!", vbInformation)
             TxtNom.Focus()
         ElseIf TxtHor.Text = "" Then
-            MsgBox("Digite o horario do funcionario!")
+            MsgBox("Digite o horario do funcionario!", vbInformation)
             TxtHor.Focus()
-        ElseIf MskTel.Text = "" Then
-            MsgBox("Digite o telefone do funcionario!")
+        ElseIf MskTel.Text = "(  )      -" Then
+            MsgBox("Digite o telefone do funcionario!", vbInformation)
             MskTel.Focus()
         ElseIf TxtEma.Text = "" Then
-            MsgBox("Digite o email do funcionario!")
+            MsgBox("Digite o email do funcionario!", vbInformation)
             TxtEma.Focus()
         ElseIf TxtRg.Text = "" Then
-            MsgBox("Digite o RG do funcionario!")
+            MsgBox("Digite o RG do funcionario!", vbInformation)
             TxtRg.Focus()
         ElseIf dtpadmissao.Text = "" Then
-            MsgBox("Digite a data de adimissão do funcionario!")
+            MsgBox("Digite a data de adimissão do funcionario!", vbInformation)
             dtpadmissao.Focus()
         ElseIf TxtAra.Text = "" Then
-            MsgBox("Digite a área de atuação do funcionario!")
+            MsgBox("Digite a área de atuação do funcionario!", vbInformation)
             TxtAra.Focus()
         Else
             objFun.Codigo = Val(TxtCod.Text)

@@ -35,16 +35,16 @@
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
         If CboPed.Text = "" Then
-            MsgBox("Digite qual foi o pedido!")
+            MsgBox("Digite qual foi o pedido!", vbInformation)
             CboPed.Focus()
         ElseIf TxtCodCli.Text = "" Then
-            MsgBox("Digite o código do cliente!")
+            MsgBox("Digite o código do cliente!", vbInformation)
             TxtCodCli.Focus()
         ElseIf MskVal.Text = "" Then
-            MsgBox("Digite o valor do pedido!")
+            MsgBox("Digite o valor do pedido!", vbInformation)
             MskVal.Focus()
         ElseIf MskVal.Text = "" Then
-            MsgBox("Digite o valor do pedido!")
+            MsgBox("Digite o valor do pedido!", vbInformation)
             MskVal.Focus()
         Else
             objPed.Codigo = Val(TxtCod.Text)
@@ -153,6 +153,7 @@
             End If
         End If
     End Sub
+
 
 
 End Class

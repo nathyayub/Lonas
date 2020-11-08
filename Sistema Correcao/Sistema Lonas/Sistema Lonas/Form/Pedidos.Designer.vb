@@ -38,8 +38,8 @@ Partial Class Pedidos
         Me.BtnNov = New System.Windows.Forms.Button()
         Me.MskVal = New System.Windows.Forms.MaskedTextBox()
         Me.GrpLoc = New System.Windows.Forms.GroupBox()
-        Me.lblCli = New System.Windows.Forms.Label()
         Me.BtnOK = New System.Windows.Forms.Button()
+        Me.lblCli = New System.Windows.Forms.Label()
         Me.TxtLoc = New System.Windows.Forms.TextBox()
         Me.DtaMax = New System.Windows.Forms.DateTimePicker()
         Me.DtaMin = New System.Windows.Forms.DateTimePicker()
@@ -57,46 +57,42 @@ Partial Class Pedidos
         '
         'TxtCod
         '
-        Me.TxtCod.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCod.Location = New System.Drawing.Point(125, 14)
-        Me.TxtCod.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtCod.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCod.Location = New System.Drawing.Point(176, 12)
         Me.TxtCod.Name = "TxtCod"
-        Me.TxtCod.Size = New System.Drawing.Size(168, 30)
+        Me.TxtCod.Size = New System.Drawing.Size(127, 30)
         Me.TxtCod.TabIndex = 111
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(13, 18)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(97, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 29)
+        Me.Label1.Size = New System.Drawing.Size(74, 22)
         Me.Label1.TabIndex = 34
         Me.Label1.Text = "Código:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(16, 171)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(2, 131)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(138, 29)
+        Me.Label3.Size = New System.Drawing.Size(171, 22)
         Me.Label3.TabIndex = 38
-        Me.Label3.Text = "Valor Total:"
+        Me.Label3.Text = "Valor do orçamento:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(16, 225)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(33, 170)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(183, 29)
+        Me.Label4.Size = New System.Drawing.Size(139, 22)
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "Data do Pedido:"
         '
@@ -105,10 +101,9 @@ Partial Class Pedidos
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(11, 48)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(9, 33)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 29)
+        Me.Label5.Size = New System.Drawing.Size(81, 23)
         Me.Label5.TabIndex = 42
         Me.Label5.Text = "Mínimo:"
         '
@@ -117,10 +112,9 @@ Partial Class Pedidos
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(340, 46)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(254, 34)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(110, 29)
+        Me.Label6.Size = New System.Drawing.Size(85, 23)
         Me.Label6.TabIndex = 44
         Me.Label6.Text = "Maximo:"
         '
@@ -135,11 +129,10 @@ Partial Class Pedidos
         Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAlt.Location = New System.Drawing.Point(904, 258)
-        Me.BtnAlt.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnAlt.Location = New System.Drawing.Point(556, 210)
         Me.BtnAlt.Name = "BtnAlt"
-        Me.BtnAlt.Size = New System.Drawing.Size(165, 53)
-        Me.BtnAlt.TabIndex = 13
+        Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
+        Me.BtnAlt.TabIndex = 10
         Me.BtnAlt.Text = "&Alterar"
         Me.BtnAlt.UseVisualStyleBackColor = False
         '
@@ -154,11 +147,10 @@ Partial Class Pedidos
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(904, 384)
-        Me.BtnSai.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnSai.Location = New System.Drawing.Point(556, 312)
         Me.BtnSai.Name = "BtnSai"
-        Me.BtnSai.Size = New System.Drawing.Size(165, 53)
-        Me.BtnSai.TabIndex = 15
+        Me.BtnSai.Size = New System.Drawing.Size(124, 43)
+        Me.BtnSai.TabIndex = 12
         Me.BtnSai.Text = "Sai&r"
         Me.BtnSai.UseVisualStyleBackColor = False
         '
@@ -173,11 +165,10 @@ Partial Class Pedidos
         Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCan.Location = New System.Drawing.Point(904, 319)
-        Me.BtnCan.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnCan.Location = New System.Drawing.Point(556, 259)
         Me.BtnCan.Name = "BtnCan"
-        Me.BtnCan.Size = New System.Drawing.Size(165, 53)
-        Me.BtnCan.TabIndex = 14
+        Me.BtnCan.Size = New System.Drawing.Size(124, 43)
+        Me.BtnCan.TabIndex = 11
         Me.BtnCan.Text = "&Cancelar"
         Me.BtnCan.UseVisualStyleBackColor = False
         '
@@ -192,11 +183,10 @@ Partial Class Pedidos
         Me.BtnLoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLoc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnLoc.Location = New System.Drawing.Point(904, 197)
-        Me.BtnLoc.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnLoc.Location = New System.Drawing.Point(556, 160)
         Me.BtnLoc.Name = "BtnLoc"
-        Me.BtnLoc.Size = New System.Drawing.Size(165, 54)
-        Me.BtnLoc.TabIndex = 12
+        Me.BtnLoc.Size = New System.Drawing.Size(124, 44)
+        Me.BtnLoc.TabIndex = 8
         Me.BtnLoc.Text = "&Localizar"
         Me.BtnLoc.UseVisualStyleBackColor = False
         '
@@ -211,11 +201,10 @@ Partial Class Pedidos
         Me.BtnExc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnExc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnExc.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnExc.Location = New System.Drawing.Point(904, 137)
-        Me.BtnExc.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnExc.Location = New System.Drawing.Point(556, 111)
         Me.BtnExc.Name = "BtnExc"
-        Me.BtnExc.Size = New System.Drawing.Size(165, 53)
-        Me.BtnExc.TabIndex = 11
+        Me.BtnExc.Size = New System.Drawing.Size(124, 43)
+        Me.BtnExc.TabIndex = 7
         Me.BtnExc.Text = "&Excluir"
         Me.BtnExc.UseVisualStyleBackColor = False
         '
@@ -230,11 +219,10 @@ Partial Class Pedidos
         Me.BtnGra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGra.Location = New System.Drawing.Point(904, 75)
-        Me.BtnGra.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnGra.Location = New System.Drawing.Point(556, 61)
         Me.BtnGra.Name = "BtnGra"
-        Me.BtnGra.Size = New System.Drawing.Size(165, 53)
-        Me.BtnGra.TabIndex = 10
+        Me.BtnGra.Size = New System.Drawing.Size(124, 43)
+        Me.BtnGra.TabIndex = 6
         Me.BtnGra.Text = "&Gravar"
         Me.BtnGra.UseVisualStyleBackColor = False
         '
@@ -249,123 +237,124 @@ Partial Class Pedidos
         Me.BtnNov.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnNov.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNov.Location = New System.Drawing.Point(904, 14)
-        Me.BtnNov.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnNov.Location = New System.Drawing.Point(556, 11)
         Me.BtnNov.Name = "BtnNov"
-        Me.BtnNov.Size = New System.Drawing.Size(165, 53)
+        Me.BtnNov.Size = New System.Drawing.Size(124, 43)
         Me.BtnNov.TabIndex = 0
         Me.BtnNov.Text = "&Novo"
         Me.BtnNov.UseVisualStyleBackColor = False
         '
         'MskVal
         '
-        Me.MskVal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MskVal.Location = New System.Drawing.Point(208, 170)
-        Me.MskVal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.MskVal.Mask = "999999999"
+        Me.MskVal.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MskVal.Location = New System.Drawing.Point(175, 127)
+        Me.MskVal.Margin = New System.Windows.Forms.Padding(2)
         Me.MskVal.Name = "MskVal"
-        Me.MskVal.Size = New System.Drawing.Size(200, 30)
-        Me.MskVal.TabIndex = 4
+        Me.MskVal.Size = New System.Drawing.Size(152, 30)
+        Me.MskVal.TabIndex = 3
         '
         'GrpLoc
         '
-        Me.GrpLoc.Controls.Add(Me.lblCli)
         Me.GrpLoc.Controls.Add(Me.BtnOK)
+        Me.GrpLoc.Controls.Add(Me.lblCli)
         Me.GrpLoc.Controls.Add(Me.TxtLoc)
         Me.GrpLoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrpLoc.ForeColor = System.Drawing.Color.White
-        Me.GrpLoc.Location = New System.Drawing.Point(565, 375)
-        Me.GrpLoc.Margin = New System.Windows.Forms.Padding(4)
+        Me.GrpLoc.Location = New System.Drawing.Point(295, 289)
         Me.GrpLoc.Name = "GrpLoc"
-        Me.GrpLoc.Padding = New System.Windows.Forms.Padding(4)
-        Me.GrpLoc.Size = New System.Drawing.Size(315, 118)
-        Me.GrpLoc.TabIndex = 66
+        Me.GrpLoc.Size = New System.Drawing.Size(236, 96)
+        Me.GrpLoc.TabIndex = 9
         Me.GrpLoc.TabStop = False
         Me.GrpLoc.Text = "Localizar"
         Me.GrpLoc.Visible = False
         '
+        'BtnOK
+        '
+        Me.BtnOK.BackColor = System.Drawing.Color.Silver
+        Me.BtnOK.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnOK.FlatAppearance.BorderSize = 2
+        Me.BtnOK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnOK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnOK.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnOK.ForeColor = System.Drawing.Color.Black
+        Me.BtnOK.Location = New System.Drawing.Point(160, 52)
+        Me.BtnOK.Name = "BtnOK"
+        Me.BtnOK.Size = New System.Drawing.Size(50, 27)
+        Me.BtnOK.TabIndex = 3
+        Me.BtnOK.Text = "OK"
+        Me.BtnOK.UseVisualStyleBackColor = False
+        '
         'lblCli
         '
         Me.lblCli.AutoSize = True
-        Me.lblCli.Location = New System.Drawing.Point(16, 37)
-        Me.lblCli.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCli.Location = New System.Drawing.Point(12, 30)
         Me.lblCli.Name = "lblCli"
-        Me.lblCli.Size = New System.Drawing.Size(145, 25)
+        Me.lblCli.Size = New System.Drawing.Size(117, 20)
         Me.lblCli.TabIndex = 2
         Me.lblCli.Text = "Digite o Código"
         '
-        'BtnOK
-        '
-        Me.BtnOK.ForeColor = System.Drawing.Color.Black
-        Me.BtnOK.Location = New System.Drawing.Point(213, 65)
-        Me.BtnOK.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnOK.Name = "BtnOK"
-        Me.BtnOK.Size = New System.Drawing.Size(55, 32)
-        Me.BtnOK.TabIndex = 1
-        Me.BtnOK.Text = "OK"
-        Me.BtnOK.UseVisualStyleBackColor = True
-        '
         'TxtLoc
         '
-        Me.TxtLoc.Location = New System.Drawing.Point(21, 65)
-        Me.TxtLoc.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtLoc.Location = New System.Drawing.Point(16, 53)
         Me.TxtLoc.Name = "TxtLoc"
-        Me.TxtLoc.Size = New System.Drawing.Size(183, 30)
+        Me.TxtLoc.Size = New System.Drawing.Size(138, 26)
         Me.TxtLoc.TabIndex = 0
         '
         'DtaMax
         '
+        Me.DtaMax.CalendarFont = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.DtaMax.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtaMax.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtaMax.Location = New System.Drawing.Point(457, 46)
-        Me.DtaMax.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DtaMax.Location = New System.Drawing.Point(340, 33)
+        Me.DtaMax.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaMax.Name = "DtaMax"
-        Me.DtaMax.Size = New System.Drawing.Size(200, 30)
+        Me.DtaMax.Size = New System.Drawing.Size(151, 26)
         Me.DtaMax.TabIndex = 7
         '
         'DtaMin
         '
+        Me.DtaMin.CalendarFont = New System.Drawing.Font("Times New Roman", 15.0!)
         Me.DtaMin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtaMin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtaMin.Location = New System.Drawing.Point(123, 47)
-        Me.DtaMin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DtaMin.Location = New System.Drawing.Point(93, 32)
+        Me.DtaMin.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaMin.Name = "DtaMin"
-        Me.DtaMin.Size = New System.Drawing.Size(200, 30)
+        Me.DtaMin.Size = New System.Drawing.Size(151, 26)
         Me.DtaMin.TabIndex = 6
         '
         'DtaPed
         '
-        Me.DtaPed.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DtaPed.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtaPed.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtaPed.Location = New System.Drawing.Point(208, 224)
-        Me.DtaPed.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DtaPed.Location = New System.Drawing.Point(176, 166)
+        Me.DtaPed.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaPed.Name = "DtaPed"
-        Me.DtaPed.Size = New System.Drawing.Size(200, 30)
-        Me.DtaPed.TabIndex = 5
+        Me.DtaPed.Size = New System.Drawing.Size(151, 30)
+        Me.DtaPed.TabIndex = 4
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(17, 71)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(98, 54)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 29)
+        Me.Label8.Size = New System.Drawing.Size(72, 22)
         Me.Label8.TabIndex = 77
         Me.Label8.Text = "Pedido:"
         '
         'CboPed
         '
         Me.CboPed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboPed.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CboPed.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CboPed.FormattingEnabled = True
         Me.CboPed.Items.AddRange(New Object() {"Capota", "Fechamento", "Lona", "Frontal", "Lateral", "Traseiro"})
-        Me.CboPed.Location = New System.Drawing.Point(128, 63)
-        Me.CboPed.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CboPed.Location = New System.Drawing.Point(176, 50)
+        Me.CboPed.Margin = New System.Windows.Forms.Padding(2)
         Me.CboPed.Name = "CboPed"
-        Me.CboPed.Size = New System.Drawing.Size(325, 33)
-        Me.CboPed.TabIndex = 2
+        Me.CboPed.Size = New System.Drawing.Size(264, 30)
+        Me.CboPed.TabIndex = 1
         '
         'BtnCli
         '
@@ -375,43 +364,40 @@ Partial Class Pedidos
         Me.BtnCli.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCli.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCli.Font = New System.Drawing.Font("Times New Roman", 14.0!)
-        Me.BtnCli.Location = New System.Drawing.Point(331, 119)
-        Me.BtnCli.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BtnCli.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCli.Location = New System.Drawing.Point(236, 88)
+        Me.BtnCli.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnCli.Name = "BtnCli"
-        Me.BtnCli.Size = New System.Drawing.Size(63, 34)
-        Me.BtnCli.TabIndex = 3
+        Me.BtnCli.Size = New System.Drawing.Size(45, 30)
+        Me.BtnCli.TabIndex = 2
         Me.BtnCli.Text = "..."
         Me.BtnCli.UseVisualStyleBackColor = False
         '
         'TxtCli
         '
         Me.TxtCli.Enabled = False
-        Me.TxtCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCli.Location = New System.Drawing.Point(403, 119)
-        Me.TxtCli.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtCli.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCli.Location = New System.Drawing.Point(286, 89)
         Me.TxtCli.Name = "TxtCli"
-        Me.TxtCli.Size = New System.Drawing.Size(253, 30)
+        Me.TxtCli.Size = New System.Drawing.Size(231, 30)
         Me.TxtCli.TabIndex = 80
         '
         'TxtCodCli
         '
-        Me.TxtCodCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCodCli.Location = New System.Drawing.Point(248, 119)
-        Me.TxtCodCli.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtCodCli.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCodCli.Location = New System.Drawing.Point(175, 88)
         Me.TxtCodCli.Name = "TxtCodCli"
-        Me.TxtCodCli.Size = New System.Drawing.Size(72, 30)
+        Me.TxtCodCli.Size = New System.Drawing.Size(55, 30)
         Me.TxtCodCli.TabIndex = 78
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(17, 119)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(7, 92)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(214, 29)
+        Me.Label2.Size = New System.Drawing.Size(165, 22)
         Me.Label2.TabIndex = 79
         Me.Label2.Text = "Código Do Cliente:"
         '
@@ -423,21 +409,19 @@ Partial Class Pedidos
         Me.GroupBox1.Controls.Add(Me.DtaMax)
         Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(19, 265)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Location = New System.Drawing.Point(26, 205)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(673, 96)
-        Me.GroupBox1.TabIndex = 83
+        Me.GroupBox1.Size = New System.Drawing.Size(505, 78)
+        Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Prazo De Entrega"
         '
         'Pedidos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(1085, 517)
+        Me.ClientSize = New System.Drawing.Size(692, 404)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BtnCli)
         Me.Controls.Add(Me.TxtCli)
@@ -460,7 +444,7 @@ Partial Class Pedidos
         Me.Controls.Add(Me.TxtCod)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Pedidos"
         Me.Text = "Pedidos"
         Me.GrpLoc.ResumeLayout(False)
@@ -487,7 +471,6 @@ Partial Class Pedidos
     Friend WithEvents MskVal As System.Windows.Forms.MaskedTextBox
     Friend WithEvents GrpLoc As System.Windows.Forms.GroupBox
     Friend WithEvents lblCli As System.Windows.Forms.Label
-    Friend WithEvents BtnOK As System.Windows.Forms.Button
     Friend WithEvents TxtLoc As System.Windows.Forms.TextBox
     Friend WithEvents DtaMax As System.Windows.Forms.DateTimePicker
     Friend WithEvents DtaMin As System.Windows.Forms.DateTimePicker
@@ -499,4 +482,5 @@ Partial Class Pedidos
     Friend WithEvents TxtCodCli As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents BtnOK As System.Windows.Forms.Button
 End Class

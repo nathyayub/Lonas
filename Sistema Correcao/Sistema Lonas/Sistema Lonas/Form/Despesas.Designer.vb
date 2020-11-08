@@ -41,10 +41,10 @@ Partial Class Despesas
         '
         'TxtNom
         '
-        Me.TxtNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNom.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNom.Location = New System.Drawing.Point(96, 77)
         Me.TxtNom.Name = "TxtNom"
-        Me.TxtNom.Size = New System.Drawing.Size(193, 26)
+        Me.TxtNom.Size = New System.Drawing.Size(193, 30)
         Me.TxtNom.TabIndex = 1
         '
         'Label2
@@ -52,7 +52,7 @@ Partial Class Despesas
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(12, 80)
+        Me.Label2.Location = New System.Drawing.Point(28, 80)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(63, 22)
         Me.Label2.TabIndex = 79
@@ -60,10 +60,10 @@ Partial Class Despesas
         '
         'TxtCod
         '
-        Me.TxtCod.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCod.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtCod.Location = New System.Drawing.Point(96, 29)
         Me.TxtCod.Name = "TxtCod"
-        Me.TxtCod.Size = New System.Drawing.Size(127, 26)
+        Me.TxtCod.Size = New System.Drawing.Size(127, 30)
         Me.TxtCod.TabIndex = 76
         '
         'Label1
@@ -71,7 +71,7 @@ Partial Class Despesas
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 32)
+        Me.Label1.Location = New System.Drawing.Point(18, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(74, 22)
         Me.Label1.TabIndex = 77
@@ -174,7 +174,7 @@ Partial Class Despesas
         Me.GrpLoc.Controls.Add(Me.TxtLoc)
         Me.GrpLoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrpLoc.ForeColor = System.Drawing.Color.White
-        Me.GrpLoc.Location = New System.Drawing.Point(16, 135)
+        Me.GrpLoc.Location = New System.Drawing.Point(32, 170)
         Me.GrpLoc.Name = "GrpLoc"
         Me.GrpLoc.Size = New System.Drawing.Size(236, 96)
         Me.GrpLoc.TabIndex = 127
@@ -214,7 +214,7 @@ Partial Class Despesas
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(458, 297)
+        Me.ClientSize = New System.Drawing.Size(458, 283)
         Me.Controls.Add(Me.GrpLoc)
         Me.Controls.Add(Me.BtnCan)
         Me.Controls.Add(Me.BtnLoc)

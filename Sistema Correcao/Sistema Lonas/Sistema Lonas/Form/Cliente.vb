@@ -52,38 +52,38 @@
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
         If TxtNom.Text = "" Then
-            MsgBox("Digite o nome do cliente!")
+            MsgBox("Digite o nome do cliente!",vbInformation)
             TxtNom.Focus()
-        ElseIf MskTel.Text = "" And TxtEma.Text = "" Then
-            MsgBox("Digite o telefone ou e-mail do cliente!")
+        ElseIf MskTel.Text = "(  )      -" Then
+            MsgBox("Digite o telefone do cliente!", vbInformation)
             MskTel.Focus()
-        ElseIf mskCpf.Text = "   .   .   -" And mskCNPJ.Text = "  .   .   /    -" Then
-            MsgBox("Digite o CPF ou o CNPJ dp cliente!")
-            mskCpf.Focus()
-        ElseIf mskCNPJ.Text <> "  .   .   /    -" And TxtIns.Text = "" Then
-            MsgBox("Digite a Inscrição Estadual do cliente!")
-            TxtIns.Focus()
         ElseIf TxtEma.Text = "" Then
-            MsgBox("Digite o email do cliente!")
-            mskCpf.Focus()
+            MsgBox("Digite o email do cliente!", vbInformation)
+            TxtEma.Focus()
+        ElseIf TxtCep.Text = "     -" Then
+            MsgBox("Digite o CEP do cliente!", vbInformation)
+            TxtCep.Focus()
         ElseIf TxtEnd.Text = "" Then
-            MsgBox("Digite o endereço do cliente!")
+            MsgBox("Digite o endereço do cliente!", vbInformation)
             TxtEnd.Focus()
         ElseIf TxtCom.Text = "" Then
-            MsgBox("Digite o complemento do cliente!")
+            MsgBox("Digite o complemento do cliente!", vbInformation)
             TxtCom.Focus()
         ElseIf TxtBai.Text = "" Then
-            MsgBox("Digite o bairro do cliente!")
+            MsgBox("Digite o bairro do cliente!", vbInformation)
             TxtBai.Focus()
         ElseIf TxtEst.Text = "" Then
-            MsgBox("Digite o estado do cliente!")
+            MsgBox("Digite o estado do cliente!", vbInformation)
             TxtEst.Focus()
         ElseIf TxtCid.Text = "" Then
-            MsgBox("Digite a cidade do cliente!")
+            MsgBox("Digite a cidade do cliente!", vbInformation)
             TxtCid.Focus()
-        ElseIf TxtCep.Text = "" Then
-            MsgBox("Digite o CEP do cliente!")
-            TxtCep.Focus()
+        ElseIf mskCpf.Text = "   .   .   -" And mskCNPJ.Text = "  .   .   /    -" Then
+            MsgBox("Digite o CPF ou o CNPJ dp cliente!", vbInformation)
+            mskCpf.Focus()
+        ElseIf mskCNPJ.Text <> "  .   .   /    -" And TxtIns.Text = "" Then
+            MsgBox("Digite a Inscrição Estadual do cliente!", vbInformation)
+            TxtIns.Focus()
         ElseIf objControle.Testar_vazio(Me) <> True Then
 
             objCli.Codigo = Val(TxtCod.Text)

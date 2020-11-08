@@ -52,23 +52,23 @@ Partial Class SaidaDeMateriais
         Me.BtnMat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnMat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnMat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnMat.Font = New System.Drawing.Font("Times New Roman", 14.0!)
-        Me.BtnMat.Location = New System.Drawing.Point(261, 10)
+        Me.BtnMat.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMat.Location = New System.Drawing.Point(264, 11)
         Me.BtnMat.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnMat.Name = "BtnMat"
-        Me.BtnMat.Size = New System.Drawing.Size(47, 28)
+        Me.BtnMat.Size = New System.Drawing.Size(47, 30)
         Me.BtnMat.TabIndex = 1
         Me.BtnMat.Text = "..."
         Me.BtnMat.UseVisualStyleBackColor = False
         '
         'DtaRet
         '
-        Me.DtaRet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DtaRet.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtaRet.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DtaRet.Location = New System.Drawing.Point(188, 91)
+        Me.DtaRet.Location = New System.Drawing.Point(190, 88)
         Me.DtaRet.Margin = New System.Windows.Forms.Padding(2)
         Me.DtaRet.Name = "DtaRet"
-        Me.DtaRet.Size = New System.Drawing.Size(120, 26)
+        Me.DtaRet.Size = New System.Drawing.Size(120, 30)
         Me.DtaRet.TabIndex = 3
         '
         'Label8
@@ -76,7 +76,7 @@ Partial Class SaidaDeMateriais
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(10, 95)
+        Me.Label8.Location = New System.Drawing.Point(57, 92)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(128, 22)
         Me.Label8.TabIndex = 142
@@ -93,7 +93,7 @@ Partial Class SaidaDeMateriais
         Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnAlt.Location = New System.Drawing.Point(699, 154)
+        Me.BtnAlt.Location = New System.Drawing.Point(577, 154)
         Me.BtnAlt.Name = "BtnAlt"
         Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
         Me.BtnAlt.TabIndex = 7
@@ -111,7 +111,7 @@ Partial Class SaidaDeMateriais
         Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCan.Location = New System.Drawing.Point(699, 105)
+        Me.BtnCan.Location = New System.Drawing.Point(577, 105)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 43)
         Me.BtnCan.TabIndex = 6
@@ -126,8 +126,8 @@ Partial Class SaidaDeMateriais
         Me.BtnEst.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnEst.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEst.Font = New System.Drawing.Font("Times New Roman", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEst.Location = New System.Drawing.Point(317, 82)
+        Me.BtnEst.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEst.Location = New System.Drawing.Point(476, 95)
         Me.BtnEst.Name = "BtnEst"
         Me.BtnEst.Size = New System.Drawing.Size(55, 35)
         Me.BtnEst.TabIndex = 4
@@ -145,7 +145,7 @@ Partial Class SaidaDeMateriais
         Me.BtnGra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnGra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGra.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnGra.Location = New System.Drawing.Point(699, 55)
+        Me.BtnGra.Location = New System.Drawing.Point(577, 55)
         Me.BtnGra.Name = "BtnGra"
         Me.BtnGra.Size = New System.Drawing.Size(124, 43)
         Me.BtnGra.TabIndex = 5
@@ -163,7 +163,7 @@ Partial Class SaidaDeMateriais
         Me.BtnNov.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnNov.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNov.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnNov.Location = New System.Drawing.Point(699, 5)
+        Me.BtnNov.Location = New System.Drawing.Point(577, 5)
         Me.BtnNov.Name = "BtnNov"
         Me.BtnNov.Size = New System.Drawing.Size(124, 43)
         Me.BtnNov.TabIndex = 0
@@ -172,10 +172,10 @@ Partial Class SaidaDeMateriais
         '
         'TxtRet
         '
-        Me.TxtRet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtRet.Location = New System.Drawing.Point(188, 53)
+        Me.TxtRet.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtRet.Location = New System.Drawing.Point(190, 50)
         Me.TxtRet.Name = "TxtRet"
-        Me.TxtRet.Size = New System.Drawing.Size(120, 26)
+        Me.TxtRet.Size = New System.Drawing.Size(121, 30)
         Me.TxtRet.TabIndex = 2
         '
         'Label3
@@ -183,7 +183,7 @@ Partial Class SaidaDeMateriais
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(10, 57)
+        Me.Label3.Location = New System.Drawing.Point(7, 53)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(179, 22)
         Me.Label3.TabIndex = 136
@@ -191,18 +191,18 @@ Partial Class SaidaDeMateriais
         '
         'TxtNomMat
         '
-        Me.TxtNomMat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNomMat.Location = New System.Drawing.Point(317, 10)
+        Me.TxtNomMat.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNomMat.Location = New System.Drawing.Point(317, 12)
         Me.TxtNomMat.Name = "TxtNomMat"
-        Me.TxtNomMat.Size = New System.Drawing.Size(214, 26)
+        Me.TxtNomMat.Size = New System.Drawing.Size(214, 30)
         Me.TxtNomMat.TabIndex = 133
         '
         'TxtCodMat
         '
-        Me.TxtCodMat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCodMat.Location = New System.Drawing.Point(188, 11)
+        Me.TxtCodMat.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCodMat.Location = New System.Drawing.Point(190, 11)
         Me.TxtCodMat.Name = "TxtCodMat"
-        Me.TxtCodMat.Size = New System.Drawing.Size(68, 26)
+        Me.TxtCodMat.Size = New System.Drawing.Size(68, 30)
         Me.TxtCodMat.TabIndex = 131
         '
         'Label1
@@ -210,7 +210,7 @@ Partial Class SaidaDeMateriais
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(10, 15)
+        Me.Label1.Location = New System.Drawing.Point(14, 15)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(172, 22)
         Me.Label1.TabIndex = 132
@@ -224,12 +224,12 @@ Partial Class SaidaDeMateriais
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Material, Me.QuantidadeMinima, Me.UltimoReabastecimento})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DgdGrade.Location = New System.Drawing.Point(9, 142)
+        Me.DgdGrade.Location = New System.Drawing.Point(9, 135)
         Me.DgdGrade.Margin = New System.Windows.Forms.Padding(2)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.RowTemplate.Height = 24
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgdGrade.Size = New System.Drawing.Size(679, 280)
+        Me.DgdGrade.Size = New System.Drawing.Size(522, 280)
         Me.DgdGrade.TabIndex = 130
         '
         'Column1
@@ -265,7 +265,7 @@ Partial Class SaidaDeMateriais
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(835, 443)
+        Me.ClientSize = New System.Drawing.Size(713, 443)
         Me.Controls.Add(Me.BtnMat)
         Me.Controls.Add(Me.DtaRet)
         Me.Controls.Add(Me.Label8)

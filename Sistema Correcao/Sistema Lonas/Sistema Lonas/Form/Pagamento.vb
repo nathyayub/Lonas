@@ -21,16 +21,16 @@
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
         If txtcodped.Text = "" Then
-            MsgBox("Digite o código do pedido!")
+            MsgBox("Digite o código do pedido!", vbInformation)
             txtcodped.Focus()
         ElseIf txtval.Text = "" Then
-            MsgBox("Digite o valor do pedido!")
+            MsgBox("Digite o valor do pedido!", vbInformation)
             txtval.Focus()
         ElseIf CboPag.Text = "" Then
-            MsgBox("Digite a forma de pagamento!")
+            MsgBox("Digite a forma de pagamento!", vbInformation)
             CboPag.Focus()
         ElseIf dtpvenc.Text = "" Then
-            MsgBox("Digite a data de vencimento!")
+            MsgBox("Digite a data de vencimento!", vbInformation)
             dtpvenc.Focus()
         Else
             objPag.Codigo = Val(txtcod.Text)
@@ -57,6 +57,7 @@
         chbrec.Enabled = True
         btnverificar.Enabled = True
         CboPag.Enabled = True
+        txtval.Enabled = True
         txtval.Focus()
         novo = True
     End Sub
@@ -83,6 +84,7 @@
         dtpvenc.Enabled = True
         chbrec.Enabled = True
         CboPag.Enabled = True
+        txtval.Enabled = True
         txtcodped.Focus()
         novo = False
     End Sub
@@ -137,12 +139,16 @@
             TxtPag.Text = txtval.Text
         End If
     End Sub
-
     Private Sub ChbVis_CheckedChanged(sender As Object, e As EventArgs) Handles ChbVis.CheckedChanged
         If ChbVis.Checked = True Then
             TxtPag.Text = txtval.Text * 0.93
         Else
             TxtPag.Text = txtval.Text
+        End If
+    End Sub
+    Private Sub txtval_TextChanged(sender As Object, e As EventArgs) Handles txtval.TextChanged
+        If ChbVis.Checked = True Then
+            TxtPag.Text = txtval.Text * 0.93
         End If
     End Sub
 End Class

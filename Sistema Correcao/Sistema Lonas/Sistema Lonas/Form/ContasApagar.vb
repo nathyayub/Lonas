@@ -35,13 +35,13 @@
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
 
         If TxtTip.Text = "" Then
-            MsgBox("Selecione o tipo da conta!")
+            MsgBox("Selecione o tipo da conta!", vbInformation)
             TxtTip.Focus()
         ElseIf TxtVal.Text = "" Then
-            MsgBox("Digite o valor do pagamento!")
+            MsgBox("Digite o valor do pagamento!", vbInformation)
             TxtVal.Focus()
         ElseIf DtpVen.Text = "" Then
-            MsgBox("Digite o a data co vencimento!")
+            MsgBox("Digite o a data co vencimento!", vbInformation)
             DtpVen.Focus()
         Else
             objCon.Codigo = Val(TxtCodc.Text)

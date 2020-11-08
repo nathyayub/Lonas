@@ -34,22 +34,22 @@
     End Sub
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
         If txtnome.Text = "" Then
-            MsgBox("Digite o nome da embarcação!")
+            MsgBox("Digite o nome da embarcação!", vbInformation)
             txtnome.Focus()
         ElseIf txtmarca.Text = "" Then
-            MsgBox("Digite o nome da marca do barco!")
+            MsgBox("Digite o nome da marca do barco!", vbInformation)
             txtmarca.Focus()
         ElseIf txtmodelo.Text = "" Then
-            MsgBox("Digite o nome do modelo!")
+            MsgBox("Digite o nome do modelo!", vbInformation)
             txtmodelo.Focus()
         ElseIf txtfabricacao.Text = "" Then
-            MsgBox("Digite o nome do ano de fabricação!")
+            MsgBox("Digite o nome do ano de fabricação!", vbInformation)
             txtfabricacao.Focus()
         ElseIf txtcliente.Text = "" Then
-            MsgBox("Digite o código do cliente!")
+            MsgBox("Digite o código do cliente!", vbInformation)
             txtcliente.Focus()
         ElseIf txtmarina.Text = "" Then
-            MsgBox("Digite o código da marina!")
+            MsgBox("Digite o código da marina!", vbInformation)
             txtmarina.Focus()
         Else
             objEmb.Codigo = Val(txtcodigo.Text)
@@ -183,4 +183,6 @@
     Private Sub txtmodelo_TextChanged(sender As Object, e As EventArgs) Handles txtmodelo.TextChanged
 
     End Sub
+
+    
 End Class

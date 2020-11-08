@@ -32,13 +32,13 @@
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
 
         If txtnom.Text = "" Then
-            MsgBox("Digite o nome da empresa!")
+            MsgBox("Digite o nome da empresa!", vbInformation)
             txtnom.Focus()
         ElseIf txttel.Text = "" Then
-            MsgBox("Digite o telefone de contato da empresa!")
+            MsgBox("Digite o telefone de contato da empresa!", vbInformation)
             txttel.Focus()
         ElseIf txtven.Text = "" Then
-            MsgBox("Digite o nome do vendedor que atendeu a Lonas Timoneiro!")
+            MsgBox("Digite o nome do vendedor que atendeu a Lonas Timoneiro!", vbInformation)
             txtven.Focus()
         ElseIf mskCnpj.Text = "  .   .   /    -" Then
             MsgBox("Digite o CNPJ do Fornecedor!", vbInformation)

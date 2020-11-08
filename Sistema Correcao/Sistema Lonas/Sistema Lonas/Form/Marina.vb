@@ -29,26 +29,26 @@
 
     Private Sub BtnGra_Click(sender As Object, e As EventArgs) Handles BtnGra.Click
         If txtnomeE.Text = "" Then
-            MsgBox("Digite o nome da marina!")
+            MsgBox("Digite o nome da marina!", vbInformation)
             txtnomeE.Focus()
+        ElseIf TxtCep.Text = "     -" Then
+            MsgBox("Digite o CEP da marina!", vbInformation)
+            TxtCep.Focus()
         ElseIf txtEnde.Text = "" Then
-            MsgBox("Digite o endereço da marina!")
+            MsgBox("Digite o endereço da marina!", vbInformation)
             txtEnde.Focus()
         ElseIf txtbairro.Text = "" Then
-            MsgBox("Digite o bairro da marina!")
+            MsgBox("Digite o bairro da marina!", vbInformation)
             txtbairro.Focus()
         ElseIf txtcomp.Text = "" Then
-            MsgBox("Digite o complemento da marina!")
+            MsgBox("Digite o complemento da marina!", vbInformation)
             txtcomp.Focus()
         ElseIf txtcidade.Text = "" Then
-            MsgBox("Digite a cidade da marina!")
+            MsgBox("Digite a cidade da marina!", vbInformation)
             txtcidade.Focus()
         ElseIf txtestado.Text = "" Then
-            MsgBox("Digite o estado da marina!")
+            MsgBox("Digite o estado da marina!", vbInformation)
             txtestado.Focus()
-        ElseIf txtcep.Text = "" Then
-            MsgBox("Digite o CEP da marina!")
-            txtcep.Focus()
 
         Else
 
@@ -63,12 +63,12 @@
 
             objmar.Gravar(novo)
             txtcodigo.Text = objmar.Codigo
-
+            btnConsultarCep.Enabled = False
             objControle.habilitar_tela(Me, False)
             objControle.habilitar_botoes(Me, True)
             btnConsultarCep.Enabled = False
         End If
-        btnConsultarCep.Enabled = False
+
 
     End Sub
 
@@ -135,6 +135,7 @@
         txtestado.Enabled = False
         txtcidade.Enabled = False
         txtcodigo.Enabled = False
+        btnConsultarCep.Enabled = True
         txtnomeE.Focus()
         GrpLoc.Visible = False
         novo = False
