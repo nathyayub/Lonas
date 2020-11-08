@@ -57,7 +57,7 @@
     Public Function Localizar_porData(ini As Date, fin As Date) As DataTable
         Dim objds As New DataSet
 
-        Dim objda = (New OleDb.OleDbDataAdapter("RelatorioSaidaMat", objbanco.objcon))
+        Dim objda = (New OleDb.OleDbDataAdapter("RelatSaidaMat", objbanco.objcon))
         objda.SelectCommand.CommandType = CommandType.StoredProcedure
         objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo1", OleDb.OleDbType.Date))
         objda.SelectCommand.Parameters.Add(New OleDb.OleDbParameter("campo2", OleDb.OleDbType.Date))
