@@ -5,10 +5,6 @@ Imports System.Text
 
 Public Class FrmMenu
 
-
-
-
-
     Private Sub FrmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             Dim DtsDolar As String
@@ -249,5 +245,10 @@ Public Class FrmMenu
 
     Private Sub AjudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AjudaToolStripMenuItem.Click
         Process.Start("Ajuda.pdf")
+    End Sub
+
+    Private Sub FornecedorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FornecedorToolStripMenuItem.Click
+        ConsultaFornecedor.Show()
+        ConsultaFornecedor.MdiParent = Me
     End Sub
 End Class

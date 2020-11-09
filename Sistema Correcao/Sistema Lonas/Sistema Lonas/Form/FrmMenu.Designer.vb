@@ -97,6 +97,7 @@ Partial Class FrmMenu
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.FornecedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -367,7 +368,7 @@ Partial Class FrmMenu
         'ConsultasToolStripMenuItem
         '
         resources.ApplyResources(Me.ConsultasToolStripMenuItem, "ConsultasToolStripMenuItem")
-        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.DespesasToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.FuncionariosToolStripMenuItem, Me.EstoqueToolStripMenuItem1})
+        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.FornecedorToolStripMenuItem, Me.EstoqueToolStripMenuItem1, Me.DespesasToolStripMenuItem, Me.FuncionariosToolStripMenuItem})
         Me.ConsultasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem"
         '
@@ -559,6 +560,11 @@ Partial Class FrmMenu
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Name = "Label5"
         '
+        'FornecedorToolStripMenuItem
+        '
+        resources.ApplyResources(Me.FornecedorToolStripMenuItem, "FornecedorToolStripMenuItem")
+        Me.FornecedorToolStripMenuItem.Name = "FornecedorToolStripMenuItem"
+        '
         'FrmMenu
         '
         resources.ApplyResources(Me, "$this")
@@ -665,5 +671,6 @@ Partial Class FrmMenu
     Friend WithEvents PedidosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PedidoPorDataToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AjudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FornecedorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
