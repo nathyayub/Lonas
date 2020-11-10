@@ -30,6 +30,11 @@ Partial Class ConsultaPedidoPorData
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnimprimir = New System.Windows.Forms.Button()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,9 +44,10 @@ Partial Class ConsultaPedidoPorData
         Me.DgdGrade.AllowUserToDeleteRows = False
         Me.DgdGrade.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DgdGrade.Location = New System.Drawing.Point(24, 69)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(1040, 535)
@@ -52,7 +58,7 @@ Partial Class ConsultaPedidoPorData
         Me.DtpFin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtpFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DtpFin.Location = New System.Drawing.Point(497, 22)
-        Me.DtpFin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DtpFin.Margin = New System.Windows.Forms.Padding(4)
         Me.DtpFin.Name = "DtpFin"
         Me.DtpFin.Size = New System.Drawing.Size(135, 30)
         Me.DtpFin.TabIndex = 23
@@ -62,7 +68,7 @@ Partial Class ConsultaPedidoPorData
         Me.DtpIni.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DtpIni.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DtpIni.Location = New System.Drawing.Point(177, 18)
-        Me.DtpIni.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DtpIni.Margin = New System.Windows.Forms.Padding(4)
         Me.DtpIni.Name = "DtpIni"
         Me.DtpIni.Size = New System.Drawing.Size(135, 30)
         Me.DtpIni.TabIndex = 22
@@ -77,7 +83,7 @@ Partial Class ConsultaPedidoPorData
         Me.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnok.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnok.Location = New System.Drawing.Point(732, 11)
-        Me.btnok.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnok.Margin = New System.Windows.Forms.Padding(4)
         Me.btnok.Name = "btnok"
         Me.btnok.Size = New System.Drawing.Size(151, 49)
         Me.btnok.TabIndex = 21
@@ -118,12 +124,47 @@ Partial Class ConsultaPedidoPorData
         Me.btnimprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnimprimir.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnimprimir.Location = New System.Drawing.Point(913, 12)
-        Me.btnimprimir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnimprimir.Margin = New System.Windows.Forms.Padding(4)
         Me.btnimprimir.Name = "btnimprimir"
         Me.btnimprimir.Size = New System.Drawing.Size(151, 49)
         Me.btnimprimir.TabIndex = 25
         Me.btnimprimir.Text = "Imprimir"
         Me.btnimprimir.UseVisualStyleBackColor = False
+        '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "codped"
+        Me.Column1.HeaderText = "Código do Pedido"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 136
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "nomcli"
+        Me.Column2.HeaderText = "Cliente"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 80
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "valpedtot"
+        Me.Column3.HeaderText = "Valor do Pedido"
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 127
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "dataped"
+        Me.Column4.HeaderText = "Data do Pedido"
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 124
+        '
+        'Column5
+        '
+        Me.Column5.DataPropertyName = "pedido"
+        Me.Column5.HeaderText = "Pedido"
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 81
         '
         'ConsultaPedidoPorData
         '
@@ -139,7 +180,7 @@ Partial Class ConsultaPedidoPorData
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ConsultaPedidoPorData"
         Me.Text = "Consulta de Pedido por Data"
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).EndInit()
@@ -154,4 +195,9 @@ Partial Class ConsultaPedidoPorData
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnimprimir As System.Windows.Forms.Button
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

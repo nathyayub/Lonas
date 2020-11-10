@@ -108,6 +108,7 @@
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
         GrpDat.Enabled = True
+        GrpLoc.Visible = False
         TxtCod.Enabled = False
         txtnomcli.Enabled = False
         txtcodemb.Enabled = False

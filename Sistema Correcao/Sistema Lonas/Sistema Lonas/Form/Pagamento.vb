@@ -80,6 +80,7 @@
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
         objControle.habilitar_tela(Me, False)
         objControle.habilitar_botoes(Me, False)
+        GrpLoc.Visible = False
         btnverificar.Enabled = True
         dtpvenc.Enabled = True
         chbrec.Enabled = True

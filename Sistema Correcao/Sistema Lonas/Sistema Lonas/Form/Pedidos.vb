@@ -127,6 +127,7 @@
         TxtCli.Enabled = False
         TxtCodCli.Enabled = False
         GroupBox1.Enabled = True
+        GrpLoc.Visible = False
         DtaMax.Enabled = True
         DtaMin.Enabled = True
         TxtCodCli.Focus()

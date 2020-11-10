@@ -84,6 +84,7 @@
         objControle.habilitar_tela(Me, True)
         objControle.habilitar_botoes(Me, False)
         TxtCod.Enabled = False
+        GrpLoc.Visible = False
         TxtNom.Focus()
         novo = False
     End Sub
