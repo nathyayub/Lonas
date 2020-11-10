@@ -67,6 +67,7 @@
             objControle.Limpar_tela(Me)
             BtnExc.Enabled = False
             BtnAlt.Enabled = False
+            TxtPag.Text = ""
         End If
     End Sub
 

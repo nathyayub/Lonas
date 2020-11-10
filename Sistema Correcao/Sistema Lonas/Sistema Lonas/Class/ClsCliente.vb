@@ -132,6 +132,7 @@
         End If
     End Sub
     Public Function Excluir(chave As Integer) As Boolean
+
         If MessageBox.Show("Deseja excluir?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
             sql = "Delete from tabcliente where codcli=" & chave
             objbanco.executar_comando(sql)

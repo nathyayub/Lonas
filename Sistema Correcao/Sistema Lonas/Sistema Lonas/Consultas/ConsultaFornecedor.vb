@@ -2,8 +2,9 @@
     Dim objFor As New ClsFornecedor
     Public quemChamou As String = ""
     Dim objdtLimpo As New DataTable
-    Private Sub ConsultaFornecedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub ConsultaFornecedor_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Me.Top = 0
+        Me.Left = 0
     End Sub
 
     Private Sub TxtCampo_TextChanged(sender As Object, e As EventArgs) Handles TxtCampo.TextChanged

@@ -113,11 +113,15 @@
     End Sub
 
     Private Sub BtnExc_Click(sender As Object, e As EventArgs) Handles BtnExc.Click
-        If objPed.Excluir(TxtCod.Text) = True Then
-            objControle.Limpar_tela(Me)
-            BtnExc.Enabled = False
-            BtnAlt.Enabled = False
-        End If
+        Try
+            If objPed.Excluir(TxtCod.Text) = True Then
+                objControle.Limpar_tela(Me)
+                BtnExc.Enabled = False
+                BtnAlt.Enabled = False
+            End If
+        Catch ex As Exception
+            MsgBox("Você não pode excluir um pedido pois já tem registro de pagamento", vbInformation)
+        End Try
     End Sub
 
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click

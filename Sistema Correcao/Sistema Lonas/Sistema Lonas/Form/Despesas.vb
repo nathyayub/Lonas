@@ -77,5 +77,17 @@
         TxtNom.Text = objDesp.Nome
 
     End Sub
+    Private Sub BtnAlt_Click_1(sender As Object, e As EventArgs) Handles BtnAlt.Click
+        objControle.habilitar_tela(Me, True)
+        objControle.habilitar_botoes(Me, False)
+        GrpLoc.Visible = False
+        TxtCod.Enabled = False
+        TxtNom.Focus()
+        GrpLoc.Visible = False
+        novo = False
+    End Sub
 
+    Private Sub BtnAlt_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

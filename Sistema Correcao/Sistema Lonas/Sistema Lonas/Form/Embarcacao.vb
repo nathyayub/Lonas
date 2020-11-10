@@ -69,12 +69,15 @@
         End If
     End Sub
     Private Sub BtnExc_Click(sender As Object, e As EventArgs) Handles BtnExc.Click
-        If objEmb.Excluir(txtcodigo.Text) = True Then
-            objControle.Limpar_tela(Me)
-            BtnExc.Enabled = False
-            BtnAlt.Enabled = False
-        End If
-
+        Try
+            If objEmb.Excluir(txtcodigo.Text) = True Then
+                objControle.Limpar_tela(Me)
+                BtnExc.Enabled = False
+                BtnAlt.Enabled = False
+            End If
+        Catch ex As Exception
+            MsgBox("Você não pode excluir essa embarcação devido ela ter um pedidos registrados", vbInformation)
+        End Try
     End Sub
     Private Sub BtnAlt_Click(sender As Object, e As EventArgs) Handles BtnAlt.Click
         objControle.habilitar_tela(Me, True)

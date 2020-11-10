@@ -36,6 +36,7 @@ Partial Class Despesas
         Me.Label9 = New System.Windows.Forms.Label()
         Me.BtnOK = New System.Windows.Forms.Button()
         Me.TxtLoc = New System.Windows.Forms.TextBox()
+        Me.BtnAlt = New System.Windows.Forms.Button()
         Me.GrpLoc.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -88,7 +89,7 @@ Partial Class Despesas
         Me.BtnSai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnSai.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSai.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSai.Location = New System.Drawing.Point(322, 223)
+        Me.BtnSai.Location = New System.Drawing.Point(322, 272)
         Me.BtnSai.Name = "BtnSai"
         Me.BtnSai.Size = New System.Drawing.Size(124, 43)
         Me.BtnSai.TabIndex = 6
@@ -142,7 +143,7 @@ Partial Class Despesas
         Me.BtnCan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BtnCan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCan.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCan.Location = New System.Drawing.Point(322, 171)
+        Me.BtnCan.Location = New System.Drawing.Point(322, 220)
         Me.BtnCan.Name = "BtnCan"
         Me.BtnCan.Size = New System.Drawing.Size(124, 46)
         Me.BtnCan.TabIndex = 5
@@ -209,12 +210,32 @@ Partial Class Despesas
         Me.TxtLoc.Size = New System.Drawing.Size(138, 26)
         Me.TxtLoc.TabIndex = 0
         '
+        'BtnAlt
+        '
+        Me.BtnAlt.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnAlt.BackColor = System.Drawing.Color.Silver
+        Me.BtnAlt.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.BtnAlt.FlatAppearance.BorderSize = 2
+        Me.BtnAlt.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnAlt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnAlt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BtnAlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAlt.Font = New System.Drawing.Font("Times New Roman", 15.0!)
+        Me.BtnAlt.ForeColor = System.Drawing.Color.Black
+        Me.BtnAlt.Location = New System.Drawing.Point(322, 171)
+        Me.BtnAlt.Name = "BtnAlt"
+        Me.BtnAlt.Size = New System.Drawing.Size(124, 43)
+        Me.BtnAlt.TabIndex = 128
+        Me.BtnAlt.Text = "&Alterar"
+        Me.BtnAlt.UseVisualStyleBackColor = False
+        '
         'Despesas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Brown
-        Me.ClientSize = New System.Drawing.Size(458, 283)
+        Me.ClientSize = New System.Drawing.Size(458, 330)
+        Me.Controls.Add(Me.BtnAlt)
         Me.Controls.Add(Me.GrpLoc)
         Me.Controls.Add(Me.BtnCan)
         Me.Controls.Add(Me.BtnLoc)
@@ -247,4 +268,5 @@ Partial Class Despesas
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents BtnOK As System.Windows.Forms.Button
     Friend WithEvents TxtLoc As System.Windows.Forms.TextBox
+    Friend WithEvents BtnAlt As System.Windows.Forms.Button
 End Class

@@ -30,7 +30,7 @@
             sql = "select max(Codigo) as codigo from TabDespesa"
             m_cod = objbanco.buscar_ultimoRegistro(sql)
         Else
-            sql = "Update tabcliente set Nome='" & m_nome & "' where codigo=" & m_cod
+            sql = "Update TabDespesa set Nome='" & m_nome & "' where codigo=" & m_cod
             objbanco.executar_comando(sql)
         End If
 
@@ -107,7 +107,6 @@
         Return objds.Tables(0)
 
     End Function
-
     Private Sub mostrar_DadosVindosDoBanco()
         m_cod = objdtLocal.Rows(0).Item(0)
         m_nome = objdtLocal.Rows(0).Item(1)

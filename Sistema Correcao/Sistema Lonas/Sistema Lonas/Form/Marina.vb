@@ -117,11 +117,15 @@
     End Sub
 
     Private Sub BtnExc_Click(sender As Object, e As EventArgs) Handles BtnExc.Click
-        If objmar.Excluir(txtcodigo.Text) = True Then
-            objControle.Limpar_tela(Me)
-            BtnExc.Enabled = False
-            BtnAlt.Enabled = False
-        End If
+        Try
+            If objmar.Excluir(txtcodigo.Text) = True Then
+                objControle.Limpar_tela(Me)
+                BtnExc.Enabled = False
+                BtnAlt.Enabled = False
+            End If
+        Catch ex As Exception
+            MsgBox("Você não pode excluir um Marina pois já tem embarcações registrados nela", vbInformation)
+        End Try
     End Sub
 
 

@@ -368,7 +368,7 @@ Partial Class FrmMenu
         'ConsultasToolStripMenuItem
         '
         resources.ApplyResources(Me.ConsultasToolStripMenuItem, "ConsultasToolStripMenuItem")
-        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.FornecedorToolStripMenuItem, Me.EstoqueToolStripMenuItem1, Me.DespesasToolStripMenuItem, Me.FuncionariosToolStripMenuItem})
+        Me.ConsultasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.MarinaToolStripMenuItem, Me.EmbarcaçãoToolStripMenuItem, Me.AgendamentoMediçãoToolStripMenuItem, Me.PedidoToolStripMenuItem, Me.EstoqueToolStripMenuItem1, Me.DespesasToolStripMenuItem, Me.FornecedorToolStripMenuItem, Me.FuncionariosToolStripMenuItem})
         Me.ConsultasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ConsultasToolStripMenuItem.Name = "ConsultasToolStripMenuItem"
         '
