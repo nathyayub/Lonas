@@ -117,8 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;TextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ToolStripButton5.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;LblCodCli.Name" xml:space="preserve">
     <value>LblCodCli</value>
@@ -126,7 +127,6 @@
   <data name="&gt;&gt;lbleuro.Name" xml:space="preserve">
     <value>lbleuro</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="EstoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>306, 36</value>
   </data>
@@ -135,6 +135,9 @@
   </data>
   <data name="ToolStripButton3.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
+    <value>Panel2</value>
   </data>
   <data name="&gt;&gt;TxtEuro.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -156,6 +159,9 @@
   </data>
   <data name="&gt;&gt;ToolStripButton9.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator3.Name" xml:space="preserve">
+    <value>ToolStripSeparator3</value>
   </data>
   <data name="&gt;&gt;ToolStripSeparator8.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -180,9 +186,6 @@
   </data>
   <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 18</value>
-  </data>
-  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
-    <value>Label3</value>
   </data>
   <data name="ToolStrip1.Text" xml:space="preserve">
     <value>ToolStrip1</value>
@@ -209,6 +212,9 @@
   <data name="&gt;&gt;ToolStripButton3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lbleuro.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="ToolStripButton12.Text" xml:space="preserve">
     <value>Logo</value>
   </data>
@@ -223,9 +229,6 @@
   </data>
   <data name="TooMarina.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 60</value>
-  </data>
-  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
-    <value>grbcotacao</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -261,6 +264,9 @@
   <data name="MenuStrip1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 12pt</value>
   </data>
+  <data name="&gt;&gt;lbleuro.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
@@ -282,8 +288,8 @@
   <data name="&gt;&gt;TxtDolarCota.Parent" xml:space="preserve">
     <value>Panel2</value>
   </data>
-  <data name="RelátorioPedidoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 24</value>
+  <data name="&gt;&gt;TextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ToolStripButton10.Name" xml:space="preserve">
     <value>ToolStripButton10</value>
@@ -312,14 +318,17 @@
   <data name="ToolStripButton12.Size" type="System.Drawing.Size, System.Drawing">
     <value>498, 143</value>
   </data>
-  <data name="lblvalordolar.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;Label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ToolStripSplitButton1.Name" xml:space="preserve">
     <value>ToolStripSplitButton1</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButton12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 7</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>963, 614</value>
@@ -348,46 +357,8 @@
   <data name="&gt;&gt;TextBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ToolStripButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="LblCodCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 26</value>
   </data>
   <data name="&gt;&gt;Label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -485,9 +456,6 @@
   <data name="&gt;&gt;ToolStripButton5.Name" xml:space="preserve">
     <value>ToolStripButton5</value>
   </data>
-  <data name="&gt;&gt;txtDolar.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
   <data name="&gt;&gt;ToolStripSeparator4.Name" xml:space="preserve">
     <value>ToolStripSeparator4</value>
   </data>
@@ -496,9 +464,6 @@
   </data>
   <data name="PedidoPorDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 24</value>
-  </data>
-  <data name="RelátorioEmbacaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 24</value>
   </data>
   <data name="&gt;&gt;ToolStripSeparator11.Name" xml:space="preserve">
     <value>ToolStripSeparator11</value>
@@ -545,6 +510,9 @@
   <data name="AgendamentoMediçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 24</value>
   </data>
+  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
   <data name="&gt;&gt;PedidosToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -559,6 +527,9 @@
   </data>
   <data name="&gt;&gt;ToolStripSeparator12.Name" xml:space="preserve">
     <value>ToolStripSeparator12</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButton6.Name" xml:space="preserve">
+    <value>ToolStripButton6</value>
   </data>
   <data name="lbleuro.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -629,9 +600,6 @@
   <data name="ToolStripButton4.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="grbcotacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>955, 899</value>
-  </data>
   <data name="&gt;&gt;ToolStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -643,6 +611,9 @@
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="txtDolar.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
   </data>
   <data name="ToolStripButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>503, 60</value>
@@ -668,14 +639,8 @@
   <data name="RelátorioAgendamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 24</value>
   </data>
-  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;EstoqueToolStripMenuItem1.Name" xml:space="preserve">
     <value>EstoqueToolStripMenuItem1</value>
-  </data>
-  <data name="ToolStripButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>503, 60</value>
   </data>
   <data name="ToolStripSeparator10.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
@@ -698,11 +663,11 @@
   <data name="ToolStripButton12.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
+  <data name="&gt;&gt;RelátorioGeralDeClienteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;PedidoPorDataToolStripMenuItem.Name" xml:space="preserve">
     <value>PedidoPorDataToolStripMenuItem</value>
-  </data>
-  <data name="RelatorioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 23</value>
   </data>
   <data name="&gt;&gt;TxtEuro.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -734,8 +699,8 @@
   <data name="ToolStripSeparator11.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
   </data>
-  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="ToolStripButton11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 60</value>
   </data>
   <data name="&gt;&gt;EvolucaçãoProdutoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -748,6 +713,9 @@
   </data>
   <data name="&gt;&gt;TextBox2.Parent" xml:space="preserve">
     <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;RelátorioGeralDeClienteToolStripMenuItem.Name" xml:space="preserve">
+    <value>RelátorioGeralDeClienteToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;lbleuro.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -767,14 +735,11 @@
   <data name="ClienteToolStripMenuItem.Text" xml:space="preserve">
     <value>Cliente</value>
   </data>
-  <data name="ToolStrip1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 12pt</value>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TxtEuro.Name" xml:space="preserve">
     <value>TxtEuro</value>
-  </data>
-  <data name="lbldolar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
   </data>
   <data name="&gt;&gt;ToolStripSeparator12.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -802,6 +767,9 @@
   </data>
   <data name="ToolStripButton2.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
   </data>
   <data name="ToolStripButton9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -913,6 +881,9 @@
   <data name="&gt;&gt;ToolStripButton1.Name" xml:space="preserve">
     <value>ToolStripButton1</value>
   </data>
+  <data name="&gt;&gt;SaídaDeMateriaisToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;ToolStripButton1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -922,14 +893,17 @@
   <data name="ToolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
   </data>
+  <data name="AjudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
   <data name="RelátorioMateriasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 24</value>
   </data>
+  <data name="ToolStripButton10.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
   <data name="&gt;&gt;PedidoPorDataToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FornecedorToolStripMenuItem.Name" xml:space="preserve">
-    <value>FornecedorToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;grbcotacao.Parent" xml:space="preserve">
     <value>$this</value>
@@ -940,14 +914,58 @@
   <data name="RelátorioClienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 24</value>
   </data>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;ToolStripSeparator4.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ClienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 24</value>
   </data>
-  <data name="ToolStripButton11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 60</value>
+  <data name="ToolStripButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
   <data name="&gt;&gt;ToolStripSeparator11.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1129,26 +1147,17 @@
   <data name="&gt;&gt;ToolStripSeparator5.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ToolStripButton5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;TextBox2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;ToolStripButton12.Name" xml:space="preserve">
     <value>ToolStripButton12</value>
   </data>
-  <data name="&gt;&gt;ToolStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ToolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>511, 934</value>
-  </data>
   <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="&gt;&gt;TextBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ConsultasToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1171,8 +1180,8 @@
   <data name="GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 777</value>
   </data>
-  <data name="ToolStripButton1.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>LimeGreen</value>
+  <data name="ToolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>511, 934</value>
   </data>
   <data name="&gt;&gt;lbldolar.Name" xml:space="preserve">
     <value>lbldolar</value>
@@ -1242,6 +1251,9 @@
   <data name="&gt;&gt;RelátorioPedidoToolStripMenuItem.Name" xml:space="preserve">
     <value>RelátorioPedidoToolStripMenuItem</value>
   </data>
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
   <data name="ToolStripSeparator6.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
   </data>
@@ -1251,14 +1263,11 @@
   <data name="TextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
   </data>
-  <data name="lbldolar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
   <data name="&gt;&gt;EvolucaçãoProdutoToolStripMenuItem.Name" xml:space="preserve">
     <value>EvolucaçãoProdutoToolStripMenuItem</value>
   </data>
-  <data name="ToolStripButton5.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="RelátorioPedidoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 24</value>
   </data>
   <data name="EvolucaçãoProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>201, 24</value>
@@ -1274,6 +1283,9 @@
   </data>
   <data name="&gt;&gt;RelátorioGeralDeEmbarcaçãoToolStripMenuItem.Name" xml:space="preserve">
     <value>RelátorioGeralDeEmbarcaçãoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;txtEuroCota.Parent" xml:space="preserve">
+    <value>Panel2</value>
   </data>
   <data name="lbldolar.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1332,11 +1344,14 @@
   <data name="SairToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 23</value>
   </data>
-  <data name="&gt;&gt;ToolStripButton6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmMenu</value>
+  </data>
+  <data name="&gt;&gt;lbldolar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ToolStripSeparator13.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
@@ -1353,8 +1368,8 @@
   <data name="ToolStripButton3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 20.25pt</value>
   </data>
-  <data name="LblCodCli.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 26</value>
+  <data name="lbldolar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label7.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -1368,32 +1383,32 @@
   <data name="&gt;&gt;RelátorioGeralDePedidosToolStripMenuItem.Name" xml:space="preserve">
     <value>RelátorioGeralDePedidosToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;TxtEuro.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
+  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="ToolStripSplitButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 60</value>
   </data>
-  <data name="RelátorioGeralDePedidosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 24</value>
+  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripButton1.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>LimeGreen</value>
+  </data>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
+    <value>HelpToolStripMenuItem</value>
   </data>
   <data name="EntradaDeMaterialToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>306, 36</value>
   </data>
-  <data name="&gt;&gt;SaídaDeMaterialToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PedidoToolStripMenuItem.Name" xml:space="preserve">
-    <value>PedidoToolStripMenuItem</value>
+  <data name="&gt;&gt;ToolStripButton5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ToolStripSeparator12.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
   </data>
   <data name="&gt;&gt;ToolStripButton8.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ToolStripSeparator2.Name" xml:space="preserve">
-    <value>ToolStripSeparator2</value>
   </data>
   <data name="ToolStripButton5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 20.25pt</value>
@@ -1403,9 +1418,6 @@
   </data>
   <data name="ToolStripButton10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 20.25pt</value>
-  </data>
-  <data name="FornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 24</value>
   </data>
   <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1284, 27</value>
@@ -1425,8 +1437,8 @@
   <data name="&gt;&gt;RelátorioDeDespesasPorDataToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ToolStripButton12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="grbcotacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>955, 899</value>
   </data>
   <data name="RelátorioMateriaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 24</value>
@@ -1434,8 +1446,8 @@
   <data name="&gt;&gt;lbldolar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;PedidoToolStripMenuItem.Name" xml:space="preserve">
+    <value>PedidoToolStripMenuItem</value>
   </data>
   <data name="TextBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>87, 16</value>
@@ -1458,11 +1470,11 @@
   <data name="ToolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
   </data>
-  <data name="txtDolar.TabIndex" type="System.Int32, mscorlib">
-    <value>115</value>
+  <data name="&gt;&gt;txtDolar.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
   </data>
-  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 7</value>
+  <data name="&gt;&gt;ToolStripSeparator2.Name" xml:space="preserve">
+    <value>ToolStripSeparator2</value>
   </data>
   <data name="lbleuro.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -1476,14 +1488,11 @@
   <data name="&gt;&gt;Label7.Name" xml:space="preserve">
     <value>Label7</value>
   </data>
-  <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
-    <value>HelpToolStripMenuItem</value>
+  <data name="RelátorioGeralDePedidosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 24</value>
   </data>
   <data name="ToolStripButton10.Size" type="System.Drawing.Size, System.Drawing">
     <value>503, 60</value>
-  </data>
-  <data name="ToolStripButton6.Text" xml:space="preserve">
-    <value>Pedidos</value>
   </data>
   <data name="&gt;&gt;EntradaDeMaterialToolStripMenuItem.Name" xml:space="preserve">
     <value>EntradaDeMaterialToolStripMenuItem</value>
@@ -1497,23 +1506,17 @@
   <data name="&gt;&gt;RelátorioEmbacaçãoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PedidoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;ToolStripSeparator10.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblvalordolar.Parent" xml:space="preserve">
-    <value>grbcotacao</value>
   </data>
   <data name="&gt;&gt;Label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ToolStripSeparator3.Name" xml:space="preserve">
-    <value>ToolStripSeparator3</value>
+  <data name="&gt;&gt;ToolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtEuroCota.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;PedidoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblvalordolar.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1524,8 +1527,8 @@
   <data name="ToolStripButton6.Size" type="System.Drawing.Size, System.Drawing">
     <value>503, 60</value>
   </data>
-  <data name="ToolStripButton10.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>grbcotacao</value>
   </data>
   <data name="&gt;&gt;PedidoPorDataToolStripMenuItem1.Name" xml:space="preserve">
     <value>PedidoPorDataToolStripMenuItem1</value>
@@ -1599,9 +1602,6 @@
   <data name="ToolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>508, 6</value>
   </data>
-  <data name="ToolStripButton4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 20.25pt</value>
-  </data>
   <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 2, 0, 2</value>
   </data>
@@ -1610,9 +1610,6 @@
   </data>
   <data name="RelátorioFornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 24</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
-    <value>GroupBox1</value>
   </data>
   <data name="&gt;&gt;SairToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1629,14 +1626,14 @@
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 26</value>
   </data>
-  <data name="RelátorioEstoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 24</value>
+  <data name="&gt;&gt;TxtEuro.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
   </data>
-  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="lbldolar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
   </data>
-  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
-    <value>Label8</value>
+  <data name="&gt;&gt;FornecedorToolStripMenuItem.Name" xml:space="preserve">
+    <value>FornecedorToolStripMenuItem</value>
   </data>
   <data name="ToolStripButton7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1731,23 +1728,23 @@
   <data name="ToolStripButton7.Size" type="System.Drawing.Size, System.Drawing">
     <value>503, 60</value>
   </data>
+  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 18</value>
+  </data>
   <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
   </data>
-  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
-    <value>Label2</value>
+  <data name="&gt;&gt;ToolStripButton6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Label8.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
   </data>
   <data name="MarinaToolStripMenuItem.Text" xml:space="preserve">
     <value>Marina</value>
-  </data>
-  <data name="&gt;&gt;CadastroDeMateriaisToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ToolStripButton6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1821,6 +1818,9 @@
   <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="grbcotacao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="grbcotacao.Size" type="System.Drawing.Size, System.Drawing">
     <value>329, 62</value>
   </data>
@@ -1836,11 +1836,11 @@
   <data name="RelatorioToolStripMenuItem.Text" xml:space="preserve">
     <value>Relatorio</value>
   </data>
-  <data name="&gt;&gt;lbldolar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ToolStripButton6.Text" xml:space="preserve">
+    <value>Pedidos</value>
   </data>
-  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="FornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 24</value>
   </data>
   <data name="txtEuroCota.Location" type="System.Drawing.Point, System.Drawing">
     <value>250, 47</value>
@@ -1872,23 +1872,23 @@
   <data name="&gt;&gt;ToolStripSeparator7.Name" xml:space="preserve">
     <value>ToolStripSeparator7</value>
   </data>
-  <data name="&gt;&gt;SaídaDeMateriaisToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="AgendamentoMediçãoToolStripMenuItem.Text" xml:space="preserve">
     <value>Agendamento-Medição</value>
   </data>
-  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ToolStripButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 60</value>
   </data>
-  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
-    <value>Panel2</value>
+  <data name="&gt;&gt;lblvalordolar.Parent" xml:space="preserve">
+    <value>grbcotacao</value>
   </data>
-  <data name="&gt;&gt;RelátorioGeralDeClienteToolStripMenuItem.Name" xml:space="preserve">
-    <value>RelátorioGeralDeClienteToolStripMenuItem</value>
+  <data name="RelátorioEstoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 24</value>
   </data>
-  <data name="&gt;&gt;ToolStripButton6.Name" xml:space="preserve">
-    <value>ToolStripButton6</value>
+  <data name="&gt;&gt;SaídaDeMaterialToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ToolStripButton8.Text" xml:space="preserve">
     <value>Embarcação</value>
@@ -2211,11 +2211,11 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="AjudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 24</value>
+  <data name="lblvalordolar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="grbcotacao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
   </data>
   <data name="&gt;&gt;Label5.Name" xml:space="preserve">
     <value>Label5</value>
@@ -2253,17 +2253,17 @@
         jB7xAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ToolStripButton4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 20.25pt</value>
   </data>
   <data name="PedidoPorDataToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 30</value>
   </data>
-  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
+  <data name="RelatorioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
   </data>
-  <data name="lbleuro.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="PedidosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 30</value>
@@ -2310,8 +2310,8 @@
   <data name="&gt;&gt;RelátorioFornecedorToolStripMenuItem.Name" xml:space="preserve">
     <value>RelátorioFornecedorToolStripMenuItem</value>
   </data>
-  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 18</value>
+  <data name="RelátorioEmbacaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 24</value>
   </data>
   <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -2325,7 +2325,7 @@
   <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;RelátorioGeralDeClienteToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;CadastroDeMateriaisToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtEuroCota.TabIndex" type="System.Int32, mscorlib">
@@ -2340,8 +2340,8 @@
   <data name="&gt;&gt;txtDolar.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;lbleuro.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="ToolStrip1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt</value>
   </data>
   <data name="ToolStripButton3.Text" xml:space="preserve">
     <value>Agendamentos</value>

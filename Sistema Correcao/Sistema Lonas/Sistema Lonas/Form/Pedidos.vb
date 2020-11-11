@@ -144,7 +144,7 @@
     End Sub
 
     Private Sub CboVdo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CboPed.SelectedIndexChanged
-        Me.Text = CboPed.SelectedValue
+
     End Sub
 
     Private Sub TxtCodCli_Validated(sender As Object, e As EventArgs)

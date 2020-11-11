@@ -66,14 +66,15 @@ Partial Class FrmMenu
         Me.ConsultasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MarinaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmbarcaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgendamentoMediçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PedidoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PedidosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PedidoPorDataToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EmbarcaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EstoqueToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DespesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FornecedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FuncionariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelatorioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RelátorioEmbacaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -97,7 +98,6 @@ Partial Class FrmMenu
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.FornecedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         Me.grbcotacao.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -382,6 +382,11 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.MarinaToolStripMenuItem, "MarinaToolStripMenuItem")
         Me.MarinaToolStripMenuItem.Name = "MarinaToolStripMenuItem"
         '
+        'EmbarcaçãoToolStripMenuItem
+        '
+        resources.ApplyResources(Me.EmbarcaçãoToolStripMenuItem, "EmbarcaçãoToolStripMenuItem")
+        Me.EmbarcaçãoToolStripMenuItem.Name = "EmbarcaçãoToolStripMenuItem"
+        '
         'AgendamentoMediçãoToolStripMenuItem
         '
         resources.ApplyResources(Me.AgendamentoMediçãoToolStripMenuItem, "AgendamentoMediçãoToolStripMenuItem")
@@ -403,25 +408,25 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.PedidoPorDataToolStripMenuItem1, "PedidoPorDataToolStripMenuItem1")
         Me.PedidoPorDataToolStripMenuItem1.Name = "PedidoPorDataToolStripMenuItem1"
         '
+        'EstoqueToolStripMenuItem1
+        '
+        resources.ApplyResources(Me.EstoqueToolStripMenuItem1, "EstoqueToolStripMenuItem1")
+        Me.EstoqueToolStripMenuItem1.Name = "EstoqueToolStripMenuItem1"
+        '
         'DespesasToolStripMenuItem
         '
         resources.ApplyResources(Me.DespesasToolStripMenuItem, "DespesasToolStripMenuItem")
         Me.DespesasToolStripMenuItem.Name = "DespesasToolStripMenuItem"
         '
-        'EmbarcaçãoToolStripMenuItem
+        'FornecedorToolStripMenuItem
         '
-        resources.ApplyResources(Me.EmbarcaçãoToolStripMenuItem, "EmbarcaçãoToolStripMenuItem")
-        Me.EmbarcaçãoToolStripMenuItem.Name = "EmbarcaçãoToolStripMenuItem"
+        resources.ApplyResources(Me.FornecedorToolStripMenuItem, "FornecedorToolStripMenuItem")
+        Me.FornecedorToolStripMenuItem.Name = "FornecedorToolStripMenuItem"
         '
         'FuncionariosToolStripMenuItem
         '
         resources.ApplyResources(Me.FuncionariosToolStripMenuItem, "FuncionariosToolStripMenuItem")
         Me.FuncionariosToolStripMenuItem.Name = "FuncionariosToolStripMenuItem"
-        '
-        'EstoqueToolStripMenuItem1
-        '
-        resources.ApplyResources(Me.EstoqueToolStripMenuItem1, "EstoqueToolStripMenuItem1")
-        Me.EstoqueToolStripMenuItem1.Name = "EstoqueToolStripMenuItem1"
         '
         'RelatorioToolStripMenuItem
         '
@@ -559,11 +564,6 @@ Partial Class FrmMenu
         resources.ApplyResources(Me.Label5, "Label5")
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Name = "Label5"
-        '
-        'FornecedorToolStripMenuItem
-        '
-        resources.ApplyResources(Me.FornecedorToolStripMenuItem, "FornecedorToolStripMenuItem")
-        Me.FornecedorToolStripMenuItem.Name = "FornecedorToolStripMenuItem"
         '
         'FrmMenu
         '
