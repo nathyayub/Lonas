@@ -24,14 +24,15 @@ Partial Class ConsultaMateriais
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConsultaMateriais))
         Me.DgdGrade = New System.Windows.Forms.DataGridView()
+        Me.TxtCampo = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.QtdMin = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.QtdMax = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TxtCampo = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DgdGrade, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,14 +42,35 @@ Partial Class ConsultaMateriais
         Me.DgdGrade.AllowUserToDeleteRows = False
         Me.DgdGrade.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.DgdGrade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3, Me.QtdMin, Me.QtdMax})
+        Me.DgdGrade.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3, Me.QtdMin, Me.QtdMax, Me.Column5})
         Me.DgdGrade.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DgdGrade.Location = New System.Drawing.Point(19, 111)
-        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DgdGrade.Margin = New System.Windows.Forms.Padding(4)
         Me.DgdGrade.Name = "DgdGrade"
         Me.DgdGrade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DgdGrade.Size = New System.Drawing.Size(864, 417)
         Me.DgdGrade.TabIndex = 16
+        '
+        'TxtCampo
+        '
+        Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCampo.Location = New System.Drawing.Point(13, 55)
+        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtCampo.Name = "TxtCampo"
+        Me.TxtCampo.Size = New System.Drawing.Size(635, 30)
+        Me.TxtCampo.TabIndex = 15
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(11, 21)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(261, 29)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Digite o código ou nome"
         '
         'Column1
         '
@@ -92,26 +114,12 @@ Partial Class ConsultaMateriais
         Me.QtdMax.Name = "QtdMax"
         Me.QtdMax.Width = 148
         '
-        'TxtCampo
+        'Column5
         '
-        Me.TxtCampo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCampo.Location = New System.Drawing.Point(13, 55)
-        Me.TxtCampo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TxtCampo.Name = "TxtCampo"
-        Me.TxtCampo.Size = New System.Drawing.Size(635, 30)
-        Me.TxtCampo.TabIndex = 15
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(11, 21)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(261, 29)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Digite o código ou nome"
+        Me.Column5.DataPropertyName = "QtdAtu"
+        Me.Column5.HeaderText = "Quantidade Atual"
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 135
         '
         'ConsultaMateriais
         '
@@ -140,4 +148,5 @@ Partial Class ConsultaMateriais
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents QtdMin As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents QtdMax As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

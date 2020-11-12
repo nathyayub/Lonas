@@ -5,7 +5,12 @@
         Me.Left = 0
     End Sub
     Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
-        DgdGrade.DataSource = objentsai.Localizar_porData(DtpIni.Text, DtpFin.Text)
+        If DtpIni.Value > DtpFin.Value Then
+            MsgBox("data inicial não pode ser maior que a data final", vbInformation)
+        Else
+            DgdGrade.DataSource = objentsai.Localizar_porData(DtpIni.Text, DtpFin.Text)
+        End If
+
     End Sub
 
 

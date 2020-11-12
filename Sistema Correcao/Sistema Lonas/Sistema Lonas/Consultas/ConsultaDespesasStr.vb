@@ -6,7 +6,12 @@
         Me.Left = 0
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        DgdGrade.DataSource = objdes.Localizar_porData(DtpIni.Text, DtpFin.Text)
+        If DtpIni.Value > DtpFin.Value Then
+            MsgBox("data inicial não pode ser maior que a data final", vbInformation)
+        Else
+            DgdGrade.DataSource = objdes.Localizar_porData(DtpIni.Text, DtpFin.Text)
+        End If
+
     End Sub
 
     Private Sub btnimprimir_Click_1(sender As Object, e As EventArgs) Handles btnimprimir.Click

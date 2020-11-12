@@ -15,7 +15,12 @@
     End Sub
 
     Private Sub btnok_Click(sender As Object, e As EventArgs) Handles btnok.Click
-        DgdGrade.DataSource = objEntM.Localizar_porData(DtpIni.Text, DtpFin.Text)
+        If DtpIni.Value > DtpFin.Value Then
+            MsgBox("data inicial não pode ser maior que a data final", vbInformation)
+        Else
+            DgdGrade.DataSource = objEntM.Localizar_porData(DtpIni.Text, DtpFin.Text)
+        End If
+
     End Sub
 
     Private Sub ConsultaEntradaMatRelat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
